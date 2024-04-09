@@ -1,0 +1,643 @@
+summary,column_description,table_id
+2008 Italian Motorcycle Grand Prix,"rider<The name of the motorcycle rider>
+manufacturer<The brand of the motorcycle manufacturer>
+laps<The number of laps completed in the race>
+time<The total time taken to complete the race>
+grid<The starting grid position of the rider>",2-16212245-1.html.csv
+"This table contains information about episodes from season 3 of the TV show ""Gossip Girl"", including the episode number, title, director, writer, original air date, and US viewers in millions.","no in series<The episode number within the entire series>
+no in season<The episode number within the third season>
+title<The title of the episode>
+directed by<The name of the director of the episode>
+written by<The name of the writer of the episode>
+original air date<The date when the episode first aired>
+us viewers (in millions)<The number of viewers in the United States in millions for that episode>",1-26748314-1.html.csv
+"The table contains information about the discography of Caribou Records, including the artist, album, country, year, catalog number, and format.","artist<The name of the artist/band>
+album<The title of the album>
+country<The country where the album was released>
+year<The year the album was released>
+catalog<The catalog number of the album>
+format<The format of the album release (e.g. lp, cd)>",2-18078622-1.html.csv
+"This table provides information about episodes from the second series of the TV show ""Merlin.""","no overall<The overall episode number in the series>
+no for series<The episode number within the second series>
+title<The title of the episode>
+directed by<The director of the episode>
+written by<The writer of the episode>
+original air date<The original air date of the episode>
+uk viewers (million)<The number of viewers in the UK in millions>",1-29063233-1.html.csv
+"This table provides information about episodes from the TV series Merlin (series 2), including episode number, title, director, writer, original air date, and UK viewership.","no overall<The overall episode number in the series>
+no for series<The episode number within the series>
+title<The title of the episode>
+directed by<The director of the episode>
+written by<The writer of the episode>
+original air date<The date when the episode first aired>
+uk viewers (million)<The number of UK viewers in millions for the episode>",1-29063233-1.html.csv
+"This table provides information on episodes from the TV series ""Merlin"" (series 2), including episode number, title, director, writer, original air date, and UK viewership.","no overall<The overall episode number in the series>
+no for series<The episode number within the series>
+title<The title of the episode>
+directed by<The director of the episode>
+written by<The writer of the episode>
+original air date<The date the episode first aired>
+uk viewers (million)<The number of UK viewers in millions for the episode>",1-29063233-1.html.csv
+"This table shows information about episodes of the TV series ""Merlin (series 2)"", including episode number, title, directors, writers, original air dates, and UK viewership.","no overall<The overall episode number in the series>
+no for series<The episode number within the series>
+title<The title of the episode>
+directed by<The director of the episode>
+written by<The writer of the episode>
+original air date<The original air date of the episode>
+uk viewers (million)<The number of UK viewers in millions for the episode>",1-29063233-1.html.csv
+"This table provides information about episodes from the second series of the TV show ""Merlin.""","no overall<The overall episode number in the series>
+no for series<The episode number within the second series>
+title<The title of the episode>
+directed by<The director of the episode>
+written by<The writer of the episode>
+original air date<The original air date of the episode>
+uk viewers (million)<The number of viewers in the UK in millions>",1-29063233-1.html.csv
+"This table contains information about episodes of the TV series ""Merlin (Series 2)"" including episode number, title, director, writer, original air date, and UK viewership.","no overall<The overall episode number in the series>
+no for series<The episode number within the series>
+title<The title of the episode>
+directed by<The director of the episode>
+written by<The writer of the episode>
+original air date<The date when the episode first aired>
+uk viewers (million)<The number of viewers in the UK in millions>",1-29063233-1.html.csv
+"This table shows information about episodes of the TV series ""Merlin"" (series 2), including episode number, title, director, writer, original air date, and UK viewership.","no overall<The overall episode number of the series>
+no for series<The episode number within the series>
+title<The title of the episode>
+directed by<The director of the episode>
+written by<The writer of the episode>
+original air date<The date when the episode first aired>
+uk viewers (million)<The number of UK viewers in millions for the episode>",1-29063233-1.html.csv
+"This table provides information about episodes from the second series of the TV show ""Merlin.""","no overall<The overall episode number in the series>
+no for series<The episode number within the second series>
+title<The title of the episode>
+directed by<The director of the episode>
+written by<The writer of the episode>
+original air date<The date the episode first aired>
+uk viewers (million)<The number of viewers in millions for the episode in the UK>",1-29063233-1.html.csv
+"This table provides information about episodes from the TV series ""Merlin"" (series 2), including episode number, title, director, writer, original air date, and UK viewership.","no overall<The overall episode number in the series>
+no for series<The episode number within the series>
+title<The title of the episode>
+directed by<The director of the episode>
+written by<The writer of the episode>
+original air date<The date when the episode first aired>
+uk viewers (million)<The number of viewers in millions in the UK when the episode aired>",1-29063233-1.html.csv
+"This table provides information about episodes from the TV series Merlin (series 2), including episode number, title, director, writer, original air date, and UK viewership.","no overall<The overall episode number in the series>
+no for series<The episode number within the series>
+title<The title of the episode>
+directed by<The director of the episode>
+written by<The writer of the episode>
+original air date<The date when the episode first aired>
+uk viewers (million)<The number of viewers in the UK in millions>",1-29063233-1.html.csv
+This table shows the statistics for the 2008-09 R.S.C. Anderlecht season for three players.,"player<The name of the player>
+league<The number of league games played by the player>
+title playoff<The number of title playoff games played by the player>
+super cup<The number of super cup games played by the player>
+total<The total number of games played by the player in the season>",2-17200019-10.html.csv
+"This table shows the statistics of players in the 2008-09 R.S.C. Anderlecht season, including the number of league games played, title playoff games played, super cup games played, and the total number of games played.","player<The name of the player>
+league<The number of league games played by the player>
+title playoff<The number of title playoff games played by the player>
+super cup<The number of super cup games played by the player>
+total<The total number of games played by the player>",2-17200019-10.html.csv
+"This table shows the statistics for the 2008-09 R.S.C. Anderlecht season, including the number of league matches played, title playoff matches played, super cup matches played, and the total number of matches played by each player.","player<The name of the player>
+league<The number of league matches played by the player>
+title playoff<The number of title playoff matches played by the player>
+super cup<The number of super cup matches played by the player>
+total<The total number of matches played by the player>",2-17200019-10.html.csv
+"This table shows the number of league appearances, title playoff appearances, and super cup appearances for three players in the 2008-09 R.S.C. Anderlecht season.","player<The name of the player>
+league<The number of league appearances made by the player>
+title playoff<The number of title playoff appearances made by the player>
+super cup<The number of super cup appearances made by the player>
+total<The total number of appearances made by the player in all competitions>",2-17200019-10.html.csv
+This table shows the statistics of players in the 2008-09 R.S.C. Anderlecht season.,"player<The name of the player>
+league<The number of league games played by the player>
+title playoff<The number of title playoff games played by the player>
+super cup<The number of super cup games played by the player>
+total<The total number of games played by the player in the season>",2-17200019-10.html.csv
+"The table shows the statistics for the 2008-09 R.S.C. Anderlecht season for three players - Mbark Boussoufa, Nicolás Frutos, and Jan Polák.","player<The name of the player>
+league<The number of league games played by the player>
+title playoff<The number of title playoff games played by the player>
+super cup<The number of super cup games played by the player>
+total<The total number of games played by the player in the season>",2-17200019-10.html.csv
+The table shows the statistics of players from the 2008-09 R.S.C. Anderlecht season.,"player<The name of the player>
+league<The number of league games played by the player>
+title playoff<The number of title playoff games played by the player>
+super cup<The number of super cup games played by the player>
+total<The total number of games played by the player>",2-17200019-10.html.csv
+This table shows the statistics for players in the 2008-09 R.S.C. Anderlecht season.,"player<Player name>
+league<Number of league games played>
+title playoff<Number of title playoff games played>
+super cup<Number of super cup games played>
+total<The total number of games played by the player>",2-17200019-10.html.csv
+"This table shows the number of league matches, title playoff matches, and super cup matches played by different players in the 2008-09 R.S.C. Anderlecht season.","player<The name of the player>
+league<The number of league matches played by the player>
+title playoff<The number of title playoff matches played by the player>
+super cup<The number of super cup matches played by the player>
+total<The total number of matches played by the player in the season>",2-17200019-10.html.csv
+The table shows the statistics for three players in the 2008-09 R.S.C. Anderlecht season.,"player<The name of the player>
+league<Number of league games played by the player>
+title playoff<Number of title playoff games played by the player>
+super cup<Number of super cup games played by the player>
+total<The total number of games played by the player>",2-17200019-10.html.csv
+"The table provides information on the top performers in the 1989 U.S. Open (Golf), including their final scores and earnings.","place<The final ranking of the player in the tournament>
+player<The name of the player>
+country<The country the player represents>
+score<The breakdown of the player's scores in each round, leading to their total score>
+to par<The player's score in relation to par (+ for above par, - for below par)>
+money<The amount of money earned by the player in the tournament>",2-17231086-6.html.csv
+"The table shows the results of the 1989 U.S. Open (golf) tournament, including the players, their countries, scores, to par, and prize money.","place<The ranking of the player in the tournament>
+player<The name of the player>
+country<The country the player represents>
+score<The total score of the player, calculated by adding up the scores from each round>
+to par<The score relative to par for the player>
+money<The amount of prize money won by the player>",2-17231086-6.html.csv
+This table displays the results of the 1989 U.S. Open (Golf) for three players.,"place<The finishing position of the player in the tournament>
+player<The name of the player>
+country<The country the player represents>
+score<The total score of the player in the tournament, calculated by adding up the scores from each round>
+to par<The score relative to par for the player, indicating how many strokes above or below par they were>
+money<The amount of prize money earned by the player for their performance in the tournament>",2-17231086-6.html.csv
+This table shows the results of the 1989 U.S. Open (golf) tournament.,"place<The final ranking of the player in the tournament>
+player<The name of the player>
+country<The country the player represents>
+score<The total score of the player in the tournament>
+to par<The score relative to par for the player>
+money<The amount of prize money won by the player>",2-17231086-6.html.csv
+"This table displays the results of the 1989 U.S. Open (Golf) for three players - Tom Kite, Hubert Green, and Curtis Strange.",place<The final ranking of the player in the tournament> player<The name of the player> country<The country the player represents> score<The total score achieved by the player in the tournament> to par<The score in relation to par for the player> money<The amount of prize money earned by the player>,2-17231086-6.html.csv
+"The table shows the results of the 1989 U.S. Open (golf) tournament, including the player's name, country, score, score to par, and prize money.","place<The finishing position of the player in the tournament>
+player<The name of the player>
+country<The country the player represents>
+score<The total score of the player in the tournament, calculated by adding up the scores from each round>
+to par<The score relative to par (under par or over par)>
+money<The amount of prize money won by the player>",2-17231086-6.html.csv
+"The table shows the results of the 1989 U.S. Open (Golf) tournament, including the player's name, country, score, score relative to par, and prize money.","place<The final ranking of the player in the tournament>
+player<The name of the player>
+country<The country the player represents>
+score<The total score of the player in the tournament, calculated by adding up the scores from each round>
+to par<The score relative to par, indicating whether the player scored above or below par for the tournament>
+money<The amount of prize money earned by the player>",2-17231086-6.html.csv
+"This table shows the results of the 1989 U.S. Open (golf) including the player's name, country, score, to par, and prize money.","place<The final position of the player in the tournament>
+player<The name of the player>
+country<The country the player represents>
+score<The total score of the player for the tournament>
+to par<The score relative to par for the player>
+money<The prize money earned by the player>",2-17231086-6.html.csv
+This table shows the results of the 1989 U.S. Open (Golf) tournament.,"place<The ranking or position of the player in the tournament>
+player<The name of the player>
+country<The country the player represents>
+score<The total score of the player in the tournament, calculated by adding up the scores from each round>
+to par<The score difference of the player from par>
+money<The amount of prize money won by the player>",2-17231086-6.html.csv
+"This table shows the results of the 1989 U.S. Open golf tournament for three players - Tom Kite, Hubert Green, and Curtis Strange.","place<The ranking or position of the player in the tournament>
+player<The name of the player>
+country<The country the player represents>
+score<The total score of the player in the tournament, calculated by adding up the scores from each round>
+to par<The score in relation to par, indicating whether the player scored above (+) or below (-) par for the tournament>
+money<The amount of prize money won by the player in the tournament>",2-17231086-6.html.csv
+"This table provides information about players from the 2004-05 Philadelphia Flyers season, including their round, position, nationality, and college/junior/club team.","round<The round in which the player was selected in the draft>
+player<The name of the player>
+position<The position the player plays in the team>
+nationality<The nationality of the player>
+college / junior / club team (league)<The college, junior team, or club team with the league in which the player played>",2-14101654-10.html.csv
+"This table shows information about players from the 2004-05 Philadelphia Flyers season, including their round, position, nationality, and college/junior/club team.","round<The round in which the player was selected in the draft> player<The name of the player> position<The position the player plays> nationality<The nationality of the player> college / junior / club team (league)<The college, junior team, or club team the player was associated with>",2-14101654-10.html.csv
+2004 - 05 Philadelphia Flyers season,"round<The round of the player in the team>
+player<The name of the player>
+position<The playing position of the player>
+nationality<The nationality of the player>
+college / junior / club team (league)<The team or league the player was associated with>",2-14101654-10.html.csv
+"The table shows information about players in the 2004-05 Philadelphia Flyers season, including their round, position, nationality, and college/junior/club team.","round<The round in which the player was selected in the draft>
+player<The name of the player>
+position<The position the player plays>
+nationality<The nationality of the player>
+college/junior/club team (league)<The college, junior team, or club team the player belonged to>",2-14101654-10.html.csv
+"This table shows information about players from the 2004-05 Philadelphia Flyers season, including their round, player name, position, nationality, and college/junior/club team.","round<The round in which the player was selected in the draft>
+player<The name of the player>
+position<The playing position of the player>
+nationality<The nationality of the player>
+college / junior / club team (league)<The college, junior team, or club team and league in which the player played>",2-14101654-10.html.csv
+This table provides information about the players of the 2004-05 Philadelphia Flyers season.,"round<The round in which the player was drafted or acquired>
+player<The name of the player>
+position<The position played by the player>
+nationality<The nationality of the player>
+college / junior / club team (league)<The college, junior team, or club team along with the league in which the player played>",2-14101654-10.html.csv
+2004 - 05 Philadelphia Flyers season,"round<The round in which the player was selected>
+player<The name of the player>
+position<The position the player plays in the team>
+nationality<The nationality of the player>
+college / junior / club team (league)<The college, junior team, or club team the player was associated with>",2-14101654-10.html.csv
+The table shows information about players from the 2004-05 Philadelphia Flyers season.,"round<The round in which the player was selected>
+player<The name of the player>
+position<The position the player plays>
+nationality<The nationality of the player>
+college / junior / club team (league)<The team the player was associated with>",2-14101654-10.html.csv
+2004-05 Philadelphia Flyers season,"round<The round in which the player was selected>
+player<The name of the player>
+position<The position the player plays in the team>
+nationality<The nationality of the player>
+college / junior / club team (league)<The team or league the player played for before joining the Philadelphia Flyers>",2-14101654-10.html.csv
+The table shows information about players from the 2004-05 Philadelphia Flyers season.,"round<The round in which the player was drafted or acquired>
+player<The name of the player>
+position<The player's position on the team>
+nationality<The player's nationality>
+college / junior / club team (league)<The college, junior team, or club team and league in which the player previously played>",2-14101654-10.html.csv
+"This table provides information about different beers from West Berkshire Brewery, including the year of release, beer name, prize won, category, and the competition it was entered in.","year<The year the beer was released>
+beer name<The name of the beer>
+prize<The award won by the beer>
+category<The category in which the beer won an award>
+competition<The name of the competition where the beer was entered>",2-17514817-1.html.csv
+"This table contains information about the West Berkshire Brewery, including the year, beer name, prize, category, and competition for various awards won by their beers.","year<The year in which the award was won>
+beer name<The name of the winning beer>
+prize<The prize or award won by the beer>
+category<The category of the award, such as best bitter or best local beer>
+competition<The name of the competition where the award was won>",2-17514817-1.html.csv
+"This table provides information about the west berkshire brewery's beers, prizes, categories, and the competitions they participated in.","year<The year when the beer was recognized or awarded>
+beer name<The name of the beer produced by west berkshire brewery>
+prize<The prize or award received for the beer>
+category<The category under which the beer was recognized (e.g., best bitter, best local beer)>
+competition<The name of the competition where the beer was entered and won an award>",2-17514817-1.html.csv
+"This table provides information about the west berkshire brewery, including the year, beer name, prize, category, and competition of various awards won.","year<The year in which the award was won>
+beer name<The name of the beer that won the award>
+prize<The level of recognition received (e.g., gold medal, overall winner)>
+category<The category in which the beer won the award (e.g., best local beer, best bitter)>
+competition<The name of the competition where the award was won (e.g., bracknell blues and real ale festival, camra reading branch beer festival)>",2-17514817-1.html.csv
+The table provides information about different beers from West Berkshire Brewery that have won prizes in various competitions.,"year<The year the beer won the prize>
+beer name<The name of the winning beer>
+prize<The type of prize won by the beer>
+category<The category in which the beer won the prize>
+competition<The name of the competition where the beer won the prize>",2-17514817-1.html.csv
+"This table provides information about different beers from West Berkshire Brewery, including the year they won an award, the name of the beer, the prize won, the category of the prize, and the competition where they won.","year<The year the beer won an award>
+beer name<The name of the beer that won an award>
+prize<The type of prize won by the beer>
+category<The category of the prize (e.g., best bitter, best local beer)>
+competition<The name of the competition where the beer won the award>",2-17514817-1.html.csv
+"The table contains information about the West Berkshire Brewery's beers, including their names, prizes won, categories, and the competitions they participated in.","year<The year when the beer participated in the competition>
+beer name<The name of the beer brewed by West Berkshire Brewery>
+prize<The prize awarded to the beer>
+category<The category in which the beer competed>
+competition<The name of the competition where the beer participated>",2-17514817-1.html.csv
+"The table contains information about West Berkshire Brewery's beers, their prizes, categories, and the competitions they participated in.","year<The year when the beer participated in the competition>
+beer name<The name of the beer>
+prize<The prize or award received by the beer>
+category<The category or type of beer>
+competition<The name of the competition where the beer participated>",2-17514817-1.html.csv
+"The table contains information about beers from West Berkshire Brewery, including the year of production, beer name, prize won, category of the beer, and the competition it was entered in.","year<The year the beer was produced>
+beer name<The name of the beer>
+prize<The prize or award won by the beer>
+category<The category of the beer (e.g. best bitter, best local beer)>
+competition<The name of the competition where the beer was entered>",2-17514817-1.html.csv
+2008 - 09 phoenix suns season,"game<The game number>
+date<The date of the game>
+team<The opposing team>
+location attendance<The location of the game and the attendance number>
+record<The team's record after the game>",2-17340355-10.html.csv
+2008 - 09 phoenix suns season,"game<The number of the game>
+date<The date of the game>
+team<The opposing team>
+location attendance<The location of the game and the attendance number>
+record<The win-loss record for the phoenix suns>",2-17340355-10.html.csv
+"This table shows information about the 2008-09 Phoenix Suns season, including game details, dates, teams, locations, attendance, and team records.","game<The number of the game in the season>
+date<The date of the game>
+team<The opposing team>
+location attendance<The location of the game and the attendance number>
+record<The team's win-loss record after the game>",2-17340355-10.html.csv
+2008 - 09 phoenix suns season,"game<The number of the game in the season> 
+date<The date of the game> 
+team<The name of the opposing team> 
+location attendance<The location of the game and the attendance number> 
+record<The win-loss record of the Phoenix Suns after the game>",2-17340355-10.html.csv
+2008 - 09 phoenix suns season,"game<The number of the game>, date<The date of the game>, team<The opposing team>, location attendance<The venue and attendance of the game>, record<The team's win-loss record after the game>",2-17340355-10.html.csv
+2008 - 09 phoenix suns season,"game<The number of the game in the season>
+date<The date of the game>
+team<The opposing team>
+location attendance<The location of the game and the number of attendees>
+record<The win-loss record of the team after the game>",2-17340355-10.html.csv
+2008-09 Phoenix Suns season,"game<The number of the game in the season>
+date<The date of the game>
+team<The opposing team>
+location attendance<The location and attendance of the game>
+record<The win-loss record of the Phoenix Suns after the game>",2-17340355-10.html.csv
+"This table provides information about the 2008-09 Phoenix Suns season, including game number, date, opponent team, location and attendance, and team's record.","game<The number of the game in the season>
+date<The date of the game>
+team<The opponent team>
+location attendance<The arena and attendance of the game>
+record<The team's record after the game>",2-17340355-10.html.csv
+2008 - 09 phoenix suns season,"game<The number of the game played>
+date<The date of the game>
+team<The opposing team>
+location attendance<The location and attendance of the game>
+record<The team's record after the game>",2-17340355-10.html.csv
+"2008-09 Phoenix Suns season games, dates, teams, locations, attendance, and records","game<The number of the game in the season>
+date<The date of the game>
+team<The opposing team>
+location attendance<The venue and number of attendees>
+record<The team's win-loss record after the game>",2-17340355-10.html.csv
+"This table shows the rankings, names, nations, scores, and placements of three participants in the 1979 World Figure Skating Championships.","rank<The ranking of the participant in the competition>
+name<The name of the participant>
+nation<The country the participant represents>
+sp + fs<The combined score of the short program and free skate>
+points<The total points earned by the participant>
+places<The total placements earned by the participant>",2-11312764-4.html.csv
+"This table shows the rankings, names, nations, scores, and placements of three figure skaters in the 1979 world figure skating championships.","rank<The ranking of the skater in the competition>
+name<The name of the skater>
+nation<The country the skater represents>
+sp + fs<The combined score of the skater's short program and free skate>
+points<The total points earned by the skater>
+places<The total placement points of the skater>",2-11312764-4.html.csv
+"This table shows the ranking, name, nation, scores, and placements of three skaters in the 1979 world figure skating championships.","rank<The ranking of the skater in the competition>
+name<The name of the skater>
+nation<The country the skater represents>
+sp + fs<The combined score for the short program and free skate>
+points<The total points earned by the skater>
+places<The placements achieved by the skater>",2-11312764-4.html.csv
+"This table shows the rankings, names, nations, scores, and placements of three skaters in the 1979 World Figure Skating Championships.",rank<The ranking of the skater in the competition> name<The name of the skater> nation<The country the skater represents> sp + fs<The total score combining short program and free skate> points<The total points earned by the skater> places<The placements achieved by the skater>,2-11312764-4.html.csv
+This table shows the rankings and scores of three figure skaters at the 1979 World Figure Skating Championships.,"rank<The ranking of the skater in the competition>
+name<The name of the skater>
+nation<The nation the skater represents>
+sp + fs<The total score of the skater's short program and free skate>
+points<The total points earned by the skater>
+places<The total places earned by the skater>",2-11312764-4.html.csv
+"The table shows the rankings, names, nations, sp + fs scores, total points, and places of participants in the 1979 world figure skating championships.","rank<The ranking of the participant in the competition>
+name<The name of the participant>
+nation<The country the participant represents>
+sp + fs<The total score of the participant in the short program and free skate>
+points<The total points earned by the participant>
+places<The total number of places the participant received in the competition>",2-11312764-4.html.csv
+"The table provides information about the 1979 world figure skating championships, including the rank, name, nation, sp + fs (short program + free skate), points, and places for three skaters.",rank<The ranking of the skater in the competition> name<The name of the skater> nation<The country the skater represents> sp + fs<The total score combining the short program and free skate> points<The total points earned by the skater> places<The total placement points earned by the skater>,2-11312764-4.html.csv
+"This table shows the ranking, name, nation, scores, and placements of three figure skaters in the 1979 world figure skating championships.","rank<The ranking of the skater in the competition>
+name<The name of the skater>
+nation<The country the skater represents>
+sp + fs<The combined score of the skater's short program and free skate>
+points<The total points earned by the skater>
+places<The total placements of the skater in competitions>",2-11312764-4.html.csv
+Summary of 1979 World Figure Skating Championships,"rank<The ranking of the skater in the competition>
+name<The name of the skater>
+nation<The nation the skater represents>
+sp + fs<The sum of the scores from short program and free skate>
+points<The total points scored by the skater>
+places<The total number of places the skater received>",2-11312764-4.html.csv
+Summary of the 1976 world junior figure skating championships results,rank<The ranking of the skater in the competition> name<The name of the skater> nation<The country the skater represents> sp + fs<The combined score for the skater's short program and free skate> points<The total points earned by the skater> places<The number of participants the skater placed higher than in the competition>,2-11025881-1.html.csv
+"This table provides information on the top three participants in the 1976 world junior figure skating championships, including their rank, name, nation, combined score for short program and free skate, total points, and final placement.",rank<The position the participant finished in the competition> name<The name of the participant> nation<The country the participant represented> sp + fs<The combined score for the short program and free skate> points<The total points earned by the participant> places<The final placement in the competition>,2-11025881-1.html.csv
+The table shows the results of the 1976 world junior figure skating championships for three participants.,"rank<The position in which the skater finished in the competition>
+name<The name of the skater>
+nation<The country the skater represents>
+sp + fs<The combined score of the short program and free skate>
+points<The total points earned by the skater>
+places<The number of participants in the competition that the skater placed higher than>",2-11025881-1.html.csv
+The table shows the results of the 1976 world junior figure skating championships for three competitors.,"rank<The final ranking of the competitor in the competition>
+name<The name of the competitor>
+nation<The country the competitor represents>
+sp + fs<The combined score of the competitor's short program and free skate>
+points<The total points earned by the competitor>
+places<The number of competitors the competitor placed ahead of in the competition>",2-11025881-1.html.csv
+This table shows the results of the 1976 world junior figure skating championships for three competitors.,"rank<The ranking of the competitor in the competition>
+name<The name of the competitor>
+nation<The country the competitor represents>
+sp + fs<The combined score of the short program and free skate>
+points<The total points earned by the competitor>
+places<The number of competitors the competitor placed higher than>",2-11025881-1.html.csv
+"The table shows the rankings, names, nations, scores, points, and places of the top performers in the 1976 world junior figure skating championships.",rank<The position in which the skater finished in the competition> name<The name of the skater> nation<The country the skater represents> sp + fs<The combined score of the skater's short program and free skate> points<The total points earned by the skater> places<The number of competitors the skater finished ahead of in the competition>,2-11025881-1.html.csv
+The table contains information about the top performers in the 1976 world junior figure skating championships.,rank<The ranking of the skater in the competition> name<The name of the skater> nation<The country the skater represents> sp + fs<The combined score of the short program and free skate> points<The total points earned by the skater> places<The number of competitors the skater placed ahead of in the competition>,2-11025881-1.html.csv
+Results of the 1976 world junior figure skating championships,rank<The position in the final standings>,2-11025881-1.html.csv
+1976 world junior figure skating championships,rank<The ranking position of the skater in the competition> name<The name of the skater> nation<The country the skater represents> sp + fs<The sum of the scores of the short program and free skate> points<The total points earned by the skater> places<The number of skaters the skater placed ahead of>,2-11025881-1.html.csv
+"This table shows the rankings, names, nations, scores (combined short program and free skate), total points, and final places of participants in the 1976 World Junior Figure Skating Championships.","rank<The ranking of the participant in the competition>
+name<The name of the participant>
+nation<The country the participant represents>
+sp + fs<The combined score of the participant's short program and free skate>
+points<The total points scored by the participant>
+places<The final placement of the participant in the competition>",2-11025881-1.html.csv
+"This table shows the 2003-04 Detroit Red Wings season with information on the date, visitor team, score, home team, decision, attendance, and record.","date<The date of the match>
+visitor<The visiting team>
+score<The final score of the match>
+home<The home team>
+decision<The decision maker for the game>
+attendance<The number of people present at the match>
+record<The team's overall record for the season>",2-13135264-6.html.csv
+This table shows the game details of the 2003-04 Detroit Red Wings season.,"date<The date of the game>
+visitor<The visiting team>
+score<The score of the game, showing goals for the visitor and home team>
+home<The home team>
+decision<The winning goalie for the game>
+attendance<The number of spectators present at the game>
+record<The team's overall record, showing wins, losses, overtime losses, and shootout losses>",2-13135264-6.html.csv
+"This table shows the 2003-04 Detroit Red Wings season with details about the date, teams playing, scores, decision makers, attendance, and team records.","date<The date of the game>
+visitor<The visiting team>
+score<The final score, with the visiting team's score listed first>
+home<The home team>
+decision<The decision maker for the game>
+attendance<The number of people in attendance at the game>
+record<The team's win-loss-overtime loss-shootout loss record>",2-13135264-6.html.csv
+"The table shows the 2003-04 Detroit Red Wings season including dates, teams (visitor and home), scores, decision, attendance, and record.","date<The date of the match>
+visitor<The visiting team>
+score<The score of the match>
+home<The home team>
+decision<The decision maker for the game>
+attendance<The number of people present at the game>
+record<The team's record for the season>",2-13135264-6.html.csv
+"The table shows the 2003-04 Detroit Red Wings season with information on dates, visiting team, scores, home team, decision, attendance, and record.","date<The date of the match>
+visitor<The visiting team>
+score<The final score of the match>
+home<The home team>
+decision<The decision maker for the match>
+attendance<The number of attendees at the match>
+record<The team's overall record in the season>",2-13135264-6.html.csv
+"This table provides information on the 2003-04 Detroit Red Wings season, including dates, teams, scores, decisions, attendance, and records.",date<The date of the match> visitor<The visiting team> score<The final score of the match> home<The home team> decision<The winning decision> attendance<The number of spectators present> record<The team's overall record>,2-13135264-6.html.csv
+"The table shows the 2003-04 Detroit Red Wings season, including dates, teams, scores, decisions, attendance, and records for each game.",date<The date of the game> visitor<The visiting team> score<The score of the game> home<The home team> decision<The decision maker for the game> attendance<The number of people in attendance> record<The team's overall record after the game>,2-13135264-6.html.csv
+This table shows the details of Detroit Red Wings games during the 2003-04 season.,"date<The date of the game>
+visitor<The visiting team>
+score<The final score of the game>
+home<The home team>
+decision<The winning goaltender's last name>
+attendance<The number of people in attendance at the game>
+record<The team's overall record in the season>",2-13135264-6.html.csv
+This table shows the 2003-04 Detroit Red Wings season with details of matches played.,"date<The date of the match>
+visitor<The visiting team>
+score<The score of the match, showing goals for each team>
+home<The home team>
+decision<The winning decision, whether it was a win, loss, or tie>
+attendance<The number of spectators present at the match>
+record<The team's overall record, showing wins, losses, ties, and overtime losses>",2-13135264-6.html.csv
+This table shows the details of three games played by the Detroit Red Wings during the 2003-04 season.,"date<The date of the game>
+visitor<The visiting team>
+score<The final score of the game, in the format visitor score - home score>
+home<The home team>
+decision<The winning goaltender's last name>
+attendance<The number of spectators present at the game>
+record<The team's record after the game, in the format wins - losses - ties - overtime losses>",2-13135264-6.html.csv
+list of prime ministers of Albania,"name<The name of the prime minister>
+born - died<The birth and death years of the prime minister>
+term start<The start date of the prime minister's term>
+term end<The end date of the prime minister's term>
+political party<The political party affiliation of the prime minister>",2-167235-8.html.csv
+List of prime ministers of Albania,"name<The name of the prime minister>
+born - died<The birth and death years of the prime minister>
+term start<The start date of the prime minister's term>
+term end<The end date of the prime minister's term>
+political party<The political party affiliation of the prime minister>",2-167235-8.html.csv
+List of prime ministers of Albania,"name<The name of the prime minister>
+born - died<The birth and death year of the prime minister>
+term start<The start date of the prime minister's term>
+term end<The end date of the prime minister's term>
+political party<The political party affiliation of the prime minister>",2-167235-8.html.csv
+List of prime ministers of Albania,"name<The name of the prime minister>
+born - died<The birth and death years of the prime minister>
+term start<The start date of the prime minister's term>
+term end<The end date of the prime minister's term>
+political party<The political party affiliation of the prime minister>",2-167235-8.html.csv
+List of prime ministers of Albania,"name<The name of the prime minister>
+born - died<The birth and death years of the prime minister>
+term start<The start date of the prime minister's term>
+term end<The end date of the prime minister's term>
+political party<The political party affiliation of the prime minister>",2-167235-8.html.csv
+list of prime ministers of Albania,"name<The name of the prime minister>
+born - died<The birth and death year of the prime minister>
+term start<The start date of the prime minister's term>
+term end<The end date of the prime minister's term>
+political party<The political party affiliation of the prime minister>",2-167235-8.html.csv
+List of prime ministers of Albania,"name<The name of the prime minister>
+born - died<The birth and death year of the prime minister>
+term start<The start date of the prime minister's term>
+term end<The end date of the prime minister's term>
+political party<The political party affiliation of the prime minister>",2-167235-8.html.csv
+"The table lists the prime ministers of Albania along with their birth and death years, term start and end dates, and political party affiliation.","name<The name of the prime minister>
+born - died<The birth and death years of the prime minister>
+term start<The start date of the prime minister's term>
+term end<The end date of the prime minister's term>
+political party<The political party affiliation of the prime minister>",2-167235-8.html.csv
+List of prime ministers of Albania,"name<The name of the prime minister>
+born - died<The birth and death years of the prime minister>
+term start<The start date of the prime minister's term>
+term end<The end date of the prime minister's term>
+political party<The political party affiliation of the prime minister>",2-167235-8.html.csv
+List of Prime Ministers of Albania,"name<The name of the prime minister>
+born - died<The birth and death years of the prime minister>
+term start<The start date of the prime minister's term>
+term end<The end date of the prime minister's term>
+political party<The political party affiliation of the prime minister>",2-167235-8.html.csv
+"This table shows the all-time roster of the Utah Jazz basketball team, including player names, nationality, position, years played for the Jazz, and the school or club team they were associated with.","player<The name of the player on the roster>
+nationality<The nationality of the player>
+position<The position played by the player>
+years for jazz<The years in which the player played for the Utah Jazz>
+school / club team<The school or club team the player was associated with>",2-11545282-4.html.csv
+"This table lists the all-time roster of the Utah Jazz basketball team, including player names, nationality, position, years played for the Jazz, and school/club team.","player<The name of the player>
+nationality<The nationality of the player>
+position<The position the player played on the team>
+years for jazz<The years the player played for the Utah Jazz>
+school / club team<The school or club team the player was associated with>",2-11545282-4.html.csv
+This table displays information about the all-time roster of the Utah Jazz basketball team.,"player<The name of the player on the roster>
+nationality<The nationality of the player>
+position<The position played by the player>
+years for jazz<The years during which the player played for the Utah Jazz>
+school / club team<The school or club team the player was associated with>",2-11545282-4.html.csv
+"This table shows the all-time roster of the Utah Jazz, including information on players' nationality, position, years played for the Jazz, and their school/club team.","player<The name of the player on the roster>
+nationality<The country the player is from>
+position<The position the player plays on the basketball court>
+years for jazz<The years the player played for the Utah Jazz>
+school / club team<The school or club team the player played for before joining the Utah Jazz>",2-11545282-4.html.csv
+"This table shows the all-time roster of Utah Jazz players, including their nationality, position, years played for the Jazz, and their school/club team.","player<The name of the player>
+nationality<The nationality of the player>
+position<The position played by the player>
+years for jazz<The years the player played for the Utah Jazz>
+school / club team<The school or club team the player was associated with>",2-11545282-4.html.csv
+"This table shows the all-time roster of the Utah Jazz basketball team, including player information such as nationality, position, years played for the team, and school/club team.","player<The name of the player on the roster>
+nationality<The nationality of the player>
+position<The position played by the player>
+years for jazz<The years the player played for the Utah Jazz>
+school / club team<The school or club team the player was associated with>",2-11545282-4.html.csv
+"This table shows the all-time roster of the Utah Jazz, including player names, nationality, position, years played for the team, and their school/club team.","player<The name of the player on the roster>
+nationality<The country the player is from>
+position<The position the player plays on the team>
+years for jazz<The years the player played for the Utah Jazz>
+school / club team<The school or club team the player was associated with>",2-11545282-4.html.csv
+This table shows the all-time roster of the Utah Jazz basketball team.,"player<The name of the player>
+nationality<The nationality of the player>
+position<The position played by the player>
+years for jazz<The years the player played for the Utah Jazz>
+school / club team<The school or club team the player was associated with>",2-11545282-4.html.csv
+This table lists the all-time roster of the Utah Jazz basketball team.,"player<The name of the player>
+nationality<The country of origin of the player>
+position<The playing position of the player>
+years for jazz<The years the player played for the Utah Jazz>
+school / club team<The college or club team the player was associated with>",2-11545282-4.html.csv
+"This table lists the all-time roster of Utah Jazz players, including their nationality, position, years played for the Jazz, and their school or club team.","player<The name of the player on the roster>
+nationality<The nationality of the player>
+position<The position the player played in basketball>
+years for jazz<The years in which the player played for the Utah Jazz>
+school / club team<The school or club team the player was associated with before joining the Utah Jazz>",2-11545282-4.html.csv
+Brian Watts' tournament statistics,"tournament<The name of the tournament>
+wins<The number of wins in the tournament>
+top - 5<The number of times finishing in the top 5 in the tournament>
+top - 25<The number of times finishing in the top 25 in the tournament>
+events<The total number of events participated in>
+cuts made<The number of cuts made in the tournament>",2-10167122-1.html.csv
+Summary of Brian Watts' performance in different golf tournaments.,"tournament<The name of the golf tournament>
+wins<The number of wins Brian Watts has in the tournament>
+top - 5<The number of times Brian Watts finished in the top 5 in the tournament>
+top - 25<The number of times Brian Watts finished in the top 25 in the tournament>
+events<The total number of events Brian Watts participated in>
+cuts made<The number of times Brian Watts made the cut in the tournament>",2-10167122-1.html.csv
+This table shows the tournament statistics for Brian Watts.,"tournament<The name of the tournament>
+wins<The number of wins in the tournament>
+top - 5<The number of times finishing in the top 5 in the tournament>
+top - 25<The number of times finishing in the top 25 in the tournament>
+events<The total number of events played in the tournament>
+cuts made<The number of cuts made in the tournament>",2-10167122-1.html.csv
+The table shows statistics for Brian Watts in various golf tournaments.,"tournament<The name of the golf tournament>
+wins<The number of wins Brian Watts had in the tournament>
+top-5<The number of times Brian Watts finished in the top 5 in the tournament>
+top-25<The number of times Brian Watts finished in the top 25 in the tournament>
+events<The total number of events Brian Watts participated in>
+cuts made<The number of times Brian Watts made the cut in the tournament>",2-10167122-1.html.csv
+This table contains data related to brian watts' performance in different golf tournaments.,"tournament<The name of the golf tournament>
+wins<The number of wins brian watts had in the tournament>
+top - 5<The number of times brian watts finished in the top 5 in the tournament>
+top - 25<The number of times brian watts finished in the top 25 in the tournament>
+events<The total number of events brian watts participated in>
+cuts made<The number of cuts brian watts made in the tournament>",2-10167122-1.html.csv
+This table provides information about Brian Watts' performance in different golf tournaments.,"tournament<The name of the golf tournament>
+wins<The number of wins Brian Watts has in that tournament>
+top - 5<The number of times Brian Watts finished in the top 5 in that tournament>
+top - 25<The number of times Brian Watts finished in the top 25 in that tournament>
+events<The total number of events Brian Watts participated in>
+cuts made<The total number of cuts Brian Watts made in that tournament>",2-10167122-1.html.csv
+This table provides data on brian watts' performance in various golf tournaments.,"tournament<The name of the golf tournament>
+wins<The number of wins brian watts had in the tournament>
+top - 5<The number of times brian watts finished in the top 5 in the tournament>
+top - 25<The number of times brian watts finished in the top 25 in the tournament>
+events<The total number of events brian watts participated in>
+cuts made<The number of cuts brian watts made in the tournament>",2-10167122-1.html.csv
+This table shows the tournament statistics for Brian Watts.,"tournament<The name of the tournament>
+wins<The number of wins in the tournament>
+top - 5<The number of times finishing in the top 5 in the tournament>
+top - 25<The number of times finishing in the top 25 in the tournament>
+events<The total number of events participated in>
+cuts made<The number of cuts made in the tournament>",2-10167122-1.html.csv
+This table shows the tournament statistics of Brian Watts.,"tournament<The name of the tournament>
+wins<The number of wins in the tournament>
+top - 5<The number of times finishing in the top 5 in the tournament>
+top - 25<The number of times finishing in the top 25 in the tournament>
+events<The total number of events participated in>
+cuts made<The number of cuts made in the tournament>",2-10167122-1.html.csv
+"This table provides information about different viral diseases including their family, baltimore group, envelopment, virion shape, and replication site.","family<The family of the viral disease>
+baltimore group<The baltimore group classification of the virus>
+envelopment<Whether the virus is enveloped or non-enveloped>
+virion shape<The shape of the virus particle>
+replication site<The site where the virus replicates within the host cell>",2-15845253-1.html.csv
+"The table provides information about different viral diseases including the family, Baltimore group, envelopment, virion shape, and replication site.","family<The family name of the viral disease>
+baltimore group<The Baltimore group classification of the viral disease>
+envelopment<Whether the virus is enveloped or non-enveloped>
+virion shape<The shape of the viral particle>
+replication site<The location where the virus replicates within the host cell>",2-15845253-1.html.csv
+"Summary of viral diseases including family, baltimore group, envelopment, virion shape, and replication site","family<The family name of the virus>
+baltimore group<The Baltimore classification group of the virus>
+envelopment<Whether the virus is enveloped or non-enveloped>
+virion shape<The shape of the virus particle>
+replication site<The location where the virus replicates within the host cell>",2-15845253-1.html.csv
+"The table provides information about different viral diseases, including their family, Baltimore group, envelopment, virion shape, and replication site.","family<The family of the viral disease>
+baltimore group<The Baltimore group classification of the virus>
+envelopment<Whether the virus is enveloped or non-enveloped>
+virion shape<The shape of the virus particle>
+replication site<The location where the virus replicates within the host cell>",2-15845253-1.html.csv
+"This table provides information on different viral diseases, including the family, Baltimore group, envelopment, virion shape, and replication site.","family<The family of the viral disease>, baltimore group<The Baltimore classification group of the virus>, envelopment<Whether the virus is enveloped or non-enveloped>, virion shape<The shape of the virus particle>, replication site<The site where the virus replicates in the host cell>",2-15845253-1.html.csv
+"The table provides information about different viral diseases, including their family, Baltimore group classification, envelopment status, virion shape, and replication site.","family<The family to which the virus belongs>
+baltimore group<The Baltimore group classification of the virus>
+envelopment<Whether the virus is enveloped or non-enveloped>
+virion shape<The shape of the virus particle>
+replication site<The site where viral replication occurs>",2-15845253-1.html.csv

@@ -1,0 +1,87 @@
+,summary,column_description,table_id
+0,2008 Italian Motorcycle Grand Prix,"rider<The name of the motorcycle rider>
+manufacturer<The brand of the motorcycle manufacturer>
+laps<The number of laps completed in the race>
+time<The total time taken to complete the race>
+grid<The starting grid position of the rider>",2-16212245-1.html.csv
+1,"This table contains information about episodes from season 3 of the TV show ""Gossip Girl"", including the episode number, title, director, writer, original air date, and US viewers in millions.","no in series<The episode number within the entire series>
+no in season<The episode number within the third season>
+title<The title of the episode>
+directed by<The name of the director of the episode>
+written by<The name of the writer of the episode>
+original air date<The date when the episode first aired>
+us viewers (in millions)<The number of viewers in the United States in millions for that episode>",1-26748314-1.html.csv
+2,"The table contains information about the discography of Caribou Records, including the artist, album, country, year, catalog number, and format.","artist<The name of the artist/band>
+album<The title of the album>
+country<The country where the album was released>
+year<The year the album was released>
+catalog<The catalog number of the album>
+format<The format of the album release (e.g. lp, cd)>",2-18078622-1.html.csv
+3,"This table provides information about episodes from the second series of the TV show ""Merlin.""","no overall<The overall episode number in the series>
+no for series<The episode number within the second series>
+title<The title of the episode>
+directed by<The director of the episode>
+written by<The writer of the episode>
+original air date<The original air date of the episode>
+uk viewers (million)<The number of viewers in the UK in millions>",1-29063233-1.html.csv
+13,This table shows the statistics for the 2008-09 R.S.C. Anderlecht season for three players.,"player<The name of the player>
+league<The number of league games played by the player>
+title playoff<The number of title playoff games played by the player>
+super cup<The number of super cup games played by the player>
+total<The total number of games played by the player in the season>",2-17200019-10.html.csv
+23,"The table provides information on the top performers in the 1989 U.S. Open (Golf), including their final scores and earnings.","place<The final ranking of the player in the tournament>
+player<The name of the player>
+country<The country the player represents>
+score<The breakdown of the player's scores in each round, leading to their total score>
+to par<The player's score in relation to par (+ for above par, - for below par)>
+money<The amount of money earned by the player in the tournament>",2-17231086-6.html.csv
+33,"This table provides information about players from the 2004-05 Philadelphia Flyers season, including their round, position, nationality, and college/junior/club team.","round<The round in which the player was selected in the draft>
+player<The name of the player>
+position<The position the player plays in the team>
+nationality<The nationality of the player>
+college / junior / club team (league)<The college, junior team, or club team with the league in which the player played>",2-14101654-10.html.csv
+43,"This table provides information about different beers from West Berkshire Brewery, including the year of release, beer name, prize won, category, and the competition it was entered in.","year<The year the beer was released>
+beer name<The name of the beer>
+prize<The award won by the beer>
+category<The category in which the beer won an award>
+competition<The name of the competition where the beer was entered>",2-17514817-1.html.csv
+52,2008 - 09 phoenix suns season,"game<The game number>
+date<The date of the game>
+team<The opposing team>
+location attendance<The location of the game and the attendance number>
+record<The team's record after the game>",2-17340355-10.html.csv
+62,"This table shows the rankings, names, nations, scores, and placements of three participants in the 1979 World Figure Skating Championships.","rank<The ranking of the participant in the competition>
+name<The name of the participant>
+nation<The country the participant represents>
+sp + fs<The combined score of the short program and free skate>
+points<The total points earned by the participant>
+places<The total placements earned by the participant>",2-11312764-4.html.csv
+71,Summary of the 1976 world junior figure skating championships results,rank<The ranking of the skater in the competition> name<The name of the skater> nation<The country the skater represents> sp + fs<The combined score for the skater's short program and free skate> points<The total points earned by the skater> places<The number of participants the skater placed higher than in the competition>,2-11025881-1.html.csv
+81,"This table shows the 2003-04 Detroit Red Wings season with information on the date, visitor team, score, home team, decision, attendance, and record.","date<The date of the match>
+visitor<The visiting team>
+score<The final score of the match>
+home<The home team>
+decision<The decision maker for the game>
+attendance<The number of people present at the match>
+record<The team's overall record for the season>",2-13135264-6.html.csv
+91,list of prime ministers of Albania,"name<The name of the prime minister>
+born - died<The birth and death years of the prime minister>
+term start<The start date of the prime minister's term>
+term end<The end date of the prime minister's term>
+political party<The political party affiliation of the prime minister>",2-167235-8.html.csv
+101,"This table shows the all-time roster of the Utah Jazz basketball team, including player names, nationality, position, years played for the Jazz, and the school or club team they were associated with.","player<The name of the player on the roster>
+nationality<The nationality of the player>
+position<The position played by the player>
+years for jazz<The years in which the player played for the Utah Jazz>
+school / club team<The school or club team the player was associated with>",2-11545282-4.html.csv
+111,Brian Watts' tournament statistics,"tournament<The name of the tournament>
+wins<The number of wins in the tournament>
+top - 5<The number of times finishing in the top 5 in the tournament>
+top - 25<The number of times finishing in the top 25 in the tournament>
+events<The total number of events participated in>
+cuts made<The number of cuts made in the tournament>",2-10167122-1.html.csv
+120,"This table provides information about different viral diseases including their family, baltimore group, envelopment, virion shape, and replication site.","family<The family of the viral disease>
+baltimore group<The baltimore group classification of the virus>
+envelopment<Whether the virus is enveloped or non-enveloped>
+virion shape<The shape of the virus particle>
+replication site<The site where the virus replicates within the host cell>",2-15845253-1.html.csv

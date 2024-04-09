@@ -1,0 +1,32 @@
+{"table_name": "2-11916083-39.html.csv", "label": "the 31997 mintage be release in 2001", "pred": "year, mintage"}
+{"table_name": "2-15753390-2.html.csv", "label": "2 be the fewest point that roger dutton / tony wright receive", "pred": "rider, points"}
+{"table_name": "2-16369528-1.html.csv", "label": "after 2005 , the winner of the lifetime achievement award be andrew rule john silvester , sandra harvey lindsay simpson , marele day , shane maloney , and peter doyle", "pred": "year, lifetime achievement"}
+{"table_name": "2-14101654-10.html.csv", "label": "every player come from either a college program or a junior / club team", "pred": "player, college / junior / club team (league)"}
+{"table_name": "2-10167122-1.html.csv", "label": "the open championship be the tournament with the highest number of event", "pred": "tournament, events"}
+{"table_name": "2-18409326-1.html.csv", "label": "the station with a frequency of 00 96.3 fm play classic rock", "pred": "frequency, branding, format"}
+{"table_name": "2-14305653-58.html.csv", "label": "the yugoslavian national team suffer its worst outcome lose 2:1 in the balken cup against poland on march 22", "pred": "date, city, opponent, results, type of game"}
+{"table_name": "1-18522916-5.html.csv", "label": "roberto gamarra be the outgoing manager of nejapa", "pred": "team, outgoing manager, manner of departure, date of vacancy, replaced by, date of appointment, position in table"}
+{"table_name": "2-14123212-1.html.csv", "label": "w293al have the highest erp w , whereas w264bf have the lowest erp w", "pred": "call sign, erp w"}
+{"table_name": "2-16776506-2.html.csv", "label": "the opponent in final on 6 february 2000 in wellington new zealand on hard surface be katerina kramperov\u00e1", "pred": "date, location, surface, opponent in final"}
+{"table_name": "2-1554049-2.html.csv", "label": "the surface for the opponent roger federer be clay after july 13 , 2003", "pred": "date, tournament, surface, opponent"}
+{"table_name": "2-1015521-1.html.csv", "label": "bell uh - 1 iroquois be the version of b - 58 aircraft model originate in the united state which have 2 in service", "pred": "aircraft, origin, versions, in service"}
+{"table_name": "2-1122988-1.html.csv", "label": "when the grid be 5 , the least amount of lap be 43.0", "pred": "driver, laps, grid"}
+{"table_name": "2-1590321-59.html.csv", "label": "active from 1947 - 1964 , titus ozon score 157 goal", "pred": "name, years, goals"}
+{"table_name": "2-10814487-4.html.csv", "label": "the super league xii score on 21 / 07 / 07 be 14 - 10", "pred": "date, home team, away team, score"}
+{"table_name": "1-27700375-11.html.csv", "label": "the nets' only win come at the air canada centre", "pred": "team, score, location attendance, record"}
+{"table_name": "2-12207158-2.html.csv", "label": "when the record be 4 - 5 , the opponent be yankee on april 11", "pred": "date, opponent, record"}
+{"table_name": "2-14781412-8.html.csv", "label": "equestrian at the asian game happen every 4 year from 1982 to 2010 , except for in 1990", "pred": "year, location, gold, silver, bronze"}
+{"table_name": "2-13932013-1.html.csv", "label": "otto graham have win 44 more game than brady quinn", "pred": "quarterback, wins"}
+{"table_name": "2-17916431-2.html.csv", "label": "3 of the total game feature have an attendance in the 3000s", "pred": "game, date, opponent, attendance"}
+{"table_name": "1-14562722-2.html.csv", "label": "on march 15 , 2007 and in region 4 , the highest number of episode be 4", "pred": "volume, discs, episodes, region 4"}
+{"table_name": "2-18622227-6.html.csv", "label": "wimbledon have only 1 a result during the year 1986 to 1999", "pred": "tournament, 1986, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999"}
+{"table_name": "1-27833469-1.html.csv", "label": "series 101 be in season 10", "pred": "series, season, title"}
+{"table_name": "1-27700375-11.html.csv", "label": "brook lopez lead the team in point for 5 straight game", "pred": "game, date, team, high points"}
+{"table_name": "2-17311783-10.html.csv", "label": "verizon center 20173 for the location and attendance when the record be 49 - 36%", "pred": "location attendance, record"}
+{"table_name": "2-10809157-19.html.csv", "label": "carlton score 20.7 when they play richmond at prince park", "pred": "home team, home team score, away team, away team score, venue, date"}
+{"table_name": "2-11545282-4.html.csv", "label": "the jazz have 2 player , both guard , with the last name dawkins but their time on the team do not overlap", "pred": "player, position, years for jazz"}
+{"table_name": "2-11692087-1.html.csv", "label": "the team have be call the coquitlam adanacs throughout all 45 season since 1965", "pred": "season, team name"}
+{"table_name": "1-25551880-2.html.csv", "label": "stage 1 be the only stage where a mountain classification wasn't award", "pred": "stage, mountains classification"}
+{"table_name": "2-16218498-1.html.csv", "label": "port autonome versus sport clube da praia have higher score than of lprc oiler versus mighty blackpool", "pred": "team 1, agg, team 2, 1st leg, 2nd leg"}
+{"table_name": "2-11512626-6.html.csv", "label": "when the score be 4 - 5 , the athletics record go 53 - 32 against the colorado rockies", "pred": "date, opponent, score, loss, record"}
+{"table_name": "2-13312898-25.html.csv", "label": "glenn capriola be not select before round 6", "pred": "name, round, pick, overall, position, college"}
