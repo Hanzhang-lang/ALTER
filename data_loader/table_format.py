@@ -26,7 +26,7 @@ class TableFormat:
             
     def load_data_from_dic(self, data: dict, use_sampling=True):
         assert isinstance(data, dict)
-        df = pd.DataFrame(columns=[self.normalize_col_name(c) for c in data["table"]["header"]])
+        df = pd.DataFrame(columns=[self.normalize_col_name(c) for c in data["header"]])
         for i, line in enumerate(data['rows']):
             df.loc[i] = line
         self.data = df

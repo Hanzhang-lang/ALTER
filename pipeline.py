@@ -3,10 +3,10 @@ from executor import SQLManager
 from langchain.chains import LLMChain
 from langchain_openai import ChatOpenAI, OpenAI
 from data_loader import TableLoader, TableFormat, TableAug
-from prompt_manager import PrePrompt, get_k_shot, get_k_shot_with_aug, row_instruction, answer_instruction, get_k_shot_with_answer
+from prompt_manager import get_k_shot_with_aug, row_instruction, answer_instruction, get_k_shot_with_answer
 import json
 import os
-import sys
+from utils import eval_fv_match
 import logging
 import datetime
 from typing import List
@@ -62,7 +62,7 @@ def pipeline(task_name: str,
     model = ChatOpenAI(model_name=model_name, openai_api_base="https://api.chatanywhere.tech/v1",
                        openai_api_key="sk-kxgtm71G6zwC44lglIF5CfiEVVzjjc39TOtppkNAwrVA2fUW")
     engine = create_engine('sqlite:///db/sqlite/tabfact.db', echo=False)
-    save_path = f"result/data/{task_name}_{split}_{datetime.datetime.now().strftime('%m-%d_%H-%M-%S')}.json"
+    
     manager = SQLManager(engine=engine)
     small_test = True
     table_loader = TableLoader(
@@ -77,64 +77,70 @@ def pipeline(task_name: str,
     verbose = True
     save_file = True
     load_sql = False 
+    # stage_1: column pick up   stage_2: SQL Generate  stage_3: Answer output
     stage_1 = False
     stage_2 = False
     stage_3 = True
     # get k_shot example
-
+    preds, ground, table_names = [], [], []
     if stage_1:
         k_shot_prompt = get_k_shot_with_aug()
+        save_path = f"result/data/{task_name}_{split}_{datetime.datetime.now().strftime('%m-%d_%H-%M-%S')}.json"
     elif stage_2:
         k_shot_prompt = row_instruction
         logger.info('\n' + k_shot_prompt.format(table='test-table',
                 claim='test-claim', aug='test-aug'))
+        save_path = f"result/SQL/{task_name}_{split}_{datetime.datetime.now().strftime('%m-%d_%H-%M-%S')}.json"
     elif stage_3:
         k_shot_prompt = get_k_shot_with_answer()
-    llm_chain = LLMChain(llm=model, prompt=k_shot_prompt, verbose=True)
-    aug_information = pd.read_csv(f"result/aug/{task_name}_{split}_summary_31.csv", index_col='table_id')
+        save_path = f"result/answer/{task_name}_{split}_{datetime.datetime.now().strftime('%m-%d_%H-%M-%S')}.json"
+    llm_chain = LLMChain(llm=model, prompt=k_shot_prompt, verbose=verbose)
+    
+    aug_information = pd.read_csv(f"result/aug/{task_name}_{split}_summary.csv", index_col='table_id')
     with tqdm(
         total=num_batches + (1 if num_samples % batch_size > 0 else 0),
         desc=f"Processing {task_name}",
         ncols=150,
     ) as pbar:
-        preds, ground, table_names = [], [], []
         # for batch_num in range(num_batches + (1 if num_samples % batch_size > 0 else 0)):
-        for batch_num in range(num_batches):
+        for batch_num in range(num_batches+ (1 if num_samples % batch_size > 0 else 0)):
             
             inputs = []
             start = batch_num * batch_size
             if start + batch_size >= num_samples:
-                batch_size = num_samples - start
-            batch_data = table_loader.dataset[start: start+batch_size]
-            
+                batch_size = num_samples - start            
             for i in range(batch_size):
                 normalized_sample = table_loader.normalize_table(
                     table_loader.dataset[start + i])
                 # 输入 table, claim
-                
+                table_names.append(normalized_sample['id'])
+                ground.append(normalized_sample['query'])
                 formatter = TableFormat(
                     format='none', data=normalized_sample, use_sampling=True)
                 if stage_2:
                     #注意函数命名
                     #TODO: 修改内外循环逻辑，避免重复读取文件
                     sql_preds = []
-                    with open('./result/data/tabfact_test_04-08_02-43-03.json', 'r') as f:
+                    with open('./result/data/tabfact_test_04-09_06-19-47.json', 'r') as f:
                         lines = f.readlines()
                         for l in lines:
                             sql_preds.append(json.loads(l)['pred'])
-                    columns = [c.strip() for c in sql_preds[start + i].split(',')]
+                    columns = [formatter.normalize_col_name(c.strip()) for c in sql_preds[start + i].split(',')]
                     formatter.data = formatter.data.loc[:, columns]
                     
                 if stage_3:
                     #注意函数命名
                     stage2_sql = []
-                    with open('./result/data/tabfact_test_04-08_03-42-31_SQL.json', 'r') as f:
+                    with open('./result/SQL/tabfact_test_04-09_06-45-20.json', 'r') as f:
                         lines = f.readlines()
                         for l in lines:
                             stage2_sql.append(json.loads(l)['pred'])
                     #TODO:修改Format赋值逻辑
-                    formatter.data = manager.execute_from_df(stage2_sql[start + i], formatter.all_data, table_name='DF')
-                    
+                    #TODO: 如果SQL执行报错的话，如何处理
+                    try:
+                        formatter.data = manager.execute_from_df(stage2_sql[start + i], formatter.all_data, table_name='DF')
+                    except:
+                        stage2_sql[start + i] = 'no SQL execution'
                     inputs.append(dict({'table': formatter.format_html(table_caption=normalized_sample['table']['caption']),
                                     'claim': normalized_sample['query'],
                                     'SQL':  stage2_sql[start + i],
@@ -144,14 +150,10 @@ def pipeline(task_name: str,
                     
                     inputs.append(dict({'table': formatter.format_html(table_caption=normalized_sample['table']['caption']),
                                         'claim': normalized_sample['query'],
-                                        'aug':  summary_aug + table_aug.table_size(formatter) + f'column info: {column_aug}'
+                                        'aug':  summary_aug + table_aug.table_size(formatter) + f'\ncolumn info: {column_aug}'
                                         }))
-                table_names.append(normalized_sample['id'])
-                ground.append(normalized_sample['query'])
                 if verbose:
                     logger.info(f'Table-id: {start + i}')
-                # logger.info('\n' + formatter.format_psql())
-                # logger.info(table_loader.dataset[start + i]['statement'])
             # call llm to get batch executable sql
             batch_pred = llm_chain.batch(inputs, return_only_outputs=True)
             
@@ -160,27 +162,19 @@ def pipeline(task_name: str,
     if save_file:
         save_json(table_names, ground, preds, save_path)
     
-    if execute:
-        with tqdm(
-            total=num_batches + (1 if num_samples % batch_size > 0 else 0),
-            desc=f"Processing {task_name}",
-            ncols=150,
-        ) as pbar:
-            for batch_num in range(num_batches):
-                for i in range(batch_size):
-                    start = batch_num * batch_size
-                    # summary, operations = split_answer(batch_pred[i]['text'])
-                    executable_SQL = manager.assemble_sql(preds[i])
-
-                    formatter = TableFormat(
-                        format='none', data=table_loader.dataset[start + i], use_sampling=True)
-                    subtable = manager.execute_from_df(executable_SQL, formatter.all_data)
-                    llm_chain = LLMChain(llm=model, prompt=k_shot_prompt, verbose=False)
+    evaluate = True
+    if evaluate:
+        labels = table_loader.dataset['label']
+        preds = []
+        with open('./result/SQL/tabfact_test_04-09_06-45-20.json', 'r') as f:
+            lines = f.readlines()
+            for l in lines:
+                preds.append(json.loads(l)['pred'].split(':')[1].strip())
 
 
         # do evaluation
-        # accuracy = eval_fv_match(batch_pred, ground)
-    logger.info('test end.................')
+        accuracy = eval_fv_match(preds, labels)
+        logger.info(f'Evaluate end, Accuracy: {accuracy}')
 
 
 if __name__ == "__main__":

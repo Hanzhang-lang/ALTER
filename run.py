@@ -62,7 +62,7 @@ if __name__ == "__main__":
             use_sample=args.use_sample
             
         )
-    if args.mode == 'Augmentaion':
+    if args.mode == 'Augmentation':
         augmentation(
             task_name=args.task_name,
             split=args.split,

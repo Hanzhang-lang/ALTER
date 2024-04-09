@@ -34,7 +34,7 @@ def augmentation(task_name: str,
              model_name: str,
              aug_type: str = 'summary',
              batch_size: int = 32):
-    model = ChatOpenAI(model_name=model_name, openai_api_base="https://api.chatanywhere.cn/v1",
+    model = ChatOpenAI(model_name=model_name, openai_api_base="https://api.chatanywhere.tech/v1",
                        openai_api_key="sk-kxgtm71G6zwC44lglIF5CfiEVVzjjc39TOtppkNAwrVA2fUW")
     small_test = True
     table_loader = TableLoader(
@@ -52,11 +52,11 @@ def augmentation(task_name: str,
             aug_tables = []
             start = batch_num * batch_size
             if start + batch_size >= num_samples:
-                batch_size = num_samples - start + 1
+                batch_size = num_samples - start
             batch_data = table_loader.dataset[start: start+batch_size]
             
             if os.path.exists(aug_path) and aug_path.endswith('.csv'):
-                auged_names = pd.read_csv(aug_path)['table_id']
+                auged_names = list(pd.read_csv(aug_path)['table_id'])
             else: 
                 auged_names = []
             table_names = []
