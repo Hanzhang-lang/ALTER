@@ -6,7 +6,7 @@ from data_loader import TableLoader, TableFormat, TableAug
 from prompt_manager import get_k_shot_with_aug, row_instruction, answer_instruction, get_k_shot_with_answer
 import json
 import os
-from utils import eval_fv_match
+from utils import eval_fv_match, normalize_table
 import logging
 import datetime
 from typing import List
@@ -77,7 +77,7 @@ def pipeline(task_name: str,
     verbose = True
     save_file = True
     load_sql = False 
-    # stage_1: column pick up   stage_2: SQL Generate  stage_3: Answer output
+    # stage_1: column pick up   stage_2: SQL Generate  stage_3: SQL Excution and Answer output
     stage_1 = False
     stage_2 = False
     stage_3 = True
@@ -97,6 +97,7 @@ def pipeline(task_name: str,
     llm_chain = LLMChain(llm=model, prompt=k_shot_prompt, verbose=verbose)
     
     aug_information = pd.read_csv(f"result/aug/{task_name}_{split}_summary.csv", index_col='table_id')
+    schema_information = pd.read_csv(f"result/aug/{task_name}_{split}_schema.csv", index_col='table_id')
     with tqdm(
         total=num_batches + (1 if num_samples % batch_size > 0 else 0),
         desc=f"Processing {task_name}",
@@ -138,7 +139,9 @@ def pipeline(task_name: str,
                     #TODO:修改Format赋值逻辑
                     #TODO: 如果SQL执行报错的话，如何处理
                     try:
-                        formatter.data = manager.execute_from_df(stage2_sql[start + i], formatter.all_data, table_name='DF')
+                        # before execute sql, normalize data format
+                        formatter.data = normalize_table(formatter.data, schema_information.loc[normalized_sample['id']]['schema'])
+                        formatter.data = manager.execute_from_df(stage2_sql[start + i], formatter.data, table_name='DF')
                     except:
                         stage2_sql[start + i] = 'no SQL execution'
                     inputs.append(dict({'table': formatter.format_html(table_caption=normalized_sample['table']['caption']),

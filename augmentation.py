@@ -1,7 +1,7 @@
 from langchain_openai import ChatOpenAI, OpenAI
 from data_loader import TableLoader, TableFormat, TableAug
 import os
-import sys
+from enum import Enum, unique
 import pandas as pd
 import logging
 import datetime
@@ -9,7 +9,6 @@ from typing import List
 from tqdm import tqdm
 LOG_FORMAT = "%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s"
 logger = logging.getLogger(__name__)
-
 
 
 def save_csv(input_list: List[List], label_list: List, file_path):
@@ -67,10 +66,21 @@ def augmentation(task_name: str,
             # 针对augmentation的cache
                     table_names.append(batch_data['table'][i]['id'])
             formatter = TableFormat(format='none')
-            summary_augs, column_augs = table_aug.batch_summary_aug(
+            if aug_type == 'summary':
+                summary_augs, column_augs = table_aug.batch_summary_aug(
+                    formatter, aug_tables, len(table_names), output_token=True)
+                save_csv([summary_augs, column_augs, table_names], [
+                            'summary', 'column_description', 'table_id'], aug_path)
+            elif aug_type == 'schema':
+                schema_augs = table_aug.batch_schema_aug(
                 formatter, aug_tables, len(table_names), output_token=True)
-            save_csv([summary_augs, column_augs, table_names], [
-                        'summary', 'column_description', 'table_id'], aug_path)
+                save_csv([schema_augs, table_names], [
+                            'schema', 'table_id'], aug_path)
+            elif aug_type == 'composition':
+                com_augs = table_aug.batch_composition_aug(
+                formatter, aug_tables, len(table_names), output_token=True)
+                save_csv([com_augs, table_names], [
+                            'composition', 'table_id'], aug_path)
             pbar.update(1)
                 
                 
