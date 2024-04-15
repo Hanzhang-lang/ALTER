@@ -11,6 +11,7 @@ logger = logging.getLogger(__name__)
 # with open('data_loader/small_test_id.json', 'r') as f:
 #     small_test_id = json.load(f)
 
+#TODO: 字符表示形式representation
 
 class TableAug:
     def __init__(self, model=None) -> None:
@@ -72,8 +73,37 @@ class TableAug:
         if output_token:
             logger.info(f"Batch Schema Augmentaion Tokens: {cb.total_tokens}")
         return schema_list
+    
+    def batch_sum_aug(self, formatter: TableFormat, batch_data, batch_size: int, output_token=False):
+        """
+        batch summary augmentation(不好用)
+        """
+        pre_instruction_schema = PromptTemplate(input_variables=["table"], template="""
+        Instruction: Given the following table, you need to summarize the contents of the table and tell what table is about.
+        Table: {table}
+
+        The output should use the following format: 
+        Summary: #summary for table contents
+        
+        Summary:
+        """)
+        summary_list = []
+        llm_chain = LLMChain(
+            llm=self.llm, prompt=pre_instruction_schema, verbose=False)
+        with get_openai_callback() as cb:
+            # add
+            batch_pred = llm_chain.batch([formatter.load_data_from_dic(batch_data[i]).format_html(
+                batch_data[i]['caption']) for i in range(batch_size)], return_only_outputs=True)
+
+        for i in range(len(batch_pred)):
+            parts = batch_pred[i]['text']
+            summary_list.append(parts)
+        if output_token:
+            logger.info(f"Batch Summary Augmentaion Tokens: {cb.total_tokens}")
+        return summary_list
 
     def batch_summary_aug(self, formatter: TableFormat, batch_data, batch_size: int, output_token=False):
+        #TODO: split 2 parts
         """
         batch summary data
         """
@@ -130,29 +160,39 @@ class TableAug:
         operations = parts[1].split(':')[1].strip()
         return summary, operations
 
-    def batch_composition_aug(self, formatter: TableFormat, batch_data, batch_size: int, output_token=False):
+    def batch_composition_aug(self, formatter: TableFormat, batch_data, batch_size: int, output_token=False, schema_information=None):
         """
         batch composition augmentation
         """
         pre_instruction_com = PromptTemplate(input_variables=["table"], template="""
-        Below is a subtable with columns filtered, you are required to infer the data distribution and format from the sample data of the sub-table.
-        sub-table: {table}
+        Below is a subtable with rows sampled, you are required to infer the data distribution and format from the sample data.
         Refine commonalities about the structure within each table column.
+        You need to output in the following format: 
+        number. Column_name: Commonalities
+        #example format
+        1. championship: Names of golf tournaments are listed with some additional information (e.g., 's open, classic)
+
+        sub-table: {table}
         """)
         com_list = []
         llm_chain = LLMChain(
             llm=self.llm, prompt=pre_instruction_com, verbose=False)
         with get_openai_callback() as cb:
-            # add
-            batch_pred = llm_chain.batch([formatter.load_data_from_dic(batch_data[i]).format_html(
-                batch_data[i]['caption']) for i in range(batch_size)], return_only_outputs=True)
-
+            # add schema augmentaion info first
+            if schema_information is not None:
+                batch_pred = llm_chain.batch([formatter.load_data_from_dic(batch_data[i], schema_information=schema_information.loc[batch_data[i]['id']]['schema']).format_html(
+                    batch_data[i]['caption']) for i in range(batch_size)], return_only_outputs=True)
+            else:
+                batch_pred = llm_chain.batch([formatter.load_data_from_dic(batch_data[i]).format_html(
+                    batch_data[i]['caption']) for i in range(batch_size)], return_only_outputs=True)
         for i in range(len(batch_pred)):
             parts = batch_pred[i]['text']
             com_list.append(parts)
         if output_token:
             logger.info(
-                f"Batch Composition Augmentaion Tokens: {cb.total_tokens}")
+                f"Batch Composition Augmentaion  All Tokens: {cb.total_tokens}")
+            logger.info(
+                f"Batch Composition Augmentaion Tokens Average: {cb.total_tokens / batch_size if batch_size > 0 else 0}" )
         return com_list
 
     def composition_aug(self, formatter: TableFormat, output_token=False):

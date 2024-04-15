@@ -32,16 +32,18 @@ def augmentation(task_name: str,
              use_sample: bool,
              model_name: str,
              aug_type: str = 'summary',
-             batch_size: int = 32):
+             batch_size: int = 32,
+             small_test=True):
     model = ChatOpenAI(model_name=model_name, openai_api_base="https://api.chatanywhere.tech/v1",
-                       openai_api_key="sk-kxgtm71G6zwC44lglIF5CfiEVVzjjc39TOtppkNAwrVA2fUW")
-    small_test = True
+                       openai_api_key="sk-kxgtm71G6zwC44lglIF5CfiEVVzjjc39TOtppkNAwrVA2fUW", temperature=0.1)
     table_loader = TableLoader(
         table_name=task_name, split=split, use_sample=use_sample, small_test=small_test)
     table_aug = TableAug(model)
     num_samples = len(table_loader.dataset)
     num_batches = num_samples // batch_size
     aug_path = f"result/aug/{task_name}_{split}_{aug_type}.csv"
+    if aug_type == 'composition':
+        schema_information = pd.read_csv(f"result/aug/{task_name}_{split}_schema.csv", index_col='table_id')
     with tqdm(
         total=num_batches + (1 if num_samples % batch_size > 0 else 0),
         desc=f"Augmentation for {task_name}, AUG TYPE: {aug_type}",
@@ -60,27 +62,34 @@ def augmentation(task_name: str,
                 auged_names = []
             table_names = []
             for i in range(batch_size):
-                if batch_data['table'][i]['id'] not in auged_names:
-                    auged_names.append(batch_data['table'][i]['id'])
-                    aug_tables.append(batch_data['table'][i])            
+                normalized = table_loader.normalize_table(table_loader.dataset[start + i])
+                if normalized['id'] not in auged_names:
+                    auged_names.append(normalized['id'])
+                    aug_tables.append(normalized['table'])            
             # 针对augmentation的cache
-                    table_names.append(batch_data['table'][i]['id'])
+                    table_names.append(normalized['id'])
             formatter = TableFormat(format='none')
-            if aug_type == 'summary':
-                summary_augs, column_augs = table_aug.batch_summary_aug(
+            if len(table_names):
+                if aug_type == 'summary_alone':
+                    summary_augs = table_aug.batch_sum_aug(formatter, aug_tables, len(table_names), output_token=True)
+                    save_csv([summary_augs, table_names], [
+                                'summary', 'table_id'], aug_path)
+                if aug_type == 'summary':
+                    summary_augs, column_augs = table_aug.batch_summary_aug(
+                        formatter, aug_tables, len(table_names), output_token=True)
+                    save_csv([summary_augs, column_augs, table_names], [
+                                'summary', 'column_description', 'table_id'], aug_path)
+                elif aug_type == 'schema':
+                    schema_augs = table_aug.batch_schema_aug(
                     formatter, aug_tables, len(table_names), output_token=True)
-                save_csv([summary_augs, column_augs, table_names], [
-                            'summary', 'column_description', 'table_id'], aug_path)
-            elif aug_type == 'schema':
-                schema_augs = table_aug.batch_schema_aug(
-                formatter, aug_tables, len(table_names), output_token=True)
-                save_csv([schema_augs, table_names], [
-                            'schema', 'table_id'], aug_path)
-            elif aug_type == 'composition':
-                com_augs = table_aug.batch_composition_aug(
-                formatter, aug_tables, len(table_names), output_token=True)
-                save_csv([com_augs, table_names], [
-                            'composition', 'table_id'], aug_path)
+                    save_csv([schema_augs, table_names], [
+                                'schema', 'table_id'], aug_path)
+                elif aug_type == 'composition':
+                    #augmentaion的过程中要进行标准化
+                    com_augs = table_aug.batch_composition_aug(
+                    formatter, aug_tables, len(table_names), output_token=True,schema_information=schema_information)
+                    save_csv([com_augs, table_names], [
+                                'composition', 'table_id'], aug_path)
             pbar.update(1)
                 
                 

@@ -57,9 +57,9 @@ class SQLManager:
             result.insert(0, field_names)
             return result
 
-    def get_simple_fields(self, table_name):
+    def get_simple_fields(self, command):
         """Get column fields about specified table."""
-        return self._query(f"SHOW COLUMNS FROM {table_name}")
+        return self.session.execute(text(command))
 
     def run(self, command: str, fetch: str = "all") -> List:
         """Execute a SQL command and return a string representing the results."""
@@ -69,10 +69,11 @@ class SQLManager:
         if ttype == sqlparse.tokens.DML:
             if sql_type == "SELECT":
                 return self._query(command, self.session, fetch)
-            else:
-                return self.get_simple_fields(table_name)
-            
+        else:
+            self.get_simple_fields(command)
+        
     def execute_from_df(self, command: str, data: DataFrame,  table_name='DF'):
+        #TODO:添加sqlparse
         db_data = data
         db_data.columns = [self.normalize_col_name(c) for c in data.columns]
         db_data.to_sql(table_name, self.engine, if_exists='replace', index=False)

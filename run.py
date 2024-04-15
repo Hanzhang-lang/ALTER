@@ -34,8 +34,12 @@ def add_arguments():
         default="Pipeline",
         help='choosing mode to run',
     )
-    parser.add_argument('--batch_size', type=int, default=32)
+    parser.add_argument('--batch_size', type=int, default=16)
+    parser.add_argument('--stage_2', action='store_true')
+    parser.add_argument('--stage_3', action='store_true')
+    parser.add_argument('--stage_1', action='store_true')
     parser.add_argument('--aug_type', type=str, default='summary')
+    parser.add_argument('--small_test',action='store_true', help='Use small test data for Tabfact dataset')
     # parser.add_argument('--dubug', type=bool, help='Debug using sample data', default=True)
     parser.add_argument('--use_sample', action='store_true', help='Use sample data')
     parser.add_argument('--model', type=str, default='gpt-3.5-turbo-0125', help='LLM Model')
@@ -59,9 +63,13 @@ if __name__ == "__main__":
             task_name=args.task_name,
             split=args.split,
             model_name=args.model,
-            use_sample=args.use_sample
-            
-        )
+            use_sample=args.use_sample,
+            small_test=args.small_test,
+            stage_1 = args.stage_1,
+            stage_2 = args.stage_2,
+            stage_3 = args.stage_3,
+            batch_size = args.batch_size)
+        
     if args.mode == 'Augmentation':
         augmentation(
             task_name=args.task_name,
@@ -69,6 +77,7 @@ if __name__ == "__main__":
             model_name=args.model,
             use_sample=args.use_sample,
             aug_type=args.aug_type,
-            batch_size = args.batch_size
+            batch_size = args.batch_size,
+            small_test=args.small_test
             
         )

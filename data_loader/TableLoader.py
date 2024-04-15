@@ -65,6 +65,35 @@ class TableLoader:
                 "query": _line["statement"],
                 "label": label,
             }
+        if self.table_name == 'totto':
+            return {
+                "title": _line['table_page_title'],
+                "context": "",
+                "table": {
+                    "header": _line['table_rows'][0],
+                    "rows": _line['table_rows'][1:],
+                    "caption": _line['table_section_title'],
+                    "header_hierarchy": _line['table_header_hierarchy'],
+                },
+                "query": f"Produce a one-sentence description for each highlighted cells ({str(_line['highlighted_cells'])}) of the table.",
+                "label": _line["final_sentences"],
+            }
+        if self.table_name == 'sqa':
+            return {
+                "id": _line['id'],
+                "title": "",
+                "context": "",
+                "table": {
+                    "id": _line['id'],
+                    "header": _line['table_header'],
+                    "rows": _line['table_data'],
+                    "caption": "",
+                },
+                # "query": _line["question"],
+                'query': ' '.join(_line["question_and_history"]),
+                "label": _line["answer_text"],
+            }
+            
 
 
     def table2db(self, db_con: str, _line: dict):
