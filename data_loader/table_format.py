@@ -7,7 +7,7 @@ from pandas import DataFrame
 import pandas as pd
 import re
 
-from utils import parse_output, normalize_null_value, parse_datetime
+from utils import parse_output, normalize_string_value, parse_datetime
 from functools import partial
 class TableFormat:
     def __init__(self, format:str, data: Optional[Union[dict, DataFrame]] = None, use_sampling=True) -> None:
@@ -138,19 +138,27 @@ class TableFormat:
     
     def normalize_schema(self, schema_information):
         col_name, col_schema = parse_output(schema_information)
-        mac_dic = {'Numerical': pd.to_numeric, 'Char': normalize_null_value, 'Date': partial(pd.to_datetime, dayfirst=True, format='mixed')}
+        mac_dic = {'Numerical': pd.to_numeric, 'Char': normalize_string_value, 'Date': partial(pd.to_datetime, format='%Y-%m-%d')}
         for i, _ in enumerate(col_name):
-            if col_schema[i] == 'Date':
-                try:
-                    self.all_data[col_name[i]] = self.all_data[col_name[i]].apply(lambda x: parse_datetime(x))
-                    self.data[col_name[i]] = self.data[col_name[i]].apply(lambda x: parse_datetime(x))
-                except:
-                    print(f'Unknown Date format {self.data.head()[col_name[i]]}')
-                    continue
-            self.all_data[col_name[i]] = mac_dic[col_schema[i]](self.all_data[col_name[i]], errors='coerce')
-            self.data[col_name[i]] = mac_dic[col_schema[i]](self.data[col_name[i]], errors='coerce')
+            if col_name[i] in self.data.columns:
+                if col_schema[i] == 'Date' or 'date' in col_name[i]:
+                    try:
+                        self.all_data[col_name[i]] = self.all_data[col_name[i]].apply(lambda x: parse_datetime(x))
+                        self.data[col_name[i]] = self.data[col_name[i]].apply(lambda x: parse_datetime(x))
+                        try:
+                            self.all_data[col_name[i]] = mac_dic[col_schema[i]](self.all_data[col_name[i]], errors='ignore')
+                            self.data[col_name[i]] = mac_dic[col_schema[i]](self.data[col_name[i]], errors='ignore')
+                            self.all_data[col_name[i]] = self.all_data[col_name[i]].dt.date
+                            self.data[col_name[i]] = self.data[col_name[i]].dt.date
+                        except: 
+                            pass
+                    except:
+                        print(f'Unknown Date format {self.data.head()[col_name[i]]}')
+                        continue
+                else:
+                    self.all_data[col_name[i]] = mac_dic[col_schema[i]](self.all_data[col_name[i]], errors='coerce')
+                    self.data[col_name[i]] = mac_dic[col_schema[i]](self.data[col_name[i]], errors='coerce')
             #TODO: whether format date in fixed format
-        return self.data
     
     def get_all_data(self):
         self.all_data = self.data

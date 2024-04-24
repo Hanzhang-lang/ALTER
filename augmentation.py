@@ -87,7 +87,7 @@ def augmentation(task_name: str,
                 elif aug_type == 'composition':
                     #augmentaion的过程中要进行标准化
                     com_augs = table_aug.batch_composition_aug(
-                    formatter, aug_tables, len(table_names), output_token=True,schema_information=schema_information)
+                    formatter, aug_tables, len(table_names), output_token=True,schema_information=None)
                     save_csv([com_augs, table_names], [
                                 'composition', 'table_id'], aug_path)
             pbar.update(1)

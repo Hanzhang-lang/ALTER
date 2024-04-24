@@ -6,6 +6,7 @@ from dateutil import parser
 import datetime
 import string
 import collections
+import numpy as np
 def parse_output(output: str, pattern=r'([^<]*)<([^\s>]*)>'):
     """
     pattern = r'\d. (.+?): (.+)'
@@ -24,10 +25,10 @@ def parse_specific_composition(output:str, columns:List):
     compositions = []
     for ind, (item, composition) in enumerate(zip(items, crakets)):
         if item in columns:
-            compositions.append( f'{len(compositions) + 1}. ' + item + ':' + composition)
+            compositions.append(item + ':' + composition)
     return compositions
     
-def normalize_null_value(series, errors='coerce'):
+def normalize_string_value(series, errors='coerce'):
     def normalize_null(s):
         try:
             if type(s) == str and s.replace(' ', '').lower() in [
@@ -35,7 +36,7 @@ def normalize_null_value(series, errors='coerce'):
             ]:
                 return None
             else:
-                return s
+                return s.strip(' ')
         except:
             if errors == 'coerce':
                 return None
@@ -44,7 +45,7 @@ def normalize_null_value(series, errors='coerce'):
 
 def normalize_schema(data, schema_information):
     col_name, col_schema = parse_output(schema_information)
-    mac_dic = {'Numerical': pd.to_numeric, 'Char': normalize_null_value, 'Date': pd.to_datetime}
+    mac_dic = {'Numerical': pd.to_numeric, 'Char': normalize_string_value, 'Date': pd.to_datetime}
     for i, _ in enumerate(col_name):
         data[col_name[i]] = mac_dic[col_schema[i]](data[col_name[i]], errors='coerce')
     return data
@@ -86,7 +87,9 @@ def eval_tabfact(output_file, gold_list, verbose=False):
         pred_label.append(predict_ans)
     if verbose:
         print(pred_label)
-    return pred_label
+        print(gold_list)
+        print(np.where(np.array(pred_label) != np.array(gold_list)))
+    return eval_fv_match(pred_label, gold_list)
     # return eval_fv_match(pred_label, gold_list)
 
 def eval_ex_match(

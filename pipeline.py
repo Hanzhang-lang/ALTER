@@ -3,7 +3,7 @@ from executor import SQLManager
 from langchain.chains import LLMChain
 from langchain_openai import ChatOpenAI, OpenAI
 from data_loader import TableLoader, TableFormat, TableAug
-from prompt_manager import get_k_shot_with_aug, row_instruction, answer_instruction, get_k_shot_with_answer, view_instruction
+from prompt_manager import get_k_shot_with_aug, row_instruction, answer_instruction, get_k_shot_with_answer, view_instruction, get_k_shot_with_schema_linking
 import json
 import os
 from utils import eval_fv_match, normalize_schema, parse_specific_composition, parse_output
@@ -12,6 +12,9 @@ import datetime
 from typing import List
 from tqdm import tqdm
 import pandas as pd
+from tenacity import retry, stop_after_attempt, wait_random_exponential, wait_fixed, retry_if_exception_type
+from langchain_community.llms.openai import completion_with_retry
+import openai
 LOG_FORMAT = "%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s"
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
@@ -53,8 +56,6 @@ def split_answer(answer: str):
     operations = parts[1].split(':')[1].strip()
     return summary, operations
 
-
-
 def pipeline(task_name: str,
              split: str,
              use_sample: bool,
@@ -65,15 +66,15 @@ def pipeline(task_name: str,
              stage_3: bool,
              batch_size: int):
     model = ChatOpenAI(model_name=model_name, openai_api_base="https://api.chatanywhere.tech/v1",
-                       openai_api_key="sk-kxgtm71G6zwC44lglIF5CfiEVVzjjc39TOtppkNAwrVA2fUW", temperature=0.1)
+                       openai_api_key="sk-kxgtm71G6zwC44lglIF5CfiEVVzjjc39TOtppkNAwrVA2fUW", temperature=0.1, max_retries=5, request_timeout=600)
     engine = create_engine('sqlite:///db/sqlite/tabfact.db', echo=False)
     manager = SQLManager(engine=engine)
     table_loader = TableLoader(
         table_name=task_name, split=split, use_sample=use_sample, small_test=small_test)
-    num_samples = len(table_loader.dataset)
+    # num_samples = len(table_loader.dataset)
+    num_samples = 255
     num_batches = num_samples // batch_size
- 
-    verbose = True
+    verbose = False
     save_file = True
     use_schema = True
     use_composition = True
@@ -81,7 +82,7 @@ def pipeline(task_name: str,
     # get k_shot example
     preds, ground, table_names = [], [], []
     if stage_1:
-        k_shot_prompt = get_k_shot_with_aug()
+        k_shot_prompt = get_k_shot_with_schema_linking()
         save_path = f"result/data/{task_name}_{split}_{datetime.datetime.now().strftime('%m-%d_%H-%M-%S')}.json"
     elif stage_2:
         k_shot_prompt = row_instruction
@@ -89,10 +90,20 @@ def pipeline(task_name: str,
         logger.info('\n' + k_shot_prompt.format(table='test-table',
                 claim='test-claim', aug='test-aug'))
         save_path = f"result/SQL/{task_name}_{split}_{datetime.datetime.now().strftime('%m-%d_%H-%M-%S')}.json"
+        stage1_column = []
+        with open('./result/data/tabfact_test_04-18_14-13-13.json', 'r') as f:
+            lines = f.readlines()
+            for l in lines:
+                stage1_column.append(json.loads(l)['pred'])
     elif stage_3:
-        # k_shot_prompt = get_k_shot_with_answer()
-        k_shot_prompt = answer_instruction
+        k_shot_prompt = get_k_shot_with_answer()
+        # k_shot_prompt = answer_instruction
         save_path = f"result/answer/{task_name}_{split}_{datetime.datetime.now().strftime('%m-%d_%H-%M-%S')}.json"
+        stage2_sql = []
+        with open('./result/SQL/tabfact_test_04-20_02-04-20.json', 'r') as f:
+            lines = f.readlines()
+            for l in lines:
+                stage2_sql.append(json.loads(l)['pred'])
     llm_chain = LLMChain(llm=model, prompt=k_shot_prompt, verbose=verbose)
     
     aug_information = pd.read_csv(f"result/aug/{task_name}_{split}_summary.csv", index_col='table_id')
@@ -125,23 +136,16 @@ def pipeline(task_name: str,
                 if stage_2:
                     #注意函数命名
                     #TODO: 修改内外循环逻辑，避免重复读取文件
-                    column_preds = []
-                    with open('./result/data/sqa_test_04-15_08-30-49.json', 'r') as f:
-                        lines = f.readlines()
-                        for l in lines:
-                            column_preds.append(json.loads(l)['pred'])
-                    columns = [formatter.normalize_col_name(c.strip()) for c in column_preds[start + i].split(',')]
+                    columns = [formatter.normalize_col_name(c.strip()) for c in stage1_column[start + i].split(',')]
                     if use_schema:
                         formatter.normalize_schema(schema_information.loc[normalized_sample['id']]['schema'])
-                    formatter.data = formatter.data.loc[:, columns]
+                    try:
+                        formatter.data = formatter.data.loc[:, columns]
+                    except:
+                        pass
                     
                 if stage_3:
                     #注意函数命名
-                    stage2_sql = []
-                    with open('./result/SQL/sqa_test_04-15_10-35-18.json', 'r') as f:
-                        lines = f.readlines()
-                        for l in lines:
-                            stage2_sql.append(json.loads(l)['pred'])
                     #TODO:修改Format赋值逻辑
                     #TODO: 如果SQL执行报错的话，如何处理
                     try:
@@ -152,6 +156,7 @@ def pipeline(task_name: str,
                         formatter.data = manager.execute_from_df(stage2_sql[start + i], formatter.all_data, table_name='DF')
                     except:
                         stage2_sql[start + i] = 'no SQL execution'
+                        formatter.data = formatter.all_data
                     inputs.append(dict({'table': formatter.format_html(table_caption=normalized_sample['table']['caption']),
                                     'claim': normalized_sample['query'],
                                     'SQL':  stage2_sql[start + i],
@@ -178,6 +183,7 @@ def pipeline(task_name: str,
                 if verbose:
                     logger.info(f'Table-id: {start + i}')
             # call llm to get batch executable sql
+
             batch_pred = llm_chain.batch(inputs, return_only_outputs=True)
             
             preds.extend([pred['text'] for pred in batch_pred])

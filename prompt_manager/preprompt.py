@@ -12,7 +12,7 @@ Output: """
 #TODO: support mysql, sqlite
 row_instruction = PromptTemplate(input_variables=["table", "claim", "aug"], 
                                  template="""
-Our ultimate goal is to answer query based on the table. Below is a subtable with columns filtered, you are required to infer the data distribution and format from the sample data of the sub-table. Carefully analyze the query, based on the augmentation information, write a SQLITE3 SELECT SQL statement using table DF that complete query.
+Our ultimate goal is to answer query based on the table. Below is a subtable with columns filtered, you are required to infer the data distribution and format from the sample data of the sub-table. Carefully analyze the query, based on the augmentation information, write a SQLITE3 SELECT SQL statement using table DF that complete query. Output SQL directly with no explanation.
 sub-table: {table}
 Query: {claim}
 Extra information: {aug}
@@ -36,7 +36,7 @@ SQL Excuted:
 ```{SQL}```
 Sub-table: {table}
 Query: {claim}
-""" + instructions['sqa'])
+""" + instructions['tabfact'])
 
 
 

@@ -34,7 +34,7 @@ def add_arguments():
         default="Pipeline",
         help='choosing mode to run',
     )
-    parser.add_argument('--batch_size', type=int, default=16)
+    parser.add_argument('--batch_size', type=int, default=32)
     parser.add_argument('--stage_2', action='store_true')
     parser.add_argument('--stage_3', action='store_true')
     parser.add_argument('--stage_1', action='store_true')
