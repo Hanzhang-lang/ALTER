@@ -52,7 +52,7 @@ class TableFormat:
         )
         return structured_data_markdown
     
-    def format_nl_sep(self, sep='|', table_caption:str = ''):
+    def format_nl_sep(self, table_caption:str = '', sep='|',):
         """
         Nl_sep: 
         <Grammar>\n Each table cell is separated by | , the column idx starts from 1
@@ -146,8 +146,8 @@ class TableFormat:
                         self.all_data[col_name[i]] = self.all_data[col_name[i]].apply(lambda x: parse_datetime(x))
                         self.data[col_name[i]] = self.data[col_name[i]].apply(lambda x: parse_datetime(x))
                         try:
-                            self.all_data[col_name[i]] = mac_dic[col_schema[i]](self.all_data[col_name[i]], errors='ignore')
-                            self.data[col_name[i]] = mac_dic[col_schema[i]](self.data[col_name[i]], errors='ignore')
+                            self.all_data[col_name[i]] = pd.to_datetime(self.all_data[col_name[i]], format='%Y-%m-%d',errors='ignore')
+                            self.data[col_name[i]] = pd.to_datetime(self.data[col_name[i]], format='%Y-%m-%d', errors='ignore')
                             self.all_data[col_name[i]] = self.all_data[col_name[i]].dt.date
                             self.data[col_name[i]] = self.data[col_name[i]].dt.date
                         except: 

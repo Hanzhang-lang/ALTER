@@ -169,9 +169,6 @@ def pipeline(task_name: str,
                         # _, compositions = parse_output(composition_information.loc[normalized_sample['id']]['composition'], pattern = r'\d. (.+?): (.+)')
                         extra_col_info = []
                         for i_c in range(len(col_names)):
-                            # try: 
-                            #     extra_col_info.append(f'{i + 1}. {col_names[i]}: {col_infos[i] + ". "+ compositions[i]}')
-                            # except:
                             extra_col_info.append(f'{i_c + 1}. {col_names[i_c]}: {col_infos[i_c]}')
                         extra_information = summary_aug + '\n' + '\n'.join(extra_col_info)
                     if stage_2:

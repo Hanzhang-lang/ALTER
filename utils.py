@@ -54,6 +54,8 @@ def parse_datetime(date_string):
     parsed_date = parser.parse(date_string)
     if parsed_date is None or not all([parsed_date.year, parsed_date.month, parsed_date.day]):
         return date_string
+    if parsed_date.year == datetime.datetime.now().year:
+        return date_string
     normalized_date = datetime.datetime.strftime(parsed_date, "%Y-%m-%d")
     return normalized_date
 
