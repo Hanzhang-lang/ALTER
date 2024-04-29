@@ -65,6 +65,18 @@ class TableLoader:
                 "query": _line["statement"],
                 "label": label,
             }
+        if self.table_name == 'wikitable':
+            return {
+                "id": _line['id'],
+                "title": "",
+                "context": "",
+                "table": {
+                    "header": _line['table']['header'],
+                    "rows": _line['table']['rows'],
+                    "caption": _line['caption'],
+                },
+                "query": _line['question'],
+                "label": _line['answers']},
         if self.table_name == 'totto':
             return {
                 "title": _line['table_page_title'],
