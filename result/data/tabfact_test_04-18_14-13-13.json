@@ -1,0 +1,256 @@
+{"table_name": "1-29063233-1.html.csv", "label": "the sweet dream episode happen later in the series than the witchfinder", "pred": "title, no_overall, no_for_series, original_air_date"}
+{"table_name": "1-29063233-1.html.csv", "label": "david moore direct 3 episode of series 2 of merlin", "pred": "title, directed_by, no_overall"}
+{"table_name": "1-29063233-1.html.csv", "label": "the lady of the lake episode have the most uk viewer", "pred": "title, uk_viewers_million"}
+{"table_name": "1-29063233-1.html.csv", "label": "lucy watkins only write 1 episode of series 2", "pred": "title, written_by"}
+{"table_name": "1-29063233-1.html.csv", "label": "beauty and the beast (part 2) have more uk viewer than beauty and the beast (part 1)", "pred": "title, uk_viewers_million"}
+{"table_name": "1-29063233-1.html.csv", "label": "the sweet dream episode happen earlier in the series than the witchfinder", "pred": "title, no_overall, no_for_series, original_air_date"}
+{"table_name": "1-29063233-1.html.csv", "label": "david moore direct 5 episode of series 2 of merlin", "pred": "title, directed_by"}
+{"table_name": "1-29063233-1.html.csv", "label": "the lady of the lake episode have the least uk viewer", "pred": "title, uk_viewers_million"}
+{"table_name": "1-29063233-1.html.csv", "label": "lucy watkins only write 6 episode of series 2", "pred": "title, written_by"}
+{"table_name": "1-29063233-1.html.csv", "label": "beauty and the beast (part 2) have less uk viewer than beauty and the beast (part 1)", "pred": "title, uk_viewers_million"}
+{"table_name": "2-17200019-10.html.csv", "label": "4 player score 3 goal total , and all 4 be in league 4", "pred": "player, league, total"}
+{"table_name": "2-17200019-10.html.csv", "label": "jonathan legear score 4 more goal than mat\u00edas su\u00e1rez , the next highest rank player in the belgian first dvision a league who play in the belgian cup", "pred": "player, league, total"}
+{"table_name": "2-17200019-10.html.csv", "label": "of the 4 player who play in the belgian cup , jonathan legear score more goal than the other player combine", "pred": "player, league, title_playoff, super_cup, total"}
+{"table_name": "2-17200019-10.html.csv", "label": "guillaume gillet score 3 time as much as each of the other 2 player in the uefa champion league tournament", "pred": "player, league, total"}
+{"table_name": "2-17200019-10.html.csv", "label": "though 4 player from belgian first division a be in the top 19 scorer , the top scorer (matias suarez) have 8 fewer goal than mbark boussoufa , who have 11 goal", "pred": "player, league, total"}
+{"table_name": "2-17200019-10.html.csv", "label": "4 player score 3 goal total , and all 4 be in league 5", "pred": "player, league, total"}
+{"table_name": "2-17200019-10.html.csv", "label": "thomas chatelle score 4 more goal than mat\u00edas su\u00e1rez , the next highest rank player in the belgian first dvision a league who play in the belgian cup", "pred": "player, league, total"}
+{"table_name": "2-17200019-10.html.csv", "label": "of the 4 player who play in the belgian cup , lucas biglia score more goal than the other player combine", "pred": "player, total"}
+{"table_name": "2-17200019-10.html.csv", "label": "jelle van damme score 3 time as much as each of the other 2 player in the uefa champion league tournament", "pred": "player, league, total"}
+{"table_name": "2-17200019-10.html.csv", "label": "though 4 player from belgian first division a be in the top 19 scorer , the top scorer (matias suarez) have 5 fewer goal than bart goor , who have 11 goal", "pred": "player, league, total"}
+{"table_name": "2-17231086-6.html.csv", "label": "3 of the people tie for ninth place be from the united state", "pred": "player, country, place"}
+{"table_name": "2-17231086-6.html.csv", "label": "a majority of the people who score under par be from the united state", "pred": "player, country, score, to_par"}
+{"table_name": "2-17231086-6.html.csv", "label": "the average score for player from japan be 281", "pred": "player, country, score"}
+{"table_name": "2-17231086-6.html.csv", "label": "there be a total of 4 country represent by the player", "pred": "player, country"}
+{"table_name": "2-17231086-6.html.csv", "label": "the most amount of money win by someone from wale be 67823", "pred": "player, country, money"}
+{"table_name": "2-17231086-6.html.csv", "label": "3 of the people tie for fifth place be from the united state", "pred": "player, country, place"}
+{"table_name": "2-17231086-6.html.csv", "label": "a majority of the people who score over par be from the united state", "pred": "player, country, score, to_par"}
+{"table_name": "2-17231086-6.html.csv", "label": "the average score for player from japan be 251", "pred": "player, country, score"}
+{"table_name": "2-17231086-6.html.csv", "label": "there be a total of 5 country represent by the player", "pred": "player, country"}
+{"table_name": "2-17231086-6.html.csv", "label": "the most amount of money win by someone from wale be 46823", "pred": "player, country, money"}
+{"table_name": "2-14101654-10.html.csv", "label": "except for slovakia , all other country be from north america", "pred": "player, nationality"}
+{"table_name": "2-14101654-10.html.csv", "label": "5 player be from the united state and canada each", "pred": "player, nationality"}
+{"table_name": "2-14101654-10.html.csv", "label": "no 2 player attend the same college / junior / club team (league)", "pred": "player, college_junior_club_team_league"}
+{"table_name": "2-14101654-10.html.csv", "label": "only round 3 be not list 2 time", "pred": "round, player, position, nationality"}
+{"table_name": "2-14101654-10.html.csv", "label": "triston grant be the only player list for left wing", "pred": "player, position"}
+{"table_name": "2-14101654-10.html.csv", "label": "the only player not from the united state or canada be from norway", "pred": "player, nationality"}
+{"table_name": "2-14101654-10.html.csv", "label": "the number of player from canada outnumber the number of player from the united state", "pred": "player, nationality"}
+{"table_name": "2-14101654-10.html.csv", "label": "every player come from either a college program or a junior / club team", "pred": "player, position, nationality, college_junior_club_team_league"}
+{"table_name": "2-14101654-10.html.csv", "label": "2 player be draft in each round round 3 and 9", "pred": "player, round"}
+{"table_name": "2-14101654-10.html.csv", "label": "triston grant play the same position as the other payer draft in his round", "pred": "player, position"}
+{"table_name": "2-17514817-1.html.csv", "label": "west berkshire brewery 's good old boy beer have 5 award between 1995 and 2009", "pred": "beer_name, prize, year"}
+{"table_name": "2-17514817-1.html.csv", "label": "west berkshire brewery 's dr hexter healer beer win 3 gold medal between 1995 and 2009", "pred": "beer_name, prize, year"}
+{"table_name": "2-17514817-1.html.csv", "label": "west berkshire brewery 's maggs magnificent mild be its most decorate beer between 1995 and 2009", "pred": "beer_name, prize, year"}
+{"table_name": "2-17514817-1.html.csv", "label": "3 of west berkshire brewery 's beer each win a single award between 1995 and 2009", "pred": "beer_name, prize, year"}
+{"table_name": "2-17514817-1.html.csv", "label": "west berkshire brewery 's maggs magnificent mild 2 time win an award at the siba national beer competition between 1995 and 2009", "pred": "beer_name, prize, year, competition"}
+{"table_name": "2-17514817-1.html.csv", "label": "west berkshire brewery 's good old boy beer do not win a single award between 1995 and 2009", "pred": "beer_name, prize, category, year"}
+{"table_name": "2-17514817-1.html.csv", "label": "west berkshire brewery 's dr hexter healer beer have only receive a silver medal between 1995 and 2009", "pred": "beer_name, prize, year"}
+{"table_name": "2-17514817-1.html.csv", "label": "west berkshire brewery 's maggs magnificent mild have win a gold medal every single instance in which it win a prize between 1995 and 2009", "pred": "beer_name, prize, year"}
+{"table_name": "2-17514817-1.html.csv", "label": "west berkshire brewery 's maggs magnificent mild 2 time receive a bronze award at the siba national beer competition between 1995 and 2005", "pred": "beer_name, prize, year, competition"}
+{"table_name": "2-17340355-10.html.csv", "label": "3 of the game at the us airways center have the same attendance", "pred": "game, date, team, location_attendance"}
+{"table_name": "2-17340355-10.html.csv", "label": "the highest attendance be at the american airline center", "pred": "team, location_attendance"}
+{"table_name": "2-17340355-10.html.csv", "label": "the game at the target center take place after the game at the fedexforum", "pred": "game, date, team, location_attendance"}
+{"table_name": "2-17340355-10.html.csv", "label": "the game against minnesota have a higher attendance than the game against new orleans", "pred": "game, date, team, location_attendance"}
+{"table_name": "2-17340355-10.html.csv", "label": "the game against new orleans didn't have the highest attendance", "pred": "game, date, team, location_attendance"}
+{"table_name": "2-17340355-10.html.csv", "label": "golden state , memphis , and new orleans all have the same attendance", "pred": "team, location_attendance"}
+{"table_name": "2-17340355-10.html.csv", "label": "the highest attendance be at the target center", "pred": "team, location_attendance"}
+{"table_name": "2-17340355-10.html.csv", "label": "the game at the fedexforum take place after the game at the target center", "pred": "game, date, team, location_attendance"}
+{"table_name": "2-17340355-10.html.csv", "label": "the game against minnesota have a lower attendance than the game against new orleans", "pred": "game, date, team, location_attendance"}
+{"table_name": "2-17340355-10.html.csv", "label": "the game against new orleans have the highest attendance", "pred": "game, date, team, location_attendance"}
+{"table_name": "2-11312764-4.html.csv", "label": "emi watanabe be rank 1 place higher than dagmar lurz in the 1979 world figure skate championship", "pred": "name, rank, places"}
+{"table_name": "2-11312764-4.html.csv", "label": "there be a 74.64 point difference between the highest score (186.92) and the lowest score (112.28)", "pred": "name, points"}
+{"table_name": "2-11312764-4.html.csv", "label": "linda fratianne be the winner and anett p\u00f6tzsch be rank in second place in the 1979 world figure skate championship", "pred": "name, rank, nation"}
+{"table_name": "2-11312764-4.html.csv", "label": "bodil olsson be not from switzerland and do not receive 27 sp + f", "pred": "name, nation, sp_+_fs, points, places"}
+{"table_name": "2-11312764-4.html.csv", "label": "natalia strelkova be not the female lose the skating championship", "pred": "name, nation"}
+{"table_name": "2-11312764-4.html.csv", "label": "emi watanabe be rank third in the 1979 world figure skate championship , 2 place higher than dagmar lurz", "pred": "rank, name, nation, places"}
+{"table_name": "2-11312764-4.html.csv", "label": "there be an 64.64 point difference between the highest score (186.92) and the lowest score (122.28)", "pred": "name, points"}
+{"table_name": "2-11312764-4.html.csv", "label": "linda fratianne finish in first place , but anett p\u00f6tzsch do not manage to get in the top 3", "pred": "name, rank, places"}
+{"table_name": "2-11312764-4.html.csv", "label": "natalia strelkova come in last place with 112.28 point", "pred": "name, points, places"}
+{"table_name": "2-11025881-1.html.csv", "label": "mark cockerell finish with a better score than partice macrez", "pred": "name, points"}
+{"table_name": "2-11025881-1.html.csv", "label": "west germany have 2 of the top 6 but do not have anyone win a medal", "pred": "name, nation, rank, points"}
+{"table_name": "2-11025881-1.html.csv", "label": "pierre lamine have a mere 0.16 more point than shinji someya", "pred": "name, points"}
+{"table_name": "2-11025881-1.html.csv", "label": "france 's competitor finish in consecutive position of 7th and 8th respectively", "pred": "name, nation, rank"}
+{"table_name": "2-11025881-1.html.csv", "label": "the gap between first and last be a total of 58.04", "pred": "name, points, places"}
+{"table_name": "2-11025881-1.html.csv", "label": "mark cockerell finish with a worse score than partice macrez", "pred": "name, points, rank"}
+{"table_name": "2-11025881-1.html.csv", "label": "west germany have 2 of the top 6 and win a gold medal", "pred": "name, nation, rank, points"}
+{"table_name": "2-11025881-1.html.csv", "label": "pierre lamine beat shinji someya by more than a point", "pred": "name, points, nation"}
+{"table_name": "2-11025881-1.html.csv", "label": "france 's competitor all finish better than 5th", "pred": "name, nation, rank, points, places"}
+{"table_name": "2-11025881-1.html.csv", "label": "the gap between first and last be less than 50 point", "pred": "name, points"}
+{"table_name": "2-13135264-6.html.csv", "label": "detroit have the highest visitor score , with 5 point", "pred": "visitor, score"}
+{"table_name": "2-13135264-6.html.csv", "label": "detroit have the highest home team score , at 6 point", "pred": "home, score"}
+{"table_name": "2-13135264-6.html.csv", "label": "the highest score of the season be detroit , on january 5 with 6 point", "pred": "date, visitor, score, home"}
+{"table_name": "2-13135264-6.html.csv", "label": "the highest attendance be 20066 , occur on 6 date", "pred": "date, visitor, attendance"}
+{"table_name": "2-13135264-6.html.csv", "label": "the highest point gap be on january 5 , with a spread of 6 point", "pred": "date, visitor, score, home, decision, attendance, record"}
+{"table_name": "2-13135264-6.html.csv", "label": "detroit have 1 of the lowest visitor score this season", "pred": "visitor, score, decision, attendance"}
+{"table_name": "2-13135264-6.html.csv", "label": "detroit tie for the highest home team score", "pred": "home, score"}
+{"table_name": "2-13135264-6.html.csv", "label": "by late january detroit be the lowest scoring team", "pred": "date, visitor, score, home, decision, attendance, record"}
+{"table_name": "2-13135264-6.html.csv", "label": "the low attendance rate of 20066 occur multiple time", "pred": "date, attendance"}
+{"table_name": "2-13135264-6.html.csv", "label": "there be a tie for the largest point gap 2 time during the season", "pred": "date, visitor, score, home, decision, attendance, record"}
+{"table_name": "2-167235-8.html.csv", "label": "the term start for bashkim fino be after the term start for vilson ahmeti", "pred": "name, term_start"}
+{"table_name": "2-167235-8.html.csv", "label": "ilir meta , bashkim fino , ylli bufi and pandeli majko (1st time) be all member of the socialist party of albania political party", "pred": "name, political_party"}
+{"table_name": "2-167235-8.html.csv", "label": "the term end for vilson ahmeti be after the term end for ylli bufi", "pred": "name, term_end"}
+{"table_name": "2-167235-8.html.csv", "label": "sali berisha be the first person since aleksand\u00ebr meksi , to be elect as a member of the democratic party of albania political party", "pred": "name, political_party"}
+{"table_name": "2-167235-8.html.csv", "label": "only 1 person have be a member of the party of labour of albania political party and be elect", "pred": "name, political_party"}
+{"table_name": "2-167235-8.html.csv", "label": "the term start for ylli bufi be after the term start for vilson ahmeti", "pred": "name, term_start"}
+{"table_name": "2-167235-8.html.csv", "label": "ilir meta , bashkim fino , ylli bufi and pandeli majko (1st time) be all member of the democratic party of albania", "pred": "name, political_party"}
+{"table_name": "2-167235-8.html.csv", "label": "the term end for aleksand\u00ebr meksi be after the term end for ylli bufi", "pred": "name, term_end"}
+{"table_name": "2-167235-8.html.csv", "label": "ilir meta be the first person since aleksand\u00ebr meksi , to be elect as a member of the democratic party of albania political party", "pred": "name, political_party"}
+{"table_name": "2-167235-8.html.csv", "label": "only 1 person have be a member of the socialist party of albania", "pred": "name, political_party"}
+{"table_name": "2-11545282-4.html.csv", "label": "the jazz have 2 player with the last name dawkins but their time on the team do not overlap", "pred": "player, years_for_jazz"}
+{"table_name": "2-11545282-4.html.csv", "label": "paul dawkins play for the jazz 7 year before darryl dawkins", "pred": "player, years_for_jazz"}
+{"table_name": "2-11545282-4.html.csv", "label": "adrian dantley be on the team the entire time that brad davis be", "pred": "player, years_for_jazz"}
+{"table_name": "2-11545282-4.html.csv", "label": "james donaldson have 2 stint on the jazz 's roster", "pred": "player, years_for_jazz"}
+{"table_name": "2-11545282-4.html.csv", "label": "the jazz have at least 3 guard that be on the team 1979 - 80", "pred": "player, nationality, position, years_for_jazz"}
+{"table_name": "2-11545282-4.html.csv", "label": "the jazz have 2 player , both guard , with the last name dawkins but their time on the team do not overlap", "pred": "player, position, years_for_jazz"}
+{"table_name": "2-11545282-4.html.csv", "label": "darryl dawkins play for the jazz 7 year before paul dawkins", "pred": "player, years_for_jazz"}
+{"table_name": "2-11545282-4.html.csv", "label": "adrian dantley be on the team the entire time that brad davis be also on the team , as well as surpass davis by 4 additional year", "pred": "player, years_for_jazz"}
+{"table_name": "2-11545282-4.html.csv", "label": "james donaldson have 2 stint on the jazz 's roster , total 5 year in total", "pred": "player, years_for_jazz"}
+{"table_name": "2-11545282-4.html.csv", "label": "the jazz have at least 3 guard that be on the team during 1979 - 80 , 1 be james donaldson", "pred": "player, position, years_for_jazz"}
+{"table_name": "2-10167122-1.html.csv", "label": "the open championship be the tournament with the highest number of event", "pred": "tournament, events"}
+{"table_name": "2-10167122-1.html.csv", "label": "none of the tournament result in a win for brian watt", "pred": "tournament, wins, top_5, top_25"}
+{"table_name": "2-10167122-1.html.csv", "label": "the pga championship have 3 more cut made than the us open", "pred": "tournament, cuts_made"}
+{"table_name": "2-10167122-1.html.csv", "label": "all the tournament list have an average of 2.5 event", "pred": "tournament, events"}
+{"table_name": "2-10167122-1.html.csv", "label": "brian watt do not make the top - 25 at the master tournament", "pred": "tournament, top_25"}
+{"table_name": "2-10167122-1.html.csv", "label": "for brian watt , the open championship be the tournament with his second highest number of event", "pred": "tournament, events"}
+{"table_name": "2-10167122-1.html.csv", "label": "brian watt win exactly 1 major tournament", "pred": "tournament, wins"}
+{"table_name": "2-10167122-1.html.csv", "label": "the pga championship , brian watt have 3 fewer cut made than in the us open", "pred": "tournament, cuts_made"}
+{"table_name": "2-10167122-1.html.csv", "label": "brian watt not the top 25 at the master tournament 1 time", "pred": "tournament, top_25"}
+{"table_name": "2-15845253-1.html.csv", "label": "9 viral family have a replication site in the nucleus", "pred": "family, replication_site"}
+{"table_name": "2-15845253-1.html.csv", "label": "14 viral family have a replication site in the cytoplasm", "pred": "family, replication_site"}
+{"table_name": "2-15845253-1.html.csv", "label": "2 viral family have a complex virion shape", "pred": "family, virion_shape"}
+{"table_name": "2-15845253-1.html.csv", "label": "13 viral family have an icosahedral virion shape", "pred": "family, virion_shape"}
+{"table_name": "2-15845253-1.html.csv", "label": "7 viral family have a helical virion shape", "pred": "family, virion_shape"}
+{"table_name": "2-15845253-1.html.csv", "label": "9 of the viral disease replicate in the nucleus", "pred": "family, replication_site"}
+{"table_name": "2-15845253-1.html.csv", "label": "only 1 of the viral disease have a spherical virion shape", "pred": "family, virion_shape"}
+{"table_name": "2-15845253-1.html.csv", "label": "8 of the viral disease be non - envelop", "pred": "family, envelopment"}
+{"table_name": "2-15845253-1.html.csv", "label": "only 1 of the viral disease be in baltimore group iii", "pred": "family, baltimore_group"}
+{"table_name": "2-15845253-1.html.csv", "label": "only 1 of the viral disease have not be assign to a family", "pred": "family, baltimore_group, envelopment, virion_shape, replication_site"}
+{"table_name": "2-15845253-1.html.csv", "label": "9 viral family have a replication site in the cytoplasm", "pred": "family, replication site"}
+{"table_name": "2-15845253-1.html.csv", "label": "14 viral family have a replication site in the nucleus", "pred": "family, replication_site"}
+{"table_name": "2-15845253-1.html.csv", "label": "2 viral family have a helical virion shape", "pred": "family, virion_shape"}
+{"table_name": "2-15845253-1.html.csv", "label": "13 viral family have an helical virion shape", "pred": "family, virion_shape"}
+{"table_name": "2-15845253-1.html.csv", "label": "7 viral family have a icosahedral virion shape", "pred": "family, virion_shape"}
+{"table_name": "2-15845253-1.html.csv", "label": "9 of the viral disease replicate outside the nucleus", "pred": "family, replication_site"}
+{"table_name": "2-15845253-1.html.csv", "label": "none of the viral disease have a spherical virion shape", "pred": "family, virion_shape"}
+{"table_name": "2-15845253-1.html.csv", "label": "8 of the viral disease possess an enveloped", "pred": "family, envelopment"}
+{"table_name": "2-15845253-1.html.csv", "label": "2 of the viral disease be in baltimore group iii", "pred": "family, baltimore_group"}
+{"table_name": "2-15845253-1.html.csv", "label": "only 1 of the viral disease have be assign to a family", "pred": "family, baltimore_group, envelopment, virion_shape, replication_site"}
+{"table_name": "2-15272585-8.html.csv", "label": "galina voskoboeva play a total of 3 game on a hard tennis court", "pred": "tournament, surface, opponent"}
+{"table_name": "2-15272585-8.html.csv", "label": "galina voskoboeva play 20% of her game on a clay top tennis court", "pred": "tournament, surface, opponent"}
+{"table_name": "2-15272585-8.html.csv", "label": "galina voskoboeva have an equal winrate between both clay and hard court", "pred": "surface, outcome, opponent, score"}
+{"table_name": "2-15272585-8.html.csv", "label": "galina voskoboeva never play the same opponent more than 1 time", "pred": "opponent, date, outcome"}
+{"table_name": "2-15272585-8.html.csv", "label": "on average , galina voskoboeva lose with only 4 point", "pred": "date, outcome, opponent, score"}
+{"table_name": "2-15272585-8.html.csv", "label": "galina voskoboeva play a total of 3 game on a hard tennis court , and 1 on clay", "pred": "tournament, surface, opponent"}
+{"table_name": "2-15272585-8.html.csv", "label": "galina voskoboeva play 20% of her game on a clay top tennis court and 1% on hard", "pred": "tournament, surface, opponent"}
+{"table_name": "2-15272585-8.html.csv", "label": "galina voskoboeva have an equal winrate between both clay and hard court but she never win", "pred": "outcome, surface, score"}
+{"table_name": "2-15272585-8.html.csv", "label": "galina voskoboeva never play the same opponent more than 1 time except in 6 june 2006", "pred": "opponent, date, outcome"}
+{"table_name": "2-15272585-8.html.csv", "label": "on average , galina voskoboeva lose with only 4 point against oleksandra kravets and alice canepa", "pred": "opponent, score"}
+{"table_name": "2-12546630-1.html.csv", "label": "alfredo binda be the race leader for 13 race in the 1933 giro d'italia", "pred": "winner, race_leader"}
+{"table_name": "2-12546630-1.html.csv", "label": "alfredo binda win 6 race of the 1933 giro d'italia , but he be the race leader for 13 race", "pred": "winner, race_leader"}
+{"table_name": "2-12546630-1.html.csv", "label": "in the 1933 giro d'italia , gerard loncke win the race on may 26 , despite alfredo binda be the race leader", "pred": "date, winner, race_leader"}
+{"table_name": "2-12546630-1.html.csv", "label": "ettore meini win 2 race in a row , on may 24 and 25th , during the 1933 giro d'italia", "pred": "date, winner"}
+{"table_name": "2-12546630-1.html.csv", "label": "learco guerra be the race leader for the first race of the 1933 giro d'italia , and do not become race leader again for the rest of the circuit", "pred": "date, course, winner, race_leader"}
+{"table_name": "2-12546630-1.html.csv", "label": "alfredo binda be the race leader for 15 race in the 1933 giro d'italia", "pred": "date, course, winner, race_leader"}
+{"table_name": "2-12546630-1.html.csv", "label": "alfredo binda win 7 race of the 1933 giro d'italia , but he be the race leader for 15 race", "pred": "winner, race_leader"}
+{"table_name": "2-12546630-1.html.csv", "label": "in the 1933 giro d'italia , gerard loncke win the race on may 25 , despite alfredo binda be the race leader", "pred": "date, winner, race_leader"}
+{"table_name": "2-12546630-1.html.csv", "label": "ettore meini win 3 race in a row , on may 24 , 25th and 26th , during the 1933 giro d'italia", "pred": "date, winner"}
+{"table_name": "2-12546630-1.html.csv", "label": "learco guerra be the race leader for the first race of the 1933 giro d'italia , and] become race leader again for the rest of the circuit", "pred": "date, course, winner, race_leader"}
+{"table_name": "2-13312898-28.html.csv", "label": "2 player be pick during the 2nd round of the draft", "pred": "round, pick, name"}
+{"table_name": "2-13312898-28.html.csv", "label": "wes robert be pick by the indianapolis colt before ed whitley be choose", "pred": "name, round, pick, overall"}
+{"table_name": "2-13312898-28.html.csv", "label": "more player be draft from usc than from clemson", "pred": "name, college"}
+{"table_name": "2-13312898-28.html.csv", "label": "no player in the running back position be pick after the 10th round", "pred": "name, position, round, pick"}
+{"table_name": "2-13312898-28.html.csv", "label": "curtis dickey be pick during an earlier round than randy bielski", "pred": "name, round, pick, overall"}
+{"table_name": "2-13312898-28.html.csv", "label": "5 player be pick in the 2nd round of the draft", "pred": "round, pick, overall, name, position"}
+{"table_name": "2-13312898-28.html.csv", "label": "wes robert and ed whitley be both pick in the 3rd round", "pred": "name, round, pick"}
+{"table_name": "2-13312898-28.html.csv", "label": "usc and clemson college have the most player draft at 3 each", "pred": "name, college"}
+{"table_name": "2-13312898-28.html.csv", "label": "there be 3 run back position pick by the 6th round", "pred": "name, position"}
+{"table_name": "2-13312898-28.html.csv", "label": "curtis dickey and randy bielski be pick in round 2", "pred": "name, round, pick"}
+{"table_name": "2-187504-13.html.csv", "label": "italy receive 2 more gold medal than canada do but tie with the united state and west germany", "pred": "nation, gold"}
+{"table_name": "2-187504-13.html.csv", "label": "sweden place higher than austria in the total medal count for the 1988 olympics", "pred": "nation, total"}
+{"table_name": "2-187504-13.html.csv", "label": "6 different country receive the same number of bronze medal", "pred": "nation, bronze"}
+{"table_name": "2-187504-13.html.csv", "label": "sweden and canada be the only country on the table that do not receive a medal in 1 of the category", "pred": "nation, gold, silver, bronze"}
+{"table_name": "2-187504-13.html.csv", "label": "the soviet union receive 4 more medal than east germany in the total medal count", "pred": "nation, total"}
+{"table_name": "2-187504-13.html.csv", "label": "italy receive 3 more gold medal than canada do but tie with the united state and west germany", "pred": "nation, gold, total"}
+{"table_name": "2-187504-13.html.csv", "label": "sweden place lower than austria in the total medal count for the 1988 olympics", "pred": "nation, total"}
+{"table_name": "2-187504-13.html.csv", "label": "8 different country receive the same number of bronze medal", "pred": "nation, bronze"}
+{"table_name": "2-187504-13.html.csv", "label": "sweden and canada be the only country on the table that do not receive a medal in 2 of the category", "pred": "nation, gold, silver, bronze"}
+{"table_name": "2-187504-13.html.csv", "label": "the soviet union receive 6 more medal than east germany in the total medal count", "pred": "nation, total"}
+{"table_name": "2-18156552-1.html.csv", "label": "ngc 1796 have the largest apparent magnitude of 12.9 follow by ngc 1705 with 12.8", "pred": "name, apparent_magnitude"}
+{"table_name": "2-18156552-1.html.csv", "label": "ngc 1705 have the smallest redshift at 633 kilometer per second plus or minus 6 kilometer per second", "pred": "name, redshift_km_s_"}
+{"table_name": "2-18156552-1.html.csv", "label": "ngc 2082 redshift faster than ngc 1705 by 551 kilometer per second plus or minus 6 kilometer per second", "pred": "name, redshift_km_s_"}
+{"table_name": "2-18156552-1.html.csv", "label": "ngc 1574 have a deeper declination (or dec) of \u00b058\u203229\u2033 , than any other galaxy in the dorado group", "pred": "name, dec_j2000_"}
+{"table_name": "2-18156552-1.html.csv", "label": "the lowest right ascension (or ra) be ngc 1533 with a right ascension of 4 hour 9 minute and 51.8 second", "pred": "name, ra_j2000_, dec_j2000_, redshift_km_s_"}
+{"table_name": "2-18156552-1.html.csv", "label": "ngc 1515 have the largest apparent magnitude of 12.9 follow by ngc 1705 with 12.8", "pred": "name, apparent_magnitude"}
+{"table_name": "2-18156552-1.html.csv", "label": "ngc 1796 have the largest redshift at 633 kilometer per second plus or minus 6 kilometer per second", "pred": "name, redshift_km_s_"}
+{"table_name": "2-18156552-1.html.csv", "label": "ngc 1705 redshift faster than ngc2082 by 441 kilometer per second plus or minus 6 kilometer per second", "pred": "name, redshift_km_s_"}
+{"table_name": "2-18156552-1.html.csv", "label": "ngc 2082 have a deeper declination (or dec) of \u00b059\u203228\u2033 , than any other galaxy in the dorado group", "pred": "name, dec_j2000_"}
+{"table_name": "2-18156552-1.html.csv", "label": "the lowest right ascension (or ra) be ngc 2082 with a right ascension of 4 hour 8 minute and 58.1 second", "pred": "name, type, ra_j2000_, dec_j2000_, redshift_km_s_"}
+{"table_name": "2-14175075-5.html.csv", "label": "cedar rapid be the site with the earliest date", "pred": "date, site"}
+{"table_name": "2-14175075-5.html.csv", "label": "volleyball be the sport with the 2nd earliest date", "pred": "sport, date"}
+{"table_name": "2-14175075-5.html.csv", "label": "softball be the sport with the latest date", "pred": "sport, date"}
+{"table_name": "2-14175075-5.html.csv", "label": "w gymnastics be the sport with the earliest date in 2008", "pred": "sport, date"}
+{"table_name": "2-14175075-5.html.csv", "label": "wrestling be the sport with the latest date in 2007", "pred": "sport, date, winning_team, date"}
+{"table_name": "2-14175075-5.html.csv", "label": "ames be the site with the earliest date", "pred": "site, date"}
+{"table_name": "2-14175075-5.html.csv", "label": "volleyball be the sport with the earliest date", "pred": "sport, date"}
+{"table_name": "2-14175075-5.html.csv", "label": "softball be the sport with the second latest date", "pred": "date, sport"}
+{"table_name": "2-14175075-5.html.csv", "label": "w gymnastics be the sport with the earliest date in 2007", "pred": "date, sport"}
+{"table_name": "2-14175075-5.html.csv", "label": "wrestling be the sport with the latest date in 2008", "pred": "sport, date, winning_team, site"}
+{"table_name": "2-1195142-2.html.csv", "label": "the 2005 drama desk award for outstanding choreography do not go to william ivey long", "pred": "year, award, category, nominee, result"}
+{"table_name": "2-1195142-2.html.csv", "label": "nominee for best costume design in 2005 at the tony award be qilliam ivey long", "pred": "nominee, result"}
+{"table_name": "2-1195142-2.html.csv", "label": "jerry mitchell be 1 of 2 winner of a tony award", "pred": "nominee, result"}
+{"table_name": "2-1195142-2.html.csv", "label": "jerry mitchell be 1 of 3 nominee for a drama desk award", "pred": "nominee, result"}
+{"table_name": "2-1195142-2.html.csv", "label": "gary beach be 1 of 4 nominee for a tony award", "pred": "nominee, result"}
+{"table_name": "2-1195142-2.html.csv", "label": "willam ivey long win the 2005 drama desk award for outstanding choreography", "pred": "year, award, category, nominee, result"}
+{"table_name": "2-1195142-2.html.csv", "label": "the 2005 nominee for best costume design win the award", "pred": "year, nominee, result"}
+{"table_name": "2-1195142-2.html.csv", "label": "jerry mitchell win 2 tony award", "pred": "year, award, category, nominee, result"}
+{"table_name": "2-1195142-2.html.csv", "label": "jerry mitchell be nominate for a drama desk award 3 time", "pred": "year, nominee, result"}
+{"table_name": "2-1195142-2.html.csv", "label": "gary beach be 1 of 4 winner of a tony award", "pred": "nominee, result"}
+{"table_name": "2-17915-12.html.csv", "label": "lleyton hewitt have win the master series final 2 time , in 2002 and 2003", "pred": "year, outcome, championship, opponent, score"}
+{"table_name": "2-17915-12.html.csv", "label": "19 of lleyton hewitt master series final have 1 side or the other finishing with 6 point", "pred": "year, outcome, championship, opponent, score"}
+{"table_name": "2-17915-12.html.csv", "label": "only the master series final in paris have a carpet surface", "pred": "year, championship, surface"}
+{"table_name": "2-17915-12.html.csv", "label": "lleyton hewitt be a runner - up 5 time out of a total of 7", "pred": "outcome, year, championship, opponent"}
+{"table_name": "2-17915-12.html.csv", "label": "lleyton hewitt never face the same opponent in more than 1 master series final", "pred": "year, championship, opponent"}
+{"table_name": "2-17915-12.html.csv", "label": "ileyton hewitt have win the master series 2 time , in 2004 and 2005", "pred": "year, outcome, championship, surface, opponent"}
+{"table_name": "2-17915-12.html.csv", "label": "19 of ileyton hewitt master series final have 1 side or the other finishing with 4 point", "pred": "year, outcome, championship, opponent, score"}
+{"table_name": "2-17915-12.html.csv", "label": "only the master series final in cincinnati have a carpet surface", "pred": "year, championship, surface"}
+{"table_name": "2-17915-12.html.csv", "label": "ileyton hewitt be a runner up 1 time out of a total of 7", "pred": "outcome, year, championship, opponent"}
+{"table_name": "2-17915-12.html.csv", "label": "ileyton hewitt face the same opponent , wayne ferreira , in every master series final", "pred": "year, championship, opponent"}
+{"table_name": "2-18607260-13.html.csv", "label": "the kirin cup have game on both may 17 and 21 , 1998", "pred": "date, venue"}
+{"table_name": "2-18607260-13.html.csv", "label": "the world cup have 4 game throughout june 1998 , all of which be in france", "pred": "date, venue, score, comp"}
+{"table_name": "2-18607260-13.html.csv", "label": "netherlands and romania have game on june 1 and june 3 , respectively , in 1998", "pred": "date, venue"}
+{"table_name": "2-18607260-13.html.csv", "label": "neither team score for the first 2 game of the world cup in france", "pred": "date, venue, score, comp"}
+{"table_name": "2-18607260-13.html.csv", "label": "the game on june 18 and 28 , 1998 both have a score of 1 - 1", "pred": "date, score"}
+{"table_name": "2-18607260-13.html.csv", "label": "the kirin cup have game on both june 1 and 3 , 1998", "pred": "date, venue, comp"}
+{"table_name": "2-18607260-13.html.csv", "label": "the world cup have 3 game throughout july 1998 , all of which be in japan", "pred": "date, venue, comp"}
+{"table_name": "2-18607260-13.html.csv", "label": "netherlands and romania have game on june 24 and 28 , respectively , in 1998", "pred": "date, venue"}
+{"table_name": "2-18607260-13.html.csv", "label": "neither team score for only the first game of the world cup in france", "pred": "date, venue, score, comp"}
+{"table_name": "2-18607260-13.html.csv", "label": "the game on june 18 and 28 , both have a score of 2 - 0", "pred": "date, score"}
+{"table_name": "2-1546813-1.html.csv", "label": "the solheim cup be host in the us on 7 occassions from 1990 through 2013", "pred": "year, venue, winning_team"}
+{"table_name": "2-1546813-1.html.csv", "label": "the united state team win 8 of the solheim cup start in 1990 and the last be in 2009", "pred": "year, winning_team"}
+{"table_name": "2-1546813-1.html.csv", "label": "patty sheehan , judy rankin , and kathy whitworth be all captain that win the cup 2 time", "pred": "year, winning_team, usa_captain, europe_captain"}
+{"table_name": "2-1546813-1.html.csv", "label": "the solheim cup be host outside of the united state 6 time from 1990 - 2013", "pred": "year, venue, winning_team"}
+{"table_name": "2-1546813-1.html.csv", "label": "the highest score for a winning team be 18 and the lowest score be 11.5", "pred": "year, winning_team, score"}
+{"table_name": "2-1546813-1.html.csv", "label": "the solheim cup be host outside the us on 7 occasion from 1990 - 2013", "pred": "year, venue"}
+{"table_name": "2-1546813-1.html.csv", "label": "the us last win the solheim cup in 2009 , which be 1 of 7 title since 1990", "pred": "year, winning_team, usa_captain, europe_captain"}
+{"table_name": "2-1546813-1.html.csv", "label": "patty sheehan , judy rankin and kathy whitworth be all captain that win the solheim cup 1 time", "pred": "year, winning_team, usa_captain, europe_captain"}
+{"table_name": "2-1546813-1.html.csv", "label": "the solheim cup be host in the united state 6 time from 1990 - 2013", "pred": "year, venue, winning_team, usa_captain, europe_captain"}
+{"table_name": "2-1546813-1.html.csv", "label": "the highest score for a winning team be 18 , while the lowest score for a winning team be 13", "pred": "year, winning_team, score"}
+{"table_name": "2-11512626-6.html.csv", "label": "in a game on august 30 , mohler (1 - 10) take the loss while in a game on august 31 oquist (2 - 5) suffer the loss", "pred": "date, opponent, loss"}
+{"table_name": "2-11512626-6.html.csv", "label": "only 2 time be the attendance less than 20000 crowd and it be on august 4 and august 5", "pred": "date, opponent, attendance"}
+{"table_name": "2-11512626-6.html.csv", "label": "the attendance on august 26 and august 27 be 48063 and 48032", "pred": "date, attendance"}
+{"table_name": "2-11512626-6.html.csv", "label": "when the score be 10 - 4 , the colorado rockies' record go to 68 - 70 in a game against the athletics", "pred": "date, opponent, score, record"}
+{"table_name": "2-11512626-6.html.csv", "label": "on august 27 remlinger (6 - 6) take the loss as the rockies go to 64 - 70", "pred": "date, opponent, loss, record"}
+{"table_name": "2-11512626-6.html.csv", "label": "in a game on august 30 , mogler (1 - 10) won while in a game against oquist", "pred": "date, opponent, loss"}
+{"table_name": "2-11512626-6.html.csv", "label": "the attendance be less than 20000 over 5 time between august 4 and 6th", "pred": "date, opponent, attendance"}
+{"table_name": "2-11512626-6.html.csv", "label": "on august 26 the attendance be 24343 and on august 27 the attendance be 2142", "pred": "date, attendance"}
+{"table_name": "2-11512626-6.html.csv", "label": "when the score be 4 - 5 , the athletics record go 53 - 32 against the colorado rockies", "pred": "date, opponent, score, loss, record"}
+{"table_name": "2-11512626-6.html.csv", "label": "on august 25 , remlinger (6 - 6) take the win against the rockies", "pred": "date, opponent, loss"}
+{"table_name": "2-18842944-2.html.csv", "label": "there be 2 game that take place in the month of december", "pred": "date, opponent"}
+{"table_name": "2-18842944-2.html.csv", "label": "the largest attendance be at the game that take place on september 13 , 1976", "pred": "date, opponent, attendance"}
+{"table_name": "2-18842944-2.html.csv", "label": "the smallest attendance be not at the game against the new england patriot", "pred": "opponent, attendance"}
+{"table_name": "2-18842944-2.html.csv", "label": "the attendance in week 12 be higher than the attendance in week 13", "pred": "week, date, opponent, attendance"}
+{"table_name": "2-18842944-2.html.csv", "label": "the buffalo bill lose more game than they win", "pred": "opponent, result"}
+{"table_name": "2-18842944-2.html.csv", "label": "there be 2 game that take place in the month of november december", "pred": "date, opponent"}
+{"table_name": "2-18842944-2.html.csv", "label": "the largest attendance of 44505 be at the game that take place on september 13 , 1976", "pred": "date, opponent, attendance"}
+{"table_name": "2-18842944-2.html.csv", "label": "the smallest attendance be not at the game against the new england patriot but against baltimore colt", "pred": "opponent, attendance"}
+{"table_name": "2-18842944-2.html.csv", "label": "the attendance in week 12 be higher than the attendance in week 6 and 13", "pred": "week, date, opponent, attendance"}

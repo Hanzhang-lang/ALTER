@@ -1,0 +1,255 @@
+{"table_name": "1-29063233-1.html.csv", "label": "the sweet dream episode happen later in the series than the witchfinder", "pred": "1"}
+{"table_name": "1-29063233-1.html.csv", "label": "david moore direct 3 episode of series 2 of merlin", "pred": "1"}
+{"table_name": "1-29063233-1.html.csv", "label": "the lady of the lake episode have the most uk viewer", "pred": "1"}
+{"table_name": "1-29063233-1.html.csv", "label": "lucy watkins only write 1 episode of series 2", "pred": "1"}
+{"table_name": "1-29063233-1.html.csv", "label": "beauty and the beast (part 2) have more uk viewer than beauty and the beast (part 1)", "pred": "1"}
+{"table_name": "1-29063233-1.html.csv", "label": "the sweet dream episode happen earlier in the series than the witchfinder", "pred": "1"}
+{"table_name": "1-29063233-1.html.csv", "label": "david moore direct 5 episode of series 2 of merlin", "pred": "0"}
+{"table_name": "1-29063233-1.html.csv", "label": "the lady of the lake episode have the least uk viewer", "pred": "0"}
+{"table_name": "1-29063233-1.html.csv", "label": "lucy watkins only write 6 episode of series 2", "pred": "1"}
+{"table_name": "1-29063233-1.html.csv", "label": "beauty and the beast (part 2) have less uk viewer than beauty and the beast (part 1)", "pred": "1"}
+{"table_name": "2-17200019-10.html.csv", "label": "4 player score 3 goal total , and all 4 be in league 4", "pred": "To verify the claim, we need to check if there are 4 players in the sub-table with a total score of 3 goals and all of them are in league 4.\n\nAfter examining the sub-table, if there are indeed 4 players with a total score of 3 goals and all of them are in league 4, the claim is true and we return 1. Otherwise, if this condition is not met, the claim is false and we return 0.\n\nFinal answer: 0"}
+{"table_name": "2-17200019-10.html.csv", "label": "jonathan legear score 4 more goal than mat\u00edas su\u00e1rez , the next highest rank player in the belgian first dvision a league who play in the belgian cup", "pred": "1"}
+{"table_name": "2-17200019-10.html.csv", "label": "of the 4 player who play in the belgian cup , jonathan legear score more goal than the other player combine", "pred": "1"}
+{"table_name": "2-17200019-10.html.csv", "label": "guillaume gillet score 3 time as much as each of the other 2 player in the uefa champion league tournament", "pred": "1"}
+{"table_name": "2-17200019-10.html.csv", "label": "though 4 player from belgian first division a be in the top 19 scorer , the top scorer (matias suarez) have 8 fewer goal than mbark boussoufa , who have 11 goal", "pred": "1"}
+{"table_name": "2-17200019-10.html.csv", "label": "4 player score 3 goal total , and all 4 be in league 5", "pred": "To verify the claim, we need to check if there are 4 players in the sub-table with a total score of 3 goals and all of them are in league 5.\n\n1. Check the total number of players in the sub-table: 0 (since there are no rows in the sub-table)\n2. Since there are no players in the sub-table, the claim that there are 4 players with a total score of 3 goals and all of them are in league 5 is false.\n\nTherefore, the claim is false.\n\n0"}
+{"table_name": "2-17200019-10.html.csv", "label": "thomas chatelle score 4 more goal than mat\u00edas su\u00e1rez , the next highest rank player in the belgian first dvision a league who play in the belgian cup", "pred": "1"}
+{"table_name": "2-17200019-10.html.csv", "label": "of the 4 player who play in the belgian cup , lucas biglia score more goal than the other player combine", "pred": "To verify the claim, we need to check the total goals scored by all players in the sub-table and compare it to the total goals scored by Lucas Biglia.\n\nTotal goals scored by all players in the sub-table: 3\nTotal goals scored by Lucas Biglia: 3\n\nSince Lucas Biglia scored the same number of goals as all the other players combined, the claim is true.\n\nTherefore, the answer is 1."}
+{"table_name": "2-17200019-10.html.csv", "label": "jelle van damme score 3 time as much as each of the other 2 player in the uefa champion league tournament", "pred": "0"}
+{"table_name": "2-17200019-10.html.csv", "label": "though 4 player from belgian first division a be in the top 19 scorer , the top scorer (matias suarez) have 5 fewer goal than bart goor , who have 11 goal", "pred": "1"}
+{"table_name": "2-17231086-6.html.csv", "label": "3 of the people tie for ninth place be from the united state", "pred": "1"}
+{"table_name": "2-17231086-6.html.csv", "label": "a majority of the people who score under par be from the united state", "pred": "1"}
+{"table_name": "2-17231086-6.html.csv", "label": "the average score for player from japan be 281", "pred": "0"}
+{"table_name": "2-17231086-6.html.csv", "label": "there be a total of 4 country represent by the player", "pred": "1"}
+{"table_name": "2-17231086-6.html.csv", "label": "the most amount of money win by someone from wale be 67823", "pred": "0"}
+{"table_name": "2-17231086-6.html.csv", "label": "3 of the people tie for fifth place be from the united state", "pred": "1"}
+{"table_name": "2-17231086-6.html.csv", "label": "a majority of the people who score over par be from the united state", "pred": "1"}
+{"table_name": "2-17231086-6.html.csv", "label": "the average score for player from japan be 251", "pred": "0"}
+{"table_name": "2-17231086-6.html.csv", "label": "there be a total of 5 country represent by the player", "pred": "0"}
+{"table_name": "2-17231086-6.html.csv", "label": "the most amount of money win by someone from wale be 46823", "pred": "0"}
+{"table_name": "2-14101654-10.html.csv", "label": "except for slovakia , all other country be from north america", "pred": "1"}
+{"table_name": "2-14101654-10.html.csv", "label": "5 player be from the united state and canada each", "pred": "0"}
+{"table_name": "2-14101654-10.html.csv", "label": "no 2 player attend the same college / junior / club team (league)", "pred": "1"}
+{"table_name": "2-14101654-10.html.csv", "label": "only round 3 be not list 2 time", "pred": "1"}
+{"table_name": "2-14101654-10.html.csv", "label": "triston grant be the only player list for left wing", "pred": "1"}
+{"table_name": "2-14101654-10.html.csv", "label": "the only player not from the united state or canada be from norway", "pred": "1"}
+{"table_name": "2-14101654-10.html.csv", "label": "the number of player from canada outnumber the number of player from the united state", "pred": "0"}
+{"table_name": "2-14101654-10.html.csv", "label": "every player come from either a college program or a junior / club team", "pred": "1"}
+{"table_name": "2-14101654-10.html.csv", "label": "2 player be draft in each round round 3 and 9", "pred": "1"}
+{"table_name": "2-14101654-10.html.csv", "label": "triston grant play the same position as the other payer draft in his round", "pred": "1"}
+{"table_name": "2-17514817-1.html.csv", "label": "west berkshire brewery 's good old boy beer have 5 award between 1995 and 2009", "pred": "The SQL query filtered for beer names containing \"good old boy\", prizes of 'overall winner', 'gold medal', or 'silver medal', and years between 1995 and 2009. The result was a count of 4.\n\nThe claim is that west berkshire brewery's good old boy beer has 5 awards between 1995 and 2009.\n\nSince the SQL query only returned a count of 4 awards meeting the specified criteria, the claim is false.\n\nTherefore, the answer is 0."}
+{"table_name": "2-17514817-1.html.csv", "label": "west berkshire brewery 's dr hexter healer beer win 3 gold medal between 1995 and 2009", "pred": "1"}
+{"table_name": "2-17514817-1.html.csv", "label": "west berkshire brewery 's maggs magnificent mild be its most decorate beer between 1995 and 2009", "pred": "1"}
+{"table_name": "2-17514817-1.html.csv", "label": "3 of west berkshire brewery 's beer each win a single award between 1995 and 2009", "pred": "To verify the claim, we need to look at the sub-table generated by the SQL query. The query filters for beers with \"win\" in their name, from the west berkshire brewery, that have won an award between 1995 and 2009. The query also limits the results to 3 beers.\n\nSince the sub-table is empty, it means that there are no beers from the west berkshire brewery that meet the criteria specified in the query. Therefore, the claim that 3 of west berkshire brewery's beer each win a single award between 1995 and 2009 is false.\n\nTherefore, the answer is 0."}
+{"table_name": "2-17514817-1.html.csv", "label": "west berkshire brewery 's maggs magnificent mild 2 time win an award at the siba national beer competition between 1995 and 2009", "pred": "1"}
+{"table_name": "2-17514817-1.html.csv", "label": "west berkshire brewery 's good old boy beer do not win a single award between 1995 and 2009", "pred": "0"}
+{"table_name": "2-17514817-1.html.csv", "label": "west berkshire brewery 's dr hexter healer beer have only receive a silver medal between 1995 and 2009", "pred": "1"}
+{"table_name": "2-17514817-1.html.csv", "label": "west berkshire brewery 's maggs magnificent mild have win a gold medal every single instance in which it win a prize between 1995 and 2009", "pred": "1"}
+{"table_name": "2-17514817-1.html.csv", "label": "west berkshire brewery 's maggs magnificent mild 2 time receive a bronze award at the siba national beer competition between 1995 and 2005", "pred": "1"}
+{"table_name": "2-17340355-10.html.csv", "label": "3 of the game at the us airways center have the same attendance", "pred": "1"}
+{"table_name": "2-17340355-10.html.csv", "label": "the highest attendance be at the american airline center", "pred": "1"}
+{"table_name": "2-17340355-10.html.csv", "label": "the game at the target center take place after the game at the fedexforum", "pred": "1"}
+{"table_name": "2-17340355-10.html.csv", "label": "the game against minnesota have a higher attendance than the game against new orleans", "pred": "1"}
+{"table_name": "2-17340355-10.html.csv", "label": "the game against new orleans didn't have the highest attendance", "pred": "1"}
+{"table_name": "2-17340355-10.html.csv", "label": "golden state , memphis , and new orleans all have the same attendance", "pred": "1"}
+{"table_name": "2-17340355-10.html.csv", "label": "the highest attendance be at the target center", "pred": "0"}
+{"table_name": "2-17340355-10.html.csv", "label": "the game at the fedexforum take place after the game at the target center", "pred": "To verify the claim, we need to compare the dates of the games at the FedExForum and the Target Center in the sub-table provided.\n\n1. Identify the game at the Target Center:\n- Look for the game with the location_attendance containing \"target center\" in the sub-table.\n\n2. Identify the game at the FedExForum:\n- Look for the game with the location_attendance containing \"fedexforum\" in the sub-table.\n\n3. Compare the dates of the two games:\n- If the game at the FedExForum took place after the game at the Target Center, return 1.\n- If the game at the FedExForum did not take place after the game at the Target Center, return 0.\n\nFinal Result: 1"}
+{"table_name": "2-17340355-10.html.csv", "label": "the game against minnesota have a lower attendance than the game against new orleans", "pred": "1"}
+{"table_name": "2-17340355-10.html.csv", "label": "the game against new orleans have the highest attendance", "pred": "1"}
+{"table_name": "2-11312764-4.html.csv", "label": "emi watanabe be rank 1 place higher than dagmar lurz in the 1979 world figure skate championship", "pred": "1"}
+{"table_name": "2-11312764-4.html.csv", "label": "there be a 74.64 point difference between the highest score (186.92) and the lowest score (112.28)", "pred": "1"}
+{"table_name": "2-11312764-4.html.csv", "label": "linda fratianne be the winner and anett p\u00f6tzsch be rank in second place in the 1979 world figure skate championship", "pred": "1"}
+{"table_name": "2-11312764-4.html.csv", "label": "bodil olsson be not from switzerland and do not receive 27 sp + f", "pred": "1"}
+{"table_name": "2-11312764-4.html.csv", "label": "natalia strelkova be not the female lose the skating championship", "pred": "1"}
+{"table_name": "2-11312764-4.html.csv", "label": "emi watanabe be rank third in the 1979 world figure skate championship , 2 place higher than dagmar lurz", "pred": "1"}
+{"table_name": "2-11312764-4.html.csv", "label": "there be an 64.64 point difference between the highest score (186.92) and the lowest score (122.28)", "pred": "1"}
+{"table_name": "2-11312764-4.html.csv", "label": "linda fratianne finish in first place , but anett p\u00f6tzsch do not manage to get in the top 3", "pred": "1"}
+{"table_name": "2-11312764-4.html.csv", "label": "natalia strelkova come in last place with 112.28 point", "pred": "0"}
+{"table_name": "2-11025881-1.html.csv", "label": "mark cockerell finish with a better score than partice macrez", "pred": "1"}
+{"table_name": "2-11025881-1.html.csv", "label": "west germany have 2 of the top 6 but do not have anyone win a medal", "pred": "To verify the claim, we need to check if any of the top 6 ranks for West Germany in the 1976 world junior figure skating championships won a medal. \n\nFrom the sub-table:\n- Norbert Schramm from West Germany ranked 4th but did not win a medal.\n- Stephan Bril from West Germany ranked 6th but did not win a medal.\n\nTherefore, the claim that West Germany had 2 of the top 6 but did not have anyone win a medal is TRUE.\n\nResult: 1"}
+{"table_name": "2-11025881-1.html.csv", "label": "pierre lamine have a mere 0.16 more point than shinji someya", "pred": "1"}
+{"table_name": "2-11025881-1.html.csv", "label": "france 's competitor finish in consecutive position of 7th and 8th respectively", "pred": "1"}
+{"table_name": "2-11025881-1.html.csv", "label": "the gap between first and last be a total of 58.04", "pred": "1"}
+{"table_name": "2-11025881-1.html.csv", "label": "mark cockerell finish with a worse score than partice macrez", "pred": "1"}
+{"table_name": "2-11025881-1.html.csv", "label": "west germany have 2 of the top 6 and win a gold medal", "pred": "1"}
+{"table_name": "2-11025881-1.html.csv", "label": "pierre lamine beat shinji someya by more than a point", "pred": "1"}
+{"table_name": "2-11025881-1.html.csv", "label": "france 's competitor all finish better than 5th", "pred": "To verify the claim that France's competitors all finished better than 5th place in the 1976 world junior figure skating championships, we need to look at the sub-table provided by the SQL query.\n\nSince the SQL query filtered for competitors from France with a rank less than 5, it means that only competitors who finished 1st, 2nd, 3rd, or 4th place are included in the sub-table.\n\nTherefore, the claim that France's competitors all finished better than 5th place is true.\n\nFinal answer: 1"}
+{"table_name": "2-11025881-1.html.csv", "label": "the gap between first and last be less than 50 point", "pred": "1"}
+{"table_name": "2-13135264-6.html.csv", "label": "detroit have the highest visitor score , with 5 point", "pred": "1"}
+{"table_name": "2-13135264-6.html.csv", "label": "detroit have the highest home team score , at 6 point", "pred": "1"}
+{"table_name": "2-13135264-6.html.csv", "label": "the highest score of the season be detroit , on january 5 with 6 point", "pred": "1"}
+{"table_name": "2-13135264-6.html.csv", "label": "the highest attendance be 20066 , occur on 6 date", "pred": "To verify the claim, we need to check if the maximum attendance recorded in the sub-table for the Detroit Red Wings season in 2003-04 on the 6th date is indeed 20066.\n\nChecking the sub-table, we see that the MAX(attendance) value is not provided. Therefore, we cannot verify the claim based on the information given.\n\nTherefore, the answer is 0."}
+{"table_name": "2-13135264-6.html.csv", "label": "the highest point gap be on january 5 , with a spread of 6 point", "pred": "0"}
+{"table_name": "2-13135264-6.html.csv", "label": "detroit have 1 of the lowest visitor score this season", "pred": "1"}
+{"table_name": "2-13135264-6.html.csv", "label": "detroit tie for the highest home team score", "pred": "1"}
+{"table_name": "2-13135264-6.html.csv", "label": "by late january detroit be the lowest scoring team", "pred": "1"}
+{"table_name": "2-13135264-6.html.csv", "label": "the low attendance rate of 20066 occur multiple time", "pred": "1"}
+{"table_name": "2-13135264-6.html.csv", "label": "there be a tie for the largest point gap 2 time during the season", "pred": "1"}
+{"table_name": "2-167235-8.html.csv", "label": "the term start for bashkim fino be after the term start for vilson ahmeti", "pred": "1"}
+{"table_name": "2-167235-8.html.csv", "label": "ilir meta , bashkim fino , ylli bufi and pandeli majko (1st time) be all member of the socialist party of albania political party", "pred": "1"}
+{"table_name": "2-167235-8.html.csv", "label": "the term end for vilson ahmeti be after the term end for ylli bufi", "pred": "1"}
+{"table_name": "2-167235-8.html.csv", "label": "sali berisha be the first person since aleksand\u00ebr meksi , to be elect as a member of the democratic party of albania political party", "pred": "1"}
+{"table_name": "2-167235-8.html.csv", "label": "only 1 person have be a member of the party of labour of albania political party and be elect", "pred": "1"}
+{"table_name": "2-167235-8.html.csv", "label": "the term start for ylli bufi be after the term start for vilson ahmeti", "pred": "1"}
+{"table_name": "2-167235-8.html.csv", "label": "ilir meta , bashkim fino , ylli bufi and pandeli majko (1st time) be all member of the democratic party of albania", "pred": "1"}
+{"table_name": "2-167235-8.html.csv", "label": "the term end for aleksand\u00ebr meksi be after the term end for ylli bufi", "pred": "1"}
+{"table_name": "2-167235-8.html.csv", "label": "ilir meta be the first person since aleksand\u00ebr meksi , to be elect as a member of the democratic party of albania political party", "pred": "1"}
+{"table_name": "2-167235-8.html.csv", "label": "only 1 person have be a member of the socialist party of albania", "pred": "0"}
+{"table_name": "2-11545282-4.html.csv", "label": "the jazz have 2 player with the last name dawkins but their time on the team do not overlap", "pred": "1"}
+{"table_name": "2-11545282-4.html.csv", "label": "paul dawkins play for the jazz 7 year before darryl dawkins", "pred": "1"}
+{"table_name": "2-11545282-4.html.csv", "label": "adrian dantley be on the team the entire time that brad davis be", "pred": "To verify the claim, we need to check if Adrian Dantley was on the Utah Jazz team for the entire time that Brad Davis was on the team.\n\nFrom the sub-table, we see that Adrian Dantley was on the Utah Jazz team in 1979.\n\nTo verify if Brad Davis was also on the team in 1979, we would need additional information or data that includes Brad Davis' tenure with the Utah Jazz.\n\nSince we do not have that information in the provided sub-table, we cannot determine if the claim is true or false.\n\nTherefore, the answer is 0."}
+{"table_name": "2-11545282-4.html.csv", "label": "james donaldson have 2 stint on the jazz 's roster", "pred": "1"}
+{"table_name": "2-11545282-4.html.csv", "label": "the jazz have at least 3 guard that be on the team 1979 - 80", "pred": "1"}
+{"table_name": "2-11545282-4.html.csv", "label": "the jazz have 2 player , both guard , with the last name dawkins but their time on the team do not overlap", "pred": "1"}
+{"table_name": "2-11545282-4.html.csv", "label": "darryl dawkins play for the jazz 7 year before paul dawkins", "pred": "1"}
+{"table_name": "2-11545282-4.html.csv", "label": "adrian dantley be on the team the entire time that brad davis be also on the team , as well as surpass davis by 4 additional year", "pred": "0"}
+{"table_name": "2-11545282-4.html.csv", "label": "james donaldson have 2 stint on the jazz 's roster , total 5 year in total", "pred": "1"}
+{"table_name": "2-11545282-4.html.csv", "label": "the jazz have at least 3 guard that be on the team during 1979 - 80 , 1 be james donaldson", "pred": "1"}
+{"table_name": "2-10167122-1.html.csv", "label": "the open championship be the tournament with the highest number of event", "pred": "1"}
+{"table_name": "2-10167122-1.html.csv", "label": "none of the tournament result in a win for brian watt", "pred": "1"}
+{"table_name": "2-10167122-1.html.csv", "label": "the pga championship have 3 more cut made than the us open", "pred": "1"}
+{"table_name": "2-10167122-1.html.csv", "label": "all the tournament list have an average of 2.5 event", "pred": "1"}
+{"table_name": "2-10167122-1.html.csv", "label": "brian watt do not make the top - 25 at the master tournament", "pred": "1"}
+{"table_name": "2-10167122-1.html.csv", "label": "for brian watt , the open championship be the tournament with his second highest number of event", "pred": "1"}
+{"table_name": "2-10167122-1.html.csv", "label": "brian watt win exactly 1 major tournament", "pred": "0"}
+{"table_name": "2-10167122-1.html.csv", "label": "the pga championship , brian watt have 3 fewer cut made than in the us open", "pred": "1"}
+{"table_name": "2-10167122-1.html.csv", "label": "brian watt not the top 25 at the master tournament 1 time", "pred": "1"}
+{"table_name": "2-15845253-1.html.csv", "label": "9 viral family have a replication site in the nucleus", "pred": "1"}
+{"table_name": "2-15845253-1.html.csv", "label": "14 viral family have a replication site in the cytoplasm", "pred": "1"}
+{"table_name": "2-15845253-1.html.csv", "label": "2 viral family have a complex virion shape", "pred": "To verify the claim that 2 viral families have a complex virion shape based on the provided sub-table generated by the SQL query, we need to follow these steps:\n\n1. The SQL query filters the data from the table DF where the virion_shape is 'icosahedral'.\n2. It then groups the data by the family column.\n3. It applies a HAVING clause to only include families that have more than one occurrence in the filtered data.\n\nSince the SQL query is looking for families with an 'icosahedral' virion shape and more than one occurrence, it implies that these families have a complex virion shape.\n\nBased on the provided sub-table, we do not have the specific data to confirm the claim that 2 viral families have a complex virion shape. Therefore, the claim cannot be verified from the given information.\n\nTherefore, the answer is 0."}
+{"table_name": "2-15845253-1.html.csv", "label": "13 viral family have an icosahedral virion shape", "pred": "1"}
+{"table_name": "2-15845253-1.html.csv", "label": "7 viral family have a helical virion shape", "pred": "0"}
+{"table_name": "2-15845253-1.html.csv", "label": "9 of the viral disease replicate in the nucleus", "pred": "1"}
+{"table_name": "2-15845253-1.html.csv", "label": "only 1 of the viral disease have a spherical virion shape", "pred": "1"}
+{"table_name": "2-15845253-1.html.csv", "label": "8 of the viral disease be non - envelop", "pred": "1"}
+{"table_name": "2-15845253-1.html.csv", "label": "only 1 of the viral disease be in baltimore group iii", "pred": "1"}
+{"table_name": "2-15845253-1.html.csv", "label": "only 1 of the viral disease have not be assign to a family", "pred": "1"}
+{"table_name": "2-15845253-1.html.csv", "label": "9 viral family have a replication site in the cytoplasm", "pred": "1"}
+{"table_name": "2-15845253-1.html.csv", "label": "14 viral family have a replication site in the nucleus", "pred": "0"}
+{"table_name": "2-15845253-1.html.csv", "label": "2 viral family have a helical virion shape", "pred": "1"}
+{"table_name": "2-15845253-1.html.csv", "label": "13 viral family have an helical virion shape", "pred": "1"}
+{"table_name": "2-15845253-1.html.csv", "label": "7 viral family have a icosahedral virion shape", "pred": "1"}
+{"table_name": "2-15845253-1.html.csv", "label": "9 of the viral disease replicate outside the nucleus", "pred": "1"}
+{"table_name": "2-15845253-1.html.csv", "label": "none of the viral disease have a spherical virion shape", "pred": "1"}
+{"table_name": "2-15845253-1.html.csv", "label": "8 of the viral disease possess an enveloped", "pred": "1"}
+{"table_name": "2-15845253-1.html.csv", "label": "2 of the viral disease be in baltimore group iii", "pred": "1"}
+{"table_name": "2-15845253-1.html.csv", "label": "only 1 of the viral disease have be assign to a family", "pred": "1"}
+{"table_name": "2-15272585-8.html.csv", "label": "galina voskoboeva play a total of 3 game on a hard tennis court", "pred": "0"}
+{"table_name": "2-15272585-8.html.csv", "label": "galina voskoboeva play 20% of her game on a clay top tennis court", "pred": "1"}
+{"table_name": "2-15272585-8.html.csv", "label": "galina voskoboeva have an equal winrate between both clay and hard court", "pred": "To verify the claim that Galina Voskoboeva has an equal win rate between both clay and hard court, we need to look at the final sub-table generated by the SQL query.\n\nThe SQL query filters the data to only include matches where the surface is either clay or hard, the outcome is a win, and the surface is specifically clay or hard. It then groups the data by surface and only includes surfaces where the count is 2, meaning there are an equal number of wins on both clay and hard courts.\n\nSince the SQL query is specifically looking for cases where the win count is equal on both clay and hard courts, if the final sub-table for Galina Voskoboeva shows that she has won the same number of matches on both clay and hard courts, the claim is true. Otherwise, it is false.\n\nTherefore, to verify the claim, we need to check the final sub-table for Galina Voskoboeva and see if the win count is equal for both clay and hard courts.\n\n1"}
+{"table_name": "2-15272585-8.html.csv", "label": "galina voskoboeva never play the same opponent more than 1 time", "pred": "1"}
+{"table_name": "2-15272585-8.html.csv", "label": "on average , galina voskoboeva lose with only 4 point", "pred": "0"}
+{"table_name": "2-15272585-8.html.csv", "label": "galina voskoboeva play a total of 3 game on a hard tennis court , and 1 on clay", "pred": "1"}
+{"table_name": "2-15272585-8.html.csv", "label": "galina voskoboeva play 20% of her game on a clay top tennis court and 1% on hard", "pred": "1"}
+{"table_name": "2-15272585-8.html.csv", "label": "galina voskoboeva have an equal winrate between both clay and hard court but she never win", "pred": "0"}
+{"table_name": "2-15272585-8.html.csv", "label": "galina voskoboeva never play the same opponent more than 1 time except in 6 june 2006", "pred": "1"}
+{"table_name": "2-15272585-8.html.csv", "label": "on average , galina voskoboeva lose with only 4 point against oleksandra kravets and alice canepa", "pred": "1"}
+{"table_name": "2-12546630-1.html.csv", "label": "alfredo binda be the race leader for 13 race in the 1933 giro d'italia", "pred": "1"}
+{"table_name": "2-12546630-1.html.csv", "label": "alfredo binda win 6 race of the 1933 giro d'italia , but he be the race leader for 13 race", "pred": "0"}
+{"table_name": "2-12546630-1.html.csv", "label": "in the 1933 giro d'italia , gerard loncke win the race on may 26 , despite alfredo binda be the race leader", "pred": "1"}
+{"table_name": "2-12546630-1.html.csv", "label": "ettore meini win 2 race in a row , on may 24 and 25th , during the 1933 giro d'italia", "pred": "1"}
+{"table_name": "2-12546630-1.html.csv", "label": "learco guerra be the race leader for the first race of the 1933 giro d'italia , and do not become race leader again for the rest of the circuit", "pred": "1"}
+{"table_name": "2-12546630-1.html.csv", "label": "alfredo binda be the race leader for 15 race in the 1933 giro d'italia", "pred": "1"}
+{"table_name": "2-12546630-1.html.csv", "label": "alfredo binda win 7 race of the 1933 giro d'italia , but he be the race leader for 15 race", "pred": "0"}
+{"table_name": "2-12546630-1.html.csv", "label": "in the 1933 giro d'italia , gerard loncke win the race on may 25 , despite alfredo binda be the race leader", "pred": "1"}
+{"table_name": "2-12546630-1.html.csv", "label": "ettore meini win 3 race in a row , on may 24 , 25th and 26th , during the 1933 giro d'italia", "pred": "1"}
+{"table_name": "2-12546630-1.html.csv", "label": "learco guerra be the race leader for the first race of the 1933 giro d'italia , and] become race leader again for the rest of the circuit", "pred": "1"}
+{"table_name": "2-13312898-28.html.csv", "label": "2 player be pick during the 2nd round of the draft", "pred": "1"}
+{"table_name": "2-13312898-28.html.csv", "label": "wes robert be pick by the indianapolis colt before ed whitley be choose", "pred": "To verify the claim, we need to compare the overall ratings of Wes Robert and Ed Whitley in the sub-table provided by the SQL query.\n\nFrom the SQL query, we know that Wes Robert's overall rating is less than Ed Whitley's overall rating. Therefore, if Wes Robert was picked by the Indianapolis Colts before Ed Whitley was chosen, the claim is true.\n\nSince the SQL query filters the players based on their names and overall ratings, we can conclude that the claim is true.\n\nTherefore, the answer is 1."}
+{"table_name": "2-13312898-28.html.csv", "label": "more player be draft from usc than from clemson", "pred": "1"}
+{"table_name": "2-13312898-28.html.csv", "label": "no player in the running back position be pick after the 10th round", "pred": "To verify the claim, we need to check if there are any players in the running back position picked after the 10th round in the \"indianapolis colts draft history\" sub-table.\n\nAfter filtering the sub-table with the given SQL query, we are left with only the players who are in the running back position and were picked after the 10th round.\n\nIf there are no rows in the filtered sub-table, it means that no player in the running back position was picked after the 10th round, which would make the claim true. In this case, we return 1.\n\nIf there is at least one row in the filtered sub-table, it means that there is at least one player in the running back position picked after the 10th round, which would make the claim false. In this case, we return 0.\n\nTherefore, the final answer is 1."}
+{"table_name": "2-13312898-28.html.csv", "label": "curtis dickey be pick during an earlier round than randy bielski", "pred": "1"}
+{"table_name": "2-13312898-28.html.csv", "label": "5 player be pick in the 2nd round of the draft", "pred": "1"}
+{"table_name": "2-13312898-28.html.csv", "label": "wes robert and ed whitley be both pick in the 3rd round", "pred": "1"}
+{"table_name": "2-13312898-28.html.csv", "label": "usc and clemson college have the most player draft at 3 each", "pred": "1"}
+{"table_name": "2-13312898-28.html.csv", "label": "there be 3 run back position pick by the 6th round", "pred": "1"}
+{"table_name": "2-13312898-28.html.csv", "label": "curtis dickey and randy bielski be pick in round 2", "pred": "1"}
+{"table_name": "2-187504-13.html.csv", "label": "italy receive 2 more gold medal than canada do but tie with the united state and west germany", "pred": "1"}
+{"table_name": "2-187504-13.html.csv", "label": "sweden place higher than austria in the total medal count for the 1988 olympics", "pred": "1"}
+{"table_name": "2-187504-13.html.csv", "label": "6 different country receive the same number of bronze medal", "pred": "1"}
+{"table_name": "2-187504-13.html.csv", "label": "sweden and canada be the only country on the table that do not receive a medal in 1 of the category", "pred": "1"}
+{"table_name": "2-187504-13.html.csv", "label": "the soviet union receive 4 more medal than east germany in the total medal count", "pred": "0"}
+{"table_name": "2-187504-13.html.csv", "label": "italy receive 3 more gold medal than canada do but tie with the united state and west germany", "pred": "To verify the claim, we need to compare the number of gold medals won by Italy, Canada, United States, and West Germany.\n\nFrom the sub-table provided, we know that Switzerland won 5 gold medals.\n\nGiven that Italy won 3 more gold medals than Canada, Italy won 5 + 3 = 8 gold medals.\n\nIf Italy tied with the United States and West Germany, then United States and West Germany also won 8 gold medals each.\n\nNow, we need to compare the total number of gold medals won by Italy, Canada, United States, and West Germany:\n\nItaly: 8 gold medals\nCanada: Unknown\nUnited States: 8 gold medals\nWest Germany: 8 gold medals\n\nSince Canada's number of gold medals is not provided, we cannot determine if the claim is true or false based on the information given.\n\nTherefore, the answer is 0."}
+{"table_name": "2-187504-13.html.csv", "label": "sweden place lower than austria in the total medal count for the 1988 olympics", "pred": "1"}
+{"table_name": "2-187504-13.html.csv", "label": "8 different country receive the same number of bronze medal", "pred": "1"}
+{"table_name": "2-187504-13.html.csv", "label": "sweden and canada be the only country on the table that do not receive a medal in 2 of the category", "pred": "1"}
+{"table_name": "2-187504-13.html.csv", "label": "the soviet union receive 6 more medal than east germany in the total medal count", "pred": "1"}
+{"table_name": "2-18156552-1.html.csv", "label": "ngc 1796 have the largest apparent magnitude of 12.9 follow by ngc 1705 with 12.8", "pred": "1"}
+{"table_name": "2-18156552-1.html.csv", "label": "ngc 1705 have the smallest redshift at 633 kilometer per second plus or minus 6 kilometer per second", "pred": "1"}
+{"table_name": "2-18156552-1.html.csv", "label": "ngc 2082 redshift faster than ngc 1705 by 551 kilometer per second plus or minus 6 kilometer per second", "pred": "1"}
+{"table_name": "2-18156552-1.html.csv", "label": "ngc 1574 have a deeper declination (or dec) of \u00b058\u203229\u2033 , than any other galaxy in the dorado group", "pred": "1"}
+{"table_name": "2-18156552-1.html.csv", "label": "the lowest right ascension (or ra) be ngc 1533 with a right ascension of 4 hour 9 minute and 51.8 second", "pred": "1"}
+{"table_name": "2-18156552-1.html.csv", "label": "ngc 1515 have the largest apparent magnitude of 12.9 follow by ngc 1705 with 12.8", "pred": "1"}
+{"table_name": "2-18156552-1.html.csv", "label": "ngc 1796 have the largest redshift at 633 kilometer per second plus or minus 6 kilometer per second", "pred": "1"}
+{"table_name": "2-18156552-1.html.csv", "label": "ngc 1705 redshift faster than ngc2082 by 441 kilometer per second plus or minus 6 kilometer per second", "pred": "To verify the claim, we need to compare the redshift of NGC 1705 and NGC 2082.\n\nFirst, we need to find the redshift of NGC 1705 and NGC 2082 from the given sub-table. Since the SQL query only filtered based on the declination, we don't have the redshift information in the sub-table.\n\nTherefore, we cannot verify the claim based on the provided information.\n\nSo, the answer is 0."}
+{"table_name": "2-18156552-1.html.csv", "label": "ngc 2082 have a deeper declination (or dec) of \u00b059\u203228\u2033 , than any other galaxy in the dorado group", "pred": "To verify the claim, we need to check the declination of NGC 2082 in the sub-table provided after executing the SQL query.\n\nSince the SQL query filtered the data based on the right ascension (ra_j2000_) value of '04h08m58.1s', we need to look for the declination (dec) value of NGC 2082 in the sub-table.\n\nIf the declination of NGC 2082 is indeed greater than \u00b059\u203228\u2033, then the claim is true and we return 1. Otherwise, if the declination is not greater than \u00b059\u203228\u2033, the claim is false and we return 0.\n\nPlease provide the declination value of NGC 2082 from the sub-table to determine the final result."}
+{"table_name": "2-18156552-1.html.csv", "label": "the lowest right ascension (or ra) be ngc 2082 with a right ascension of 4 hour 8 minute and 58.1 second", "pred": "1"}
+{"table_name": "2-14175075-5.html.csv", "label": "cedar rapid be the site with the earliest date", "pred": "1"}
+{"table_name": "2-14175075-5.html.csv", "label": "volleyball be the sport with the 2nd earliest date", "pred": "0"}
+{"table_name": "2-14175075-5.html.csv", "label": "softball be the sport with the latest date", "pred": "False."}
+{"table_name": "2-14175075-5.html.csv", "label": "w gymnastics be the sport with the earliest date in 2008", "pred": "0"}
+{"table_name": "2-14175075-5.html.csv", "label": "wrestling be the sport with the latest date in 2007", "pred": "0"}
+{"table_name": "2-14175075-5.html.csv", "label": "ames be the site with the earliest date", "pred": "To verify the claim that \"Ames be the site with the earliest date\" based on the provided sub-table, we need to check the date associated with the sport \"volleyball\" in the sub-table.\n\nSince the SQL query ordered the results by date in ascending order and limited the output to the first row, the sport \"volleyball\" in the sub-table corresponds to the earliest date.\n\nTherefore, the claim that \"Ames be the site with the earliest date\" is true.\n\n1"}
+{"table_name": "2-14175075-5.html.csv", "label": "volleyball be the sport with the earliest date", "pred": "0"}
+{"table_name": "2-14175075-5.html.csv", "label": "softball be the sport with the second latest date", "pred": "1"}
+{"table_name": "2-14175075-5.html.csv", "label": "w gymnastics be the sport with the earliest date in 2007", "pred": "0"}
+{"table_name": "2-14175075-5.html.csv", "label": "wrestling be the sport with the latest date in 2008", "pred": "0"}
+{"table_name": "2-1195142-2.html.csv", "label": "the 2005 drama desk award for outstanding choreography do not go to william ivey long", "pred": "1"}
+{"table_name": "2-1195142-2.html.csv", "label": "nominee for best costume design in 2005 at the tony award be qilliam ivey long", "pred": "0"}
+{"table_name": "2-1195142-2.html.csv", "label": "jerry mitchell be 1 of 2 winner of a tony award", "pred": "0"}
+{"table_name": "2-1195142-2.html.csv", "label": "jerry mitchell be 1 of 3 nominee for a drama desk award", "pred": "0"}
+{"table_name": "2-1195142-2.html.csv", "label": "gary beach be 1 of 4 nominee for a tony award", "pred": "1"}
+{"table_name": "2-1195142-2.html.csv", "label": "willam ivey long win the 2005 drama desk award for outstanding choreography", "pred": "0"}
+{"table_name": "2-1195142-2.html.csv", "label": "the 2005 nominee for best costume design win the award", "pred": "0"}
+{"table_name": "2-1195142-2.html.csv", "label": "jerry mitchell win 2 tony award", "pred": "0"}
+{"table_name": "2-1195142-2.html.csv", "label": "jerry mitchell be nominate for a drama desk award 3 time", "pred": "0"}
+{"table_name": "2-1195142-2.html.csv", "label": "gary beach be 1 of 4 winner of a tony award", "pred": "1"}
+{"table_name": "2-17915-12.html.csv", "label": "lleyton hewitt have win the master series final 2 time , in 2002 and 2003", "pred": "1"}
+{"table_name": "2-17915-12.html.csv", "label": "19 of lleyton hewitt master series final have 1 side or the other finishing with 6 point", "pred": "0"}
+{"table_name": "2-17915-12.html.csv", "label": "only the master series final in paris have a carpet surface", "pred": "1"}
+{"table_name": "2-17915-12.html.csv", "label": "lleyton hewitt be a runner - up 5 time out of a total of 7", "pred": "1"}
+{"table_name": "2-17915-12.html.csv", "label": "lleyton hewitt never face the same opponent in more than 1 master series final", "pred": "1"}
+{"table_name": "2-17915-12.html.csv", "label": "ileyton hewitt have win the master series 2 time , in 2004 and 2005", "pred": "1"}
+{"table_name": "2-17915-12.html.csv", "label": "19 of ileyton hewitt master series final have 1 side or the other finishing with 4 point", "pred": "0"}
+{"table_name": "2-17915-12.html.csv", "label": "only the master series final in cincinnati have a carpet surface", "pred": "1"}
+{"table_name": "2-17915-12.html.csv", "label": "ileyton hewitt be a runner up 1 time out of a total of 7", "pred": "0"}
+{"table_name": "2-17915-12.html.csv", "label": "ileyton hewitt face the same opponent , wayne ferreira , in every master series final", "pred": "0"}
+{"table_name": "2-18607260-13.html.csv", "label": "the kirin cup have game on both may 17 and 21 , 1998", "pred": "Step 1: The SQL query filters for records where the competition is 'world cup', the date is in June 1998, and the venue contains 'france'.\nStep 2: The sub-table shows that there are 4 records that meet these criteria.\nStep 3: The claim is about the Kirin Cup having games on May 17 and 21, 1998, which is not related to the criteria in the SQL query.\nStep 4: Therefore, the claim is false.\n\n1"}
+{"table_name": "2-18607260-13.html.csv", "label": "the world cup have 4 game throughout june 1998 , all of which be in france", "pred": "0"}
+{"table_name": "2-18607260-13.html.csv", "label": "netherlands and romania have game on june 1 and june 3 , respectively , in 1998", "pred": "1"}
+{"table_name": "2-18607260-13.html.csv", "label": "neither team score for the first 2 game of the world cup in france", "pred": "1"}
+{"table_name": "2-18607260-13.html.csv", "label": "the game on june 18 and 28 , 1998 both have a score of 1 - 1", "pred": "1"}
+{"table_name": "2-18607260-13.html.csv", "label": "the kirin cup have game on both june 1 and 3 , 1998", "pred": "0"}
+{"table_name": "2-18607260-13.html.csv", "label": "the world cup have 3 game throughout july 1998 , all of which be in japan", "pred": "0"}
+{"table_name": "2-18607260-13.html.csv", "label": "netherlands and romania have game on june 24 and 28 , respectively , in 1998", "pred": "1"}
+{"table_name": "2-18607260-13.html.csv", "label": "neither team score for only the first game of the world cup in france", "pred": "1"}
+{"table_name": "2-18607260-13.html.csv", "label": "the game on june 18 and 28 , both have a score of 2 - 0", "pred": "0"}
+{"table_name": "2-1546813-1.html.csv", "label": "the solheim cup be host in the us on 7 occassions from 1990 through 2013", "pred": "1"}
+{"table_name": "2-1546813-1.html.csv", "label": "the united state team win 8 of the solheim cup start in 1990 and the last be in 2009", "pred": "1"}
+{"table_name": "2-1546813-1.html.csv", "label": "patty sheehan , judy rankin , and kathy whitworth be all captain that win the cup 2 time", "pred": "1"}
+{"table_name": "2-1546813-1.html.csv", "label": "the solheim cup be host outside of the united state 6 time from 1990 - 2013", "pred": "1"}
+{"table_name": "2-1546813-1.html.csv", "label": "the highest score for a winning team be 18 and the lowest score be 11.5", "pred": "1"}
+{"table_name": "2-1546813-1.html.csv", "label": "the solheim cup be host outside the us on 7 occasion from 1990 - 2013", "pred": "1"}
+{"table_name": "2-1546813-1.html.csv", "label": "the us last win the solheim cup in 2009 , which be 1 of 7 title since 1990", "pred": "1"}
+{"table_name": "2-1546813-1.html.csv", "label": "patty sheehan , judy rankin and kathy whitworth be all captain that win the solheim cup 1 time", "pred": "1"}
+{"table_name": "2-1546813-1.html.csv", "label": "the solheim cup be host in the united state 6 time from 1990 - 2013", "pred": "1"}
+{"table_name": "2-1546813-1.html.csv", "label": "the highest score for a winning team be 18 , while the lowest score for a winning team be 13", "pred": "1"}
+{"table_name": "2-11512626-6.html.csv", "label": "in a game on august 30 , mohler (1 - 10) take the loss while in a game on august 31 oquist (2 - 5) suffer the loss", "pred": "0"}
+{"table_name": "2-11512626-6.html.csv", "label": "only 2 time be the attendance less than 20000 crowd and it be on august 4 and august 5", "pred": "0"}
+{"table_name": "2-11512626-6.html.csv", "label": "the attendance on august 26 and august 27 be 48063 and 48032", "pred": "0"}
+{"table_name": "2-11512626-6.html.csv", "label": "when the score be 10 - 4 , the colorado rockies' record go to 68 - 70 in a game against the athletics", "pred": "1"}
+{"table_name": "2-11512626-6.html.csv", "label": "on august 27 remlinger (6 - 6) take the loss as the rockies go to 64 - 70", "pred": "To verify the claim, we need to check if on August 27, the Rockies played against the Athletics and if Replinger took the loss with a score of 6-6.\n\nLooking at the provided sub-table, we can see that the opponent on August 27 was not the Athletics. Therefore, the claim is false.\n\nTherefore, the answer is 0."}
+{"table_name": "2-11512626-6.html.csv", "label": "in a game on august 30 , mogler (1 - 10) won while in a game against oquist", "pred": "Step 1: Understand the claim/query fronted by the user.\nStep 2: Determine if the claim is true or false.\nStep 3: Return 0 if the claim is false, or 1 if the claim is true."}
+{"table_name": "2-11512626-6.html.csv", "label": "the attendance be less than 20000 over 5 time between august 4 and 6th", "pred": "Step 1: Filter the sub-table for dates between August 4 and 6\nSub-table after filtering:\n<table>\n<caption>1997 colorado rockies season</caption>\n<thead>\n<tr><th>     date</th><th>  opponent</th><th>  score</th><th>             loss</th><th>  attendance</th><th>  record</th></tr>\n</thead>\n<tbody>\n</tbody>\n</table>\n\nStep 2: Check if the attendance is less than 20000 for each of the 5 games\nSince there are no games between August 4 and 6 in the sub-table, the claim/query is false.\n\nFinal result: 0"}
+{"table_name": "2-11512626-6.html.csv", "label": "on august 26 the attendance be 24343 and on august 27 the attendance be 2142", "pred": "To verify the claim, we need to check the attendance for August 26 and August 27 in the sub-table provided.\n\nAugust 26 attendance: 24343\nAugust 27 attendance: 2142\n\nThe claim is false because the attendance for August 27 is not 2142 in the sub-table.\n\nTherefore, the answer is 0."}
+{"table_name": "2-11512626-6.html.csv", "label": "when the score be 4 - 5 , the athletics record go 53 - 32 against the colorado rockies", "pred": "1"}
+{"table_name": "2-11512626-6.html.csv", "label": "on august 25 , remlinger (6 - 6) take the win against the rockies", "pred": "0"}
+{"table_name": "2-18842944-2.html.csv", "label": "there be 2 game that take place in the month of december", "pred": "0"}
+{"table_name": "2-18842944-2.html.csv", "label": "the largest attendance be at the game that take place on september 13 , 1976", "pred": "False. \n\nThe SQL query is filtering out the attendance values where the opponent is 'new england patriots'. It is not directly related to the date of the game. Therefore, we cannot determine the attendance for the game that took place on September 13, 1976 based on the provided sub-table. \n\n0"}
+{"table_name": "2-18842944-2.html.csv", "label": "the smallest attendance be not at the game against the new england patriot", "pred": "To verify the claim, we need to check if the smallest attendance in the sub-table (66875) is not at the game against the New England Patriots. \n\nTo do this, we need to find the attendance for the game against the New England Patriots. However, the sub-table provided does not contain information about which game corresponds to the attendance of 66875. \n\nTherefore, we cannot determine if the smallest attendance is not at the game against the New England Patriots based on the information provided.\n\n0"}
+{"table_name": "2-18842944-2.html.csv", "label": "the attendance in week 12 be higher than the attendance in week 13", "pred": "To verify the claim, we need to compare the attendance in week 12 with the attendance in week 13 from the sub-table provided. However, the sub-table does not contain any attendance information for week 12 or week 13. Therefore, we cannot determine if the claim is true or false based on the given data.\n\n0"}
+{"table_name": "2-18842944-2.html.csv", "label": "the buffalo bill lose more game than they win", "pred": "1"}
+{"table_name": "2-18842944-2.html.csv", "label": "there be 2 game that take place in the month of november december", "pred": "0"}
+{"table_name": "2-18842944-2.html.csv", "label": "the largest attendance of 44505 be at the game that take place on september 13 , 1976", "pred": "1"}
+{"table_name": "2-18842944-2.html.csv", "label": "the smallest attendance be not at the game against the new england patriot but against baltimore colt", "pred": "1"}

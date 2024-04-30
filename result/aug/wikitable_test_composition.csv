@@ -1,0 +1,1084 @@
+composition,table_id
+"1. Name: Names are listed in the format ""First Name Middle Name Last Name""
+2. Title: Titles include ""Ambassador"", ""Plenipotentiary"", and ""Ambassador Extraordinary and Plenipotentiary""
+3. Date_c_from: Dates are listed in the format ""YYYY-MM-DD""
+4. Date_until: Dates are listed in different formats, including ""YYYY"" and ""DD Month YYYY""
+5. Russian_state: States include ""Russian Empire"" and ""Soviet Union""
+6. Austrian_state: States include ""Austria-Hungary"", ""Federal State of Austria"", and ""Republic of Austria""",csv/203-csv/840.tsv
+"1. Rank: Numbers indicating the position of the swimmer in the race
+2. Lane: Numbers indicating the lane in which the swimmer competed
+3. Name: Full names of the swimmers
+4. Nationality: Country names of the swimmers
+5. Time: Time taken by the swimmer to complete the race
+6. Notes: Additional information such as qualification status (e.g., 'Q' for qualified)",csv/204-csv/65.tsv
+"1. Pos: Position of the driver in the race is listed.
+2. No: Number assigned to the driver.
+3. Driver: Name of the driver participating in the race.
+4. Constructor: The team the driver is representing.
+5. Laps: Number of laps completed by the driver.
+6. Time_Retired: Time or reason for retirement from the race.
+7. Grid: Starting grid position of the driver.
+8. Points: Points earned by the driver in the race.",csv/203-csv/275.tsv
+"1. Date: Dates are in the format YYYY-MM-DD
+2. Competition: Names of cycling competitions are listed with the season and World Cup designation
+3. Location: Locations are listed as city names
+4. Country: Countries are listed in full name format
+5. Event: Types of cycling events are listed (e.g., Sprint, Team sprint)
+6. Placing: Placings are listed as numerical values
+7. Rider: Names of cyclists are listed with first and last name
+8. Nationality: Nationalities are listed with three-letter country codes",csv/204-csv/272.tsv
+"1. Episode: Titles of TV show episodes are listed within double quotation marks
+2. Air_date: Dates are listed in the format YYYY-MM-DD
+3. Rating: Ratings are listed with one decimal place
+4. Share: Share values are listed as whole numbers
+5. c_18_49_Rating_Share: Ratings and share values for a specific age group are listed in the format X.X/X
+6. Viewers_m: Number of viewers are listed with two decimal places
+7. Rank_night: Nightly rank is listed with a hashtag (#) followed by the rank number
+8. Rank_timeslot: Timeslot rank is listed with a hashtag (#) followed by the rank number
+9. Rank_overall: Overall rank is listed with a hashtag (#) followed by the rank number, some rows may be empty",csv/203-csv/328.tsv
+"1. Date: Dates are listed in day-month format
+2. Venue: Venues are listed with location in parentheses
+3. Opponents: Names of opposing teams are listed
+4. Score: Scores are listed in a X-X format
+5. Competition: Names of competitions are listed with additional information in parentheses (e.g., Group B, Semifinal)",csv/204-csv/264.tsv
+"1. No_in_nseason: Sequential numbers indicating the episode's position within a season
+2. No_in_nseries: Sequential numbers indicating the episode's position within the series
+3. Title: The title of each episode enclosed in double quotation marks
+4. Canadian_airdate: Dates in the format YYYY-MM-DD indicating the Canadian airdate of the episode
+5. US_airdate: Dates in the format YYYY-MM-DD indicating the US airdate of the episode
+6. Production_code: Numbers indicating the production code of each episode",csv/204-csv/674.tsv
+"1. Player: Names of players in the United States men's national soccer team are listed
+2. Goals: Number of goals scored by each player is listed
+3. Caps: Number of caps (international appearances) for each player is listed
+4. Career: The years of each player's career with the national team are listed",csv/204-csv/410.tsv
+"1. Pos: Position of the driver in the race is listed numerically
+2. No: Driver number is listed
+3. Driver: Names of drivers are listed
+4. Team: Names of teams are listed with some additional information (e.g., 'Team Barracuda – BHA')
+5. Engine: Type of engine is listed (e.g., Honda, Chevrolet)
+6. Laps: Number of laps completed by the driver is listed
+7. Time_Retired: Time retired by the driver is listed with some additional information (e.g., '+ 39.6868')
+8. Grid: Starting grid position of the driver is listed
+9. Laps_Led: Number of laps led by the driver is listed
+10. Points: Points earned by the driver in the race is listed",csv/204-csv/366.tsv
+"1. Date: Dates are listed in a month-day format
+2. Venue: Locations of the matches are listed
+3. Opponent: Names of the opposing teams are listed
+4. Result: Outcomes of the matches are listed (e.g., Lost, Drawn)
+5. Scoreline: Scores of the matches are listed in a X-X format
+6. China_scorers: Names of Chinese players who scored goals are listed with minute of the goal scored",csv/204-csv/224.tsv
+"1. Represent: Regions or republics within Russia are listed
+2. Candidate: Names of the candidates are listed
+3. in_Russian: Names of the candidates written in Russian are listed
+4. Age: Ages of the candidates are listed
+5. Height: Heights of the candidates are listed in meters and feet
+6. Hometown: Hometowns of the candidates are listed",csv/203-csv/825.tsv
+"1. Nation: Countries are listed with some additional information (e.g., 'Netherlands', 'United Kingdom', 'Albania')
+2. Date: Dates are listed in the format YYYY-MM-DD (e.g., '2001-04-29', '2007-04-29')
+3. Quantity: Number of vessels are listed as integers (e.g., '2', '4')
+4. Type: Vessel types are listed with some additional information (e.g., '4207')
+5. Notes: Information about the vessels and their operations are provided in the notes section",csv/204-csv/390.tsv
+"1. isn: Unique identification number for each Russian detainee
+2. name: Full name of the Russian detainee
+3. arrival_ndate: Date of arrival at Guantanamo Bay in the format YYYY-MM-DD
+4. departure_ndate: Date of departure from Guantanamo Bay in the format YYYY-MM-DD
+5. notes: Additional information about the detainee, including repatriation details and allegations of involvement in terrorism",csv/203-csv/232.tsv
+"1. School_Name: Names of schools are listed with additional information such as 'Lutheran School', 'Seventh-Day Adventist School', and 'Elementary School'
+2. Low_grade: Grades are listed as either 'PK' (Pre-Kindergarten) or numerical values
+3. High_grade: Grades are listed as numerical values
+4. Students_K_12: Number of students in the range from tens to hundreds
+5. FTE_Teachers: Number of Full-Time Equivalent teachers with decimal values
+6. Student_teacher_ratio: Ratio of students to teachers with decimal values",csv/203-csv/845.tsv
+"1. NULL_COL: Contains numerical values with no apparent pattern or commonality
+2. Chronological_nNo: Contains numerical values representing chronological order
+3. Date_nNew_style: Dates are listed in the format YYYY-MM-DD
+4. Water_level_ncm: Water levels are listed in numerical values with the unit cm
+5. Peak_hour: Contains information about the peak hour of the flood, listed in different formats (e.g., 'daytime', '9:10')",csv/203-csv/261.tsv
+"1. District: Names of schools are listed with some additional information (e.g., school type, grade levels)
+2. Location: Locations are listed with the city and state information
+3. Communities_served: Information about the communities served by each school is provided, along with any additional application details.",csv/200-csv/8.tsv
+"1. Cellulose_ethers: Names of cellulose ethers are listed with some additional information (e.g., ethyl hydroxyethyl cellulose, ethylcellulose, hydroxyethyl methyl cellulose)
+2. Reagent: The column contains information about the reagents used in the production of cellulose ethers
+3. Example: Examples of cellulose ethers are listed in this column
+4. Group_R_=_H_or: Indicates the specific chemical group present in the cellulose ethers (-CH2CH3, -CH2CH2OH, -CH3)
+5. Water_solubility: Describes the solubility of the cellulose ethers in water (water insoluble, cold water soluble)
+6. Application: Provides information about the applications of cellulose ethers (e.g., thermoplastic used in coatings, inks, binders, production of cellulose films)
+7. E_number: E numbers assigned to the cellulose ethers for identification purposes (e.g., E467, E462)",csv/203-csv/162.tsv
+"1. Position: Numeric values indicating the ranking of the officer within the Royal Household
+2. Officer: Titles of the officers within the Royal Household
+3. current_officers: Names of the current officers holding the respective positions
+4. superseded_by: Titles of the officers who previously held the position but have been superseded
+5. Royal_Household: Titles of other positions within the Royal Household",csv/204-csv/368.tsv
+"1. Atomic_nno: Numbers are listed with no decimal points
+2. Name: Chemical element names are listed
+3. Symbol: Chemical element symbols are listed with no additional characters
+4. Group: Numbers are listed with no decimal points
+5. Period: Numbers are listed with no decimal points
+6. Block: Letters are listed
+7. State_at_nSTP: States of matter are listed
+8. Occurrence: Types of occurrence are listed
+9. Description: Descriptions of the chemical elements are listed",csv/203-csv/599.tsv
+"1. Year: Years are listed as four-digit numbers
+2. Car: Car numbers are listed as two-digit numbers
+3. Start: Start positions are listed as single-digit numbers
+4. Qual: Qualifying speeds are listed with three decimal places
+5. Rank: Ranks are listed as two-digit numbers
+6. Finish: Finishing positions are listed as two-digit numbers
+7. Laps: Number of laps completed are listed as three-digit numbers
+8. Led: Number of laps led are listed as single-digit numbers
+9. Retired: Reasons for retirement are listed as text (e.g., 'Magneto', 'Rod', 'Flagged')",csv/203-csv/647.tsv
+"1. Stadium: Names of football stadiums are listed with additional information such as 'de la', 'Municipal', 'Riviera'
+2. Capacity: Capacity is listed in numeric format with commas separating thousands
+3. City: Names of cities where the stadiums are located
+4. Region: Regions where the cities are located are listed
+5. Home_Team: Names of football teams that call the stadiums their home
+6. Opened: Years when the stadiums were opened are listed in numeric format",csv/204-csv/67.tsv
+"1. Location: Locations are listed with a hyphen followed by a number (e.g., Ignalina-3, Kursk-5, Chernobyl-1)
+2. Reactor_type: Reactor types are listed with a hyphen followed by a number (e.g., RBMK-1500, MKER-1000, RBMK-1000)
+3. Status: Status information includes details about construction, shutdown, or cancellation with associated years (e.g., construction cancelled in 1988, shut down in 1996)
+4. Net_nCapacity_nMWe: Net capacity values are listed with 'nan' for missing data
+5. Gross_nCapacity_nMWe: Gross capacity values are listed with 'nan' for missing data or specific values (e.g., 800)",csv/204-csv/566.tsv
+"1. Rank: Numbers indicating the ranking of the nations in the tournament
+2. Nation: Names of countries participating in the tournament
+3. Gold, Silver, Bronze, Total: Numbers representing the number of medals won by each nation in the tournament",csv/204-csv/594.tsv
+"1. Date_time: Dates and times are listed in a specific format (e.g., day month year @ hour minutes)
+2. Aircraft: Aircraft models are listed with serial numbers
+3. Foe: Enemy aircraft models are listed
+4. Result: Outcomes are described in a similar manner (e.g., driven down out of control)
+5. Location: Locations are listed with a specific format (e.g., city, country)
+6. Notes: Additional information or details are provided, if available",csv/204-csv/830.tsv
+"1. Year: Each entry consists of a range of years indicating a specific time period. 
+2. Name: Each entry is left blank, suggesting that there may be missing information or the data is not applicable for this column.",csv/203-csv/474.tsv
+"1. Week: Numeric values indicating the week number of the game
+2. Date: Dates in the format Month Day
+3. Opponent: Names of opposing teams with additional information (e.g., 'vs.', 'at')
+4. Score: Scores in the format of home team score - away team score
+5. Result: Outcome of the game (e.g., Win, Loss)
+6. Record: Team's overall record in the format Wins-Losses",csv/204-csv/993.tsv
+"1. Round: Numerical values indicating the round number of the race
+2. Date: Dates in the format Month Day
+3. Circuit: Names of racing circuits
+4. Winning_driver_TA2: Names of drivers who won in the TA2 category
+5. Winning_vehicle_TA2: Names of vehicles that won in the TA2 category
+6. Winning_driver_TA1: Names of drivers who won in the TA1 category
+7. Winning_vehicle_TA1: Names of vehicles that won in the TA1 category",csv/204-csv/458.tsv
+"1. Pos: Position of the driver in the race is listed numerically
+2. No: Driver numbers are listed
+3. Driver: Names of drivers are listed
+4. Team: Names of the teams are listed
+5. Laps: Number of laps completed by the driver
+6. Time_Retired: Time taken by the driver to complete the race or indication of retirement
+7. Grid: Starting grid position of the driver
+8. Points: Points earned by the driver in the race",csv/203-csv/659.tsv
+"1. Rank: Numbers indicating the position of the athlete in the race
+2. Pair: Numbers representing the pair of the athlete
+3. Name: Names of the athletes participating in the race
+4. Country: Names of the countries the athletes represent
+5. Time: Timing of the athletes in the race
+6. Time_behind: Time difference behind the winner of the race",csv/204-csv/201.tsv
+"1. Year: Years are listed in four-digit format
+2. Competition: Names of competitions are listed with additional information (e.g., Olympic Games, World Student Games)
+3. Venue: Venues are listed with the city and country
+4. Position: Positions are listed with ordinal numbers (e.g., 2nd, 8th, 12th)
+5. Notes: Additional notes are included, some entries may be blank",csv/203-csv/819.tsv
+"1. Year: Years are listed in the format YYYY
+2. State_Territory_Mens_Division: Names of states or territories are listed with some additional information (e.g., 'Mens Division')
+3. State_Territory_Womens_Division: Names of states or territories are listed with some additional information (e.g., 'Womens Division')
+4. Major_Centres_Division: Names of major centers are listed
+5. Community_Division: Names of communities are listed
+6. Womens_Division: Names of divisions related to women are listed",csv/204-csv/656.tsv
+"1. Outcome: Describes the result of the match (e.g., Winner, Runner-up)
+2. No: Indicates the number of the match
+3. Date: Shows the date of the match
+4. Tournament: Lists the name of the tournament along with the location
+5. Surface: Specifies the type of surface the match was played on
+6. Opponent: Names of the opponent player
+7. Score: Displays the set scores of the match",csv/204-csv/285.tsv
+"1. Contestant: Names of contestants are listed with first and last name
+2. Age: Age of contestants is listed in years
+3. Height: Height of contestants is listed in centimeters and feet/inches
+4. Home_City: Home city of contestants is listed
+5. Rank: Contestants' rank or status is listed with additional information about elimination or quitting episode",csv/204-csv/138.tsv
+"1. Player: Names of players are listed
+2. League, Cup, Europa_nLeague, Total: Numeric values are listed, representing the performance of each player in different categories (e.g., goals scored, assists)",csv/204-csv/744.tsv
+"1. Year: Years are listed in four-digit format
+2. Division: Division numbers are listed
+3. League: Names of soccer leagues are listed (e.g., USISL PDSL, USL PDL)
+4. Regular_Season: Position in the regular season is listed along with the division (e.g., 4th, Central)
+5. Playoffs: Outcome in the playoffs is listed (e.g., Division Finals, Did not qualify)
+6. Open_Cup: Outcome in the Open Cup is listed (e.g., 1st Round, Did not qualify)",csv/204-csv/972.tsv
+"1. Year: Years are listed in a range format (e.g., 1977-1978)
+2. Kit_Manufacturer: Names of kit manufacturers are listed with some additional information (e.g., 'Umbro')
+3. Shirt_Sponsor: Names of shirt sponsors are listed (e.g., 'National Express', 'Gulf Oil')
+4. Back_of_Shirt_Sponsor: Back of shirt sponsors are not listed in the sample data
+5. Short_Sponsor: Short sponsors are not listed in the sample data",csv/203-csv/329.tsv
+"1. Result: Contains the outcome of the match (e.g., Winner, Runner-up)
+2. Date: Dates are listed in the format YYYY-MM-DD
+3. Category: Contains information about the prize money or tournament category
+4. Tournament: Names of the tournament along with the location are listed
+5. Surface: Indicates the type of surface the match was played on
+6. Partnering: Lists the name of the player partnered with
+7. Opponents: Lists the names of the opponents in the match
+8. Score: Displays the set scores in the format X-Y, X-Y, X-Y",csv/203-csv/596.tsv
+"1. Season: Years are listed in the format YYYY/YY
+2. Club: Names of football clubs are listed
+3. Competition: Names of football leagues are listed
+4. Games: Number of games played is listed
+5. Goals: Number of goals scored is listed",csv/203-csv/624.tsv
+"1. Description_Losses: Each row describes a different category of losses during World War II in Poland, such as Direct War Losses, Murdered, and Deaths in other countries.
+2. c_1939_40, c_1940_41, c_1941_42, c_1942_43, c_1943_44, c_1944_45, Total: Each column represents a specific time period or total casualties for each category of losses.",csv/204-csv/149.tsv
+"1. Week: Numbers indicating the week of the game
+2. Date: Dates in the format YYYY-MM-DD
+3. Opponent: Names of the opposing teams with some additional information (e.g., 'at' before the team name)
+4. Result: Results of the game with scores (W for win, L for loss)
+5. Game_site: Locations of the games
+6. NFL_Recap: Additional information or references
+7. Attendance: Numbers indicating the attendance of the game",csv/203-csv/334.tsv
+"1. Year: Years are listed in the format YYYY
+2. Network: Names of networks are listed (e.g., ESPN)
+3. NASCAR_nCountdown: Names of commentators are listed with some additional information (e.g., Allen Bestwick, Rusty Wallace)
+4. Lap_by_lap: Names of commentators are listed (e.g., Jerry Punch)
+5. Color_commentators: Names of color commentators are listed (e.g., Dale Jarrett, Andy Petree)
+6. Pit_reporters: Names of pit reporters are listed (e.g., Dave Burns, Jamie Little)
+7. Ratings: Ratings are listed in the format X.X (X.X cable)
+8. Viewers: Number of viewers are listed in the format X.X million",csv/203-csv/122.tsv
+"1. Common_name: Names of cities are listed in both Hebrew and Arabic
+2. District: Districts are listed by geographical location (e.g., South, Jerusalem)
+3. Population_n2009: Population numbers are listed with commas for thousands separator
+4. Area_nkm²: Area sizes are listed in square kilometers
+5. Mayor: Names of mayors are listed for each city",csv/204-csv/512.tsv
+"1. Region: Names of regions in Ethiopia are listed (e.g., Ben-Gumuz, Tigray, Addis Ababa)
+2. Physician_GP_specialist: Number of physician GP specialists are listed
+3. Physician_Population_Ratio: Ratio of physicians to population is listed in the format 1:X
+4. Health_Officer: Number of health officers are listed
+5. HO_Population_Ratio: Ratio of health officers to population is listed in the format 1:X
+6. All_Nurses: Number of all nurses are listed
+7. Nurse_Population_Ratio: Ratio of all nurses to population is listed in the format 1:X
+8. Mid_wives: Number of midwives are listed
+9. Mid_Wife_Population_Ratio: Ratio of midwives to population is listed in the format 1:X
+10. HEW*: Number of HEWs (Health Extension Workers) are listed
+11. HEW_Population_Ratio: Ratio of HEWs to population is listed in the format 1:X",csv/203-csv/265.tsv
+"1. Year: Years are listed in the format YYYY
+2. Model: Descriptions of the event or theme commemorated on the coin
+3. Denomination: The face value of the coin in krooni
+4. Metal_composition: The composition of the metal used in the coin
+5. Dimensions: The weight and size of the coin in grams and millimeters",csv/204-csv/464.tsv
+"1. Rank: Numbers indicating the position or ranking of the nation in the competition
+2. Nation: Names of countries participating in the competition
+3. Gold: Number of gold medals won by each nation
+4. Silver: Number of silver medals won by each nation
+5. Bronze: Number of bronze medals won by each nation
+6. Total: Total number of medals (gold, silver, bronze) won by each nation",csv/204-csv/977.tsv
+"1. Pos: Position of the rider in the race is listed as a numerical value
+2. Rider: Names of the riders are listed with first and last names
+3. Manufacturer: Names of the manufacturer of the motorcycle are listed
+4. Time_Retired: Time at which the rider retired from the race is listed with a format of either numerical value or 'Retirement'
+5. Points: Points earned by the rider in the race are listed as numerical values or 'nan'",csv/204-csv/892.tsv
+"1. District: States and district numbers are listed (e.g., Maryland 2, Maryland 6)
+2. Incumbent: Names of current officeholders are listed
+3. Party: Political party affiliations are listed
+4. First_elected: Year of initial election is listed
+5. Result: Outcome of the election is described (e.g., Retired to run for Governor, Re-elected)
+6. Candidates: Names of candidates and their respective percentages of votes are listed",csv/203-csv/423.tsv
+"1. Rank: Numbers indicating the position of the athlete in the race
+2. Heat: Numbers indicating the heat in which the athlete competed
+3. Name: Names of the athletes listed in a specific format (last name, first name)
+4. Nationality: Country names of the athletes
+5. Time: Timing of the athletes in seconds
+6. Notes: Additional information such as personal best (PB), season best (SB), or qualification (Q)",csv/204-csv/259.tsv
+"1. Year: Years are listed in four-digit format
+2. Song: Song titles are enclosed in double quotation marks
+3. Album: Album titles are listed with possible additional information (e.g., 'The Way I Am')
+4. Position: Positions are listed as numerical values
+5. Chart: Chart names are listed (e.g., 'Billboard Hot 100')",csv/203-csv/124.tsv
+"1. Film: The column contains information about different films, but the names of the films are missing. The format seems to be a range of years indicating the period the film was produced.",csv/200-csv/24.tsv
+"1. Wrestler: Names of wrestlers who held the ICW World Heavyweight Championship are listed
+2. Reigns: Number of reigns for each wrestler is listed
+3. Date: Dates when the wrestler won the championship are listed
+4. Place: Locations where the championship was won are listed
+5. Notes: Additional information about the championship win is provided, if available",csv/203-csv/841.tsv
+"1. Outcome: Each row indicates whether the player was the winner of the tournament.
+2. No: The number of the tournament won by the player is listed.
+3. Date: The date when the tournament took place is provided in the format YYYY-MM-DD.
+4. Tournament: The location of the tournament is listed along with the country.
+5. Surface: The type of surface on which the tournament was played is mentioned.
+6. Partner: The name of the player's partner in the doubles match is given.
+7. Opponents: The names of the opponents in the final match are listed.
+8. Score: The final score of the match is provided in a set format.",csv/204-csv/331.tsv
+"1. Season: Numeric values indicating the season number
+2. Episodes: Numeric values indicating the number of episodes in each season
+3. Season_Premiere: Dates in the format YYYY-MM-DD indicating the premiere date of each season
+4. Season_Finale: Dates in the format YYYY-MM-DD indicating the finale date of each season",csv/203-csv/714.tsv
+"1. Rank: The rank of the athletes is listed as a numerical value with some additional spacing
+2. Athlete: The names of the athletes are listed with the first name followed by the last name
+3. Nationality: The nationality of the athletes is listed
+4. c_215, c_220, c_224, c_227: These columns contain some data denoted by 'o' with additional spacing
+5. Result: The result of the athletes is listed as a numerical value
+6. Notes: Additional notes or qualifiers for the athletes are listed with some spacing",csv/204-csv/844.tsv
+"1. Clerk: Names of individuals who served as law clerks at the Supreme Court of the United States (Seat 6) are listed
+2. Started: Years in which the law clerks started their clerkship
+3. Finished: Years in which the law clerks finished their clerkship
+4. School_year: Names of schools attended by the law clerks along with the year of attendance
+5. Previous_clerkship: Information about any previous clerkship experience, if applicable",csv/204-csv/619.tsv
+"1. Publication: Names of music publications are listed (e.g., Rock de Lux, NME, Vibe)
+2. Country: Countries where the publications are based are listed (e.g., Spain, United Kingdom, United States)
+3. Accolade: Descriptions of the accolades given to albums are listed (e.g., The 100 Best Albums of the 1970s, All Times Top 100 Albums + Top 50 by Decade, 51 Albums representing a Generation, a Sound and a Movement)
+4. Year: Years in which the accolades were given are listed (e.g., 1988, 1993, 2004)
+5. Rank: Rankings of the albums within the accolades are listed (e.g., 39, 145, nan)",csv/203-csv/821.tsv
+"1. Ship: Names of ships are listed with some additional information (e.g., 'Wexford', 'Henry B. Smith', 'Argus')
+2. Type_of_Vessel: Types of vessels are listed with some additional information (e.g., 'Steamer')
+3. Lake: Names of lakes are listed with some additional information (e.g., 'Lake Huron', 'Lake Superior')
+4. Location: Locations are listed with some additional information (e.g., 'north of Grand Bend, Ontario', '25 miles off Kincardine, Ontario')
+5. Lives_lost: Information about lives lost is listed with some additional information (e.g., 'all hands', '25 lost')",csv/204-csv/797.tsv
+"1. Builder: Names of companies that built the locomotives are listed (e.g., MLW, ALCO)
+2. Works_numbers: Numbers of the works where the locomotives were built are listed in ranges
+3. Dates: Years when the locomotives were built are listed
+4. CN_numbers: Canadian National numbers assigned to the locomotives are listed in ranges
+5. GT_numbers: GT (Grand Trunk) numbers assigned to the locomotives are listed in ranges
+6. Notes: Additional information about the locomotives is provided, such as where they were built",csv/204-csv/901.tsv
+"1. Player: Names of players are listed
+2. Friendlies: Number of goals scored in friendly matches are listed
+3. FIFA_Confederations_Cup: Number of goals scored in FIFA Confederations Cup matches are listed
+4. FIFA_World_Cup_Qual: Number of goals scored in FIFA World Cup Qualification matches are listed
+5. Total_Goals: Total number of goals scored by the player in all matches are listed",csv/204-csv/241.tsv
+"1. Place: Numeric values indicating the player's final position in the tournament
+2. Player: Names of the players participating in the tournament
+3. Country: Country of origin for each player
+4. Score: Scores for each player in the format of strokes for each round
+5. To_par: The score relative to par for each player
+6. Money_$: Amount of money earned by each player in the tournament",csv/204-csv/247.tsv
+"1. Alpha_numeric_Code: Consists of a combination of alphabets and numbers, possibly indicating a specific code for each station
+2. Station_name_nEnglish: Station names written in English
+3. Station_name_nChinese: Station names written in Chinese
+4. Station_name_nTamil: Station names written in Tamil
+5. Opening: Dates indicating when the station was opened, some entries may have ""TBA"" indicating to be announced",csv/202-csv/216.tsv
+"1. Contestant: Each row includes the name of a contestant followed by their age and occupation in parentheses
+2. Original_Tribe: Names of tribes are listed (e.g., Pelicans, Barracudas)
+3. Switched_Tribe: Names of tribes are listed for contestants who switched tribes
+4. Merged_Tribe: Name of the merged tribe is listed for contestants who reached that stage
+5. Finish: Includes the placement and details of elimination (e.g., Voted Out, Jury Member, Day number)
+6. Total_Votes: Number of total votes received by the contestant",csv/204-csv/827.tsv
+"1. Rank: Numbers indicating the ranking of the nations in the equestrian event at the 1960 Summer Olympics
+2. Nation: Names of the countries participating in the event, with their respective country codes in parentheses
+3. Gold: Number of gold medals won by each nation
+4. Silver: Number of silver medals won by each nation
+5. Bronze: Number of bronze medals won by each nation
+6. Total: Total number of medals (gold, silver, bronze) won by each nation",csv/203-csv/351.tsv
+"1. Rank: Numbers indicating the position of the nation in the ranking
+2. Nation: Names of countries followed by their respective country codes in parentheses
+3. Gold, Silver, Bronze, Total: Numbers representing the count of medals won in each category",csv/204-csv/216.tsv
+"1. Comet: Names of periodic comets are listed with a combination of numbers and names (e.g., 168P/Hergenrother)
+2. Discoverers_or_namesakes: Discoverers or namesakes of the comets are listed with some additional information (e.g., Hergenrother)
+3. Orbital_period_years: Orbital periods of the comets are listed in years with two decimal places (e.g., 6.89)
+4. Spacecraft_encounters: Information about spacecraft encounters is not provided for any of the comets",csv/202-csv/81.tsv
+"1. Season: Years are listed in a specific format (e.g., 'YYYY-YY')
+2. Competition: Names of football competitions are listed with some additional information (e.g., 'UEFA Europa League')
+3. Round: Rounds are listed with a specific format (e.g., '2QR', '1R')
+4. Club: Names of football clubs are listed
+5. Home: Scores for the home team are listed
+6. Away: Scores for the away team are listed",csv/203-csv/776.tsv
+"1. Name: Descriptive names of the works by Eero Saarinen are listed
+2. City: Cities where the works are located are listed
+3. State_Country: States or countries where the works are located are listed
+4. Designed: Years when the works were designed are listed
+5. Completed: Years when the works were completed are listed
+6. Other_Information: Additional information about the works is provided, such as collaborations or other details",csv/204-csv/545.tsv
+"1. Event: Alpine skiing events are listed (e.g., Super-G, Giant slalom, Slalom)
+2. Class: Classes for the athletes are listed with some additional details (e.g., LW12, LW3,5/7,9, LW2)
+3. Gold, Silver, Bronze: Names of athletes who won gold, silver, and bronze medals are listed along with their respective countries (e.g., Christopher Devlin-Young - United States (USA), Gerd Schoenfelder - Germany (GER), Michael Milton - Australia (AUS))",csv/203-csv/792.tsv
+"1. Season: Years are listed in a specific format (e.g., YYYY-YY)
+2. League_nPos: Position in the league is listed as a number
+3. League_nCompetition: Name of the league season is listed with the year
+4. League_nTop_scorer: Names of top scorers are listed with the number of goals in parentheses
+5. Danish_Cup: Status in the Danish Cup is listed (e.g., Semi-final, Winner)
+6. Europe: Performance in European competitions is listed with round reached
+7. Others: Additional achievements or information is listed",csv/203-csv/307.tsv
+"1. Rank: Some values are missing in this column.
+2. Pair: Each value represents a pair number.
+3. Country: Names of countries are listed.
+4. Athletes: Names of athletes are listed with '\n' separating each name.
+5. Time: Time values are in the format 'mm:ss.SS'.
+6. Deficit: Some values are missing in this column.",csv/204-csv/934.tsv
+"1. Date: Dates are listed in the format YYYY-MM-DD
+2. Location: Locations are listed with the city and country
+3. Opponent: Names of the opposing teams are listed
+4. Result: Results are listed in the format X-X
+5. Competition: Competition names are abbreviated with a single letter (e.g., F for Friendly)",csv/204-csv/904.tsv
+"1. Season: Numeric values indicating the season number of the show
+2. Episodes: Numeric values indicating the number of episodes in each season
+3. Time_slot_EST: Descriptive information about the time slot for each episode
+4. Original_airing_nSeason_premiere: Dates indicating the original airing date of the season premiere
+5. Original_airing_nSeason_finale: Dates indicating the original airing date of the season finale
+6. Original_airing_nTV_season: Range of years indicating the TV season
+7. Rank: Numeric values with a '#' symbol indicating the rank of the show
+8. Viewers_nin_millions: Numeric values indicating the number of viewers in millions",csv/203-csv/867.tsv
+"1. Year: Years are listed in four-digit format
+2. Record: Records are listed in a format of wins-losses
+3. Finish: Finish positions are listed as ordinal numbers (e.g., 1st, 4th, 6th)
+4. Manager: Names of managers are listed with first and last names
+5. Playoffs: Information about playoffs is listed, including whether the team made it and the outcome (e.g., Lost League Finals)",csv/203-csv/822.tsv
+"1. Date: Dates are listed in the format YYYY-MM-DD
+2. Tournament: Names of golf tournaments are listed with some additional information (e.g., 's open, classic)
+3. Winning_score: Winning scores are listed in the format -XX (XX-XX-XX-XX=XXX)
+4. Margin_of_victory: Margin of victory is listed with additional information (e.g., 2 strokes, playoff)
+5. Runners_up: Names of runners-up are listed with commas separating multiple names",csv/203-csv/278.tsv
+"1. Aircraft: Names of aircraft are listed with additional information such as model numbers (e.g., Aero Commander 500, Beechcraft Super King Air 350)
+2. Origin: Countries of origin are listed for each aircraft (e.g., USA, Italy)
+3. Type: Descriptions of the type of aircraft are provided (e.g., Light utility transport, Light transport)
+4. In_service: Number of aircraft currently in service is listed (e.g., 0, 1)
+5. Notes: Additional notes about the aircraft, including service history and years in operation, are provided.",csv/203-csv/103.tsv
+"1. Rnd: Numbers indicating the round of the championship
+2. Circuit: Names of racing circuits where the championship took place
+3. GTP_Winning_Team_nGTP_Winning_Drivers: Names of winning team and drivers in the GTP category
+4. GTO_Winning_Team_nGTO_Winning_Drivers: Names of winning team and drivers in the GTO category
+5. GTU_Winning_Team_nGTU_Winning_Drivers: Names of winning team and drivers in the GTU category
+6. Results: Indicates the results of the race for each round",csv/203-csv/101.tsv
+"1. Date: Dates are listed in a day-month format
+2. NULL_COL: Some entries have a three-letter code
+3. Rank: Some entries have a two-letter code
+4. Tournament_name: Names of snooker tournaments are listed with some additional information (e.g., 'Classic', 'Open')
+5. Venue: Names of venues where the tournaments took place
+6. City: Cities where the tournaments were held
+7. Winner: Names of the winners of the tournaments
+8. Runner_up: Names of the runners-up in the tournaments
+9. Score: Scores of the matches in a X-X format",csv/203-csv/140.tsv
+"1. Year: Years are listed in four-digit format
+2. Single: Titles of singles are enclosed in double quotation marks
+3. Peak_chart_positions_US_Country: Peak chart positions in the US Country chart are listed
+4. Peak_chart_positions_CAN_Country: Peak chart positions in the Canadian Country chart are listed
+5. Album: Information about albums is provided, with some entries indicating 'singles only' or 'single only'",csv/204-csv/919.tsv
+"1. Association: Names of countries or regions are listed
+2. Joining_year: Years are listed for when the association joined
+3. Mens_team: Names of men's national teams or clubs are listed
+4. Womens_team: Names of women's national teams or clubs are listed
+5. League: Names of football leagues are listed with some additional information (e.g., 'Championship', 'League')",csv/203-csv/495.tsv
+"1. Year: Years are listed in four-digit format (e.g., 1976)
+2. Designers: Designers are listed with additional information such as the brand or gender they designed for (e.g., Female: Kenzo Takada of Jungle Jap)
+3. Brief_description: Descriptions of the clothing items are listed with materials and accessories included (e.g., Dress, pieced together knit & jersey fabrics)
+4. Selected_by_: Individuals who selected the dress of the year are listed (e.g., Helena Matheopoulos)
+5. Associated_publication: Publications associated with the dress of the year are listed (e.g., The Daily Express)",csv/203-csv/205.tsv
+"1. School: Names of high schools are listed with some additional information (e.g., 'High School')
+2. c_2007, c_2008, c_2009, c_2010, c_2011: The columns represent the scores or values for each respective year. The values are numerical.",csv/204-csv/989.tsv
+"1. President: Names of the Presidents of the United States are listed
+2. Became_Oldest_Living_President: Dates are listed in the format Month Day, Year
+3. Ceased_to_Be_Oldest_Living_President: Dates are listed in the format Month Day, Year
+4. Age_at_Start_Date: Age is listed in the format years, days
+5. Age_at_End_Date: Age is listed in the format years, days
+6. Duration_Years_Days: Duration is listed in the format years, days
+7. Duration_Days: Duration is listed in days",csv/203-csv/260.tsv
+"1. Year: Years are listed in four-digit format
+2. Winner: Names of horses are listed
+3. Age: Age of the horse is listed
+4. Jockey: Names of jockeys are listed
+5. Trainer: Names of trainers are listed
+6. Owner: Names of horse owners are listed
+7. Distance_nMiles: Distance is listed in a specific format (e.g., 1-1/8)
+8. Time: Time is listed in minutes and seconds format
+9. Purse: Purse amount is listed with dollar sign and commas for thousands separator
+10. Gr: Grade of the race is listed with Roman numerals",csv/204-csv/502.tsv
+"1. No_in_nseries: Numbers indicating the episode's position within a series
+2. No_in_nseason: Numbers indicating the episode's position within a season
+3. Title: Episode titles enclosed in quotation marks
+4. Directed_by: Names of directors
+5. Written_by: Names of writers, with additional information on teleplay or story
+6. Original_air_date: Dates in the format YYYY-MM-DD
+7. Prod_ncode: Production codes for the episodes",csv/203-csv/315.tsv
+"1. Rank: Numbers indicating the ranking of countries in the film industry
+2. Country: Names of countries involved in the film industry
+3. Box_Office: Amount of box office revenue in billion dollars
+4. Year: Year in which the data was recorded
+5. Box_office_nc_from_national_films: Percentage of box office revenue generated from national films, with the year mentioned in parentheses",csv/203-csv/448.tsv
+"1. Boat: Descriptive names of the type of boat used in rowing (e.g., Lightweight coxless pairs, Single sculls)
+2. Time: Recorded in minutes and seconds format (e.g., 6:26.21)
+3. Crew: Names of the rowers in the crew listed with some additional information (e.g., full names separated by '\n')
+4. Nation: Country names are listed for the crew (e.g., Ireland, Denmark, New Zealand)
+5. Date: Years are listed for the record (e.g., 1994, 1999, 2009)
+6. Location: Places where the records were achieved are listed (e.g., Paris, France, Lucerne, Switzerland, Poznań, Poland)",csv/203-csv/360.tsv
+"1. Model: The model names include the brand, model, and some additional information such as engine type and transmission.
+2. Fuel_Type: The fuel type is specified for each model, either diesel or petrol.
+3. mpg_US_gallons: The fuel economy rating in miles per gallon (mpg) is provided for each model.
+4. L_100 km: The fuel economy rating in liters per 100 kilometers (L/100km) is provided for each model.
+5. NZ_Rating_nStars: The New Zealand fuel economy rating in stars is provided for each model.",csv/204-csv/815.tsv
+"1. Rank: Numbers indicating the player's ranking in terms of goals scored
+2. Player: Names of the players
+3. Nation: Three-letter abbreviations indicating the player's nationality
+4. Club: Names of the clubs the players belong to
+5. Goals: Number of goals scored by the players",csv/204-csv/705.tsv
+"1. Name_of_place: Names of places are listed with some additional information (e.g., 'ville, berg')
+2. Number_of_counties: Number of counties is listed as a numerical value
+3. Principal_county: Names of counties are listed with some additional information (e.g., 'County')
+4. Lower_zip_code: Lower zip codes are listed as numerical values
+5. Upper_zip_code: Upper zip codes are listed as numerical values or left blank if not applicable",csv/203-csv/443.tsv
+"1. Name: Names of astronomical objects are listed with alphanumeric characters and sometimes additional information (e.g., UGCA, NGC)
+2. Type: Classification types are listed with abbreviations (e.g., Im, Irr, SA(s)d)
+3. RA_J2000: Right ascension coordinates are listed in the format of hours, minutes, and seconds
+4. Dec_J2000: Declination coordinates are listed in the format of degrees, minutes, and seconds
+5. Redshift_km_s: Redshift values are listed with units in kilometers per second
+6. Apparent_Magnitude: Apparent magnitude values are listed with decimal numbers",csv/204-csv/189.tsv
+"1. Name: Names of hospitals are listed with additional information (e.g., 'Medical Center, General Hospital)
+2. City: Cities where the hospitals are located are listed
+3. Hospital_beds: Number of hospital beds are listed
+4. Operating_rooms: Number of operating rooms are listed
+5. Total: Total number of beds and operating rooms combined are listed
+6. Trauma_designation: Trauma designation status is indicated
+7. Affiliation: Hospital affiliation is indicated
+8. Notes: Additional notes or information are provided",csv/203-csv/319.tsv
+"1. Date: Dates are in the format YYYY-MM-DD
+2. Opponent: Names of opposing teams are listed
+3. Venue: Locations are indicated with a single letter (e.g., A for Away)
+4. Result: Scores are listed in the format Home Team Score - Away Team Score
+5. Attendance: Number of attendees are listed
+6. Scorers: Names of players who scored goals are listed",csv/204-csv/411.tsv
+"1. Representative: Names of former members of the United States House of Representatives are listed with middle initials or names included
+2. Years: Range of years served in office are listed with some individuals having multiple non-consecutive terms
+3. State: States represented by the former members are listed
+4. Party: Political party affiliation of the former members is listed
+5. Lifespan: Birth and death years of the former members are listed",csv/204-csv/677.tsv
+"1. District: Numbers indicating the district number
+2. Incumbent: Names of current officeholders
+3. c_2008_Status: Status of the incumbent in 2008 election (e.g., Re-election, Open)
+4. Democratic: Names of Democratic candidates
+5. Republican: Names of Republican candidates",csv/203-csv/432.tsv
+"1. num: Numbers are listed with no additional information
+2. Weekend_End_Date: Dates are listed in the format YYYY-MM-DD
+3. Film: Names of films are listed with no additional information
+4. Box_Office: Box office numbers are listed with currency symbol (£) and commas for thousands separator",csv/204-csv/377.tsv
+"1. Rank: Numbers indicating the position of the athlete in the competition
+2. Name: Full names of the athletes participating in the competition
+3. Nationality: Three-letter country codes representing the nationality of the athletes
+4. c_1st_m: Length values in meters for the first jump
+5. c_2nd_m: Length values in meters for the second jump
+6. Points: Total points earned by the athlete in the competition",csv/203-csv/503.tsv
+"1. Year: Years are listed in four-digit format
+2. Award: Awards are listed with the category of the award (e.g., Best Actress, Best Supporting Actress)
+3. Film: Film titles are listed with some additional information (e.g., '!', 's')
+4. Result: Results are listed as either 'Nominated' or potentially other outcomes (e.g., 'Won', 'Lost')",csv/200-csv/36.tsv
+"1. Year: Years are listed in the format YYYY
+2. Injuries_US_$000: Number of injuries are listed in thousands with the unit $000
+3. Deaths_age_<15: Number of deaths for age under 15 are listed
+4. CPSC_toy_safety_funding_nUS$_Millions: Funding for toy safety is listed in millions with the unit nUS$
+5. Toy_sales_nUS_$_Billions: Toy sales are listed in billions with the unit nUS$",csv/203-csv/66.tsv
+"1. May_20_21_n118: Dates of solar eclipses are listed in the format Month Day, Year
+2. March_9_n120: Dates of solar eclipses are listed in the format Month Day, Year
+3. December_25_26_n122: Dates of solar eclipses are listed in the format Month Day, Year
+4. October_13_14_n124: Dates of solar eclipses are listed in the format Month Day, Year
+5. August_1_2_n126: Dates of solar eclipses are listed in the format Month Day, Year
+6. All rows in the second row contain numerical values
+7. All rows in the third row contain numerical values",csv/204-csv/182.tsv
+"1. Time: Time values are listed in seconds with one decimal place
+2. Wind: Wind values are listed with a negative sign and one decimal place
+3. Auto: Auto values are listed with two decimal places
+4. Athlete: Names of athletes are listed with first and last name
+5. Nationality: Nationalities are listed
+6. Location_of_race: Locations of races are listed with city and country
+7. Date: Dates are listed in the format YYYY-MM-DD",csv/203-csv/433.tsv
+"1. Team: Names of defunct NBA teams are listed with additional information (e.g., Anderson Packers, BAA Buffalo, Cleveland Rebels)
+2. City: Cities where the defunct NBA teams were based are listed (e.g., Anderson, Indiana, Buffalo, New York, Cleveland, Ohio)
+3. Years_active: The years during which the teams were active are listed in a range format (e.g., 1949-1950, Never Played, 1946-1947)
+4. Seasons_played: The number of seasons played by each team is listed (e.g., 1, 0, 1)
+5. Win-loss_record: The win-loss record of each team is listed in a specific format (e.g., 37-27, 0-0, 30-30)
+6. Winpercent: The win percentage of each team is listed (e.g., .578, N/A, .500)
+7. Playoffs_appearances: The number of playoff appearances made by each team is listed (e.g., 1, 0, 1)",csv/204-csv/773.tsv
+"1. Rank: Numbers indicating the position of the nation in the competition
+2. Nation: Names of countries participating in the Asian Winter Games
+3. Gold: Number of gold medals won by each nation
+4. Silver: Number of silver medals won by each nation
+5. Bronze: Number of bronze medals won by each nation
+6. Total: Total number of medals (gold, silver, bronze) won by each nation",csv/204-csv/682.tsv
+"1. Rank: Numbers indicating the position of the nation in the medal tally
+2. Nation: Names of countries participating in the swimming event
+3. Gold: Number of gold medals won by each nation
+4. Silver: Number of silver medals won by each nation
+5. Bronze: Number of bronze medals won by each nation
+6. Total: Total number of medals won by each nation",csv/204-csv/382.tsv
+"1. Name: Names of players are listed
+2. League, FA_Cup, League_Cup, JP_Trophy, Total: Numeric data is listed for each player in these columns",csv/204-csv/925.tsv
+"1. Series: Format is 'BB' followed by a number indicating the season of Big Brother (UK)
+2. Name: Names of the housemates are listed with first and last name
+3. Age: Age of the housemates is listed
+4. Hometown: Hometown of the housemates is listed
+5. Occupation: Occupation of the housemates is listed
+6. Status: Status of the housemates in the show is listed with their final position or outcome",csv/204-csv/444.tsv
+"1. Political_lieutenant: Names of Quebec lieutenants are listed with additional information such as their full names.
+2. District_nArea: Districts and areas in Quebec are listed along with additional information in parentheses.
+3. Took_Office: Years when the lieutenants took office are listed.
+4. Left_Office: Years when the lieutenants left office are listed.
+5. Party_leader: Names of party leaders associated with each lieutenant are listed.",csv/203-csv/831.tsv
+"1. Date: Dates are in the format YYYY-MM-DD
+2. Opponents: Names of opposing teams are listed
+3. Venue: Indicates whether the match was played at home (H) or away (A)
+4. Result: Scores are listed in the format Home Team Score - Away Team Score
+5. Scorers: Names of players who scored goals are listed
+6. Attendance: Number of spectators in attendance is listed with comma separators",csv/204-csv/857.tsv
+"1. Heat: Numeric values indicating the heat number
+2. Rank: Numeric values indicating the rank of the athlete
+3. Name: Names of athletes listed with country code in parentheses
+4. Result: Timing results listed in a specific format
+5. Notes: Additional information such as qualifiers or personal bests indicated with abbreviations",csv/203-csv/693.tsv
+"1. Name: Names include titles and full names with some additional information (e.g., Major General, Dr, Engr.)
+2. Term_Started: Dates are listed in the format YYYY-MM-DD
+3. Term_Ended: Dates are listed with the year only
+4. Alma_Mater: Names of universities or institutions are listed with some additional information (e.g., Pakistan Army Corps of Electrical and Mechanical Engineers, Warsaw University of Technology, University of Leeds)
+5. Fields: Fields of study are listed (e.g., Electrical Engineering, Aeronautical Engineering, Mechanical Engineering)
+6. Educational_Background: Degrees are listed with some additional information (e.g., B.S., Ph.D., Bachelor of Science (B.S.))",csv/204-csv/720.tsv
+"1. Date: Dates are in the format YYYY-MM-DD
+2. Opponent: Names of opposing teams are listed
+3. Venue: Stadium names are listed
+4. Result: Scores are listed in the format Home Team Score - Away Team Score
+5. Attendance: Number of attendees are listed
+6. Scorers: Names of players who scored goals are listed, separated by commas",csv/203-csv/143.tsv
+"1. Year: Years are listed in four-digit format
+2. Division: Division numbers are listed
+3. League: Names of leagues are listed
+4. Reg_Season: Position in the regular season is listed with region
+5. Playoffs: Qualification status for playoffs is indicated",csv/203-csv/428.tsv
+"1. Rank: Numbers indicating the ranking of the divers in the competition
+2. Diver: Names of the divers participating in the competition
+3. Nationality: Countries to which the divers belong
+4. Preliminary_nPoints: Points scored by the divers in the preliminary round
+5. Preliminary_nRank: Ranking of the divers in the preliminary round
+6. Final_nPoints: Points scored by the divers in the final round
+7. Final_nRank: Ranking of the divers in the final round",csv/204-csv/316.tsv
+"1. Name: Names are listed in the format ""First Name Last Name""
+2. Sport: Sports are listed with the specific discipline (e.g., Athletics - Men's 50 km walk)
+3. Event: Events are listed with the specific category (e.g., Men's 50 km walk)
+4. Placing: Placing is listed with a numerical value or a specific ranking (e.g., 19, Semifinal (5th), 46)
+5. Performance: Performance is listed with a time or score (e.g., 4:24:38.6, 11.49, 1114/1200)",csv/203-csv/0.tsv
+"1. Directed_By: Names of directors are listed with their full name and middle initial (e.g., 'Frank W. Smith')
+2. Written_By: Names of writers are listed with their full name (e.g., 'Simon J. Sharkey')
+3. Original_Air_Date: Dates are listed in the format YYYY-MM-DD (e.g., '1997-09-14')",csv/204-csv/233.tsv
+"1. Character: Names of Legion of Super-Heroes characters are listed.
+2. Real_name: Real names of the characters are listed.
+3. Home_world: Home worlds of the characters are listed.
+4. Membership_notes: Information about when the character first appeared and joined the Legion of Super-Heroes is provided.
+5. Powers: Superpowers or abilities of the characters are listed.",csv/203-csv/32.tsv
+"1. Model: Names of Škoda car models are listed (e.g., Citigo, Octavia, Yeti)
+2. c_1991 - c_2013: Sales figures are listed for each year for the respective car models, with some missing data represented by dashes and others in numeric format.",csv/204-csv/21.tsv
+"1. Week: Numeric values indicating the week number of the game
+2. Date: Dates in the format Month Day, Year
+3. TV_Time: TV network and time in the format Network Timezone Time
+4. Opponent: Name of the opposing team with location if applicable
+5. Result: Outcome of the game with scores
+6. Attendance: Numeric values indicating the number of attendees",csv/203-csv/21.tsv
+"1. Week: Numeric values indicating the week number of the game
+2. Date: Dates are listed in the format Month Day
+3. Result: Indicates whether the team won or lost the game
+4. Record: Shows the team's record in the format Wins-Losses
+5. Opponent: Lists the opponent team, sometimes with additional location information
+6. Points_For: Numeric values indicating the points scored by the team
+7. Points_Against: Numeric values indicating the points scored against the team
+8. First_Downs: Numeric values indicating the number of first downs made by the team
+9. Attendance: Numeric values indicating the number of attendees at the game",csv/203-csv/318.tsv
+"1. Chord: Chords are listed with a combination of letters and symbols indicating the type of chord (e.g., CmM7, C♯mM7)
+2. Root: The root note of the chord is listed with a letter or symbol (e.g., C, C♯, E♭)
+3. Minor_Third: The minor third note of the chord is listed with a letter and symbol (e.g., E♭, E, G♭)
+4. Perfect_Fifth: The perfect fifth note of the chord is listed with a letter and symbol (e.g., G, G♯, B♭)
+5. Major_Seventh: The major seventh note of the chord is listed with a letter and symbol (e.g., B, B♯ (C), D)",csv/204-csv/653.tsv
+"1. Chart_Year: Years are listed in the format YYYY
+2. Artist: Names of artists are listed
+3. Album: Names of albums are listed, some are labeled as ""Forthcoming Album""
+4. Song: Names of songs are listed
+5. Billboard_Hot_100: Some entries have a number listed, others have ""New Single""
+6. Billboard_Hot_RB_Hip_Hop: Some entries have a number listed, others are blank
+7. NULL_COL: Some entries are blank",csv/204-csv/895.tsv
+"1. Rank: Numbers are listed in ascending order
+2. Name: Names are listed in the format ""First Name Last Name""
+3. Club: Names of football clubs are listed
+4. Nationality: Nationalities are listed
+5. Points: Numbers are listed representing points scored",csv/203-csv/578.tsv
+"1. Title: Titles of songs are enclosed in double quotation marks
+2. Performers: Names of performers are listed
+3. Film: Names of Disney films are listed
+4. Length: Duration of the songs is listed in minutes and seconds format",csv/203-csv/85.tsv
+"1. School: Names of schools are listed (e.g., Illinois)
+2. Season: Seasons are listed in the format YYYY-YY (e.g., 1919-20)
+3. Record: Records are listed in the format W-L (e.g., 9-4)
+4. Conference_Record: Conference records are listed in the format W-L (e.g., 8-4)
+5. Place: Placement is listed with additional information (e.g., 3rd, T4th)
+6. Postseason: Information about postseason is not consistently provided, some entries are blank",csv/204-csv/640.tsv
+"1. Team: Names of rugby league teams are listed with the year of the season in parentheses
+2. Stadium: Names of stadiums are listed
+3. Capacity: Some values are missing (nan)
+4. City_Area: City and area where the team is located are listed with a comma separating them",csv/204-csv/440.tsv
+"1. No: Numbers are listed in ascending order
+2. Score: Scores of players are listed
+3. Player: Names of players are listed
+4. Team: Names of cricket teams are listed
+5. Balls: Number of balls faced by players are listed
+6. Inns: Inning number is listed
+7. Opposing_team: Names of opposing teams are listed
+8. Date: Dates are listed in the format YYYY-MM-DD
+9. Result: Results of the match are listed (e.g., Won, Lost)",csv/204-csv/167.tsv
+"1. Year: Years are listed in four-digit format
+2. Name: Song titles are enclosed in double quotation marks
+3. Label: Labels are listed with no additional information
+4. Hot_Black_Singles: Some entries are listed as ""―"" while others have a number with a ""#"" symbol
+5. Club_Play_Singles: Some entries are listed as ""―"" while others have a number with a ""#"" symbol",csv/203-csv/480.tsv
+"1. Year: Consists of four-digit numbers indicating the year of the competition
+2. Competition: Names of athletic competitions are listed with some additional information (e.g., 'World Athletics Final, World Indoor Championships)
+3. Venue: Locations of the competitions are listed with the city and country
+4. Position: Indicates the athlete's finishing position in the event
+5. Event: Specifies the type of event the athlete participated in (e.g., 100 m hurdles, 60 m hurdles)",csv/203-csv/259.tsv
+"1. Rank: Numbers are listed in ascending order indicating the player's ranking
+2. Player: Names of football players are listed with some additional information (e.g., accents, initials)
+3. From: Football clubs or teams are listed where the players are transferring from
+4. Transfer_Fee_n€_millions: Transfer fees are listed in millions of euros
+5. Year: Years are listed indicating the year of the transfer transaction",csv/203-csv/748.tsv
+"1. Season: Data is in the format of year ranges (e.g., 2006-07)
+2. Tier: Data is in numerical format indicating the tier level
+3. League: Names of basketball leagues are listed
+4. Pos: Position is listed in numerical format
+5. Postseason: Information about the team's performance in the postseason is provided
+6. German_Cup: Information about the team's performance in the German Cup is provided
+7. European_competitions: Information about the team's performance in European competitions is provided",csv/203-csv/725.tsv
+"1. Year: Years are listed in the format YYYY
+2. Total_npassengers: Number of total passengers is listed with 'nan' for missing data
+3. Passenger_nChange: Percentage change in passenger numbers is listed with a percentage sign
+4. Domestic: Data for domestic passengers is listed with 'nan' for missing data
+5. International_ntotal: Data for total international passengers is listed with 'nan' for missing data
+6. International_nnon_CIS: Data for international passengers from non-CIS countries is listed with 'nan' for missing data
+7. CIS: Data for international passengers from CIS countries is listed with 'nan' for missing data
+8. Aircraft_nLandings: Number of aircraft landings is listed with 'nan' for missing data
+9. Cargo_ntonnes: Amount of cargo in tonnes is listed with 'nan' for missing data",csv/203-csv/111.tsv
+"1. Pos: Position of the rider in the race, either a number or ""Ret"" indicating retirement
+2. Rider: Names of the riders participating in the race
+3. Manufacturer: Brand of motorcycle used by the rider
+4. Time_Retired: Time at which the rider retired from the race
+5. Points: Points earned by the rider in the race",csv/204-csv/303.tsv
+"1. Common_name: Multiple common names listed for each tree species
+2. Binomial_nomenclature: Scientific names are provided for each tree species
+3. Colour: Description of the color of the wood for each tree species
+4. Density_¹: Density information is not available for any of the tree species
+5. Location: Different states in India where the tree species can be found are listed
+6. Characteristics_Usage_and_Status: Information about the characteristics, usage, and conservation status of each tree species is provided",csv/203-csv/738.tsv
+"1. District_nbalance_n[clarification_needed]: Names of districts in Saint Helena are listed with some additional information (e.g., 'Longwood', 'Alarm Forest')
+2. Area_nkm2: Area in square kilometers is listed for each district in Saint Helena
+3. Area_nsq_mi: Area in square miles is listed for each district in Saint Helena
+4. Pop_n1998: Population count for the year 1998 is listed for each district in Saint Helena
+5. Pop_n2008: Population count for the year 2008 is listed for each district in Saint Helena
+6. Pop_km²_n2008: Population density per square kilometer for the year 2008 is listed for each district in Saint Helena",csv/203-csv/159.tsv
+"1. Season: Years are listed in the format YYYY
+2. Date: Dates are listed in the format YYYY-MM-DD
+3. Location: Locations are listed with the city and country
+4. Discipline: Type of race is listed (e.g., Downhill)
+5. Place: Position achieved is listed with ordinal numbers (e.g., 2nd, 3rd)",csv/204-csv/921.tsv
+"1. Team: Names of racing teams are listed with some additional information (e.g., 'Racing, International, DAMS)
+2. No: Numbers are listed with some additional information (e.g., '4, 11, 17')
+3. Driver: Names of drivers are listed
+4. Class: Class information is listed with some additional information (e.g., 'R')
+5. Rounds: Information about rounds is listed with some additional information (e.g., 'All, 1-6')",csv/204-csv/305.tsv
+"1. Episode: Titles of the episodes are enclosed in double quotation marks
+2. Air_Date: Dates are in the format YYYY-MM-DD
+3. Timeslot: Times are in the format HH:MM A.M./P.M.
+4. Rating: Ratings are in decimal format
+5. Share: Share values are in whole numbers
+6. c_18_49: Values are in the format X.X/X (#X)
+7. Viewers: Viewers values are in the format X.XX (#X)
+8. Weekly_Rank: Rankings are in the format XX/XX",csv/204-csv/998.tsv
+"1. Year: Years are listed in the format YYYY
+2. Competition: Names of sporting events are listed with additional information (e.g., All-Africa Games, Commonwealth Games)
+3. Venue: Locations of the events are listed with the city and country
+4. Position: Positions achieved in the events are listed with ordinal numbers (e.g., 3rd, 5th, 7th)
+5. Event: Specific events within the competitions are listed (e.g., Discus throw, Shot put)
+6. Notes: Additional information related to the performance in the event is provided (e.g., distance thrown)",csv/204-csv/483.tsv
+"1. Representative: Names of representatives are listed with their full names and possibly middle initials
+2. Party: Political party affiliations are listed with a single letter code (e.g., D for Democrat, R for Republican)
+3. Home_Town_City: Home towns or cities are listed with proper capitalization and spacing
+4. District: District numbers are listed as numerical values",csv/203-csv/155.tsv
+"1. Season: Years are listed in a range format or with a specific season/year format
+2. Level: Contains numerical values indicating the level of the division
+3. Division: Contains the name of the division with additional information (e.g., Regional, Reg. Pref.)
+4. Place: Contains the ranking or position achieved (e.g., 5th, 11th)",csv/203-csv/632.tsv
+"1. Title: Songs are listed with their titles enclosed in double quotation marks
+2. Singers: Names of singers are listed with commas separating multiple singers
+3. Lyricist: Names of lyricists are listed
+4. Length: Duration of the songs is listed in minutes and seconds format (e.g., 5:08)",csv/203-csv/816.tsv
+"1. Year: Years are listed in the format YYYY/YY
+2. Division: Division information is listed as N/A
+3. League: League information is listed (e.g., ASL)
+4. Reg_Season: Regular season placement is listed with ordinal numbers
+5. Playoffs: Playoff information is listed (e.g., No playoff, Champion (no playoff))
+6. National_Cup: Information about the National Cup is not provided",csv/203-csv/284.tsv
+"1. Name: Names of players are listed with first and last name
+2. Height: Heights are listed in feet and inches
+3. Weight_lbs: Weights are listed in pounds
+4. Position: Positions are listed with a single letter abbreviation
+5. Class: Class status is listed with a combination of letters and periods (e.g., Jr., RS So.)
+6. Hometown: Hometowns are listed with city, state, and country
+7. Previous_Teams: Previous teams are listed with the name of the school or organization",csv/204-csv/83.tsv
+"1. Season: Seasons are listed in the format of year/year (e.g., 1993/94)
+2. Tier: Tiers are listed as numerical values
+3. Division: Divisions are listed with a combination of numbers and letters (e.g., 2ªB, 3ª)
+4. Place: Places are listed with ordinal numbers (e.g., 15th, 3rd, 1st)",csv/203-csv/553.tsv
+"1. Pick_num: Numbers are listed in ascending order
+2. Player: Names of players are listed with first and last name
+3. Position: Positions are listed (e.g., Goalie, Right Wing, Left Wing)
+4. Nationality: Nationalities are listed (e.g., Canada, United States)
+5. NHL_team: Names of NHL teams are listed
+6. College_junior_club_team: Names of college/junior/club teams are listed with additional information (e.g., NCAA, OHL, WHL)",csv/203-csv/617.tsv
+"1. Represented: Names of different regions or cities in the Dominican Republic are listed
+2. Contestant: Full names of the contestants are listed with additional middle names
+3. Age: Age of the contestants is listed
+4. Height: Height of the contestants is listed in meters
+5. Hometown: Hometown of the contestants is listed, with some repeating as Santo Domingo",csv/203-csv/849.tsv
+"1. Position: Positions of players are listed with abbreviations (e.g., FW for forward, GK for goalkeeper)
+2. Player: Names of players are listed with first name followed by last name
+3. Transferred_From: Previous clubs are listed for transferred players
+4. Date: Dates are listed in the format YYYY-MM-DD",csv/204-csv/290.tsv
+"1. Rank: Rank may be listed with some missing values or additional spaces
+2. Name: Names of swimmers are listed with first and last name
+3. Nationality: Nationality of the swimmers is listed
+4. Time: Time taken by each swimmer is listed in the format minutes:seconds.milliseconds",csv/204-csv/203.tsv
+"1. Character: Names of characters are listed with their respective roles in the series
+2. Actor: Names of actors who portrayed the characters in the series
+3. Series: Range of series in which the characters appeared
+4. Notes: Additional information about the characters and their roles in the series",csv/200-csv/34.tsv
+"1. Stage: Numeric values indicating the stage number of the race
+2. Date: Dates listed in the format day month
+3. Route: Start and end locations separated by a dash
+4. Terrain: Description of the terrain for each stage
+5. Length: Distance of the stage in kilometers and miles
+6. Winner: Name of the winner with their country code in parentheses
+7. Race_leader: Name of the race leader with their country code in parentheses",csv/204-csv/406.tsv
+"1. Year: Years are listed in four-digit format
+2. Date: Dates are listed with the month and day
+3. Winner: Names of the winning teams are listed
+4. Result: Scores are listed in a ""winning score - losing score"" format
+5. Loser: Names of the losing teams are listed
+6. Location: Stadium or field names are listed for where the games took place",csv/204-csv/393.tsv
+"1. Country: Names of countries in Central America are listed
+2. Amphibians, Birds, Mammals, Reptile: Number of each type of vertebrate species is listed
+3. Total_terrestrial_vertebrates: Total number of terrestrial vertebrate species is listed
+4. Vascular_plants: Number of vascular plant species is listed
+5. Biodiversity: Total biodiversity count is listed",csv/201-csv/8.tsv
+"1. Year: Years are listed in four-digit format
+2. Recipient: Names of individuals or groups receiving the award are listed
+3. Nationality: Nationalities of the recipients are listed
+4. Profession: Professions or additional information about the recipients are listed
+5. Speech: Information about any speeches given by the recipients is not provided",csv/203-csv/458.tsv
+"1. Representative: Names of individuals serving as ambassadors are listed with their full names
+2. Title: The title of the ambassadors is consistently listed as ""Ambassador Extraordinary and Plenipotentiary""
+3. Presentation_nof_Credentials: Dates of when the ambassadors presented their credentials are listed in a YYYY-MM-DD format
+4. Termination_nof_Mission: Dates of when the ambassadors' missions were terminated are listed with varying formats (e.g., Month DD, YYYY)
+5. Appointed_by: The names of the presidents who appointed the ambassadors are listed with their full names",csv/203-csv/188.tsv
+"1. Designation: Consists of a prefix 'PE-' followed by a number
+2. Keel_Laid: Dates are in the format YYYY-MM-DD
+3. Launched: Dates are in the format YYYY-MM-DD
+4. Commissioned: Dates are in the format YYYY-MM-DD
+5. Fate: Describes the fate of the craft with additional information (e.g., 'Sold', 'Expended as target') and a date",csv/203-csv/369.tsv
+"1. Release_date: Dates are listed in the format YYYY-MM-DD
+2. Album_Title: Titles of albums are listed with additional information (e.g., artist name, compilation title)
+3. Record_Company: Names of record companies are listed
+4. Song_Title: Titles of songs are listed
+5. Certification: Certifications are listed with additional information (e.g., PARI certification level)",csv/203-csv/579.tsv
+"1. Rank: The rank of the divers in the competition is listed.
+2. Diver: The names of the divers are listed along with their country code in parentheses.
+3. Preliminary_nPoints: The points scored by the divers in the preliminary round are listed.
+4. Preliminary_nRank: The rank of the divers after the preliminary round is listed.
+5. Final_nPoints: The points scored by the divers in the final round are listed.",csv/203-csv/373.tsv
+"1. Year: Years are listed in four-digit format
+2. Single: Song titles are listed in quotation marks
+3. Chart_Positions_nUS_Country: Positions are listed with a dash if not applicable
+4. Chart_Positions_nUS: Positions are listed with a number if applicable
+5. Album: Album names are listed with additional information if applicable",csv/203-csv/619.tsv
+"1. Name: Names of highways or expressways are listed with additional information (e.g., 'Highway', 'Expressway')
+2. Route_numbers: Some routes have a designated number, while others do not
+3. Length_mi: Length of the route in miles is listed
+4. Location: Location where the route is located is mentioned
+5. Notes: Additional information about the route, such as its designation or specific details, is provided",csv/203-csv/100.tsv
+"1. Naturalisations_by_origin: Names of regions or continents are listed
+2. c_2000, c_2005, c_2009: Data is presented in a year format with numbers separated by spaces
+3. percent_Total_2009: Data is presented in percentage format with one decimal place",csv/203-csv/666.tsv
+"1. Language: Names of languages spoken in South Asia are listed
+2. c_2001_census[1]_ntotal_population_1_00459_million: Population numbers are listed in millions with commas for separation
+3. c_1991_censusIndian_Census_[2]_ntotal_population_83814_million: Population numbers are listed in millions with commas for separation
+4. NULL_COL: Some entries are missing in this column, represented by empty cells",csv/203-csv/167.tsv
+"1. Name: Names of players are listed with first and last name format
+2. Nation: Nationality of players is listed
+3. Position: Positions of players are listed with abbreviations (e.g., GK for goalkeeper, DF for defender, MF for midfielder)
+4. League_Apps: Number of appearances in league matches are listed
+5. League_Goals: Number of goals scored in league matches are listed
+6. FA_Cup_Apps: Number of appearances in FA Cup matches are listed
+7. FA_Cup_Goals: Number of goals scored in FA Cup matches are listed
+8. Total_Apps: Total number of appearances in all matches are listed
+9. Total_Goals: Total number of goals scored in all matches are listed",csv/203-csv/602.tsv
+"1. Match: Format includes a label followed by a number or letter (e.g., Semifinals-1, GL-A-2)
+2. Date: Dates are listed in the format YYYY-MM-DD
+3. Venue: Information about the venue is enclosed in square brackets
+4. Opponents: Information about the opponents is enclosed in square brackets
+5. Score: Scores are represented with a dash (-) when not available",csv/204-csv/254.tsv
+"1. Callsign: Consists of a combination of numbers and letters
+2. Area_served: Lists different locations in Tasmania
+3. Frequency: Includes numbers with decimals
+4. Band: Indicates whether the station operates on AM or FM
+5. Fate: Describes changes or events related to the station
+6. Freq_currently: Contains information about the current frequency
+7. Purpose: Specifies if the station is commercial or community-based",csv/203-csv/604.tsv
+"1. Year: Years are listed in four-digit format
+2. Network: Names of broadcasting networks are listed (e.g., CBS)
+3. Race_caller: Names of individuals who called the race are listed
+4. Color_commentator: Names of individuals who provided color commentary are listed
+5. Reporters: Names of reporters are sometimes listed
+6. Trophy_Presentation: Names of individuals involved in the trophy presentation are listed",csv/204-csv/478.tsv
+"1. Year: Years are listed in four-digit format
+2. Title: Titles of TV shows or movies are listed
+3. Role: Roles played by Tamera Mowry are listed
+4. Notes: Additional information about the role (e.g., number of episodes) is provided",csv/203-csv/785.tsv
+"1. Tablet: Numbers are listed with a space before them.
+2. Genealogy: Descriptions of genealogy are listed with specific references (e.g., Descendants of Esau 36:10 to 37:1).
+3. Narrative: Some rows have a specific narrative listed, while others state 'no narrative'.
+4. Colophon: Each row ends with a specific reference (e.g., ""This is the account of Jacob."" 37:2).",csv/203-csv/310.tsv
+"1. Year: Years are listed in four-digit format (e.g., 1989, 2008)
+2. Result: Results are listed as either ""Won"" or ""Nominated""
+3. Award: Awards are listed with additional information such as the type of award and the category (e.g., Bronze Wrangler Theatrical Motion Picture, Outstanding Lead Actor - Comedy Series)
+4. Film: Film titles are listed with some additional information (e.g., Young Guns, Two and a Half Men)",csv/203-csv/709.tsv
+"1. DATE: Dates are listed with additional information about the event or tournament (e.g., All-Filipino Cup)
+2. OPPONENT: Names of opposing teams are listed
+3. SCORE: Scores are listed in a format of [home team score]-[opponent score]
+4. TOP_SCORER_Total_points: Information about the top scorer and total points may be included
+5. VENUE: Venues where the games took place are listed",csv/204-csv/97.tsv
+"1. Num: Numbers are listed with three digits and may include additional characters (e.g., 063)
+2. Pod_Color: Information is missing for this column
+3. Nickname: Names are listed for each experiment (e.g., Pufferizer, Kitsch, Cable Dude)
+4. Short_Description: Information is missing for this column
+5. Episode: Names of episodes are listed (e.g., Leroy & Stitch)",csv/204-csv/5.tsv
+"1. Specifications: Each row describes a specific feature or service provided by Windows Server 2012
+2. Foundation, Essentials, Standard, Datacenter: Each column represents a different edition of Windows Server 2012
+3. Yes, N/A, Either in 1 VM or 1 physical server, but not both at once, 2 VMs, Unlimited: Different values indicating the availability or limitations of each feature/service in the respective edition of Windows Server 2012",csv/204-csv/134.tsv
+"1. Pos: Position of the driver in the race is listed, with some entries indicating retirement
+2. No: Number assigned to the driver
+3. Driver: Names of the drivers participating in the race
+4. Constructor: Name of the team constructor for the driver
+5. Laps: Number of laps completed by the driver
+6. Time_Retired: Time or reason for retirement if applicable
+7. Grid: Starting position of the driver on the grid
+8. Points: Points earned by the driver in the race",csv/204-csv/953.tsv
+"1. Rank: Numbers indicating the position of the cyclist in the race
+2. Cyclist: Names of cyclists with their nationality in parentheses
+3. Team: Names of cycling teams
+4. Time: Time taken by the cyclist to complete the race
+5. UCI_ProTour_nPoints: Numerical values representing points earned in the UCI ProTour",csv/203-csv/733.tsv
+"1. Episode_no: Sequential numbers indicating the episode order
+2. Airdate: Dates in the format YYYY-MM-DD
+3. Viewers: Number of viewers listed in thousands with commas separating the thousands
+4. BBC_Three_weekly_ranking: Ranking of the episode on BBC Three, with some entries marked as 'N/A'
+5. Multichannels_rank: Ranking of the episode on multichannels, with some entries marked as 'N/A'",csv/204-csv/456.tsv
+"1. Year: Years are listed in four-digit format
+2. Premiers: Names of AFL teams are listed with additional information (e.g., Saints, Bulldogs)
+3. Score: Scores are listed in a format of goals.points (total points) (e.g., 12.15 (87))
+4. Runners_Up: Names of AFL teams are listed with additional information (e.g., Tigers)",csv/203-csv/80.tsv
+"1. Rank: Numbers are listed in ascending order indicating the ranking of nations
+2. Nation: Each entry includes the country name followed by the abbreviation in parentheses
+3. Gold, Silver, Bronze, Total: Numbers indicating the count of medals won in each category for the respective nation",csv/204-csv/347.tsv
+"1. Round: Contains the round number and sometimes an additional identifier (e.g., R1)
+2. Race: Lists the location of the race
+3. Date: Provides the date of the race
+4. Pole_Position: Indicates the club/team that secured the pole position
+5. Fastest_Lap: Shows the club/team with the fastest lap time
+6. Winning_Club: Displays the club that won the race
+7. Winning_Team: Specifies the team that won the race
+8. Report: Includes a report on the race",csv/203-csv/514.tsv
+"1. Name: Names of the tallest freestanding structures in the world are listed.
+2. Country: Countries where the structures are located are listed.
+3. Town: Towns or cities where the structures are located are listed.
+4. Height_meters_ft: The height of the structures is listed in both meters and feet.
+5. Structural_type: The type of structure (e.g., skyscraper, tower, mausoleum) is listed.
+6. Held_record: The period during which the structure held a record for being the tallest is listed.
+7. Notes: Additional information or notes about the structures are provided.",csv/203-csv/39.tsv
+"1. Date: Dates are listed in the format Month Day (e.g., November 21)
+2. Opponent: Names of opposing teams are listed with some additional information (e.g., at Wisconsin, #7 Nebraska*)
+3. Rank: Rankings are listed with a '#' symbol followed by the rank number (e.g., #19)
+4. Site: Locations of the games are listed with the stadium name and city (e.g., Kinnick Stadium • Iowa City, IA)
+5. TV: Information about the TV broadcast is provided (e.g., ABC)
+6. Result: Results of the games are listed with the score and outcome (e.g., W 36-7)
+7. Attendance: Number of attendees is listed with commas for thousands separator (e.g., 60,103)",csv/203-csv/708.tsv
+"1. Celebrity: Names of celebrities are listed with their full names
+2. Residence: Cities or regions where the celebrities reside are listed
+3. Famous_for_Occupation: Description of the occupation or claim to fame of the celebrities is provided
+4. Age: The age of the celebrities is listed
+5. Status: The status of the celebrities in the competition is indicated (e.g., Winner, Runner-Up, Evicted)",csv/204-csv/380.tsv
+"1. Year: Years are listed in four-digit format
+2. Team_Record_nW: Number of wins for the team is listed
+3. Team_Record_nL: Number of losses for the team is listed
+4. Playoffs: Information about the team's playoff status is provided, including qualifiers and region information",csv/204-csv/118.tsv
+"1. Pos: Position in the league is listed numerically
+2. Team: Names of football teams are listed
+3. Played: Number of games played is listed
+4. Won: Number of games won is listed
+5. Draw: Number of games drawn is listed
+6. Lost: Number of games lost is listed
+7. Goals_For: Number of goals scored is listed
+8. Goals_Against: Number of goals conceded is listed
+9. Goal_Difference: Goal difference is listed
+10. Points: Total points earned is listed
+11. Notes: Additional notes or information are provided for some teams",csv/203-csv/53.tsv
+"1. Match: Consists of a combination of letters and numbers, possibly indicating a specific type of match or game
+2. Date: Dates are listed in the format YYYY-MM-DD
+3. Venue: Information about the location where the match took place is missing
+4. Opponents: Information about the opposing team or player is missing
+5. Score: Scores are indicated with a dash symbol indicating that the score is not provided",csv/204-csv/896.tsv
+"1. Year: Years are listed in four-digit format
+2. Competition: Names of competitions are listed with additional information (e.g., World Championships, Olympic Games)
+3. Venue: Venues are listed with the city and country (e.g., Rome, Italy)
+4. Position: Positions are listed with ordinal numbers (e.g., 1st, 5th, 13th)
+5. Event: Events are listed (e.g., Marathon)
+6. Notes: Additional information is provided (e.g., time in hh:mm:ss format)",csv/204-csv/92.tsv
+"1. Rank: Numbers indicating the player's ranking in the tournament
+2. Player_Name: Names of players participating in the tournament
+3. No_of_Titles: Number of titles won by the player
+4. Runner_up: Number of times the player finished as a runner-up in the tournament
+5. Final_Appearances: Number of times the player appeared in the final of the tournament",csv/203-csv/86.tsv
+"1. Date: Dates are listed in the format Month Day
+2. Rnd: Rounds are listed with no specific format
+3. Race_Name: Names of races are listed with additional information (e.g., Grand Prix, 200)
+4. Circuit: Circuits are listed with the full name of the location
+5. City_Location: City locations are listed with the city and state
+6. Pole_position: Pole positions are listed with the driver's name
+7. Winning_driver: Winning drivers are listed with their names
+8. Winning_team: Winning teams are listed with the team name
+9. Report: Reports are listed with no specific format",csv/203-csv/181.tsv
+"1. Week: Numeric values indicating the week number of the game
+2. Date: Dates in the format Month Day, Year
+3. Opponent: Names of the opposing teams
+4. Result: Format of W/L followed by the score, sometimes with additional information like (OT) for overtime
+5. Record: Win-Loss record of the team
+6. TV_Time: TV channel and time of the game
+7. Attendance: Number of attendees at the game",csv/203-csv/48.tsv
+"1. Massif: Names of natural massifs are listed
+2. Region: Regions or states are listed
+3. Type_of_nature_reserve: Type of nature reserve is listed with additional information
+4. Preserved_area: Area size is listed with units (e.g., ha)
+5. Buffer_zone: Buffer zone size is listed with units (e.g., ha)",csv/204-csv/2.tsv
+"1. State_linked_to_summaries_below: States are listed with additional spacing and no abbreviations
+2. Incumbent_Senator: Names of senators are listed with last name first, followed by first name
+3. Incumbent_Party: Political parties are listed with the first letter capitalized
+4. Incumbent_Electoral_history: Electoral history is listed with candidate names and percentage of votes received
+5. Most_recent_election_results: Years of the most recent elections are listed
+6. c_2018_intent: Intent for the 2018 election is listed with a status (e.g., Retiring)
+7. Candidates: Information about candidates is missing or unknown",csv/204-csv/943.tsv
+"1. Pick_num: Numbers are listed in ascending order indicating the draft pick number
+2. Player: Names of players are listed with first and last name
+3. Position: Positions are listed (e.g., Defence, Left Wing)
+4. Nationality: Nationalities are listed (e.g., United States, Canada)
+5. NHL_team: Names of NHL teams are listed
+6. College_junior_club_team: Names of college or junior club teams are listed with additional information (e.g., conference)",csv/203-csv/566.tsv
+"1. Rd: The round number of the event is listed in numerical format
+2. Event: The name of the event is listed with additional information such as sponsor names or location
+3. Circuit: The name of the circuit where the event took place is listed
+4. Location: The location of the event is listed with the state or territory included
+5. Date: The date of the event is listed in a day-month format
+6. Winner: The name of the winner of the event is listed",csv/204-csv/714.tsv
+"1. Date: Dates are listed in the format Month Day
+2. Team: Names of football teams are listed
+3. Competition: Names of football competitions are listed (e.g., Champions League, UEFA Cup)
+4. Round: Round information is listed with additional details (e.g., Qual. Round 3, Group Stage)
+5. Leg: Leg information is listed with additional details (e.g., Leg 2, Home)
+6. Opponent: Names of opposing teams are listed
+7. Location: Stadium names and locations are listed
+8. Score: Scores are listed in the format Home Team Score - Away Team Score",csv/203-csv/582.tsv
+"1. Name: Names of individuals serving as Lieutenant Governor of Indiana are listed with their full names.
+2. Took_office: Dates of taking office are listed in the format YYYY-MM-DD.
+3. Left_office: Dates of leaving office are listed with the month and day, and in some cases the year.
+4. Party: Political party affiliations are listed for each Lieutenant Governor.
+5. Governor: Names of the Governors under whom the Lieutenant Governors served are listed.
+6. Notes: This column appears to be empty in the provided sample data.",csv/203-csv/194.tsv

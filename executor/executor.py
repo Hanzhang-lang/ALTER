@@ -1,5 +1,3 @@
-from sqlbuilder.query import SELECT, C, T
-from sqlbuilder.dummy import dummy_connection, dummy_context
 import re
 import sqlparse
 from sqlalchemy import create_engine, text

@@ -52,7 +52,7 @@ def augmentation(task_name: str,
             if start + batch_size >= num_samples:
                 batch_size = num_samples - start
             batch_data = table_loader.dataset[start: start+batch_size]
-            
+            aug_path = f"result/aug/{task_name}_{split}_{aug_type[0]}.csv"
             if os.path.exists(aug_path) and aug_path.endswith('.csv'):
                 auged_names = list(pd.read_csv(aug_path)['table_id'])
             else: 
@@ -60,11 +60,11 @@ def augmentation(task_name: str,
             table_names = []
             for i in range(batch_size):
                 normalized = table_loader.normalize_table(table_loader.dataset[start + i])
-                if normalized['id'] not in auged_names:
-                    auged_names.append(normalized['id'])
+                if normalized['table']['id'] not in auged_names:
+                    auged_names.append(normalized['table']['id'])
                     aug_tables.append(normalized['table'])            
             # 针对augmentation的cache
-                    table_names.append(normalized['id'])
+                    table_names.append(normalized['table']['id'])
             formatter = TableFormat(format='none')
             if len(table_names):
                 if  'summary_alone' in aug_type:

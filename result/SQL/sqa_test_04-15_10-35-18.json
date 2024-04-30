@@ -1,0 +1,10 @@
+{"table_name": "nu-249", "label": "who had more than 5 league goals?", "pred": "SELECT Name\nFROM DF\nWHERE League > 5;"}
+{"table_name": "nu-2748", "label": "what are the dimensions of a pg16 screw? which of these dimensions is the inner diameter?", "pred": "SELECT Inner_diameter_[mm_in] \nFROM DF \nWHERE Thread_nominal_size = 'PG16';"}
+{"table_name": "nu-2401", "label": "what are all the countries?", "pred": "SELECT Country FROM DF;"}
+{"table_name": "nu-4147", "label": "which ships lost over 5 lives?", "pred": "SELECT Ship\nFROM DF\nWHERE Lives_lost NOT LIKE 'all hands' AND CAST(SUBSTRING(Lives_lost, 1, CHARINDEX(' ', Lives_lost) - 1) AS INT) > 5;"}
+{"table_name": "nu-770", "label": "who were the riders?", "pred": "SELECT Rider FROM DF;"}
+{"table_name": "nu-3799", "label": "what are all of the positions?", "pred": "SELECT DISTINCT Location\nFROM DF;"}
+{"table_name": "nu-2869", "label": "in the 1998 season what teams did the cardinals play? what team did they end with one fewer win?", "pred": "SELECT Opponent\nFROM DF\nWHERE Result LIKE 'W%'\nAND Opponent NOT IN (\n    SELECT Opponent\n    FROM DF\n    WHERE Result LIKE 'W%'\n)\nAND Opponent NOT IN (\n    SELECT Opponent\n    FROM DF\n    WHERE Result LIKE 'L%'\n)"}
+{"table_name": "nu-3209", "label": "who were all of the representatives? what is their district? who is from district 116?", "pred": "SELECT Representative, District\nFROM DF;\n\nSELECT Representative\nFROM DF\nWHERE District = 116;"}
+{"table_name": "nu-3121", "label": "who are all of the players? how many balls did they score?", "pred": "SELECT Player, Balls\nFROM DF;"}
+{"table_name": "nu-1353", "label": "what are the names of all of the teams? what are the names of all of the venues?", "pred": "SELECT Team, Venue\nFROM DF;"}

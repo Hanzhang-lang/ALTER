@@ -32,7 +32,8 @@ class TableLoader:
         self.table_name = table_name
         self.dataset = self.load_table(use_sample, split=split)
         if small_test:
-            self.dataset = self.dataset.filter(lambda example: example['small_test'])
+            self.dataset = self.dataset.filter(
+                lambda example: example['small_test'])
 
     def load_table(self, use_sample: bool = True, split: str = None, ):
         dataset = load_dataset(
@@ -45,7 +46,6 @@ class TableLoader:
         return dataset
 
     def normalize_table(self, _line: dict):
-
         if self.table_name == 'tabfact':
             if str(_line["label"]) == "0":
                 label = "0"
@@ -54,10 +54,11 @@ class TableLoader:
             else:
                 label = "2"
             return {
-                "id": _line['table']['id'],
+                "id": _line['id'],
                 "title": "",
                 "context": "",
                 "table": {
+                    "id": _line['table']['id'],
                     "header": _line['table']['header'],
                     "rows": _line['table']['rows'],
                     "caption": _line['table']['caption'],
@@ -74,9 +75,11 @@ class TableLoader:
                     "header": _line['table']['header'],
                     "rows": _line['table']['rows'],
                     "caption": _line['caption'],
+                    "id": _line['table']['name'],
                 },
                 "query": _line['question'],
-                "label": _line['answers']},
+                "label": _line['answers']}
+            
         if self.table_name == 'totto':
             return {
                 "title": _line['table_page_title'],
@@ -105,8 +108,6 @@ class TableLoader:
                 'query': ' '.join(_line["question_and_history"]),
                 "label": _line["answer_text"],
             }
-            
-
 
     def table2db(self, db_con: str, _line: dict):
 

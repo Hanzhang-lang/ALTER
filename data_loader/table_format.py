@@ -156,8 +156,10 @@ class TableFormat:
                         print(f'Unknown Date format {self.data.head()[col_name[i]]}')
                         continue
                 else:
-                    self.all_data[col_name[i]] = mac_dic[col_schema[i]](self.all_data[col_name[i]], errors='coerce')
-                    self.data[col_name[i]] = mac_dic[col_schema[i]](self.data[col_name[i]], errors='coerce')
+                    try:
+                        self.all_data[col_name[i]] = mac_dic[col_schema[i]](self.all_data[col_name[i]], errors='coerce')
+                    except:
+                        pass
             #TODO: whether format date in fixed format
     
     def get_all_data(self):

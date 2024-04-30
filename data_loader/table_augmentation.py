@@ -126,9 +126,13 @@ class TableAug:
                 batch_data[i]['caption']) for i in range(batch_size)], return_only_outputs=True)
 
         for i in range(len(batch_pred)):
-            parts = batch_pred[i]['text'].split('column description')
-            summary_list.append(parts[0].split(':')[1].strip())
-            description_list.append(parts[1].split(':')[1].strip())
+            try:
+                parts = batch_pred[i]['text'].split('column description')
+                summary_list.append(parts[0].split(':')[1].strip())
+                description_list.append(parts[1].split(':')[1].strip())
+            except:
+                summary_list.append("")
+                description_list.append(batch_pred[i]['text'])
         if output_token:
             logger.info(f"Batch Summary Augmentaion Tokens: {cb.total_tokens}")
         return summary_list, description_list
