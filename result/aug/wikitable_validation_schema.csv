@@ -1,0 +1,11 @@
+schema,table_id
+Rank<Numerical> Player<Char> County<Char> Tally<Char> Total<Numerical> Opposition<Char>,csv/204-csv/952.tsv
+Rank<Numerical> Athlete<Char> Nationality<Char> Time<Char>,csv/204-csv/59.tsv
+Year<Numerical> Team<Char> Games<Numerical> Combined_Tackles<Numerical> Tackles<Numerical> Assisted_Tackles<Numerical> Sacks<Numerical> Forced_Fumbles<Numerical> Fumble_Recoveries<Numerical> Fumble_Return_Yards<Numerical> Interceptions<Numerical> Interception_Return_Yards<Numerical> Yards_per_Interception_Return<Numerical> Longest_Interception_Return<Numerical> Interceptions_Returned_for_Touchdown<Numerical> Passes_Defended<Numerical>,csv/204-csv/756.tsv
+Date<Date> Number<Char> Type<Char> Captain<Char> Casualties<Numerical> Sunk_by<Char>,csv/203-csv/386.tsv
+Player<Char> League<Numerical> Cup<Numerical> Europa_League<Numerical> Total<Numerical>,csv/204-csv/784.tsv
+Tramway<Char> Country<Char> City<Char> Height_of_pylons<Char> Span_width_nleaning_straight_line<Char> Span_width_nhorizontal_measurement<Char> Height_of_cable_over_ground<Char> Year_of_inauguration<Numerical> Notes<Char>,csv/203-csv/457.tsv
+Country<Char> Masters<Numerical> US_Open<Numerical> The_Open<Numerical> PGA<Numerical> Total<Numerical>,csv/204-csv/396.tsv
+num<Numerical> Date<Date> Venue<Char> Opponent<Char> Score<Char> Result<Char> Competition<Char>,csv/203-csv/750.tsv
+Seat<Char> State<Char> Majority<Numerical> Member<Char> Party<Char>,csv/204-csv/659.tsv
+Date<Date> Winning_Team<Char> Score<Numerical> Losing_Team<Char> Score<Numerical> OT<Char> City<Char> State_Province<Char> Arena<Char> Attendance<Char>,csv/203-csv/343.tsv

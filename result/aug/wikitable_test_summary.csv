@@ -208,7 +208,7 @@ Description_Losses:
 - c_1943_44: The number of casualties in 1943-1944 due to murders.
 - c_1944_45: The number of casualties in 1944-1945 due to direct war losses.
 - Total: The total number of casualties for each category.",csv/204-csv/149.tsv
-,"Week<The week number of the game>
+"The table provides information about different games played by a football team. It includes details like the week number, date of the game, opponent team, game result, game site, NFL recap, and the attendance for each game.","Week<The week number of the game>
 Date<The date of the game>
 Opponent<The name of the opposing team>
 Result<The outcome of the game>

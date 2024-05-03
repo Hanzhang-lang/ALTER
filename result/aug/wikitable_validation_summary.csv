@@ -1,0 +1,70 @@
+summary,column_description,table_id
+"This table shows the ranking, player name, county, tally, total, and opposition for the 1989 All-Ireland Senior Hurling Championship.","Rank<The ranking of the player in the championship>, Player<The name of the player participating in the championship>, County<The county the player represents>, Tally<The score breakdown of goals and points>, Total<The total score of the player>, Opposition<The opposing team the player played against>",csv/204-csv/952.tsv
+The table shows the results of the Women's 800 metres event at the 2003 Summer Universiade.,"Rank<The ranking of the athlete in the event>
+Athlete<The name of the athlete who competed>
+Nationality<The country the athlete represents>
+Time<The time it took for the athlete to complete the race>",csv/204-csv/59.tsv
+"This table provides statistics for Justin Smith's American football career, including details on his performance in different years with different teams.","Year<The year of the season>
+Team<The team Justin Smith played for>
+Games<The number of games played in the season>
+Combined_Tackles<The total number of tackles made by Justin Smith>
+Tackles<The number of solo tackles made by Justin Smith>
+Assisted_Tackles<The number of tackles assisted by other players>
+Sacks<The number of sacks made by Justin Smith>
+Forced_Fumbles<The number of fumbles forced by Justin Smith>
+Fumble_Recoveries<The number of fumbles recovered by Justin Smith>
+Fumble_Return_Yards<The total yards gained from returning fumbles>
+Interceptions<The number of interceptions made by Justin Smith>
+Interception_Return_Yards<The total yards gained from returning interceptions>
+Yards_per_Interception_Return<The average yards gained per interception return>
+Longest_Interception_Return<The longest distance covered in an interception return>
+Interceptions_Returned_for_Touchdown<The number of interceptions returned for a touchdown>
+Passes_Defended<The number of passes defended by Justin Smith>",csv/204-csv/756.tsv
+"This table provides information about Convoy ONS 5, including the date, number, type, captain, casualties, and who sunk the U-boats.","Date<The date when the U-boat was sunk>
+Number<The U-boat number>
+Type<The type of U-boat>
+Captain<The name of the U-boat captain>
+Casualties<The number of casualties from the sinking>
+Sunk_by<The entity responsible for sinking the U-boat>",csv/203-csv/386.tsv
+"The table shows the statistics of three players from PFC Levski Sofia during the 2010-11 season in terms of their performance in the League, Cup, and Europa League.","Player<The name of the player>
+League<Number of games played in the League>
+Cup<Number of games played in the Cup>
+Europa_League<Number of games played in the Europa League>
+Total<The total number of games played across all competitions>",csv/204-csv/784.tsv
+"The table provides information about different spans, including their location, height, span width, height of cable over ground, year of inauguration, and any additional notes.","Tramway<The name of the tramway>
+Country<The country where the tramway is located>
+City<The city where the tramway is located>
+Height_of_pylons<The height of the pylons for the tramway>
+Span width leaning straight line<The span width in a straight line for the tramway>
+Span width horizontal measurement<The horizontal span width measurement for the tramway>
+Height of cable over ground<The height of the cable over the ground for the tramway>
+Year of inauguration<The year when the tramway was inaugurated>
+Notes<Any additional notes or information related to the tramway>",csv/203-csv/457.tsv
+This table shows the number of men's major championships won by golfers from different countries.,"Country<The country of the winning golfer>
+Masters<The number of Masters championships won>
+US_Open<The number of US Open championships won>
+The_Open<The number of The Open championships won>
+PGA<The number of PGA championships won>
+Total<The total number of major championships won by golfers from that country>",csv/204-csv/396.tsv
+"This table contains information about matches played by Adane Girma, including the date, venue, opponent, score, result, and competition.","num<The number of the match>
+Date<The date of the match>
+Venue<The location where the match took place>
+Opponent<The team Adane Girma played against>
+Score<The final score of the match>
+Result<The outcome of the match (Win/Loss)>
+Competition<The name of the competition where the match took place>",csv/203-csv/750.tsv
+"The table shows the electoral system of Australia with information on seats, states, majority, members, and party affiliations.","Seat<The name of the electoral seat>
+State<The state where the electoral seat is located>
+Majority<The majority percentage in the electoral seat>
+Member<The name of the elected member representing the electoral seat>
+Party<The political party affiliation of the elected member>",csv/204-csv/659.tsv
+"This table shows information about three NHL games from the 1993-94 season, including the date, winning team, winning team's score, losing team, losing team's score, whether there was overtime (OT), city, state/province, arena, and attendance.","Date<The date of the game>
+Winning_Team<The team that won the game>
+Score<The score of the winning team>
+Losing_Team<The team that lost the game>
+Score<The score of the losing team>
+OT<Indicates if there was overtime>
+City<The city where the game took place>
+State_Province<The state or province where the game took place>
+Arena<The name of the arena where the game took place>
+Attendance<The number of people in attendance at the game>",csv/203-csv/343.tsv

@@ -1,0 +1,70 @@
+composition,table_id
+"1. Rank: Numbers indicating the player's ranking in the championship
+2. Player: Names of players participating in the championship
+3. County: Counties represented by the players
+4. Tally: Scores in the format of goals and points (e.g., 1-10)
+5. Total: Total score of the player
+6. Opposition: Opposing team faced by the player",csv/204-csv/952.tsv
+"1. Rank: Some ranks are missing, athletes are listed in descending order of performance
+2. Athlete: Athlete names are listed with first name followed by last name
+3. Nationality: Nationalities are listed after the athlete's name
+4. Time: Times are listed in the format minutes:seconds.milliseconds",csv/204-csv/59.tsv
+"1. Year: Years are listed in four-digit format (e.g., 2010)
+2. Team: Three-letter team abbreviations are listed (e.g., SF for San Francisco)
+3. Games: Number of games played is listed
+4. Combined_Tackles: Number of combined tackles is listed
+5. Tackles: Number of tackles is listed
+6. Assisted_Tackles: Number of assisted tackles is listed
+7. Sacks: Number of sacks is listed
+8. Forced_Fumbles: Number of forced fumbles is listed
+9. Fumble_Recoveries: Number of fumble recoveries is listed
+10. Fumble_Return_Yards: Number of fumble return yards is listed
+11. Interceptions: Number of interceptions is listed
+12. Interception_Return_Yards: Number of interception return yards is listed
+13. Yards_per_Interception_Return: Yards per interception return is listed
+14. Longest_Interception_Return: Length of the longest interception return is listed
+15. Interceptions_Returned_for_Touchdown: Number of interceptions returned for a touchdown is listed
+16. Passes_Defended: Number of passes defended is listed",csv/204-csv/756.tsv
+"1. Date: Dates are in the format YYYY-MM-DD
+2. Number: U-boat numbers are listed with U- prefix
+3. Type: U-boat types are listed with Roman numerals and additional information
+4. Captain: Names of U-boat captains are listed
+5. Casualties: Number of casualties are listed
+6. Sunk_by: Names of the ships or aircraft that sunk the U-boat are listed",csv/203-csv/386.tsv
+"1. Player: Names of players are listed
+2. League: Number of games played in the league
+3. Cup: Number of games played in the cup
+4. Europa_League: Number of games played in the Europa League
+5. Total: Total number of games played in all competitions",csv/204-csv/784.tsv
+"1. Tramway: Names of aerial tramways or gondolas are listed with additional information (e.g., '3S Aerial Tramway')
+2. Country: Countries where the tramways or gondolas are located are listed
+3. City: Cities where the tramways or gondolas are located are listed
+4. Height_of_pylons: Heights of pylons are listed, some values are missing
+5. Span width leaning straight line: Measurements of the span width in a leaning straight line are listed, some values are missing
+6. Span width horizontal measurement: Measurements of the span width in a horizontal line are listed, some values are missing
+7. Height of cable over ground: Heights of the cable over the ground are listed
+8. Year of inauguration: Years when the tramways or gondolas were inaugurated are listed
+9. Notes: Additional notes or information about the tramways or gondolas are provided",csv/203-csv/457.tsv
+"1. Country: Names of countries where golfers who have won major championships are listed
+2. Masters, US_Open, The_Open, PGA: Number of wins for each specific major championship
+3. Total: Total number of major championship wins for each country",csv/204-csv/396.tsv
+"1. Date: Dates are listed in the format YYYY-MM-DD
+2. Venue: Locations are listed with the city name
+3. Opponent: Names of the opposing teams are listed
+4. Score: Scores are listed in the format X-X
+5. Result: Results are listed as either Win or Loss
+6. Competition: Names of the competitions are listed with additional information (e.g., Cup, qualifier)",csv/203-csv/750.tsv
+"1. Seat: Names of electoral districts are listed with some additional information (e.g., 'EDEN-MONARO')
+2. State: State abbreviations are listed for each electoral district (e.g., 'NSW' for New South Wales)
+3. Majority: Numbers indicating the majority percentage are listed for each electoral district (e.g., '1.7')
+4. Member: Names of elected members are listed with honorifics and last names (e.g., 'Hon Larry Anthony')
+5. Party: Party abbreviations are listed for each elected member (e.g., 'Lib' for Liberal Party)",csv/204-csv/659.tsv
+"1. Date: Dates are listed in the format YYYY-MM-DD
+2. Winning_Team: Names of winning teams are listed with some additional information (e.g., city name)
+3. Score: Scores are listed as numerical values
+4. Losing_Team: Names of losing teams are listed with some additional information (e.g., city name)
+5. OT: Indicates if the game went into overtime
+6. City: City names are listed
+7. State_Province: State or province names are listed
+8. Arena: Names of arenas are listed
+9. Attendance: Attendance numbers are listed with some additional symbols (e.g., *)",csv/203-csv/343.tsv

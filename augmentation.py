@@ -35,11 +35,12 @@ def augmentation(task_name: str,
              batch_size: int = 32,
              small_test: bool=True):
     model = ChatOpenAI(model_name=model_name, openai_api_base="https://api.chatanywhere.tech/v1",
-                       openai_api_key="sk-kxgtm71G6zwC44lglIF5CfiEVVzjjc39TOtppkNAwrVA2fUW", temperature=0.1)
+                       openai_api_key="sk-WZtqZEeuE0Xb6syVghDgAxdwe0ASWLkQRGxl61UI7B9RqNC4", temperature=0.1)
     table_loader = TableLoader(
         table_name=task_name, split=split, use_sample=use_sample, small_test=small_test)
     table_aug = TableAug(model)
     num_samples = len(table_loader.dataset)
+    num_samples = 10
     num_batches = num_samples // batch_size
     with tqdm(
         total=num_batches + (1 if num_samples % batch_size > 0 else 0),
