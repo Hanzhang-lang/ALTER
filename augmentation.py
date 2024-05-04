@@ -7,6 +7,12 @@ import logging
 import datetime
 from typing import List
 from tqdm import tqdm
+from langchain_openai import AzureChatOpenAI
+
+os.environ["AZURE_OPENAI_API_KEY"] = "0c75de50975e4f278b882fe90da47f2f"
+os.environ["AZURE_OPENAI_ENDPOINT"] = "https://ces.openai.azure.com"
+os.environ["AZURE_OPENAI_API_VERSION"] = "2024-02-01"
+os.environ["AZURE_OPENAI_CHAT_DEPLOYMENT_NAME"] = "gpt-35-turbo"
 LOG_FORMAT = "%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s"
 logger = logging.getLogger(__name__)
 
@@ -34,13 +40,19 @@ def augmentation(task_name: str,
              aug_type: List,
              batch_size: int = 32,
              small_test: bool=True):
-    model = ChatOpenAI(model_name=model_name, openai_api_base="https://api.chatanywhere.tech/v1",
-                       openai_api_key="sk-WZtqZEeuE0Xb6syVghDgAxdwe0ASWLkQRGxl61UI7B9RqNC4", temperature=0.1)
+    # model = ChatOpenAI(model_name=model_name, openai_api_base="https://api.chatanywhere.tech/v1",
+    #                    openai_api_key="sk-WZtqZEeuE0Xb6syVghDgAxdwe0ASWLkQRGxl61UI7B9RqNC4", temperature=0.1)
+    
+    model = AzureChatOpenAI(
+        openai_api_version=os.environ["AZURE_OPENAI_API_VERSION"],
+        azure_deployment=os.environ["AZURE_OPENAI_CHAT_DEPLOYMENT_NAME"],
+        temperature=0.1
+    )
     table_loader = TableLoader(
         table_name=task_name, split=split, use_sample=use_sample, small_test=small_test)
     table_aug = TableAug(model)
     num_samples = len(table_loader.dataset)
-    num_samples = 10
+
     num_batches = num_samples // batch_size
     with tqdm(
         total=num_batches + (1 if num_samples % batch_size > 0 else 0),
@@ -52,7 +64,6 @@ def augmentation(task_name: str,
             start = batch_num * batch_size
             if start + batch_size >= num_samples:
                 batch_size = num_samples - start
-            batch_data = table_loader.dataset[start: start+batch_size]
             aug_path = f"result/aug/{task_name}_{split}_{aug_type[0]}.csv"
             if os.path.exists(aug_path) and aug_path.endswith('.csv'):
                 auged_names = list(pd.read_csv(aug_path)['table_id'])

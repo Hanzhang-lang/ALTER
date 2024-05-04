@@ -7,14 +7,14 @@ from pandas import DataFrame
 import pandas as pd
 import re
 
-from utils import parse_output, normalize_string_value, parse_datetime
+from utils import parse_output, normalize_string_value, parse_datetime, normalize_rep_column
 from functools import partial
 class TableFormat:
     def __init__(self, format:str, data: Optional[Union[dict, DataFrame]] = None, use_sampling=True) -> None:
         self.format = format
         if data is not None:
             if isinstance(data, dict):
-                df = pd.DataFrame(columns=[self.normalize_col_name(c) for c in data["table"]["header"]])
+                df = normalize_rep_column(pd.DataFrame(columns=[self.normalize_col_name(c) for c in data["table"]["header"]]))
                 for i, line in enumerate(data['table']['rows']):
                     df.loc[i] = line
                 self.data = df
@@ -29,7 +29,7 @@ class TableFormat:
             
     def load_data_from_dic(self, data: dict, use_sampling=True, schema_information=None):
         assert isinstance(data, dict)
-        df = pd.DataFrame(columns=[self.normalize_col_name(c) for c in data["header"]])
+        df = normalize_rep_column(pd.DataFrame(columns=[self.normalize_col_name(c) for c in data["header"]]))
         for i, line in enumerate(data['rows']):
             df.loc[i] = line
         self.data = df

@@ -1,6 +1,7 @@
 import re
 import json
 import pandas as pd
+from pandas import DataFrame
 from typing import List
 from dateutil import parser
 import datetime
@@ -42,6 +43,13 @@ def normalize_string_value(series, errors='coerce'):
                 return None
     
     return series.apply(normalize_null)
+
+def normalize_rep_column(data: DataFrame):
+    duplicates_count = pd.Series(data.columns, index=data.columns).groupby(data.columns).cumcount()
+    rename_list = [f"{col_name}_{col_count}" if col_count > 0 else col_name for (col_name, col_count) in duplicates_count.items()]
+    data.columns = rename_list
+    return data
+
 
 def normalize_schema(data, schema_information):
     col_name, col_schema = parse_output(schema_information)

@@ -92,7 +92,6 @@ def new_pipeline(task_name: str,
             
             try: 
                 formatter.data = formatter.data.loc[:, columns]
-                formatter.all_data = formatter.all_data.loc[:, columns]
             except:
                 pass
             extra_information = '\n'.join(parse_specific_composition(composition_information.loc[sample['id']]['composition'], formatter.data.columns))
@@ -109,8 +108,11 @@ def new_pipeline(task_name: str,
             except:
                 formatter.data = formatter.all_data
                 stage_2_batch_pred = 'SELECT * from DF;'
+            
             if return_SQL:
                 logger.info(cb.total_tokens)
+                if len(formatter.data) == 0:
+                    return query, stage_2_batch_pred, 'No data from database', cb.total_tokens
                 return query, stage_2_batch_pred, formatter.format_html(), cb.total_tokens
             else:
                 llm_chain = LLMChain(llm=model, prompt=extra_answer_instruction, verbose=verbose)
