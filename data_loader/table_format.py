@@ -6,11 +6,13 @@ from typing import List, Union, Optional
 from pandas import DataFrame
 import pandas as pd
 import re
-
+from langchain_text_splitters import CharacterTextSplitter
+from langchain_openai import OpenAIEmbeddings
+from langchain_community.vectorstores import FAISS
 from utils import parse_output, normalize_string_value, parse_datetime, normalize_rep_column
 from functools import partial
 class TableFormat:
-    def __init__(self, format:str, data: Optional[Union[dict, DataFrame]] = None, use_sampling=True) -> None:
+    def __init__(self, format:str, data: Optional[Union[dict, DataFrame]] = None, use_sampling=True, save_embedding=True) -> None:
         self.format = format
         if data is not None:
             if isinstance(data, dict):
@@ -26,7 +28,14 @@ class TableFormat:
             # self.all_data.columns = [self.normalize_col_name(c) for c in self.all_data.columns]
             if use_sampling:
                 self.data = self.data.sample(n=3, random_state=42)
-            
+            if save_embedding:
+                embeddings = OpenAIEmbeddings(openai_api_base="https://api.chatanywhere.com.cn/v1", openai_api_key="sk-WZtqZEeuE0Xb6syVghDgAxdwe0ASWLkQRGxl61UI7B9RqNC4")
+                row_string = []
+                for i in range(len(self.all_data)):
+                    row_string.append(f'# Row {i + 1} ' + ' '.join([f'{{ {self.all_data.columns[j]} : {self.all_data.iloc[i, j]} }}' for j in range(len(self.all_data.columns))]))
+                    text_splitter = CharacterTextSplitter(chunk_size=1, chunk_overlap=0, separator='\n\n')
+                    texts = text_splitter.split_text('\n\n'.join(row_string))
+                    self.db = FAISS.from_texts(texts, embeddings)
     def load_data_from_dic(self, data: dict, use_sampling=True, schema_information=None):
         assert isinstance(data, dict)
         df = normalize_rep_column(pd.DataFrame(columns=[self.normalize_col_name(c) for c in data["header"]]))
@@ -41,14 +50,14 @@ class TableFormat:
         return self
         
         
-    def format_markdown(self, structured_data):
+    def format_markdown(self):
         """
         :return: the linearized text in markdown format from dict
         Markdown: 
         <Markdown grammar>\n To add a table, use three or more hyphens (---) to create each column’s header, and use pipes (|) to separate each column, every cell is separated by pipe \n"
         """
         structured_data_markdown = tabulate(
-            structured_data, headers=structured_data.columns, tablefmt="pipe", showindex=True
+            self.data, headers=self.data.columns, tablefmt="pipe", showindex=True
         )
         return structured_data_markdown
     
@@ -79,7 +88,14 @@ class TableFormat:
         """
         Each cell represented in tuple
         """
-        pass
+        
+        cells = []
+        for i in range(len(self.data)):
+            row_string = f'Row {i + 1} :' + ' '.join([f'{self.data.columns[j]} : {self.data.iloc[i, j]}' for j in range(len(self.data.columns))])
+            cells.append(f'Row {i + 1} :')
+        if table_caption:
+            head = table_caption + '\n' + head
+        return head + "\n".join(cells)
     
     def format_psql(self):
         return tabulate(self.all_data, tablefmt='psql', headers=self.all_data.columns, showindex='true')
@@ -155,11 +171,21 @@ class TableFormat:
                     except:
                         print(f'Unknown Date format {self.data.head()[col_name[i]]}')
                         continue
-                else:
+                if col_schema[i] == 'Numerical':
                     try:
-                        self.all_data[col_name[i]] = mac_dic[col_schema[i]](self.all_data[col_name[i]], errors='coerce')
+                        self.data[col_name[i]] = self.data[col_name[i]].str.replace(',', '').astype(float)
+                        continue
                     except:
                         pass
+                    try:
+                        self.data[col_name[i]] = self.data[col_name[i]].apply(lambda x: eval(x.split('=')[1]))
+                        continue
+                    except:
+                        pass
+                    self.data[col_name[i]] = pd.to_numeric(self.data[col_name[i]], errors='ignore')
+                if col_schema[i] == 'Char':
+                    self.data[col_name[i]] = normalize_string_value(self.data[col_name[i]])
+                        
             #TODO: whether format date in fixed format
     
     def get_all_data(self):
