@@ -26,7 +26,17 @@ def parse_specific_composition(output:str, columns:List):
     compositions = []
     for ind, (item, composition) in enumerate(zip(items, crakets)):
         if item in columns:
+            # compositions.append(item + ':' + composition)
             compositions.append(item + ':' + composition)
+    return compositions
+
+def parse_specific_composition_zh(output:str, columns:List):
+    items, crakets = parse_output(output, pattern = r'\d. (.+?): (.+)')
+    compositions = []
+    for ind, (item, composition) in enumerate(zip(items, crakets)):
+        if item in columns:
+            # compositions.append(item + ':' + composition)
+            compositions.append((item, composition))
     return compositions
     
 def normalize_string_value(series, errors='coerce'):
@@ -34,14 +44,14 @@ def normalize_string_value(series, errors='coerce'):
         try:
             if type(s) == str and s.replace(' ', '').lower() in [
             'na', 'nan', 'none', 'null'
-            ]:
+            ] or len(s.strip()) == 0:
                 return None
             else:
-                return s.strip(' ')
+                s = re.sub(r'^"([^"]*)"$', r'\1', s.strip())
+                return s.replace("–", "-").replace("—", "-").replace("―", "-").replace("−", "-").strip(' ')
         except:
             if errors == 'coerce':
                 return None
-    
     return series.apply(normalize_null)
 
 def normalize_rep_column(data: DataFrame):
@@ -101,6 +111,30 @@ def eval_tabfact(output_file, gold_list, verbose=False):
         print(np.where(np.array(pred_label) != np.array(gold_list)))
     return eval_fv_match(pred_label, gold_list)
     # return eval_fv_match(pred_label, gold_list)
+
+
+def normalize_number(input_str):
+   # 分割字符串以获取小时、分钟和秒
+    if ':' in input_str:
+        hours, minutes_seconds = input_str.split(":")
+        minutes, seconds = minutes_seconds.split(".")
+        # 将小时、分钟和秒转换为分钟
+        total_minutes = int(hours) * 60 + int(minutes) + float(seconds)
+        return total_minutes
+    elif ',' in input_str:
+        return input_str.replace(',', '')
+    elif '=' in input_str:
+        return eval(input_str.split('=')[1])
+    elif input_str.replace(' ', '').lower() in ['n.a', 'n/a', 'n.a.', 'n-a', 'nan', 'none', 'null']:
+        return None
+    else:
+        return input_str.replace('~', '').replace("–", "-").replace("—", "-").replace("―", "-").replace("−", "-").replace(' ', '').strip(' ')
+
+def add_row_number(df: DataFrame):
+    "default index start from 0"
+    df.index = df.index + 1
+    df = df.reset_index(names='row_number')
+    return df
 
 def eval_ex_match(
         pred_list,

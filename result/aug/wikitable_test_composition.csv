@@ -865,7 +865,7 @@ composition,table_id
 2. Keel_Laid: Dates are in the format YYYY-MM-DD
 3. Launched: Dates are in the format YYYY-MM-DD
 4. Commissioned: Dates are in the format YYYY-MM-DD
-5. Fate: Describes the fate of the craft with additional information (e.g., 'Sold', 'Expended as target') and a date",csv/203-csv/369.tsv
+5. Fate: Describes the fate of the craft with additional information, including sale, destruction, transfer, disposed, and service during WWII",csv/203-csv/369.tsv
 "1. Release_date: Dates are listed in the format YYYY-MM-DD
 2. Album_Title: Titles of albums are listed with additional information (e.g., artist name, compilation title)
 3. Record_Company: Names of record companies are listed
@@ -2459,7 +2459,7 @@ composition,table_id
 2. Latitude: The latitude is listed in degrees with a direction (e.g., 6.9° N, 3.9° N, 9.0° N)
 3. Longitude: The longitude is listed in degrees with a direction (e.g., 107.1° E, 107.4° E, 107.4° E)
 4. Diameter: The diameter is listed in kilometers (e.g., 95 km, 35 km, 62 km)",csv/202-csv/79.tsv
-"1. Result: All entries are either ""Win"" or ""Loss""
+"1. Result: All entries are either ""Win"" or ""Loss"" or ""Exch""
 2. Record: The format for the record is ""number-number-number"" (e.g., 19-0-0)
 3. Opponent: Names of opponents are listed
 4. Method: The method of victory is listed (e.g., KO)

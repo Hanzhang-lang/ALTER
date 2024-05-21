@@ -41,7 +41,6 @@ Player<The name of the player>
 Goals<The number of goals scored by the player>
 Caps<The number of caps earned by the player>
 Career<The duration of the player's career with the national team>",csv/204-csv/410.tsv
-This table shows the results of the 2012 GoPro Indy Grand Prix of Sonoma.,Pos<Position of the driver in the race>,csv/204-csv/366.tsv
 "The table provides information on Chinese football matches in 2008, including the date, venue, opponent, result, scoreline, and China's scorers.","Date<The date of the match>
 Venue<The location where the match took place>
 Opponent<The team China played against>
@@ -2513,3 +2512,4 @@ Votes<The number of votes received by the candidate>
 percent<The percentage of votes received by the candidate>
 ∆percent<The change in percentage of votes compared to the previous election>
 Expenditures<The amount of money spent on the campaign by the candidate or party>",csv/202-csv/273.tsv
+"The table shows the results of the 2012 GoPro Indy Grand Prix of Sonoma, including the position, driver, team, engine, laps completed, time retired, grid position, laps led, and points earned for each driver.",Pos<The position of the driver in the race> No<The driver's number> Driver<The name of the driver> Team<The team the driver belongs to> Engine<The type of engine used by the driver> Laps<The number of laps completed by the driver> Time_Retired<The time when the driver retired from the race> Grid<The grid position of the driver at the start of the race> Laps_Led<The number of laps led by the driver> Points<The points earned by the driver in the race>,csv/204-csv/366.tsv

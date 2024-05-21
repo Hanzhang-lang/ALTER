@@ -1,7 +1,7 @@
 from datasets import load_dataset
 import pandas as pd
 import re
-
+import os
 
 def normalize_col_name(col_name, illegal_chars={'.': '', ' ': '_',
                                                 '\\': '_',  '(': '',
@@ -36,8 +36,9 @@ class TableLoader:
                 lambda example: example['small_test'])
 
     def load_table(self, use_sample: bool = True, split: str = None, ):
+        dir_path = os.path.dirname(os.path.abspath(__file__))
         dataset = load_dataset(
-            f"data_loader/{self.table_name}.py", verification_mode="no_checks", cache_dir="/media/disk2/datasets")
+            os.path.join(dir_path, f"{self.table_name}.py"), verification_mode="no_checks", cache_dir="/media/disk2/datasets")
         if split:
             dataset = dataset[split]
         if use_sample and len(dataset) > 300:

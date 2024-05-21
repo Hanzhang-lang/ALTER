@@ -1,0 +1,299 @@
+schema,table_id
+no_overall<Numerical> no_for_series<Numerical> title<Char> directed_by<Char> written_by<Char> original_air_date<Date> uk_viewers_million<Numerical>,1-29063233-1.html.csv
+player<Char> league<Numerical> title_playoff<Numerical> super_cup<Numerical> total<Numerical>,2-17200019-10.html.csv
+place<Char> player<Char> country<Char> score<Char> to_par<Char> money<Numerical>,2-17231086-6.html.csv
+round<Numerical> player<Char> position<Char> nationality<Char> college_junior_club_team_league<Char>,2-14101654-10.html.csv
+year<Numerical> beer_name<Char> prize<Char> category<Char> competition<Char>,2-17514817-1.html.csv
+game<Numerical> date<Char> team<Char> location_attendance<Char> record<Char>,2-17340355-10.html.csv
+rank<Numerical> name<Char> nation<Char> sp_+_fs<Numerical> points<Numerical> places<Numerical>,2-11312764-4.html.csv
+rank<Numerical> name<Char> nation<Char> sp_+_fs<Numerical> points<Numerical> places<Numerical>,2-11025881-1.html.csv
+date<Char> visitor<Char> score<Char> home<Char> decision<Char> attendance<Numerical> record<Char>,2-13135264-6.html.csv
+name<Char> born_died<Date> term_start<Date> term_end<Date> political_party<Char>,2-167235-8.html.csv
+player<Char> nationality<Char> position<Char> years_for_jazz<Char> school_club_team<Char>,2-11545282-4.html.csv
+tournament<Char> wins<Numerical> top_5<Numerical> top_25<Numerical> events<Numerical> cuts_made<Numerical>,2-10167122-1.html.csv
+family<Char> baltimore_group<Char> envelopment<Char> virion_shape<Char> replication_site<Char>,2-15845253-1.html.csv
+outcome<Char> date<Date> tournament<Char> surface<Char> opponent<Char> score<Char>,2-15272585-8.html.csv
+date<Char> course<Char> distance<Char> winner<Char> race_leader<Char>,2-12546630-1.html.csv
+round<Numerical> pick<Numerical> overall<Numerical> name<Char> position<Char> college<Char>,2-13312898-28.html.csv
+rank<Numerical> nation<Char> gold<Numerical> silver<Numerical> bronze<Numerical> total<Numerical>,2-187504-13.html.csv
+name<Char> type<Char> ra_j2000_<Char> dec_j2000_<Char> redshift_km_s_<Numerical> apparent_magnitude<Numerical>,2-18156552-1.html.csv
+date<Char> site<Char> sport<Char> winning_team<Char> series<Char>,2-14175075-5.html.csv
+year<Numerical> award<Char> category<Char> nominee<Char> result<Char>,2-1195142-2.html.csv
+outcome<Char> year<Numerical> championship<Char> surface<Char> opponent<Char> score<Char>,2-17915-12.html.csv
+date<Date> venue<Char> score<Char> comp<Char> report<Char>,2-18607260-13.html.csv
+year<Numerical> venue<Char> winning_team<Char> score<Char> usa_captain<Char> europe_captain<Char>,2-1546813-1.html.csv
+date<Char> opponent<Char> score<Char> loss<Char> attendance<Numerical> record<Char>,2-11512626-6.html.csv
+week<Numerical> date<Date> opponent<Char> result<Char> attendance<Numerical>,2-18842944-2.html.csv
+date<Date> city<Char> opponent<Char> results<Numerical> type_of_game<Char>,2-14305653-58.html.csv
+game<Numerical> date<Date> opponent<Char> venue<Char> result<Char> attendance<Numerical>,2-17916431-2.html.csv
+medal_count<Numerical> date<Date> athlete<Char> nation<Char> sport<Char> record_medal_event<Char>,2-18855244-2.html.csv
+call_sign<Char> frequency_mhz<Numerical> city_of_license<Char> erp_w<Numerical> class<Char> fcc_info<Char>,2-14123212-1.html.csv
+tournament<Char> c_1986<Char> c_1988<Char> c_1989<Char> c_1990<Char> c_1991<Char> c_1992<Char> c_1993<Char> c_1994<Char> c_1995<Char> c_1996<Char> c_1997<Char> c_1998<Char> c_1999<Char>,2-18622227-6.html.csv
+home_team<Char> home_team_score<Char> away_team<Char> away_team_score<Char> venue<Char> crowd<Numerical> date<Date>,2-10776868-9.html.csv
+driver<Char> entrant<Char> constructor<Char> chassis<Char> engine<Char> tyre<Char>,2-1122039-1.html.csv
+mark<Numerical> wind<Numerical> athlete<Char> nationality<Char> venue<Char> date<Date>,2-18084-3.html.csv
+player<Char> team<Char> matches<Numerical> wickets<Numerical> average<Numerical> best_bowling<Char>,2-16570286-3.html.csv
+name<Char> position<Char> league_apps<Numerical> league_goals<Numerical> fa_cup_apps<Numerical> fa_cup_goals<Numerical> league_cup_apps<Char> league_cup_goals<Numerical> total_apps<Char> total_goals<Numerical>,2-18700010-1.html.csv
+date<Char> opponent<Char> score<Char> loss<Char> attendance<Numerical> record<Char>,2-12206617-3.html.csv
+date<Date> tournament<Char> surface<Char> opponent_in_the_final<Char> score<Char>,2-1564278-3.html.csv
+place<Numerical> player<Char> country<Char> score<Char> to_par<Char>,2-17807292-5.html.csv
+vctp<Char> vca_155<Char> vctm<Char> vcpc<Char> vclc<Char> vcrt<Char>,2-1111973-1.html.csv
+no<Numerical> _<Numerical> title<Char> director<Char> writer_s<Char> original_air_date<Date> prod_code<Numerical> us_viewers_million<Numerical>,1-2602958-5.html.csv
+call_sign<Char> frequency_mhz<Char> city_of_license<Char> erp_w<Numerical> class<Char> fcc_info<Char>,2-14369924-1.html.csv
+rank<Numerical> nation<Char> gold<Numerical> silver<Numerical> bronze<Numerical> total<Numerical>,2-14783550-1.html.csv
+game<Numerical> date<Char> team<Char> score<Char> high_points<Char> high_rebounds<Char> high_assists<Char> location_attendance<Char> record<Char>,1-27755603-10.html.csv
+no_in_series<Numerical> no_in_season<Numerical> title<Char> directed_by<Char> written_by<Char> original_air_date<Date> us_viewers_millions<Numerical>,1-24132054-1.html.csv
+constituency_number<Numerical> name<Char> reserved_for_sc_st_none<Char> district<Char> number_of_electorates_2009<Numerical>,2-18496100-2.html.csv
+season<Char> event_type<Char> location<Char> format<Char> date<Date> rank<Numerical>,2-18576668-1.html.csv
+NULL_COL<Numerical> title<Char> directed_by<Char> written_by<Char> viewers<Numerical> original_airdate<Date> prod_code<Numerical>,1-27547668-2.html.csv
+nat<Char> name<Char> moving_to<Char> type<Char> transfer_window<Char> transfer_fee<Char>,2-17438913-3.html.csv
+home_team<Char> home_team_score<Numerical> away_team<Char> away_team_score<Numerical> venue<Char> crowd<Numerical> date<Date>,2-10826385-15.html.csv
+party<Char> administrative_panel<Numerical> agricultural_panel<Numerical> cultural_and_educational_panel<Numerical> industrial_and_commercial_panel<Numerical> labour_panel<Numerical> national_university_of_ireland<Numerical> university_of_dublin<Numerical> nominated_by_the_taoiseach<Numerical> total<Numerical>,2-15547694-1.html.csv
+team_1<Char> agg<Char> team_2<Char> c_1st_leg<Char> c_2nd_leg<Char>,2-12423174-1.html.csv
+date<Char> opponent<Char> score<Char> loss<Char> attendance<Numerical> record<Char>,2-14255774-8.html.csv
+team_1<Char> agg<Char> team_2<Char> c_1st_leg<Char> c_2nd_leg<Char>,2-16218498-1.html.csv
+year<Numerical> competition<Char> venue<Char> position<Char> notes<Char>,2-12582968-1.html.csv
+home_team<Char> home_team_score<Char> away_team<Char> away_team_score<Char> venue<Char> crowd<Numerical> date<Date>,2-10806592-9.html.csv
+year<Numerical> class<Char> team<Char> points<Numerical> wins<Numerical>,2-15194193-3.html.csv
+week<Numerical> date<Date> opponent<Char> result<Char> game_site<Char> attendance<Numerical>,2-10918196-1.html.csv
+quarterback<Char> uniform_no_s<Numerical> games_started<Numerical> wins<Numerical> losses<Numerical> ties<Numerical> winning_pct<Numerical>,2-13932013-1.html.csv
+place<Char> player<Char> country<Char> score<Numerical> to_par<Char>,2-18169093-3.html.csv
+date<Date> opponent<Char> score<Char> loss<Char> attendance<Numerical> record<Char>,2-13041602-7.html.csv
+game<Numerical> date<Char> team<Char> score<Char> high_points<Char> high_rebounds<Char> high_assists<Char> location_attendance<Char> record<Char>,1-27700375-11.html.csv
+place<Char> player<Char> country<Char> score<Char> to_par<Char> money<Numerical>,2-18096431-7.html.csv
+year<Numerical> chassis<Char> engine_s<Char> tyres<Char> points<Numerical>,2-1219581-1.html.csv
+position<Numerical> team<Char> points<Numerical> played<Numerical> against<Numerical> difference<Numerical>,2-15349635-1.html.csv
+home_team<Char> home_team_score<Numerical> away_team<Char> away_team_score<Numerical> venue<Char> crowd<Numerical> date<Date>,2-10773616-16.html.csv
+jyutping<Char> character<Char> portuguese<Char> relative_value<Numerical> metric_value<Numerical> imperial_value<Char>,2-147235-16.html.csv
+date<Date> opponents<Char> h_a<Char> result_f_a<Char> attendance<Numerical> league_position<Char>,2-12817505-2.html.csv
+date<Char> opponent<Char> score<Char> loss<Char> attendance<Numerical> record<Char>,2-12076689-7.html.csv
+episode<Char> air_date<Date> timeslot<Char> c_18_49<Numerical> viewers<Numerical>,2-17443121-2.html.csv
+game<Numerical> date<Date> opponent<Char> score<Char> location<Char> record<Char>,2-17344651-6.html.csv
+player<Char> nationality<Char> position<Char> years_for_jazz<Char> school_club_team<Char>,2-11545282-1.html.csv
+NULL_COL<Char> episode_title<Char> romanized_title<Char> translation_of_title<Char> broadcast_date<Date> ratings<Numerical>,1-27784580-1.html.csv
+team<Char> lost<Numerical> last_5<Char> streak<Char> home<Char> away<Char> percent_pts<Numerical> percent_won<Numerical>,2-16653153-30.html.csv
+date<Char> opponent<Char> venue<Char> result<Char> attendance<Numerical>,2-18762971-2.html.csv
+tournament<Char> c_2007<Char> c_2008<Char> c_2009<Char> c_2010<Char> c_2011<Char>,2-12472200-7.html.csv
+res<Char> record<Numerical> opponent<Char> method<Char> event<Char> round<Numerical> time<Char>,2-17445673-2.html.csv
+game<Numerical> date<Char> team<Char> score<Char> high_points<Char> high_rebounds<Char> high_assists<Char> location_attendance<Char> record<Char>,1-23285849-5.html.csv
+game<Numerical> date<Char> team<Char> score<Char> high_points<Char> high_rebounds<Char> high_assists<Char> location_attendance<Char> record<Char>,1-23248940-9.html.csv
+season<Numerical> division<Char> wins<Numerical> losses<Numerical> ties<Numerical> final_position<Char> notes<Char>,2-16002638-1.html.csv
+cerclis_id<Numerical> name<Char> county<Char> proposed<Date> listed<Date> construction_completed<Char> partially_deleted<Char> deleted<Char>,2-11097420-1.html.csv
+opposing_team<Char> against<Numerical> date<Date> venue<Char> status<Char>,2-18844321-1.html.csv
+date<Char> opponent<Char> score<Char> loss<Char> attendance<Numerical> record<Char>,2-12206243-10.html.csv
+rank<Numerical> constituency<Char> winning_party_2003<Char> swing_to_gain<Numerical> snp_s_place_2003<Char> result<Char>,2-11105214-2.html.csv
+place<Numerical> player<Char> country<Char> score<Numerical> to_par<Char>,2-12523044-5.html.csv
+home_team<Char> home_team_score<Char> away_team<Char> away_team_score<Char> venue<Char> crowd<Numerical> date<Date>,2-10883333-10.html.csv
+year<Numerical> races<Numerical> wins<Numerical> poles<Numerical> top_5<Numerical> top_10<Numerical> dnf<Numerical> finish<Numerical> start<Numerical> winnings<Numerical> season_rank<Char> team_s<Char>,1-2649597-1.html.csv
+ngc_number<Numerical> object_type<Char> constellation<Char> right_ascension_j2000_<Char> declination_j2000_<Char> apparent_magnitude<Numerical>,2-11051845-5.html.csv
+home_team<Char> home_team_score<Char> away_team<Char> away_team_score<Char> venue<Char> crowd<Numerical> date<Date>,2-10776330-7.html.csv
+name<Char> total<Numerical> first<Date> last<Date> highest_rank<Char>,2-17634218-19.html.csv
+year<Numerical> location<Char> gold<Char> silver<Char> bronze<Char>,2-14781412-8.html.csv
+week<Numerical> date<Date> opponent<Char> result<Char> score<Char> record<Char>,2-18546846-1.html.csv
+year<Numerical> dates<Char> venue<Char> champion<Char> country<Char> score<Numerical> to_par<Numerical> margin_of_victory<Char> runner_s_up<Char> purse<Numerical> winner_s_share<Numerical>,2-1520559-1.html.csv
+week<Numerical> date<Date> opponent<Char> result<Char> attendance<Numerical>,2-16023753-2.html.csv
+date<Char> visitor<Char> score<Char> home<Char> decision<Char> attendance<Numerical> record<Char>,2-11739153-7.html.csv
+week<Numerical> date<Date> opponent<Char> result<Char> attendance<Numerical>,2-18842947-2.html.csv
+game<Numerical> date<Char> opponent<Char> result<Char> wildcats_points<Numerical> opponents<Numerical> record<Char>,1-24560733-1.html.csv
+driver<Char> constructor<Char> laps<Numerical> time_retired<Char> grid<Numerical>,2-1122485-2.html.csv
+no<Numerical> football_club<Char> continent<Char> associated_football_club<Char> seasons<Char> racing_drivers<Char>,1-23886181-1.html.csv
+club<Char> head_coach<Char> city<Char> stadium<Char> c_2003_2004_season<Char>,2-17933602-1.html.csv
+name<Char> occupation<Char> gender<Char> prison_connection<Char> played_by<Char> status<Char>,1-2933761-1.html.csv
+season<Numerical> series<Numerical> episode_title<Char> original_air_date<Date> nick_prod<Numerical>,1-2655016-4.html.csv
+stage<Numerical> winner<Char> general_classification<Char> points_classification<Char> mountains_classification<Char> combination_classification<Char> team_classification<Char>,1-25551880-2.html.csv
+year<Numerical> title<Char> us<Numerical> us_rb<Numerical> us_dance<Char>,2-1023439-2.html.csv
+year<Numerical> tournaments_played<Numerical> cuts_made<Numerical> wins<Numerical> best_finish<Char> earnings<Numerical> money_list_rank<Numerical>,1-1697190-2.html.csv
+event<Char> record<Numerical> athlete<Char> nationality<Char> date<Date>,2-1111662-2.html.csv
+game<Numerical> date<Char> team<Char> score<Char> high_points<Char> high_rebounds<Char> high_assists<Char> location_attendance<Char> series<Char>,2-17288845-11.html.csv
+place<Char> player<Char> country<Char> score<Char> to_par<Char>,2-18049082-6.html.csv
+year<Numerical> award_ceremony<Char> category<Char> nominee<Char> result<Char>,2-18963715-1.html.csv
+date<Date> opponent<Char> site<Char> result<Char> attendance<Numerical>,2-17345263-7.html.csv
+place<Char> player<Char> country<Char> score<Numerical> to_par<Char>,2-16299790-6.html.csv
+place<Numerical> player<Char> country<Char> score<Char> to_par<Char> money<Char>,2-17245513-1.html.csv
+selection<Numerical> month<Char> season<Char> team_record<Char> points_per_game<Numerical> field_goal_percentage<Numerical> rebounds_per_game<Numerical> blocks_per_game<Numerical>,1-25774493-3.html.csv
+screening_started<Date> screening_completed<Date> chapter_unfrozen<Char> chapter_opened<Date> chapter_closed<Char>,2-1283036-1.html.csv
+year<Numerical> entrant<Char> chassis<Char> engine<Char> points<Numerical>,2-1228251-1.html.csv
+game<Numerical> march<Numerical> opponent<Char> score<Char> record<Char> points<Numerical>,2-14291300-7.html.csv
+season<Numerical> trophy_winner<Char> air_force_navy_score<Char> air_force_army_score<Char> army_navy_score<Char>,1-1850339-2.html.csv
+year<Numerical> boys_singles<Char> girls_singles<Char> boys_doubles<Char> girls_doubles<Char> mixed_doubles<Char>,1-14319023-2.html.csv
+character<Char> position<Char> actor<Char> first_episode<Char> final_episode<Char> duration<Char> final_episode_count<Numerical>,1-11210576-3.html.csv
+home_team<Char> home_team_score<Numerical> away_team<Char> away_team_score<Numerical> venue<Char> crowd<Numerical> date<Date>,2-10809368-12.html.csv
+institution<Char> location<Char> founded<Numerical> type<Char> enrollment<Numerical> nickname<Char> joined<Date> left<Date> current_conference<Char>,1-16168849-1.html.csv
+year<Numerical> date<Char> winner<Char> result<Char> loser<Char> location<Char>,2-11840325-8.html.csv
+feature<Char> amt_10_desktop<Char> amt_20_21_desktop<Char> amt_25_26_mobile<Char> amt_30_desktop<Char> amt_40_mobile<Char> amt_50_desktop<Char> c_60_desktop_mobile<Char> c_70_80_desktop_mobile<Char>,2-18925475-1.html.csv
+district<Char> incumbent<Char> party<Char> first_elected<Numerical> status<Char> opponent<Char>,1-1341522-41.html.csv
+name<Char> cyl<Char> bore<Char> capacity<Char> power<Char> weight<Char>,2-16876516-2.html.csv
+title<Char> genre<Char> c_=_64<Char> zx_spectrum<Char> others<Char> year<Numerical> format<Char>,2-15168206-1.html.csv
+year<Numerical> date<Char> driver<Char> team<Char> manufacturer<Char> laps<Numerical> _<Char> race_time<Char> average_speed_mph<Numerical> report<Char>,1-2150776-1.html.csv
+series<Numerical> season<Numerical> title<Char> director_s<Char> writer_s<Char> original_airdate<Date>,1-11715748-2.html.csv
+record<Char> date<Date> driver<Char> time<Numerical> speed_avg_speed<Char>,2-1184821-1.html.csv
+year<Numerical> regional_gva<Numerical> agriculture<Numerical> industry<Numerical> services<Numerical>,2-17073558-1.html.csv
+team<Char> average<Numerical> points<Numerical> played<Numerical> c_1986_87<Numerical> c_1987_88<Numerical> c_1988_89<Numerical>,2-17968265-1.html.csv
+lane<Numerical> athlete<Char> nationality<Char> time<Numerical> react<Numerical>,2-18569011-14.html.csv
+date<Char> visiting_team<Char> final_score<Char> host_team<Char> stadium<Char>,2-10944289-2.html.csv
+place<Numerical> rider<Char> country<Char> machine<Char> speed<Char> time<Char> points<Numerical>,2-15753390-2.html.csv
+season<Numerical> series<Char> team<Char> races<Numerical> wins<Numerical> poles<Numerical> f_laps<Numerical> podiums<Numerical> points<Numerical> position<Char>,1-25557880-1.html.csv
+NULL_COL<Numerical> player<Char> country<Char> points<Numerical> events<Numerical> reset_points<Numerical>,1-13282157-1.html.csv
+rank<Numerical> country<Char> unwto_region<Char> international_tourist_arrivals_2012<Numerical> international_tourist_arrivals_2011<Numerical> change_2011_to_2012<Char> change_2010_to_2011<Char>,1-29789-1.html.csv
+state<Char> type<Char> name<Char> title<Char> royal_house<Char> c_from<Date>,2-17338083-13.html.csv
+game<Numerical> date<Date> team<Char> score<Char> high_points<Char> high_rebounds<Char> high_assists<Char> location_attendance<Char> record<Char>,1-27755603-2.html.csv
+round<Numerical> pick<Numerical> overall<Numerical> name<Char> position<Char> college<Char>,2-15198842-45.html.csv
+game<Numerical> date<Char> team<Char> score<Char> high_points<Char> high_rebounds<Char> high_assists<Char> location_attendance<Char> record<Char>,1-27902171-8.html.csv
+track<Numerical> recorded<Date> original_issue<Char> song_title<Char> time<Char>,2-11565999-5.html.csv
+place<Numerical> player<Char> country<Char> score<Char> to_par<Numerical>,2-17231125-6.html.csv
+date<Date> home_team<Char> score<Char> away_team<Char> goals<Char> attendance<Numerical> competition<Char>,2-10814487-4.html.csv
+home_team<Char> home_team_score<Char> away_team<Char> away_team_score<Char> venue<Char> crowd<Numerical> date<Date>,2-10775890-3.html.csv
+driver<Char> team<Char> laps<Numerical> time_retired<Date> grid<Numerical> points<Numerical>,2-18357242-2.html.csv
+ntfa_div_1<Char> wins<Numerical> byes<Numerical> losses<Numerical> draws<Numerical> against<Numerical>,2-14756291-5.html.csv
+date<Char> visitor<Char> score<Char> home<Char> record<Char>,2-12019734-7.html.csv
+year<Numerical> category<Char> film<Char> winner_nominee_s<Char> result<Char>,2-1305286-7.html.csv
+name<Char> city<Char> years_as_tallest<Date> metres<Numerical> feet<Numerical> floors<Numerical>,2-14669089-2.html.csv
+date<Char> visitor<Char> score<Char> home<Char> record<Char>,2-17442575-3.html.csv
+game<Numerical> date<Char> opponent<Char> result<Char> black_knights_points<Numerical> opponents<Numerical> record<Char>,1-21092444-1.html.csv
+age_group<Char> brazil_100percent_percent_of_the_population<Numerical> white_4773percent_percent_in_the_race_percent_in_the_age_group<Numerical> black_761percent_percent_in_the_race_percent_in_the_age_group<Numerical> yellow_109percent_percent_in_the_race_percent_in_the_age_group<Numerical> brown_multiracial_4313percent_percent_in_the_race_percent_in_the_age_group<Numerical> indians_043percent_percent_in_the_race_percent_in_the_age_group<Numerical> unspecified_00034percent<Numerical>,1-18950570-4.html.csv
+season<Numerical> team_name<Char> games<Numerical> losses<Numerical> points<Numerical>,2-11692087-1.html.csv
+outcome<Char> date<Date> tournament<Char> surface<Char> opponent_in_the_final<Char> score_in_the_final<Char>,2-11983898-4.html.csv
+skip<Char> third_vice_skip<Char> second<Char> lead<Char> city<Char>,2-17012578-2.html.csv
+driver<Char> constructor<Char> laps<Numerical> time_retired<Char> grid<Numerical>,2-1122988-1.html.csv
+no_in_series<Numerical> no_in_season<Numerical> title<Char> directed_by<Char> written_by<Char> original_air_date<Date>,1-25277363-2.html.csv
+team<Char> outgoing_manager<Char> manner_of_departure<Char> date_of_vacancy<Date> replaced_by<Char> date_of_appointment<Date> position_in_table<Char>,1-18522916-5.html.csv
+home_team<Char> home_team_score<Numerical> away_team<Char> away_team_score<Numerical> ground<Char> crowd<Numerical> date<Date>,2-16388398-3.html.csv
+date<Char> opponent<Char> score<Char> loss<Char> attendance<Numerical> record<Char>,2-12207158-2.html.csv
+round<Numerical> pick<Numerical> overall<Numerical> name<Char> position<Char> college<Char>,2-15100419-2.html.csv
+episode<Numerical> series<Numerical> episode_title<Char> original_air_date<Date> production_code<Numerical>,1-28967275-2.html.csv
+year<Numerical> competition<Char> venue<Char> position<Char> notes<Numerical>,2-15399415-1.html.csv
+aircraft<Char> origin<Char> type<Char> versions<Char> in_service<Char>,2-1015521-1.html.csv
+home_team<Char> home_team_score<Char> away_team<Char> away_team_score<Char> venue<Char> crowd<Numerical> date<Date>,2-10747009-18.html.csv
+provider<Char> country<Char> subscribers_2005_thousands<Numerical> subscribers_2006_thousands<Numerical> growth_percent<Numerical>,1-29395291-2.html.csv
+date<Char> winning_team<Char> score<Char> winning_pitcher<Char> losing_pitcher<Char> attendance<Numerical> location<Char>,1-12125069-2.html.csv
+rank<Numerical> name<Char> years<Date> matches<Numerical> goals<Numerical>,2-1590321-59.html.csv
+series<Numerical> season<Numerical> title<Char> directed_by<Char> written_by<Char> original_air_date<Date> us_viewers_millions<Numerical>,1-27833469-1.html.csv
+cyclist<Char> country<Char> team<Char> time<Char> uci_points<Numerical>,2-11355733-15.html.csv
+rank<Numerical> nation<Char> gold<Numerical> silver<Numerical> bronze<Numerical> total<Numerical>,2-1613392-2.html.csv
+season<Numerical> episode<Numerical> episode_summary<Char> premier_date<Date> external_link<Char> coach<Char>,1-2140071-13.html.csv
+district<Char> incumbent<Char> party<Char> first_elected<Date> result<Char> candidates<Char>,1-1342256-6.html.csv
+week<Numerical> date<Date> opponent<Char> result<Char> attendance<Numerical>,2-16778155-2.html.csv
+name<Char> bodyweight<Numerical> snatch<Numerical> clean_jerk<Numerical> total_kg<Numerical>,2-17703223-7.html.csv
+year<Numerical> date<Char> winner<Char> result<Char> loser<Char> attendance<Numerical> location<Char>,2-11650849-7.html.csv
+place<Numerical> player<Char> country<Char> score<Numerical> to_par<Char>,2-17245540-5.html.csv
+teams<Char> name<Char> trophy<Char> first_met<Numerical> games_played<Char> series_record<Char>,2-14975-5.html.csv
+season<Char> events<Numerical> cashes<Numerical> match_play<Numerical> tv_finals<Numerical> pba_titles<Numerical> average<Numerical> earnings<Numerical>,2-15654720-1.html.csv
+animal_name<Char> species<Char> books<Char> tv_series<Char> gender<Char> tv_seasons<Numerical> mate<Char> first_appearance<Date> last_appearance<Date>,2-11206371-3.html.csv
+date<Date> tournament<Char> surface<Char> opponent<Char> score<Char>,2-1554049-2.html.csv
+date<Date> opponent<Char> venue<Char> result<Char> attendance<Numerical>,2-1630554-8.html.csv
+episode<Numerical> prod<Numerical> title<Char> directed_by<Char> written_by<Char> originalairdate<Date> filmed<Char>,1-2370579-1.html.csv
+driver<Char> constructor<Char> laps<Numerical> time_retired<Date> grid<Numerical>,2-1122319-1.html.csv
+period<Char> live_births_per_year<Numerical> deaths_per_year<Numerical> natural_change_per_year<Numerical> cbr<Numerical> cdr<Numerical> nc<Numerical> tfr<Numerical> imr<Numerical> life_expectancy_total<Numerical> life_expectancy_males<Numerical> life_expectancy_females<Numerical>,1-18950570-2.html.csv
+party<Char> administrative_panel<Numerical> agricultural_panel<Numerical> cultural_and_educational_panel<Numerical> industrial_and_commercial_panel<Numerical> labour_panel<Numerical> national_university_of_ireland<Numerical> university_of_dublin<Numerical> nominated_by_the_taoiseach<Numerical> total<Numerical>,2-15547582-1.html.csv
+player<Char> nationality<Char> position<Char> years_for_jazz<Char> school_club_team<Char>,2-11545282-15.html.csv
+year<Numerical> record<Char> win_percent<Numerical> league<Char> division<Char> gb<Numerical> post_season_record<Char> post_season_win_percent<Char> mlb_affiliate<Char>,2-12482419-2.html.csv
+district<Char> incumbent<Char> party<Char> first_elected<Numerical> result<Char> candidates<Char>,1-1341690-13.html.csv
+outcome<Char> date<Date> location<Char> surface<Char> opponent_in_final<Char> score<Char>,2-16776506-2.html.csv
+volume<Numerical> discs<Numerical> episodes<Numerical> region_1<Char> region_2<Char> region_4<Char>,1-14562722-2.html.csv
+year<Numerical> record<Char> seed<Numerical> region<Char> results<Char>,2-14609295-5.html.csv
+year<Numerical> category<Char> recipients_and_nominees<Char> role_episode<Char> result<Char>,2-18552926-8.html.csv
+actor<Char> character<Char> title_rank<Char> series<Char> years<Char>,2-10831820-1.html.csv
+district<Char> incumbent<Char> party<Char> first_elected<Numerical> result<Char> candidates<Char>,1-1341690-20.html.csv
+date<Char> event<Char> winner<Char> team<Char> series_leader<Char>,2-15930479-1.html.csv
+team_1<Char> agg<Char> team_2<Char> c_1st_leg<Char> c_2nd_leg<Char>,2-16623894-37.html.csv
+res<Char> record<Char> opponent<Char> method<Char> event<Char> round<Char> time<Char>,2-17445451-2.html.csv
+rank<Numerical> rowers<Char> country<Char> time<Date> notes<Char>,2-18662685-8.html.csv
+rank_mideast<Numerical> rank_asia<Numerical> rank_world<Numerical> country<Char> c_2011_gdp_ppp_billions_of_usd<Numerical>,1-2248784-4.html.csv
+rank<Numerical> nation<Char> gold<Numerical> silver<Numerical> bronze<Numerical> total<Numerical>,2-15807932-2.html.csv
+rank<Numerical> gold<Numerical> silver<Numerical> bronze<Numerical> total<Numerical>,2-1467600-1.html.csv
+rank<Numerical> player<Char> years<Char> games<Numerical> reb_avg<Numerical> total_rebounds<Numerical>,2-16835332-3.html.csv
+game<Numerical> date<Char> team<Char> score<Char> high_points<Char> high_rebounds<Char> high_assists<Char> location_attendance<Char> record<Char>,1-11960407-2.html.csv
+date<Date> tournament<Char> surface<Char> opponent_in_the_final<Char> score<Char>,2-17086086-2.html.csv
+team<Char> games_played<Numerical> wins<Numerical> losses<Numerical> ties<Numerical> goals_for<Numerical> goals_against<Numerical>,2-11753791-1.html.csv
+game<Numerical> date<Char> opponent<Char> score<Char> location<Char> attendance<Numerical> record<Char> points<Numerical>,2-17360840-7.html.csv
+no_in_series<Numerical> no_in_season<Numerical> title<Char> directed_by<Char> written_by<Char> original_air_date<Date> production_code<Char> us_viewers_millions<Numerical>,1-27332038-1.html.csv
+tournament<Char> wins<Numerical> top_5<Numerical> top_10<Numerical> top_25<Numerical> events<Numerical> cuts_made<Numerical>,2-1598015-5.html.csv
+home_team<Char> home_team_score<Char> away_team<Char> away_team_score<Char> venue<Char> crowd<Numerical> date<Date>,2-10773616-14.html.csv
+rating<Numerical> share<Numerical> rating_share_18_49<Char> viewers_millions<Numerical> rank_overall<Numerical>,2-17138681-2.html.csv
+position<Numerical> team<Char> played<Numerical> wins<Numerical> draws<Numerical> losses<Numerical> scored<Numerical> conceded<Numerical> points<Numerical>,2-14876228-1.html.csv
+rank<Numerical> nation<Char> gold<Numerical> silver<Numerical> bronze<Numerical> total<Numerical>,2-17025909-3.html.csv
+episode<Numerical> original_airdate<Char> timeslot_approx<Char> viewers_millions<Numerical> nightly_rank<Numerical>,2-17111841-1.html.csv
+week<Numerical> date<Date> opponent<Char> result<Char> attendance<Numerical>,2-18747741-1.html.csv
+game<Numerical> date<Char> team<Char> score<Char> high_points<Char> high_rebounds<Char> high_assists<Char> location_attendance<Char> record<Char>,2-17311783-10.html.csv
+year<Numerical> award<Char> category<Char> recipient<Char> result<Char>,2-15627191-3.html.csv
+week<Numerical> date<Date> opponent<Char> result<Char> record<Char> tv_time<Char> attendance<Numerical>,2-10659538-3.html.csv
+date<Char> venue<Char> score<Char> result<Char> competition<Char>,2-15855923-1.html.csv
+rank<Numerical> airport<Char> code_iata_icao<Char> total_cargo_metric_tonnes<Numerical> percent_change<Char>,2-1451581-1.html.csv
+rank<Numerical> rider<Char> team<Char> speed<Numerical> time<Char>,2-10301911-2.html.csv
+series<Numerical> season<Numerical> title<Char> directed_by<Char> written_by<Char> original_air_date<Date> us_viewers_in_millions<Numerical>,1-20704243-5.html.csv
+year<Numerical> best_teenage_young_adult<Char> reader_s_vote<Char> best_non_fiction<Char> lifetime_achievement<Char>,2-16369528-1.html.csv
+name<Char> license<Char> os_x<Char> unix_like<Char> windows<Char> web_interface<Char>,2-18899538-1.html.csv
+tie_no<Numerical> home_team<Char> score<Char> away_team<Char> date<Date>,2-17751797-4.html.csv
+date<Char> score<Char> set_1<Char> set_2<Char> set_3<Char> total<Char>,2-17626199-35.html.csv
+home_team<Char> home_team_score<Char> away_team<Char> away_team_score<Char> venue<Char> crowd<Numerical> date<Date>,2-10808346-15.html.csv
+date<Char> opponent<Char> home_away<Char> field<Char> result<Char>,2-12075099-1.html.csv
+date<Char> opponent<Char> venue<Char> result<Char> attendance<Numerical> competition<Char> man_of_the_match<Char>,2-17120964-6.html.csv
+no_in_series<Numerical> no_in_season<Numerical> title<Char> directed_by<Char> written_by<Char> originalairdate<Date> tv_broadcast<Char>,1-16090262-1.html.csv
+position<Numerical> gymnast<Char> a_score<Numerical> b_score<Numerical> total<Numerical>,2-18662019-2.html.csv
+species<Char> indole<Char> methyl_red<Char> voges_proskauer<Char> citrate<Char>,2-16083989-1.html.csv
+week<Numerical> date<Date> opponent<Char> result<Char> attendance<Numerical>,2-16778063-2.html.csv
+game<Numerical> date<Char> team<Char> score<Char> high_points<Char> high_rebounds<Char> high_assists<Char> location_attendance<Char> record<Char>,1-25461946-5.html.csv
+rank<Numerical> nation<Char> gold<Numerical> silver<Numerical> bronze<Numerical> total<Numerical>,2-12392804-3.html.csv
+res<Char> record<Char> opponent<Char> method<Char> event<Char> round<Numerical> time<Char> location<Char>,2-1486444-3.html.csv
+year<Numerical> dates<Char> champion<Char> country<Char> score<Char> tournament_location<Char> purse<Numerical> winner_s_share<Numerical>,2-15315276-1.html.csv
+date<Date> venue<Char> score<Char> result<Char> competition<Char>,2-11978803-1.html.csv
+episode<Char> first_aired<Date> entrepreneur_s<Char> company_or_product_name<Char> money_requested<Numerical> investing_dragon_s<Char>,2-12617978-9.html.csv
+team<Char> average<Numerical> points<Numerical> played<Numerical> c_1991_92<Numerical> c_1992_93<Numerical> c_1993_94<Numerical>,2-17968282-1.html.csv
+name<Char> listed<Date> location<Char> county<Char> type<Char>,2-17286852-1.html.csv
+browser<Char> operating_system<Char> latest_stable_release<Char> theora<Char> h264<Char> vp8_webm_<Char> vp9_webm_<Char>,1-26099252-1.html.csv
+week<Numerical> date<Char> opponent<Char> result<Char> stadium<Char> record<Char> attendance<Numerical>,2-10652530-2.html.csv
+goal<Numerical> date<Date> venue<Char> result<Char> competition<Char> scored<Numerical>,2-17150259-1.html.csv
+season<Numerical> episodes<Numerical> time_slot_est<Char> season_premiere<Date> season_finale<Date> tv_season<Char> rank<Numerical> viewers_in_millions<Numerical>,1-10819266-8.html.csv
+production_no<Numerical> episode_no<Numerical> original_airdate<Date> episode_title<Char> host<Char>,2-10926568-2.html.csv
+park<Char> tower_height<Numerical> drop_height<Numerical> speed<Char> model<Char> opened<Date> height_requirement<Char>,2-12204442-1.html.csv
+model_number<Char> sspec_number<Char> frequency<Numerical> l2_cache<Char> fsb<Char> mult<Numerical> voltage<Char> tdp<Char> socket<Char> release_date<Date> part_number_s<Char> release_price_usd_<Numerical>,1-11602313-4.html.csv
+home_team<Char> home_team_score<Char> away_team<Char> away_team_score<Char> venue<Char> crowd<Numerical> date<Date>,2-10809271-13.html.csv
+couple<Char> style<Char> music<Char> choreographer_s<Char> results<Char>,2-15918328-13.html.csv
+round<Numerical> pick<Numerical> overall<Numerical> name<Char> position<Char> college<Char>,2-13312898-25.html.csv
+c_1st_lbsc_no<Numerical> lbsc_name<Char> built<Numerical> c_2nd_lbsc_no<Char> c_1st_sr_no<Char> c_2ns_sr_no<Char> withdrawn<Numerical>,2-16909120-1.html.csv
+res<Char> record<Char> opponent<Char> method<Char> event<Char> round<Numerical> location<Char>,2-17445678-2.html.csv
+res<Char> record<Char> opponent<Char> method<Char> event<Char> round<Numerical> time<Char> location<Char>,2-12758642-2.html.csv
+nat<Char> name<Char> moving_to<Char> type<Char> transfer_window<Char> transfer_fee<Char> source<Char>,2-17486851-2.html.csv
+date<Char> round<Char> opponents<Char> result_f_a<Char> attendance<Numerical>,2-13167639-5.html.csv
+goalkeeper<Char> goals<Numerical> matches<Numerical> average<Numerical> team<Char>,2-18160020-8.html.csv
+round<Numerical> player<Char> nationality<Char> nhl_team<Char> college_junior_club_team_league<Char>,2-11821711-13.html.csv
+stage<Numerical> winner<Char> general_classification<Char> points_classification<Char> mountains_classification<Char> sprints_classification<Char> team_classification<Char>,1-28853064-15.html.csv
+game<Numerical> date<Char> team<Char> score<Char> high_points<Char> high_rebounds<Char> high_assists<Char> location_attendance<Char> record<Char>,2-15780049-8.html.csv
+date<Char> visitor<Char> score<Char> home<Char> decision<Char> attendance<Numerical> record<Char>,2-11128774-6.html.csv
+episode<Numerical> season<Numerical> format<Char> title<Char> original_airdate<Date>,2-14105731-8.html.csv
+county<Char> location<Char> street_names<Char> milepost<Char> roads_intersected<Char> notes<Char>,1-10568553-1.html.csv
+rank<Numerical> all_time_rank<Numerical> name<Char> debut_year<Date> current_club<Char> goals<Numerical> apps<Numerical>,2-10724559-2.html.csv
+team<Char> outgoing_head_coach<Char> manner_of_departure<Char> date_of_vacancy<Date> position_in_table<Char> incoming_head_coach<Char> date_of_appointment<Date>,1-27133147-3.html.csv
+no_in_series<Numerical> no_in_season<Numerical> title<Char> directed_by<Char> written_by<Char> us_viewers_million<Numerical> original_air_date<Date> production_code<Char>,1-24319661-5.html.csv
+season<Numerical> manager<Char> record<Char> win_percent<Numerical> post_season_record<Char> post_season_win_percent<Numerical> mlb_affiliate<Char>,2-1031852-2.html.csv
+round<Numerical> pick<Numerical> player<Char> position<Char> college<Char>,2-15352703-1.html.csv
+no_in_series<Numerical> no_in_season<Numerical> title<Char> directed_by<Char> written_by<Char> original_air_date<Date> production_code<Char> us_viewers_millions<Numerical>,1-27713890-1.html.csv
+home_team<Char> home_team_score<Char> away_team<Char> away_team_score<Char> venue<Char> crowd<Numerical> date<Date>,2-10824095-19.html.csv
+locale<Char> skip<Char> w<Numerical> l<Numerical> pf<Numerical> pa<Numerical> ends_won<Numerical> ends_lost<Numerical> blank_ends<Numerical> stolen_ends<Numerical> shot_pct<Char>,1-1505809-2.html.csv
+settlement<Char> cyrillic_name<Char> type<Char> population_2011<Numerical> largest_ethnic_group_2002<Char> dominant_religion_2002<Char>,1-2562572-19.html.csv
+district<Char> incumbent<Char> party<Char> first_elected<Date> result<Char> candidates<Char>,1-1341640-14.html.csv
+title<Char> season<Char> winner<Char> score<Char> runner_up<Char> venue<Char> attendance<Numerical>,2-1381359-2.html.csv
+week<Numerical> date<Date> opponent<Char> result<Char> tv_time<Char> attendance<Numerical>,2-16409445-1.html.csv
+year<Numerical> first<Char> second<Char> third<Char> fourth<Char>,2-18332376-1.html.csv
+year<Numerical> theme<Char> artist<Char> mintage<Char> issue_price<Numerical>,2-11916083-39.html.csv
+player<Char> height<Char> school<Char> hometown<Char> college<Char>,2-11677760-30.html.csv
+pick<Numerical> mls_team<Char> player<Char> position<Char> affiliation<Char>,2-15214004-2.html.csv
+driver<Char> constructor<Char> laps<Numerical> time_retired<Date> grid<Numerical>,2-1075296-2.html.csv
+week<Numerical> date<Date> opponent<Char> result<Char> game_site<Char> attendance<Numerical>,2-15451468-2.html.csv
+date<Date> venue<Char> opponent<Char> result<Char> tournament<Char> scored<Numerical>,2-12825759-1.html.csv
+township<Char> county<Char> pop_2010<Numerical> land_sqmi_<Numerical> water_sqmi<Numerical> latitude<Numerical> longitude<Numerical> geo_id<Numerical> ansi_code<Numerical>,1-18600760-10.html.csv
+class<Char> wheel_arrangement<Char> manufacturer<Char> year_made<Char> quantity_made<Numerical> quantity_preserved<Numerical> year_s_withdrawn<Char>,2-1169552-2.html.csv
+county<Char> exports_us_mil<Numerical> percent_of_total_exports<Char> imports_us_mil<Numerical> percent_of_total_imports<Char>,1-24239748-2.html.csv
+game<Numerical> february<Numerical> opponent<Char> score<Char> record<Char> points<Numerical>,2-14347797-7.html.csv
+tie_no<Numerical> home_team<Char> score<Char> away_team<Char> date<Date>,2-17437287-6.html.csv
+year<Numerical> winner<Char> runners_up<Char> aggregate<Char> c_1st_leg<Char> c_2nd_leg<Char>,2-17344918-1.html.csv
+player<Char> position<Char> date_of_birth_age<Date> caps<Numerical> club_province<Char>,2-15149189-1.html.csv
+no<Numerical> date<Date> tournament<Char> winning_score<Char> to_par<Numerical> margin_of_victory<Char> runner_s_up<Char>,1-2126093-3.html.csv
+colt_model_no<Char> name<Char> stock<Char> fire_control<Char> rear_sight<Char> forward_assist<Char> case_deflector<Char> barrel_length<Char> barrel_profile<Char> barrel_twist<Char> hand_guards<Char> bayonet_lug<Char> muzzle_device<Char>,1-12834315-2.html.csv
+home_team<Char> home_team_score<Char> away_team<Char> away_team_score<Char> venue<Char> crowd<Numerical> date<Date>,2-10809157-19.html.csv
+chip<Char> flash_size<Char> eeprom<Numerical> sram<Numerical> frequency<Numerical> package<Char>,2-100290-1.html.csv
+no<Numerical> _<Numerical> title<Char> directed_by<Char> written_by<Char> us_air_date<Date> production_code<Char> us_viewers_million<Numerical>,1-21696800-1.html.csv
+member<Char> electorate<Char> province<Char> mps_term<Char> election_date<Date>,1-27592654-2.html.csv
+title<Char> developer<Char> category<Char> release_date<Date> version<Numerical>,2-18138132-2.html.csv
+frequency<Numerical> call_sign<Char> branding<Char> format<Char> owner<Char>,2-18409326-1.html.csv
+date<Date> opponent<Char> score<Char> loss<Char> save<Char>,2-13990653-2.html.csv

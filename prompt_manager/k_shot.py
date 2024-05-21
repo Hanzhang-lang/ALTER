@@ -120,7 +120,7 @@ def get_k_shot_with_aug(k: int=2):
 #     return prompt_template
 
 
-def get_k_shot_with_string(k: int = 2):
+def get_k_shot_with_string(k: int = 1):
     Output_examples = [
         # """leagues_entering_at_this_round: different league name joint with '&' or None value""",
         """
@@ -136,10 +136,10 @@ def get_k_shot_with_string(k: int = 2):
     Output: {example}""")
     table_loader = TableLoader(
         table_name='tabfact', split='validation', use_sample=False)
-    example_data = TableFormat(format='none', data=table_loader.dataset[20], use_sampling=True).data.iloc[:, [
+    example_data = TableFormat(format='none', data=table_loader.dataset[20]).get_sample_data().iloc[:, [
         0, 1, 2, 3, 5]].reset_index(drop=True)
     example_data['nation'] = TableFormat(
-        format='none', data=table_loader.dataset[130], use_sampling=True).data.iloc[:, 1].reset_index(drop=True)
+        format='none', data=table_loader.dataset[130]).get_sample_data().iloc[:, 1].reset_index(drop=True)
     examples_dict = [{"table": TableFormat(format='none', data=example_data, use_sampling=True).format_html(),
                       "example": Output_examples[i]} for i in range(k)]
     prompt_template = FewShotPromptTemplate(

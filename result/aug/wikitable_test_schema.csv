@@ -1,427 +1,417 @@
 schema,table_id
-Name<Char> Title<Char> Date_c_from<Date> Date_until<Date> Russian_state<Char> Austrian_state<Char>,csv/203-csv/840.tsv
-Rank<Numerical> Lane<Numerical> Name<Char> Nationality<Char> Time<Numerical> Notes<Char>,csv/204-csv/65.tsv
-Pos<Numerical> No<Numerical> Driver<Char> Constructor<Char> Laps<Numerical> Time_Retired<Char> Grid<Numerical> Points<Char>,csv/203-csv/275.tsv
-Date<Date> Competition<Char> Location<Char> Country<Char> Event<Char> Placing<Numerical> Rider<Char> Nationality<Char>,csv/204-csv/272.tsv
-num<Numerical> Episode<Char> Air_date<Date> Rating<Numerical> Share<Numerical> c_18_49_Rating_Share<Char> Viewers_m<Numerical> Rank_night<Char> Rank_timeslot<Char> Rank_overall<Char>,csv/203-csv/328.tsv
-Date<Char> Venue<Char> Opponents<Char> Score<Char> Competition<Char>,csv/204-csv/264.tsv
-No_in_nseason<Numerical> No_in_nseries<Numerical> Title<Char> Canadian_airdate<Date> US_airdate<Date> Production_code<Numerical>,csv/204-csv/674.tsv
-num<Numerical> Player<Char> Goals<Numerical> Caps<Numerical> Career<Char>,csv/204-csv/410.tsv
-Pos<Numerical> No<Numerical> Driver<Char> Team<Char> Engine<Char> Laps<Numerical> Time_Retired<Char> Grid<Numerical> Laps_Led<Numerical> Points<Numerical>,csv/204-csv/366.tsv
-Date<Char> Venue<Char> Opponent<Char> Result<Char> Scoreline<Char> China_scorers<Char>,csv/204-csv/224.tsv
-Represent<Char> Candidate<Char> in_Russian<Char> Age<Numerical> Height<Char> Hometown<Char>,csv/203-csv/825.tsv
-Nation<Char> Date<Date> Quantity<Numerical> Type<Numerical> Notes<Char>,csv/204-csv/390.tsv
-is<Numerical> name<Char> arrival_ndate<Date> departure_ndate<Date> notes<Char>,csv/203-csv/232.tsv
-School_Name<Char> Low_grade<Char> High_grade<Char> Students_K_12<Numerical> FTE_Teachers<Numerical> Student_teacher_ratio<Numerical>,csv/203-csv/845.tsv
-NULL_COL<Numerical> Chronological_nNo<Numerical> Date_nNew_style<Date> Water_level_ncm<Numerical> Peak_hour<Char>,csv/203-csv/261.tsv
-District<Char> Location<Char> Communities_served<Char>,csv/200-csv/8.tsv
-Cellulose_ethers<Char> Reagent<Char> Example<Char> Reagent<Char> Group_R_=_H_or<Char> Water_solubility<Char> Application<Char> E_number<Char>,csv/203-csv/162.tsv
-Position<Numerical> Officer<Char> current_officers<Char> superseded_by<Char> Royal_Household<Char>,csv/204-csv/368.tsv
-Atomic_nno<Numerical> Name<Char> Symbol<Char> Group<Numerical> Period<Numerical> Block<Char> State_at_nSTP<Char> Occurrence<Char> Description<Char>,csv/203-csv/599.tsv
-Year<Numerical> Car<Numerical> Start<Numerical> Qual<Numerical> Rank<Numerical> Finish<Numerical> Laps<Numerical> Led<Numerical> Retired<Char>,csv/203-csv/647.tsv
-num<Numerical> Stadium<Char> Capacity<Char> City<Char> Region<Char> Home_Team<Char> Opened<Numerical>,csv/204-csv/67.tsv
-Location<Char> Reactor_type<Char> Status<Char> Net_nCapacity_nMWe<Numerical> Gross_nCapacity_nMWe<Numerical>,csv/204-csv/566.tsv
-Rank<Numerical> Nation<Char> Gold<Numerical> Silver<Numerical> Bronze<Numerical> Total<Numerical>,csv/204-csv/594.tsv
-No<Numerical> Date_time<Date> Aircraft<Char> Foe<Char> Result<Char> Location<Char> Notes<Char>,csv/204-csv/830.tsv
-Year<Date> Name<Char> Year<Date> Name<Char> Year<Date> Name<Char>,csv/203-csv/474.tsv
-Week<Numerical> Date<Char> Opponent<Char> Score<Char> Result<Char> Record<Char>,csv/204-csv/993.tsv
-Round<Numerical> Date<Char> Circuit<Char> Winning_driver_TA2<Char> Winning_vehicle_TA2<Char> Winning_driver_TA1<Char> Winning_vehicle_TA1<Char>,csv/204-csv/458.tsv
-Pos<Numerical> No<Numerical> Driver<Char> Team<Char> Laps<Numerical> Time_Retired<Char> Grid<Numerical> Points<Numerical>,csv/203-csv/659.tsv
-Rank<Numerical> Pair<Numerical> Name<Char> Country<Char> Time<Char> Time_behind<Char>,csv/204-csv/201.tsv
-Year<Numerical> Competition<Char> Venue<Char> Position<Char> Notes<Char>,csv/203-csv/819.tsv
-Year<Numerical> State_Territory_Mens_Division<Char> State_Territory_Womens_Division<Char> Major_Centres_Division<Char> Community_Division<Char> Womens_Division<Char>,csv/204-csv/656.tsv
-Outcome<Char> No<Numerical> Date<Date> Tournament<Char> Surface<Char> Opponent<Char> Score<Char>,csv/204-csv/285.tsv
-Contestant<Char> Age<Numerical> Height<Char> Home_City<Char> Rank<Char>,csv/204-csv/138.tsv
-Player<Char> League<Numerical> Cup<Numerical> Europa_nLeague<Numerical> Total<Numerical>,csv/204-csv/744.tsv
-Year<Numerical> Division<Numerical> League<Char> Regular_Season<Char> Playoffs<Char> Open_Cup<Char>,csv/204-csv/972.tsv
-Year<Char> Kit_Manufacturer<Char> Shirt_Sponsor<Char> Back_of_Shirt_Sponsor<Char> Short_Sponsor<Char>,csv/203-csv/329.tsv
-Result<Char> Date<Date> Category<Char> Tournament<Char> Surface<Char> Partnering<Char> Opponents<Char> Score<Char>,csv/203-csv/596.tsv
-Season<Char> Club<Char> Competition<Char> Games<Numerical> Goals<Numerical>,csv/203-csv/624.tsv
-Description_Losses<Char> c_1939_40<Numerical> c_1940_41<Numerical> c_1941_42<Numerical> c_1942_43<Numerical> c_1943_44<Numerical> c_1944_45<Numerical> Total<Numerical>,csv/204-csv/149.tsv
-Week<Numerical> Date<Date> Opponent<Char> Result<Char> Game_site<Char> NFL_Recap<Char> Attendance<Char>,csv/203-csv/334.tsv
-Year<Numerical> Network<Char> NASCAR_nCountdown<Char> Lap_by_lap<Char> Color_commentators<Char> Pit_reporters<Char> Ratings<Char> Viewers<Char>,csv/203-csv/122.tsv
-Common_name<Char> District<Char> Hebrew<Char> Arabic<Char> Population_n2009<Char> Area_nkm²<Char> Mayor<Char>,csv/204-csv/512.tsv
-Region<Char> Physician_GP_specialist<Numerical> Physician_Population_Ratio<Char> Health_Officer<Numerical> HO_Population_Ratio<Char> All_Nurses<Numerical> Nurse_Population_Ratio<Char> Mid_wives<Numerical> Mid_Wife_Population_Ratio<Char> HEW*<Char> HEW_Population_Ratio<Char>,csv/203-csv/265.tsv
-Year<Numerical> Model<Char> Denomination<Char> Metal_composition<Char> Dimensions<Char>,csv/204-csv/464.tsv
-Rank<Numerical> Nation<Char> Gold<Numerical> Silver<Numerical> Bronze<Numerical> Total<Numerical>,csv/204-csv/977.tsv
-Pos<Numerical> Rider<Char> Manufacturer<Char> Time_Retired<Char> Points<Numerical>,csv/204-csv/892.tsv
-District<Char> Incumbent<Char> Party<Char> First_elected<Numerical> Result<Char> Candidates<Char>,csv/203-csv/423.tsv
-Rank<Numerical> Heat<Numerical> Name<Char> Nationality<Char> Time<Numerical> Notes<Char>,csv/204-csv/259.tsv
-Year<Numerical> Song<Char> Album<Char> Position<Numerical> Chart<Char>,csv/203-csv/124.tsv
-Film<Char> Film<Char> Date<Date>,csv/200-csv/24.tsv
-Wrestler_<Char> Reigns_<Numerical> Date_<Char> Place_<Char> Notes_<Char>,csv/203-csv/841.tsv
-Outcome<Char> No<Numerical> Date<Date> Tournament<Char> Surface<Char> Partner<Char> Opponents<Char> Score<Char>,csv/204-csv/331.tsv
-Season<Numerical> Episodes<Numerical> Season_Premiere<Date> Season_Finale<Date>,csv/203-csv/714.tsv
-Rank<Numerical> Athlete<Char> Nationality<Char> c_215<Char> c_220<Char> c_224<Char> c_227<Char> Result<Numerical> Notes<Char>,csv/204-csv/844.tsv
-Clerk<Char> Started<Numerical> Finished<Numerical> School_year<Char> Previous_clerkship<Char>,csv/204-csv/619.tsv
-Publication<Char> Country<Char> Accolade<Char> Year<Numerical> Rank<Numerical>,csv/203-csv/821.tsv
-Ship<Char> Type_of_Vessel<Char> Lake<Char> Location<Char> Lives_lost<Char>,csv/204-csv/797.tsv
-Builder<Char> Works_numbers<Char> Dates<Numerical> CN_numbers<Char> GT_numbers<Char> Notes<Char>,csv/204-csv/901.tsv
-Player<Char> Friendlies<Numerical> FIFA_Confederations_Cup<Numerical> FIFA_World_Cup_Qual<Numerical> Total_Goals<Numerical>,csv/204-csv/241.tsv
-Place<Numerical> Player<Char> Country<Char> Score<Char> To_par<Char> Money_$<Char>,csv/204-csv/247.tsv
-Alpha_numeric_Code<Char> Station_name_nEnglish<Char> Station_name_nChinese<Char> Station_name_nTamil<Char> Opening<Date>,csv/202-csv/216.tsv
-Contestant<Char> Original_Tribe<Char> Switched_Tribe<Char> Merged_Tribe<Char> Finish<Char> Total_Votes<Numerical>,csv/204-csv/827.tsv
-Rank<Numerical> Nation<Char> Gold<Numerical> Silver<Numerical> Bronze<Numerical> Total<Numerical>,csv/203-csv/351.tsv
-Rank<Numerical> Nation<Char> Gold<Numerical> Silver<Numerical> Bronze<Numerical> Total<Numerical>,csv/204-csv/216.tsv
-Comet<Char> Discoverers_or_namesakes<Char> Orbital_period_years<Numerical> Spacecraft_encounters<Char>,csv/202-csv/81.tsv
-Season<Char> Competition<Char> Round<Char> Club<Char> Home<Char> Away<Char>,csv/203-csv/776.tsv
-Name<Char> City<Char> State_Country<Char> Designed<Numerical> Completed<Numerical> Other_Information<Char>,csv/204-csv/545.tsv
-Event<Char> Class<Char> Gold<Char> Silver<Char> Bronze<Char>,csv/203-csv/792.tsv
-Season<Char> League_nPos<Numerical> League_nCompetition<Char> League_nTop_scorer<Char> Danish_Cup<Char> Europe<Char> Others<Char>,csv/203-csv/307.tsv
-Rank<Numerical> Pair<Numerical> Country<Char> Athletes<Char> Time<Char> Deficit<Char>,csv/204-csv/934.tsv
-Date<Date> Location<Char> Opponent<Char> Result<Char> Competition<Char>,csv/204-csv/904.tsv
-Season<Numerical> Episodes<Numerical> Time_slot_EST<Char> Original_airing_nSeason_premiere<Date> Original_airing_nSeason_finale<Date> Original_airing_nTV_season<Char> Rank<Char> Viewers_nin_millions<Numerical>,csv/203-csv/867.tsv
-Year<Numerical> Record<Char> Finish<Char> Manager<Char> Playoffs<Char>,csv/203-csv/822.tsv
-No<Numerical> Date<Date> Tournament<Char> Winning_score<Char> Margin_of_victory<Char> Runners_up<Char>,csv/203-csv/278.tsv
-Aircraft<Char> Origin<Char> Type<Char> In_service<Numerical> Notes<Char>,csv/203-csv/103.tsv
-Rnd<Numerical> Circuit<Char> GTP_Winning_Team_nGTP_Winning_Drivers<Char> GTO_Winning_Team_nGTO_Winning_Drivers<Char> GTU_Winning_Team_nGTU_Winning_Drivers<Char> Results<Char>,csv/203-csv/101.tsv
-Date<Date> Date<Date> NULL_COL<Char> Rank<Char> Tournament_name<Char> Venue<Char> City<Char> Winner<Char> Runner_up<Char> Score<Char>,csv/203-csv/140.tsv
-Year<Numerical> Single<Char> Peak_chart_npositions_nUS_Country<Numerical> Peak_chart_npositions_nCAN_Country<Numerical> Album<Char>,csv/204-csv/919.tsv
-Association<Char> Joining_year<Numerical> Mens_team<Char> Womens_team<Char> League<Char>,csv/203-csv/495.tsv
-Year<Numerical> Designers<Char> Brief_description<Char> Selected_by_<Char> Associated_publication<Char>,csv/203-csv/205.tsv
-School<Char> c_2007<Numerical> c_2008<Numerical> c_2009<Numerical> c_2010<Numerical> c_2011<Numerical>,csv/204-csv/989.tsv
-President<Char> Became_Oldest_Living_President<Date> Ceased_to_Be_Oldest_Living_President<Date> Age_at_Start_Date<Char> Age_at_End_Date<Char> Duration_Years_Days<Char> Duration_Days<Char>,csv/203-csv/260.tsv
-Year<Numerical> Winner<Char> Age<Numerical> Jockey<Char> Trainer<Char> Owner<Char> Distance_nMiles<Char> Time<Char> Purse<Char> Gr<Char>,csv/204-csv/502.tsv
-No_in_nseries<Numerical> No_in_nseason<Numerical> Title<Char> Directed_by<Char> Written_by<Char> Original_air_date<Date> Prod_ncode<Char>,csv/203-csv/315.tsv
-Rank<Numerical> Country<Char> Box_Office<Char> Year<Numerical> Box_office_nc_from_national_films<Char>,csv/203-csv/448.tsv
-Boat<Char> Time<Char> Crew<Char> Nation<Char> Date<Char> Meet<Char> Location<Char>,csv/203-csv/360.tsv
-Model<Char> Fuel_Type<Char> mpg_US_gallons<Numerical> L_100 km<Numerical> NZ_Rating_nStars<Numerical>,csv/204-csv/815.tsv
-Rank<Numerical> Player<Char> Nation<Char> Club<Char> Goals<Numerical>,csv/204-csv/705.tsv
-Name_of_place<Char> Number_of_counties<Numerical> Principal_county<Char> Lower_zip_code<Char> Upper_zip_code<Char>,csv/203-csv/443.tsv
-Name<Char> Type<Char> RA_J2000<Char> Dec_J2000<Char> Redshift_km_s<Char> Apparent_Magnitude<Numerical>,csv/204-csv/189.tsv
-Name<Char> City<Char> Hospital_beds<Numerical> Operating_rooms<Numerical> Total<Numerical> Trauma_designation<Char> Affiliation<Char> Notes<Char>,csv/203-csv/319.tsv
-Date<Date> Opponent<Char> Venue<Char> Result<Char> Attendance<Char> Scorers<Char>,csv/204-csv/411.tsv
-Representative<Char> Years<Char> State<Char> Party<Char> Lifespan<Char>,csv/204-csv/677.tsv
-District<Numerical> Incumbent<Char> c_2008_Status<Char> Democratic<Char> Republican<Char>,csv/203-csv/432.tsv
-num<Numerical> Weekend_End_Date<Date> Film<Char> Box_Office<Char>,csv/204-csv/377.tsv
-Rank<Numerical> Name<Char> Nationality<Char> c_1st_m<Numerical> c_2nd_m<Numerical> Points<Numerical>,csv/203-csv/503.tsv
-Year<Numerical> Award<Char> Film<Char> Result<Char>,csv/200-csv/36.tsv
-Year<Numerical> Injuries_US_$000<Numerical> Deaths_age_<15<Numerical> CPSC_toy_safety_funding_nUS$_Millions<Numerical> Toy_sales_nUS_$_Billions<Numerical>,csv/203-csv/66.tsv
-May_20_21_n118<Char> March_9_n120<Char> December_25_26_n122<Char> October_13_14_n124<Char> August_1_2_n126<Char>,csv/204-csv/182.tsv
-Time<Numerical> Wind<Char> Auto<Char> Athlete<Char> Nationality<Char> Location_of_race<Char> Date<Date>,csv/203-csv/433.tsv
-Team<Char> City<Char> Years_active<Char> Seasons_played<Numerical> Win–loss_record<Char> Winpercent<Char> Playoffs_appearances<Numerical>,csv/204-csv/773.tsv
-Rank<Numerical> Nation<Char> Gold<Numerical> Silver<Numerical> Bronze<Numerical> Total<Numerical>,csv/204-csv/682.tsv
-Rank<Numerical> Nation<Char> Gold<Numerical> Silver<Numerical> Bronze<Numerical> Total<Numerical>,csv/204-csv/382.tsv
-Name<Char> League<Numerical> FA_Cup<Numerical> League_Cup<Numerical> JP_Trophy<Numerical> Total<Numerical>,csv/204-csv/925.tsv
-Series<Char> Name<Char> Age<Numerical> Hometown<Char> Occupation<Char> Status<Char>,csv/204-csv/444.tsv
-Political_lieutenant<Char> District_nArea<Char> Took_Office<Numerical> Left_Office<Numerical> Party_leader<Char>,csv/203-csv/831.tsv
-Date<Date> Opponents<Char> Venue<Char> Result<Char> Scorers<Char> Attendance<Char>,csv/204-csv/857.tsv
-Heat<Numerical> Rank<Numerical> Name<Char> Result<Char> Notes<Char>,csv/203-csv/693.tsv
-Number<Numerical> Name<Char> Term_Started<Date> Term_Ended<Date> Alma_Mater<Char> Fields<Char> Educational_Background<Char>,csv/204-csv/720.tsv
-Date<Date> Opponent<Char> Venue<Char> Result<Char> Attendance<Char> Scorers<Char>,csv/203-csv/143.tsv
-Year<Numerical> Division<Numerical> League<Char> Reg_Season<Char> Playoffs<Char>,csv/203-csv/428.tsv
-Rank<Numerical> Diver<Char> Nationality<Char> Preliminary_nPoints<Numerical> Preliminary_nRank<Numerical> Final_nPoints<Char> Final_nRank<Char>,csv/204-csv/316.tsv
-Name<Char> Sport<Char> Event<Char> Placing<Char> Performance<Char>,csv/203-csv/0.tsv
-num<Numerical> Directed_By<Char> Written_By<Char> Original_Air_Date<Date>,csv/204-csv/233.tsv
-Character<Char> Real_name<Char> Home_world<Char> Membership_notes<Char> Powers<Char>,csv/203-csv/32.tsv
-Model<Char> c_1991<Char> c_1995<Char> c_1996<Char> c_1997<Char> c_1998<Char> c_1999<Char> c_2000<Char> c_2001<Char> c_2002<Char> c_2003<Char> c_2004<Char> c_2005<Char> c_2006<Char> c_2007<Char> c_2008<Char> c_2009<Char> c_2010<Char> c_2011<Char> c_2012<Char> c_2013<Char>,csv/204-csv/21.tsv
-Week<Numerical> Date<Date> TV_Time<Char> Opponent<Char> Result<Char> Attendance<Char>,csv/203-csv/21.tsv
-Week<Numerical> Date<Char> Result<Char> Record<Char> Opponent<Char> Points_For<Numerical> Points_Against<Numerical> First_Downs<Numerical> Attendance<Char>,csv/203-csv/318.tsv
-Chord<Char> Root<Char> Minor_Third<Char> Perfect_Fifth<Char> Major_Seventh<Char>,csv/204-csv/653.tsv
-Chart_Year<Numerical> Artist<Char> Album<Char> Song<Char> Billboard_Hot_100<Char> Billboard_Hot_RB_Hip_Hop<Char> NULL_COL<Char>,csv/204-csv/895.tsv
-Rank<Numerical> Name<Char> Club<Char> Nationality<Char> Points<Numerical>,csv/203-csv/578.tsv
-num<Numerical> Title<Char> Performers<Char> Film<Char> Length<Char>,csv/203-csv/85.tsv
-School<Char> Season<Char> Record<Char> Conference_Record<Char> Place<Char> Postseason<Char>,csv/204-csv/640.tsv
-Team<Char> Stadium<Char> Capacity<Numerical> City_Area<Char>,csv/204-csv/440.tsv
-No<Numerical> Score<Numerical> Player<Char> Team<Char> Balls<Numerical> Inns<Numerical> Opposing_team<Char> Date<Date> Result<Char>,csv/204-csv/167.tsv
-Year<Numerical> Name<Char> Label<Char> Hot_Black_Singles<Char> Club_Play_Singles<Char>,csv/203-csv/480.tsv
-Year<Numerical> Competition<Char> Venue<Char> Position<Char> Event<Char>,csv/203-csv/259.tsv
-Rank<Numerical> Player<Char> From<Char> Transfer_Fee_n€_millions<Numerical> Year<Numerical>,csv/203-csv/748.tsv
-Season<Char> Tier<Numerical> League<Char> Pos<Numerical> Postseason<Char> German_Cup<Char> European_competitions<Char>,csv/203-csv/725.tsv
-Year<Numerical> Total_npassengers<Numerical> Passenger_nChange<Char> Domestic<Numerical> International_ntotal<Numerical> International_nnon_CIS<Numerical> CIS<Numerical> Aircraft_nLandings<Numerical> Cargo_ntonnes<Numerical>,csv/203-csv/111.tsv
-Pos<Char> Rider<Char> Manufactuer<Char> Time_Retired<Char> Points<Char>,csv/204-csv/303.tsv
-Position<Numerical> Driver<Char> No<Numerical> Car<Char> Entrant<Char> Lak<Char> Ora<Char> San<Char> Phi<Char> Total<Numerical>,csv/204-csv/955.tsv
-County<Char> Brown<Numerical> Votes<Numerical> Nixon<Numerical> Votes<Numerical> Wyckoff<Numerical> Votes<Numerical>,csv/203-csv/520.tsv
-Goal<Numerical> Date<Date> Venue<Char> Opponent<Char> Score<Char> Result<Char> Competition<Char>,csv/203-csv/722.tsv
-No<Char> Name<Char> Code<Char> Formed<Date> Headquarters<Char> Administrative_Division<Char> Area_km2<Char> Population_2001_census<Char> percent_of_State_Population<Char> Density_per_km2<Numerical> Urban_percent<Numerical> Literacy_percent<Numerical> Sex_Ratio<Numerical> Tehsils<Char> Source<Char>,csv/202-csv/260.tsv
-Rank<Numerical> Player<Char> County<Char> Tally<Char> Total<Numerical> Opposition<Char>,csv/204-csv/505.tsv
-Rank<Numerical> Nation<Char> Gold<Numerical> Silver<Numerical> Bronze<Numerical> Total<Numerical>,csv/204-csv/509.tsv
-Week<Numerical> Date<Char> Opponent<Char> Results_nFinal_score<Char> Results_nTeam_record<Char> Venue<Char> Attendance<Char>,csv/204-csv/404.tsv
-Year<Numerical> Title<Char> Rol<Char> Format<Char> Related_Links<Char>,csv/203-csv/23.tsv
-Eps_num<Numerical> Prod_num<Numerical> Title<Char> Summary<Char> Air_Date<Date>,csv/203-csv/740.tsv
-Single_EP<Char> Tracks<Char> Label<Char> Year<Numerical> Album<Char>,csv/204-csv/817.tsv
-Year<Numerical> Chassis<Char> Engine<Char> Start<Numerical> Finish<Numerical> Team<Char>,csv/203-csv/493.tsv
-Common_name<Char> Binomial_nomenclature<Char> Colour<Char> Density_¹<Numerical> Location<Char> Characteristics_Usage_and_Status<Char>,csv/203-csv/738.tsv
-District_nbalance_n[clarification_needed]<Char> Area_nkm2<Numerical> Area_nsq_mi<Numerical> Pop_n1998<Numerical> Pop_n2008<Numerical> Pop_km²_n2008<Numerical>,csv/203-csv/159.tsv
-Season<Numerical> Date<Date> Location<Char> Discipline<Char> Place<Char>,csv/204-csv/921.tsv
-Team<Char> No<Numerical> Driver<Char> Class<Char> Rounds<Char>,csv/204-csv/305.tsv
-num<Numerical> Episode<Char> Air_Date<Date> Timeslot<Char> Rating<Numerical> Share<Numerical> c_18_49<Char> Viewers<Char> Weekly_Rank<Char>,csv/204-csv/998.tsv
-Year<Numerical> Competition<Char> Venue<Char> Position<Char> Event<Char> Notes<Char>,csv/204-csv/483.tsv
-Representative<Char> Party<Char> Home_Town_City<Char> District<Numerical>,csv/203-csv/155.tsv
-Season<Char> Level<Numerical> Division<Char> Place<Char>,csv/203-csv/632.tsv
-num<Numerical> Title<Char> Singers<Char> Lyricist<Char> Length<Char>,csv/203-csv/816.tsv
-Year<Char> Division<Char> League<Char> Reg_Season<Char> Playoffs<Char> National_Cup<Char>,csv/203-csv/284.tsv
-num<Numerical> Name<Char> Height<Char> Weight_lbs<Numerical> Position<Char> Class<Char> Hometown<Char> Previous_Teams<Char>,csv/204-csv/83.tsv
-Olympics<Char> Athlete<Char> Judge_Official<Char> Coach<Char> Language<Char>,csv/203-csv/772.tsv
-Year<Numerical> Film<Char> Role<Char> Language<Char> Notes<Char>,csv/203-csv/463.tsv
-Thread_nnominal_size<Char> Outer_diameter_n[mm_in]<Numerical> Threads_per_inch_nTPI<Numerical> Pitch_n[in_mm]<Char> Inner_diameter_n[mm_in]<Numerical> Cable_diameter_n[mm_in]<Char>,csv/204-csv/142.tsv
-City<Char> County<Char> Population_2011<Char> Population_2002<Char> Altitude_m<Numerical> Year_status_ngranted*_or_nfirst_attested†<Char>,csv/204-csv/454.tsv
-Year<Numerical> Competition<Char> Venue<Char> Position<Char> Event<Char> Notes<Numerical>,csv/203-csv/487.tsv
-decimal32<Numerical> decimal64<Numerical> decimal128<Numerical> decimal32k<Char> Format<Char>,csv/204-csv/326.tsv
-Series_Number<Numerical> Season_Number<Numerical> Episode_Title<Char> Premiere_Date<Date> Production_Code<Numerical>,csv/203-csv/768.tsv
-Stations<Char> Connections<Char> City_Neighborhood<Char> Parking<Char> Date_Opened<Date>,csv/204-csv/289.tsv
-Poll_Source<Char> Sample_Size<Numerical> Margin_of_Error<Numerical> Date<Date> Democrat<Char> percent<Numerical> Republican<Char> percent<Numerical>,csv/203-csv/662.tsv
-Series_num<Numerical> Season_num<Numerical> Title<Char> Notes<Char> Original_air_date<Date>,csv/204-csv/803.tsv
-Season<Char> Tier<Numerical> Division<Char> Place<Char>,csv/203-csv/553.tsv
-Pick_num<Numerical> Player<Char> Position<Char> Nationality<Char> NHL_team<Char> College_junior_club_team<Char>,csv/203-csv/617.tsv
-Represented<Char> Contestant<Char> Age<Numerical> Height<Numerical> Hometown<Char>,csv/203-csv/849.tsv
-Position<Char> Player<Char> Transferred_From<Char> Date<Date>,csv/204-csv/290.tsv
-Rank<Numerical> Name<Char> Nationality<Char> Time<Char>,csv/204-csv/203.tsv
-Character<Char> Actor<Char> Series<Char> Notes<Char>,csv/200-csv/34.tsv
-Stage<Numerical> Date<Char> Route<Char> Terrain<Char> Length<Char> Winner<Char> Race_leader<Char>,csv/204-csv/406.tsv
-Year<Numerical> Date<Char> Winner<Char> Result<Char> Loser<Char> Location<Char>,csv/204-csv/393.tsv
-Country<Char> Amphibians<Numerical> Birds<Numerical> Mammals<Numerical> Reptile<Numerical> Total_terrestrial_vertebrates<Numerical> Vascular_plants<Numerical> Biodiversity<Numerical>,csv/201-csv/8.tsv
-Year<Numerical> Recipient<Char> Nationality<Char> Profession<Char> Speech<Char>,csv/203-csv/458.tsv
-Representative<Char> Title<Char> Presentation_nof_Credentials<Date> Termination_nof_Mission<Date> Appointed_by<Char>,csv/203-csv/188.tsv
-Designation<Char> Keel_Laid<Date> Launched<Date> Commissioned<Date> Fate<Char>,csv/203-csv/369.tsv
-Release_date<Date> Album_Title<Char> Record_Company<Char> Song_Title<Char> Certification<Char>,csv/203-csv/579.tsv
-Rank<Numerical> Diver<Char> Preliminary_nPoints<Numerical> Preliminary_nRank<Numerical> Final_nPoints<Numerical>,csv/203-csv/373.tsv
-Year<Numerical> Single<Char> Chart_Positions_nUS_Country<Char> Chart_Positions_nUS<Numerical> Album<Char>,csv/203-csv/619.tsv
-Name<Char> Route_numbers<Char> Length_mi<Numerical> Location<Char> Notes<Char>,csv/203-csv/100.tsv
-Naturalisations_by_origin<Char> c_2000<Numerical> c_2005<Numerical> c_2009<Numerical> percent_Total_2009<Numerical>,csv/203-csv/666.tsv
-Language<Char> c_2001_census[1]_ntotal_population_1_00459_million<Numerical> c_1991_censusIndian_Census_[2]_ntotal_population_83814_million<Numerical> c_1991_censusIndian_Census_[2]_ntotal_population_83814_million<Numerical> NULL_COL<Char>,csv/203-csv/167.tsv
-Name<Char> Nation<Char> Position<Char> League_Apps<Numerical> League_Goals<Numerical> FA_Cup_Apps<Numerical> FA_Cup_Goals<Numerical> Total_Apps<Numerical> Total_Goals<Numerical>,csv/203-csv/602.tsv
-Match<Char> Date<Date> Venue<Char> Opponents<Char> Score<Char>,csv/204-csv/254.tsv
-Callsign<Char> Area_served<Char> Frequency<Numerical> Band<Char> Fate<Char> Freq_currently<Char> Purpose<Char>,csv/203-csv/604.tsv
-Year<Numerical> Network<Char> Race_caller<Char> Color_commentator<Char> Reporters<Char> Trophy_Presentation<Char>,csv/204-csv/478.tsv
-Year<Numerical> Title<Char> Role<Char> Notes<Char>,csv/203-csv/785.tsv
-"Table: <table>
-<caption<Char>>Wiseman hypothesis</caption<Char>>
-<thead<Char>>
-<tr<th<Char>>  Tablet</th<Char>><th<Char>>                        Genealogy</th<Char>><th<Char>>   Narrative</th<Char>><th<Char>>                                                                         Colophon</th<Char>></tr<th<Char>>
-</thead<Char>>
-<tbody<Char>>
-<tr<td<Numerical>>11      </td<Numerical>><td<Char>>Descendants of Esau 36:10 to 37:1</td<Char>><td<Char>>no narrative</td<Char>><td<Char>>""This is the account of Jacob."" 37:2                                             </td<Char>></tr<td<Numerical>>
-<tr<td<Numerical>>10      </td<Numerical>><td<Char>>Descendants of Esau 36:2 - 5     </td<Char>><td<Char>>36:6 - 8    </td<Char>><td<Char>>""This is the account of Esau."" 36:9                                              </td<Char>></tr<td<Numerical>>
-<tr<td<Numerical>>1       </td<Numerical>><td<Char>>Creation of Universe 1:1         </td<Char>><td<Char>>1:2 to 2:3  </td<Char>><td<Char>>""This is the account of the heavens and of the earth when they were created."" 2:4</td<Char>></tr<td<Numerical>>
-</tbody<Char>>
-</table<Char>>",csv/203-csv/310.tsv
-Year<Numerical> Result<Char> Award<Char> Film<Char>,csv/203-csv/709.tsv
-DATE<Char> OPPONENT<Char> SCORE<Char> TOP_SCORER_Total_points<Char> VENUE<Char>,csv/204-csv/97.tsv
-Num<Numerical> Pod_Color<Char> Nickname<Char> Short_Description<Char> Episode<Char>,csv/204-csv/5.tsv
-Specifications<Char> Foundation<Char> Essentials<Char> Standard<Char> Datacenter<Char>,csv/204-csv/134.tsv
-Pos<Char> No<Numerical> Driver<Char> Constructor<Char> Laps<Numerical> Time_Retired<Char> Grid<Numerical> Points<Char>,csv/204-csv/953.tsv
 Rank<Numerical> Cyclist<Char> Team<Char> Time<Char> UCI_ProTour_nPoints<Numerical>,csv/203-csv/733.tsv
-Episode_no<Numerical> Airdate<Date> Viewers<Char> BBC_Three_weekly_ranking<Char> Multichannels_rank<Char>,csv/204-csv/456.tsv
-Year<Numerical> Premiers<Char> Score<Char> Runners_Up<Char> Score<Char>,csv/203-csv/80.tsv
-Rank<Numerical> Nation<Char> Gold<Numerical> Silver<Numerical> Bronze<Numerical> Total<Numerical>,csv/204-csv/347.tsv
-Round<Numerical> Round<Char> Race<Char> Date<Date> Pole_Position<Char> Fastest_Lap<Char> Winning_Club<Char> Winning_Team<Char> Report<Char>,csv/203-csv/514.tsv
-Name<Char> Country<Char> Town<Char> Height_nmetres_ft<Char> Structural_type<Char> Held_record<Char> Notes<Char>,csv/203-csv/39.tsv
-Date<Date> Opponentnum<Char> Ranknum<Char> Site<Char> TV<Char> Result<Char> Attendance<Char>,csv/203-csv/708.tsv
-Celebrity<Char> Residence<Char> Famous_for_Occupation<Char> Age<Numerical> Status<Char>,csv/204-csv/380.tsv
-Year<Numerical> Team_Record_nW<Numerical> Team_Record_nL<Numerical> Playoffs<Char>,csv/204-csv/118.tsv
-Pos<Numerical> Team<Char> Played<Numerical> Won<Numerical> Draw<Numerical> Lost<Numerical> Goals_For<Numerical> Goals_Against<Numerical> Goal_Difference<Numerical> Points<Numerical> Notes<Char>,csv/203-csv/53.tsv
-Match<Char> Date<Date> Venue<Char> Opponents<Char> Score<Char>,csv/204-csv/896.tsv
-Year<Numerical> Competition<Char> Venue<Char> Position<Char> Event<Char> Notes<Char>,csv/204-csv/92.tsv
-Rank<Numerical> Player_Name<Char> No_of_Titles<Numerical> Runner_up<Numerical> Final_Appearances<Numerical>,csv/203-csv/86.tsv
-Date<Numerical> Rnd<Char> Race_Name<Char> Circuit<Char> City_Location<Char> Pole_position<Char> Winning_driver<Char> Winning_team<Char> Report<Char>,csv/203-csv/181.tsv
-Week<Numerical> Date<Date> Opponent<Char> Result<Char> Record<Char> TV_Time<Char> Attendance<Char>,csv/203-csv/48.tsv
-num<Numerical> Massif<Char> Region<Char> Type_of_nature_reserve<Char> Preserved_area<Numerical> Buffer_zone<Numerical>,csv/204-csv/2.tsv
-State_nlinked_to_nsummaries_below<Char> Incumbent_nSenator<Char> Incumbent_nParty<Char> Incumbent_nElectoral_nhistory<Char> Most_recent_election_results<Char> c_2018_intent<Char> Candidates<Char>,csv/204-csv/943.tsv
-Pick_num<Numerical> Player<Char> Position<Char> Nationality<Char> NHL_team<Char> College_junior_club_team<Char>,csv/203-csv/566.tsv
-Rd<Numerical> Event<Char> Circuit<Char> Location<Char> Date<Char> Winner<Char>,csv/204-csv/714.tsv
-Date<Date> Team<Char> Competition<Char> Round<Char> Leg<Char> Opponent<Char> Location<Char> Score<Char>,csv/203-csv/582.tsv
-num<Numerical> Name<Char> Took_office<Date> Left_office<Date> Party<Char> Governor<Char> Notes<Char>,csv/203-csv/194.tsv
+Description_Losses<Char> c_1939_40<Numerical> c_1940_41<Numerical> c_1941_42<Numerical> c_1942_43<Numerical> c_1943_44<Numerical> c_1944_45<Numerical> Total<Numerical>,csv/204-csv/149.tsv
 Year<Numerical> Division<Char> League<Char> Reg_Season<Char> Playoffs<Char> National_Cup<Char>,csv/203-csv/435.tsv
+Series_num<Numerical> Season_num<Numerical> Title<Char> Notes<Char> Original_air_date<Date>,csv/204-csv/803.tsv
+Date<Date> Competition<Char> Location<Char> Country<Char> Event<Char> Placing<Numerical> Rider<Char> Nationality<Char>,csv/204-csv/272.tsv
+Year<Numerical> Competition<Char> Venue<Char> Position<Char> Event<Char> Notes<Char>,csv/204-csv/483.tsv
+Year<Numerical> Film<Char> Role<Char> Language<Char> Notes<Char>,csv/203-csv/463.tsv
 Game<Numerical> Day<Char> Date<Date> Kickoff<Char> Opponent<Char> Results_nScore<Char> Results_nRecord<Char> Location<Char> Attendance<Numerical>,csv/204-csv/875.tsv
-Year<Numerical> Competition<Char> Venue<Char> Position<Char> Event<Char> Notes<Char>,csv/203-csv/395.tsv
+Year<Char> Kit_Manufacturer<Char> Shirt_Sponsor<Char> Back_of_Shirt_Sponsor<Char> Short_Sponsor<Char>,csv/203-csv/329.tsv
+Year<Numerical> Competition<Char> Venue<Char> Position<Char> Event<Char> Notes<Numerical>,csv/203-csv/395.tsv
 Season<Numerical> Team<Char> Record<Char> Head_Coach<Char> Quarterback<Char> Leading_Rusher<Char> Leading_Receiver<Char> All_Pros<Char> Runner_Up<Char>,csv/204-csv/645.tsv
+Name<Char> League<Numerical> FA_Cup<Numerical> League_Cup<Numerical> JP_Trophy<Numerical> Total<Numerical>,csv/204-csv/925.tsv
 Tournament<Char> c_2004<Char> c_2005<Char> c_2006<Char> c_2007<Char> c_2008<Char> c_2009<Char> c_2010<Char> c_2011<Char> c_2012<Char> c_2013<Char> c_2014<Char> W–L<Char>,csv/203-csv/381.tsv
+Ship<Char> Type_of_Vessel<Char> Lake<Char> Location<Char> Lives_lost<Char>,csv/204-csv/797.tsv
 name<Char> glyph<Char> C_string<Char> Unicode<Char> Unicode_name<Char>,csv/203-csv/128.tsv
-Date<Date> Opponentnum<Char> Ranknum<Char> Site<Char> TV<Char> Result<Char> Attendance<Char>,csv/203-csv/62.tsv
+Date<Date> Opponentnum<Char> Ranknum<Numerical> Site<Char> TV<Char> Result<Char> Attendance<Numerical>,csv/203-csv/62.tsv
+Pos<Numerical> Rider<Char> Manufacturer<Char> Time_Retired<Char> Points<Numerical>,csv/204-csv/892.tsv
 Date<Date> Festival<Char> Location<Char> Awards<Char> Link<Char>,csv/203-csv/402.tsv
+Name<Char> City<Char> Hospital_beds<Numerical> Operating_rooms<Numerical> Total<Numerical> Trauma_designation<Char> Affiliation<Char> Notes<Char>,csv/203-csv/319.tsv
+Model<Char> c_1991<Numerical> c_1995<Numerical> c_1996<Numerical> c_1997<Numerical> c_1998<Numerical> c_1999<Numerical> c_2000<Numerical> c_2001<Numerical> c_2002<Numerical> c_2003<Numerical> c_2004<Numerical> c_2005<Numerical> c_2006<Numerical> c_2007<Numerical> c_2008<Numerical> c_2009<Numerical> c_2010<Numerical> c_2011<Numerical> c_2012<Numerical> c_2013<Numerical>,csv/204-csv/21.tsv
 Outcome<Char> No<Numerical> Date<Date> Championship<Char> Surface<Char> Opponent_in_the_final<Char> Score_in_the_final<Char>,csv/204-csv/758.tsv
 Rank<Numerical> Nation<Char> Gold<Numerical> Silver<Numerical> Bronze<Numerical> Total<Numerical>,csv/204-csv/76.tsv
 Place<Numerical> Rider<Char> Country<Char> Team<Char> Points<Numerical> Wins<Numerical>,csv/204-csv/417.tsv
 Position<Numerical> Sail_Number<Char> Yacht<Char> State_Country<Char> Yacht_Type<Char> LOA_nMetres<Numerical> Skipper<Char> Elapsed_Time_nd_hh_mm_ss<Char>,csv/203-csv/286.tsv
+Match<Char> Date<Date> Venue<Char> Opponents<Char> Score<Char>,csv/204-csv/896.tsv
 Series<Char> Premiere<Date> Finale<Date> Winner<Char> Runner_up<Char> Third_place<Char> Hosts<Char> Judging_panel<Char> Guest_judges<Char>,csv/203-csv/178.tsv
 Year<Numerical> Award<Char> Nominated_work<Char> Category<Char> Result<Char>,csv/203-csv/63.tsv
+Season<Date> League_nPos<Numerical> League_nCompetition<Char> League_nTop_scorer<Char> Danish_Cup<Char> Europe<Char> Others<Char>,csv/203-csv/307.tsv
+Contestant<Char> Original_Tribe<Char> Switched_Tribe<Char> Merged_Tribe<Char> Finish<Char> Total_Votes<Numerical>,csv/204-csv/827.tsv
 Season<Date> Age<Numerical> Overall<Numerical> Slalom<Char> Giant_nSlalom<Numerical> Super_G<Char> Downhill<Char> Combined<Char>,csv/203-csv/779.tsv
 Route<Numerical> Name<Char> Fare_Type<Char> Terminals<Char> Terminals_1<Char> Major_streets<Char> Notes<Char> History<Char>,csv/204-csv/50.tsv
-Rank<Numerical> City<Char> Passengers<Char> Top_Carriers<Char>,csv/201-csv/47.tsv
+Team<Char> Stadium<Char> Capacity<Numerical> City_Area<Char>,csv/204-csv/440.tsv
+Year<Numerical> Competition<Char> Venue<Char> Position<Numerical> Event<Char> Notes<Char>,csv/204-csv/92.tsv
+School<Char> Season<Char> Record<Char> Conference_Record<Char> Place<Char> Postseason<Char>,csv/204-csv/640.tsv
+Represent<Char> Candidate<Char> in_Russian<Char> Age<Numerical> Height<Char> Hometown<Char>,csv/203-csv/825.tsv
+District<Numerical> Incumbent<Char> c_2008_Status<Char> Democratic<Char> Republican<Char>,csv/203-csv/432.tsv
+Rank<Numerical> City<Char> Passengers<Numerical> Top_Carriers<Char>,csv/201-csv/47.tsv
 Season<Numerical> Age<Numerical> Overall<Numerical> Slalom<Char> Giant_nSlalom<Numerical> Super_G<Char> Downhill<Char> Combined<Char>,csv/203-csv/170.tsv
-Season<Numerical> Conference<Char> Head_Coach<Char> Total_Wins<Numerical> Total_Losses<Numerical> Total_Ties<Numerical> Conference_Wins<Numerical> Conference_Losses<Numerical> Conference_Ties<Numerical> Conference_Standing<Char> Postseason_Result<Char>,csv/204-csv/8.tsv
+Contestant<Char> Age<Numerical> Height<Char> Home_City<Char> Rank<Char>,csv/204-csv/138.tsv
+num<Char> Player<Char> Goals<Numerical> Caps<Numerical> Career<Date>,csv/204-csv/410.tsv
+Name<Char> Country<Char> Town<Char> Height_nmetres_ft<Numerical> Structural_type<Char> Held_record<Date> Notes<Char>,csv/203-csv/39.tsv
+State_nlinked_to_nsummaries_below<Char> Incumbent_nSenator<Char> Incumbent_nParty<Char> Incumbent_nElectoral_nhistory<Char> Most_recent_election_results<Char> c_2018_intent<Char> Candidates<Char>,csv/204-csv/943.tsv
+Season<Numerical> Conference<Char> Head_Coach<Char> Total_Wins<Numerical> Total_Losses<Numerical> Total_Ties<Numerical> Conference_Wins<Numerical> Conference_Losses<Numerical> Conference_Ties<Numerical> Conference_Standing<Numerical> Postseason_Result<Char>,csv/204-csv/8.tsv
 Year<Numerical> Manufacturer<Char> Model<Char> Length_feet<Char> Quantity<Numerical> Fleet_Series<Char> Fuel_Propulsion<Char> Powertrain<Char>,csv/203-csv/690.tsv
+Round<Numerical> Date<Char> Circuit<Char> Winning_driver_TA2<Char> Winning_vehicle_TA2<Char> Winning_driver_TA1<Char> Winning_vehicle_TA1<Char>,csv/204-csv/458.tsv
+Date<Date> Opponents<Char> Venue<Char> Result<Char> Scorers<Char> Attendance<Numerical>,csv/204-csv/857.tsv
 Season<Numerical> Series<Char> Team<Char> Races<Numerical> Wins<Numerical> Poles<Numerical> F_Laps<Numerical> Podiums<Numerical> Points<Char> Position<Char>,csv/204-csv/424.tsv
-Frequency<Char> Call_sign<Char> Name<Char> Format<Char> Owner<Char> Target_city_market<Char> City_of_license<Char>,csv/200-csv/18.tsv
+Rank<Numerical> Country<Char> Box_Office<Char> Year<Date> Box_office_nc_from_national_films<Char>,csv/203-csv/448.tsv
+Frequency<Numerical> Call_sign<Char> Name<Char> Format<Char> Owner<Char> Target_city_market<Char> City_of_license<Char>,csv/200-csv/18.tsv
+Film<Char> Film_1<Char> Date<Date>,csv/200-csv/24.tsv
+Rd<Numerical> Event<Char> Circuit<Char> Location<Char> Date<Date> Winner<Char>,csv/204-csv/714.tsv
 Year<Numerical> Competition<Char> Venue<Char> Position<Numerical> Notes<Char>,csv/203-csv/556.tsv
 Date<Date> Location<Char> Air_Ground<Char> Number<Numerical> Type<Char> Status<Char>,csv/204-csv/434.tsv
+Name<Char> Sport<Char> Event<Char> Placing<Char> Performance<Char>,csv/203-csv/0.tsv
+Result<Char> Date<Date> Category<Char> Tournament<Char> Surface<Char> Partnering<Char> Opponents<Char> Score<Char>,csv/203-csv/596.tsv
 Round<Numerical> Pick<Numerical> Name<Char> Position<Char> College<Char>,csv/203-csv/544.tsv
-Ship<Char> Hull_No<Char> Status<Char> Years_Active<Char> NVR_nPage<Char>,csv/204-csv/559.tsv
+Number<Numerical> Name<Char> Term_Started<Date> Term_Ended<Date> Alma_Mater<Char> Fields<Char> Educational_Background<Char>,csv/204-csv/720.tsv
+Ship<Char> Hull_No<Char> Status<Char> Years_Active<Date> NVR_nPage<Char>,csv/204-csv/559.tsv
+Season<Numerical> Episodes<Numerical> Season_Premiere<Date> Season_Finale<Date>,csv/203-csv/714.tsv
+Outcome<Char> No<Numerical> Date<Date> Tournament<Char> Surface<Char> Partner<Char> Opponents<Char> Score<Char>,csv/204-csv/331.tsv
 Pos<Numerical> No<Numerical> Driver<Char> Team<Char> Laps<Numerical> Time_Retired<Char> Grid<Numerical> Laps_Led<Numerical> Points<Numerical>,csv/204-csv/578.tsv
+Position<Numerical> Officer<Char> current_officers<Char> superseded_by<Char> Royal_Household<Char>,csv/204-csv/368.tsv
 Pick_num<Numerical> NFL_Team<Char> Player<Char> Position<Char> College<Char>,csv/204-csv/519.tsv
+Year<Numerical> Injuries_US_$000<Numerical> Deaths_age_<15<Char> CPSC_toy_safety_funding_nUS$_Millions<Numerical> Toy_sales_nUS_$_Billions<Numerical>,csv/203-csv/66.tsv
 Network_name<Char> Flagship<Char> Programming_type<Char> Owner<Char> Affiliates<Numerical>,csv/204-csv/181.tsv
+Year<Numerical> Division<Numerical> League<Char> Reg_Season<Char> Playoffs<Char>,csv/203-csv/428.tsv
+Week<Numerical> Date<Date> Opponent<Char> Score<Char> Result<Char> Record<Char>,csv/204-csv/993.tsv
+Year<Numerical> Car<Numerical> Start<Numerical> Qual<Numerical> Rank<Numerical> Finish<Numerical> Laps<Numerical> Led<Numerical> Retired<Char>,csv/203-csv/647.tsv
 Iteration<Char> Dates<Date> Location<Char> Attendance<Numerical> Notes<Char>,csv/203-csv/575.tsv
+Pos<Numerical> No<Numerical> Driver<Char> Team<Char> Engine<Char> Laps<Numerical> Time_Retired<Char> Grid<Numerical> Laps_Led<Numerical> Points<Numerical>,csv/204-csv/366.tsv
+Year<Numerical> Competition<Char> Venue<Char> Position<Char> Event<Char>,csv/203-csv/259.tsv
+Year<Numerical> Recipient<Char> Nationality<Char> Profession<Char> Speech<Char>,csv/203-csv/458.tsv
 NULL_COL<Numerical> Name_on_the_Register<Char> Date_listed<Date> Location<Char> City_or_town<Char> Summary<Char>,csv/203-csv/422.tsv
 Season<Char> Team<Char> Country<Char> Division<Numerical> Apps<Numerical> Goals<Numerical>,csv/203-csv/483.tsv
+Pos<Char> Rider<Char> Manufactuer<Char> Time_Retired<Char> Points<Numerical>,csv/204-csv/303.tsv
+Pos<Char> No<Numerical> Driver<Char> Constructor<Char> Laps<Numerical> Time_Retired<Char> Grid<Numerical> Points<Numerical>,csv/204-csv/953.tsv
 Period<Char> Live_births_per_year<Numerical> Deaths_per_year<Numerical> Natural_change_per_year<Numerical> CBR*<Numerical> CDR*<Numerical> NC*<Numerical> TFR*<Numerical> IMR*<Numerical>,csv/203-csv/588.tsv
 Outcome<Char> No<Numerical> Date<Date> Tournament<Char> Surface<Char> Opponent<Char> Score<Char>,csv/203-csv/388.tsv
+Rank<Numerical> Nation<Char> Gold<Numerical> Silver<Numerical> Bronze<Numerical> Total<Numerical>,csv/203-csv/351.tsv
+Thread_nnominal_size<Char> Outer_diameter_n[mm_in]<Numerical> Threads_per_inch_nTPI<Numerical> Pitch_n[in_mm]<Numerical> Inner_diameter_n[mm_in]<Numerical> Cable_diameter_n[mm_in]<Char>,csv/204-csv/142.tsv
+Rank<Numerical> Nation<Char> Gold<Numerical> Silver<Numerical> Bronze<Numerical> Total<Numerical>,csv/204-csv/509.tsv
+Date<Date> Team<Char> Competition<Char> Round<Char> Leg<Char> Opponent<Char> Location<Char> Score<Char>,csv/203-csv/582.tsv
 Golfer<Char> Country<Char> Wins<Numerical> Match_Play<Char> Championship<Char> Invitational<Char> Champions<Char>,csv/204-csv/369.tsv
 Restaurant<Char> Location<Char> Date_Opened<Date> Date_Closed<Date>,csv/202-csv/93.tsv
-Player<Char> No<Numerical> Nationality<Char> Position<Char> Years_for_Jazz<Char> School_Club_Team<Char>,csv/203-csv/820.tsv
-Tour<Numerical> Official_title<Char> Venue<Char> City<Char> Date_nStart<Date> Date_nFinish<Date> Prize_money_nUSD<Char> Report<Char>,csv/204-csv/46.tsv
-Year<Numerical> Competition<Char> Venue<Char> Position<Char> Event<Char> Notes<Char>,csv/204-csv/315.tsv
+Position<Numerical> Driver<Char> No<Numerical> Car<Char> Entrant<Char> Lak<Numerical> Ora<Numerical> San<Numerical> Phi<Numerical> Total<Numerical>,csv/204-csv/955.tsv
+District<Char> Location<Char> Communities_served<Char>,csv/200-csv/8.tsv
+Player<Char> No<Numerical> Nationality<Char> Position<Char> Years_for_Jazz<Date> School_Club_Team<Char>,csv/203-csv/820.tsv
+Year<Numerical> Single<Char> Chart_Positions_nUS_Country<Char> Chart_Positions_nUS<Numerical> Album<Char>,csv/203-csv/619.tsv
+Tour<Numerical> Official_title<Char> Venue<Char> City<Char> Date_nStart<Date> Date_nFinish<Date> Prize_money_nUSD<Numerical> Report<Char>,csv/204-csv/46.tsv
+Year<Numerical> Competition<Char> Venue<Char> Position<Char> Event<Char> Notes<Numerical>,csv/204-csv/315.tsv
+Naturalisations_by_origin<Char> c_2000<Numerical> c_2005<Numerical> c_2009<Numerical> percent_Total_2009<Numerical>,csv/203-csv/666.tsv
+Year<Numerical> Division<Char> League<Char> Reg_Season<Char> Playoffs<Char> National_Cup<Char>,csv/203-csv/284.tsv
+Outcome<Char> No<Numerical> Date<Date> Tournament<Char> Surface<Char> Opponent<Char> Score<Char>,csv/204-csv/285.tsv
 Season<Numerical> Class<Char> Moto<Char> Races<Numerical> Win<Numerical> Podiums<Numerical> Pole<Numerical> Pts<Char> Position<Char>,csv/203-csv/508.tsv
+Specifications<Char> Foundation<Char> Essentials<Char> Standard<Char> Datacenter<Char>,csv/204-csv/134.tsv
 Distribution<Char> x86<Char> x86_64<Char> ia64<Char> ppc<Char> ppc64<Char> sparc32<Char> sparc64<Char> arm<Char> hppa<Char> mips<Char> sh<Char> s390<Char> s390x<Char> alpha<Char> m68k<Char>,csv/203-csv/477.tsv
+Rank<Numerical> Player<Char> County<Char> Tally<Char> Total<Numerical> Opposition<Char>,csv/204-csv/505.tsv
 Wrestler_<Char> Reigns_<Numerical> Date_<Date> Place_<Char> Notes_<Char>,csv/204-csv/818.tsv
-Tie_no<Char> Home_team<Char> Score<Char> Away_team<Char> Date<Date> Attendance<Char>,csv/203-csv/567.tsv
+num<Numerical> Name<Char> Height<Char> Weight_lbs<Numerical> Position<Char> Class<Char> Hometown<Char> Previous_Teams<Char>,csv/204-csv/83.tsv
+Date<Char> Opponentnum<Char> Ranknum<Char> Site<Char> TV<Char> Result<Char> Attendance<Char>,csv/203-csv/708.tsv
+Tie_no<Char> Home_team<Char> Score<Char> Away_team<Char> Date<Date> Attendance<Numerical>,csv/203-csv/567.tsv
 Rank<Numerical> Nation<Char> Gold<Numerical> Silver<Numerical> Bronze<Numerical> Total<Numerical>,csv/204-csv/165.tsv
-Rank<Numerical> Lane<Numerical> Nation<Char> Swimmers<Char> Time<Date> Time_behind<Numerical> Notes<Char>,csv/204-csv/150.tsv
+Year<Numerical> Designers<Char> Brief_description<Char> Selected_by_<Char> Associated_publication<Char>,csv/203-csv/205.tsv
+Year<Numerical> Name<Char> Label<Char> Hot_Black_Singles<Char> Club_Play_Singles<Char>,csv/203-csv/480.tsv
+Season<Char> Club<Char> Competition<Char> Games<Numerical> Goals<Numerical>,csv/203-csv/624.tsv
+num<Numerical> Name<Char> Took_office<Date> Left_office<Date> Party<Char> Governor<Char> Notes<Char>,csv/203-csv/194.tsv
+Rank<Numerical> Lane<Numerical> Nation<Char> Swimmers<Char> Time<Char> Time_behind<Numerical> Notes<Char>,csv/204-csv/150.tsv
 Season<Date> Footballer<Char> Club<Char> Position<Char> Nationality<Char>,csv/203-csv/427.tsv
-Week<Numerical> Date<Date> Opponent<Char> Result<Char> Attendance<Char>,csv/203-csv/361.tsv
-Subject<Char> Robots_Name<Char> Who<Char> When<Char> Where<Char> Occupation<Char>,csv/203-csv/87.tsv
-Match_Day<Numerical> Date<Date> Opponent<Char> H_A<Char> Score<Char> Aberdeen_Scorers<Char> Attendance<Numerical>,csv/204-csv/908.tsv
+Date<Date> Opponent<Char> Venue<Char> Result<Char> Attendance<Char> Scorers<Char>,csv/203-csv/143.tsv
+Week<Numerical> Date<Date> Opponent<Char> Result<Char> Attendance<Numerical>,csv/203-csv/361.tsv
+Subject<Char> Robots_Name<Char> Who<Char> When<Date> Where<Char> Occupation<Char>,csv/203-csv/87.tsv
+NULL_COL<Numerical> Chronological_nNo<Numerical> Date_nNew_style<Date> Water_level_ncm<Numerical> Peak_hour<Char>,csv/203-csv/261.tsv
+Date<Date> Venue<Char> Opponent<Char> Result<Char> Scoreline<Char> China_scorers<Char>,csv/204-csv/224.tsv
+Cellulose_ethers<Char> Reagent<Char> Example<Char> Reagent_1<Char> Group_R_=_H_or<Char> Water_solubility<Char> Application<Char> E_number<Char>,csv/203-csv/162.tsv
+Match_Day<Numerical> Date<Char> Opponent<Char> H_A<Char> Score<Char> Aberdeen_Scorers<Char> Attendance<Numerical>,csv/204-csv/908.tsv
+Chord<Char> Root<Char> Minor_Third<Char> Perfect_Fifth<Char> Major_Seventh<Char>,csv/204-csv/653.tsv
+Rank<Numerical> Diver<Char> Preliminary_nPoints<Numerical> Preliminary_nRank<Numerical> Final_nPoints<Numerical>,csv/203-csv/373.tsv
 Name<Char> Topic<Char> Cost<Char> Target_age<Char> Advertising<Char>,csv/204-csv/372.tsv
-Pos<Char> No<Numerical> Driver<Char> Constructor<Char> Laps<Numerical> Time_Retired<Char> Grid<Char> Points<Char>,csv/204-csv/462.tsv
+Pos<Char> No<Numerical> Driver<Char> Constructor<Char> Laps<Numerical> Time_Retired<Char> Grid<Numerical> Points<Numerical>,csv/204-csv/462.tsv
 Date_introduced<Date> Class_1_eg_Motorbike<Char> Class_2_eg_Car<Char> Class_3_eg_Car_with_trailer<Char> Class_4_eg_Van<Char> Class_5_eg_HGV<Char>,csv/203-csv/389.tsv
 Conference<Char> num_of_Bids<Numerical> Record<Char> Win percent<Numerical> Round_nof_32<Numerical> Sweet_nSixteen<Numerical> Elite_nEight<Numerical> Final_nFour<Numerical> Championship_nGame<Char>,csv/203-csv/605.tsv
+Player<Char> League<Numerical> Cup<Numerical> Europa_nLeague<Numerical> Total<Numerical>,csv/204-csv/744.tsv
 num<Numerical> Title<Char> Featured_guests<Char> Producers<Char> Time<Char> Sample_s<Char>,csv/203-csv/49.tsv
+Rank<Numerical> Nation<Char> Gold<Numerical> Silver<Numerical> Bronze<Numerical> Total<Numerical>,csv/204-csv/682.tsv
+Pos<Numerical> Team<Char> Played<Numerical> Won<Numerical> Draw<Numerical> Lost<Numerical> Goals_For<Numerical> Goals_Against<Numerical> Goal_Difference<Numerical> Points<Numerical> Notes<Char>,csv/203-csv/53.tsv
+President<Char> Became_Oldest_Living_President<Date> Ceased_to_Be_Oldest_Living_President<Date> Age_at_Start_Date<Char> Age_at_End_Date<Char> Duration_Years_Days<Char> Duration_Days<Char>,csv/203-csv/260.tsv
 Parish<Char> Church_name<Char> Location<Char> Year_built<Numerical>,csv/202-csv/175.tsv
+Player<Char> Friendlies<Numerical> FIFA_Confederations_Cup<Numerical> FIFA_World_Cup_Qual<Numerical> Total_Goals<Numerical>,csv/204-csv/241.tsv
 Polling_Firm<Char> Source<Char> Date_Published<Date> NAnastasiades<Numerical> GLillikas<Numerical> SMalas<Numerical> Others<Numerical>,csv/204-csv/116.tsv
 Rank<Numerical> Nation<Char> Gold<Numerical> Silver<Numerical> Bronze<Numerical> Total<Numerical>,csv/203-csv/811.tsv
+num<Numerical> Weekend_End_Date<Date> Film<Char> Box_Office<Char>,csv/204-csv/377.tsv
 Pos<Numerical> No<Numerical> Driver<Char> Constructor<Char> Laps<Numerical> Time_Retired<Char> Grid<Numerical> Points<Numerical>,csv/202-csv/66.tsv
+Pos<Numerical> No<Numerical> Driver<Char> Team<Char> Laps<Numerical> Time_Retired<Char> Grid<Numerical> Points<Numerical>,csv/203-csv/659.tsv
+Comet<Char> Discoverers_or_namesakes<Char> Orbital_period_years<Numerical> Spacecraft_encounters<Char>,csv/202-csv/81.tsv
+Year<Numerical> Division<Numerical> League<Char> Regular_Season<Char> Playoffs<Char> Open_Cup<Char>,csv/204-csv/972.tsv
+Date<Numerical> Rnd<Char> Race_Name<Char> Circuit<Char> City_Location<Char> Pole_position<Char> Winning_driver<Char> Winning_team<Char> Report<Char>,csv/203-csv/181.tsv
+Rank<Numerical> Nation<Char> Gold<Numerical> Silver<Numerical> Bronze<Numerical> Total<Numerical>,csv/204-csv/594.tsv
 Opus<Numerical> Title<Char> Sub­divisions<Char> Compo_sition<Numerical> Première_date<Date> Place_theatre<Char>,csv/204-csv/271.tsv
 Year<Numerical> Title<Char> Genre<Char> Publisher<Char> Notes<Char>,csv/203-csv/488.tsv
+Olympics<Char> Athlete<Char> Judge_Official<Char> Coach<Char> Language<Char>,csv/203-csv/772.tsv
 Year<Numerical> Competition<Char> Venue<Char> Position<Char> Event<Char> Notes<Char>,csv/203-csv/65.tsv
 Year<Numerical> Class<Char> No<Numerical> Tyres<Char> Car<Char> Team<Char> Co_Drivers<Char> Laps<Numerical> Pos<Char> Class_nPos<Char>,csv/204-csv/995.tsv
+Poll_Source<Char> Sample_Size<Numerical> Margin_of_Error<Numerical> Date<Date> Democrat<Char> percent<Numerical> Republican<Char> percent_1<Numerical>,csv/203-csv/662.tsv
+Nation<Char> Date<Date> Quantity<Numerical> Type<Numerical> Notes<Char>,csv/204-csv/390.tsv
 Place<Numerical> Shooter<Char> c_5_pts<Numerical> c_4_pts<Numerical> c_3_pts<Numerical> c_2_pts<Numerical> c_1_pts<Numerical> c_0_pts<Numerical> Total<Numerical> Rank<Numerical>,csv/203-csv/852.tsv
+Eps_num<Numerical> Prod_num<Numerical> Title<Char> Summary<Char> Air_Date<Date>,csv/203-csv/740.tsv
+Pick_num<Numerical> Player<Char> Position<Char> Nationality<Char> NHL_team<Char> College_junior_club_team<Char>,csv/203-csv/566.tsv
+num<Numerical> Episode<Char> Air_date<Date> Rating<Numerical> Share<Numerical> c_18_49_Rating_Share<Char> Viewers_m<Numerical> Rank_night<Char> Rank_timeslot<Char> Rank_overall<Char>,csv/203-csv/328.tsv
+Atomic_nno<Numerical> Name<Char> Symbol<Char> Group<Numerical> Period<Numerical> Block<Char> State_at_nSTP<Char> Occurrence<Char> Description<Char>,csv/203-csv/599.tsv
+Year<Numerical> Date<Char> Winner<Char> Result<Char> Loser<Char> Location<Char>,csv/204-csv/393.tsv
+No_in_nseries<Numerical> No_in_nseason<Numerical> Title<Char> Directed_by<Char> Written_by<Char> Original_air_date<Date> Prod_ncode<Numerical>,csv/203-csv/315.tsv
+Date<Date> Location<Char> Opponent<Char> Result<Char> Competition<Char>,csv/204-csv/904.tsv
 Year<Numerical> Film<Char> Rotten_Tomatoes<Char> Metacritic<Char> IMDb<Char>,csv/203-csv/641.tsv
-Rank<Numerical> Mountain_Peak<Char> Nation<Char> Province<Char> Elevation<Char> Prominence<Char> Isolation<Char>,csv/203-csv/626.tsv
+Rank<Numerical> Mountain_Peak<Char> Nation<Char> Province<Char> Elevation<Numerical> Prominence<Numerical> Isolation<Numerical>,csv/203-csv/626.tsv
 Episode<Numerical> Show_num<Char> Iron_Chef<Char> Challenger<Char> Challenger_specialty<Char> Secret_ingredients_or_theme<Char> Winner<Char> Final_score<Char>,csv/204-csv/86.tsv
+Year<Numerical> Result<Char> Award<Char> Film<Char>,csv/203-csv/709.tsv
 Rank<Numerical> Nation<Char> Gold<Numerical> Silver<Numerical> Bronze<Numerical> Total<Numerical>,csv/203-csv/585.tsv
+Goal<Numerical> Date<Date> Venue<Char> Opponent<Char> Score<Char> Result<Char> Competition<Char>,csv/203-csv/722.tsv
 Year<Numerical> Organization<Char> Award<Char> Work<Char> Result<Char>,csv/204-csv/407.tsv
+Year<Numerical> State_Territory_Mens_Division<Char> State_Territory_Womens_Division<Char> Major_Centres_Division<Char> Community_Division<Char> Womens_Division<Char>,csv/204-csv/656.tsv
+Political_lieutenant<Char> District_nArea<Char> Took_Office<Date> Left_Office<Date> Party_leader<Char>,csv/203-csv/831.tsv
 State<Char> Membership<Char> Parliament<Char> Membership_status<Char> Represented_since<Date> Members<Numerical>,csv/201-csv/20.tsv
 Year<Numerical> Matches<Numerical> Winner<Char> Results<Char> Pakistan_nCaptain<Char> Pakistan_nCoach<Char> India_nCaptain<Char> India_nCoach<Char>,csv/204-csv/719.tsv
-Model<Char> Volume<Char> Engine<Char> Fuel<Char> Power_Torque<Char> Years_produced<Char> Produced<Numerical>,csv/203-csv/264.tsv
+Model<Char> Volume<Char> Engine<Char> Fuel<Char> Power_Torque<Char> Years_produced<Date> Produced<Numerical>,csv/203-csv/264.tsv
 Team<Char> Chassis<Char> Engine<Char> Tires<Char> No<Numerical> Drivers<Char>,csv/204-csv/531.tsv
-Speed<Char> Date<Date> Country<Char> Train<Char> Arr<Char> Power<Char> State<Char> Comments<Char>,csv/204-csv/274.tsv
-Year<Numerical> Competition<Char> Venue<Char> Position<Char> Event<Char> Notes<Char>,csv/204-csv/588.tsv
+Speed<Numerical> Date<Date> Country<Char> Train<Char> Arr<Char> Power<Char> State<Char> Comments<Char>,csv/204-csv/274.tsv
+Name_of_place<Char> Number_of_counties<Numerical> Principal_county<Char> Lower_zip_code<Numerical> Upper_zip_code<Numerical>,csv/203-csv/443.tsv
+Year<Numerical> Single<Char> Peak_chart_npositions_nUS_Country<Numerical> Peak_chart_npositions_nCAN_Country<Numerical> Album<Char>,csv/204-csv/919.tsv
+Date<Date> Opponent<Char> Venue<Char> Result<Char> Attendance<Numerical> Scorers<Char>,csv/204-csv/411.tsv
+Year<Numerical> Competition<Char> Venue<Char> Position<Char> Event<Char> Notes<Numerical>,csv/204-csv/588.tsv
 Name<Char> Pennant<Numerical> Namesake<Char> Builder<Char> Ordered<Date> Laid_down<Date> Launched<Date> Commissioned<Date> Fate<Char>,csv/204-csv/432.tsv
 num<Numerical> Title<Char> Time<Char> Lyrics<Char> Music<Char> Producers<Char> Performers<Char>,csv/203-csv/12.tsv
 Round<Numerical> Pick<Numerical> Player<Char> Position<Char> Nationality<Char> School_Club_Team<Char>,csv/204-csv/695.tsv
 Contestant<Char> Original_nTribe<Char> First_nSwitch<Char> Second_nSwitch<Char> Merged_nTribe<Char> Finish<Char> Ghost_nIsland<Char> Total_nVotes<Numerical>,csv/204-csv/999.tsv
+Year<Numerical> Title<Char> Role<Char> Notes<Char>,csv/203-csv/785.tsv
+Pick_num<Numerical> Player<Char> Position<Char> Nationality<Char> NHL_team<Char> College_junior_club_team<Char>,csv/203-csv/617.tsv
+Team<Char> City<Char> Years_active<Char> Seasons_played<Numerical> Win–loss_record<Char> Winpercent<Numerical> Playoffs_appearances<Numerical>,csv/204-csv/773.tsv
 Year<Numerical> MVP<Char> Defensive_Player_of_the_Year<Char> Unsung_Hero<Char> Newcomer_of_the_Year<Char>,csv/203-csv/304.tsv
+num<Numerical> Directed_By<Char> Written_By<Char> Original_Air_Date<Date>,csv/204-csv/233.tsv
 num<Numerical> Date<Date> Venue<Char> Opponent<Char> Score<Char> Result<Char> Competition<Char>,csv/203-csv/766.tsv
-Band<Char> Disc_Song<Char> Released<Numerical> Disc_Description<Char> Disk_Size<Char> Image<Char>,csv/203-csv/72.tsv
-Event<Char> Gold<Char> Time<Date> Silver<Char> Time_1<Date> Bronze<Char> Time_2<Date>,csv/203-csv/10.tsv
+Year<Numerical> Award<Char> Film<Char> Result<Char>,csv/200-csv/36.tsv
+Band<Char> Disc_Song<Char> Released<Date> Disc_Description<Char> Disk_Size<Char> Image<Char>,csv/203-csv/72.tsv
+Event<Char> Gold<Char> Time<Numerical> Silver<Char> Time_1<Numerical> Bronze<Char> Time_2<Numerical>,csv/203-csv/10.tsv
 Year<Numerical> Rider<Char> Victories<Numerical> Bike<Char> Manufacturers_Championship<Char>,csv/203-csv/415.tsv
 Route<Numerical> Destinations<Char> Via<Char> Frequency_nminutes<Numerical> Peak_Hours_Only<Char> Former<Char>,csv/203-csv/335.tsv
+DATE<Char> OPPONENT<Char> SCORE<Char> TOP_SCORER_Total_points<Char> VENUE<Char>,csv/204-csv/97.tsv
 Name<Char> Location<Char> Date_Formed<Date> Area<Char> Description<Char>,csv/202-csv/264.tsv
+Team<Char> No<Numerical> Driver<Char> Class<Char> Rounds<Char>,csv/204-csv/305.tsv
+District_nbalance_n[clarification_needed]<Char> Area_nkm2<Numerical> Area_nsq_mi<Numerical> Pop_n1998<Numerical> Pop_n2008<Numerical> Pop_km²_n2008<Numerical>,csv/203-csv/159.tsv
+num<Numerical> Massif<Char> Region<Char> Type_of_nature_reserve<Char> Preserved_area<Numerical> Buffer_zone<Numerical>,csv/204-csv/2.tsv
+Wrestler_<Char> Reigns_<Numerical> Date_<Date> Place_<Char> Notes_<Char>,csv/203-csv/841.tsv
 Season<Numerical> Team<Char> Country<Char> Division<Numerical> Apps<Numerical> Goals<Numerical>,csv/203-csv/297.tsv
-Place<Char> Player<Char> Country<Char> Score<Char> To_par<Char> Money_$<Char>,csv/204-csv/900.tsv
+Place<Char> Player<Char> Country<Char> Score<Char> To_par<Char> Money_$<Numerical>,csv/204-csv/900.tsv
 Value<Char> Diameter<Char> Composition<Char> c_1975–1979_nObverse<Char> c_1975–1979_nReverse<Char> c_1981_nObverse<Char> c_1981_nReverse<Char>,csv/203-csv/96.tsv
 Wrestler_<Char> Times_<Numerical> Date_<Date> Location_<Char> Notes_<Char>,csv/204-csv/499.tsv
-Binary<Char> Octal<Char> Decimal<Numerical> Hexadecimal<Char> Glyph<Char>,csv/203-csv/684.tsv
+Binary<Numerical> Octal<Numerical> Decimal<Numerical> Hexadecimal<Numerical> Glyph<Char>,csv/203-csv/684.tsv
 Hull<Char> Type<Char> Original_Name<Char> Original_Operator<Char> Delivery<Date> Disposition_2012<Char> c_2nd_name<Char> c_2nd_operator<Char> c_3rd_Name<Char> c_3rd_operator<Char>,csv/204-csv/280.tsv
 Team<Char> City<Char> Venue<Char> Capacity<Numerical> Head_Coach<Char> Team_Captain<Char> Past_Season<Char>,csv/204-csv/391.tsv
+Common_name<Char> District<Char> Hebrew<Char> Arabic<Char> Population_n2009<Numerical> Area_nkm²<Numerical> Mayor<Char>,csv/204-csv/512.tsv
+Episode_no<Numerical> Airdate<Date> Viewers<Numerical> BBC_Three_weekly_ranking<Char> Multichannels_rank<Numerical>,csv/204-csv/456.tsv
 Match_no<Numerical> Match_Type<Char> Team_Europe<Char> Score<Char> Team_USA<Char> Progressive_Total<Char>,csv/203-csv/380.tsv
 ZOOM<Char> Cast_Member_1<Char> Cast_Member_2<Char> Cast_Member_3<Char> Cast_Member_4<Char> Cast_Member_5<Char> Cast_Member_6<Char> Cast_Member_7<Char>,csv/204-csv/810.tsv
 Year<Numerical> Single<Char> Peak_chart_positions_nAUS<Numerical> Peak_chart_positions_nAUT<Numerical> Peak_chart_positions_nBEL_nFl<Numerical> Peak_chart_positions_nBEL_nWa<Numerical> Peak_chart_positions_nFIN<Numerical> Peak_chart_positions_nFRA<Numerical> Peak_chart_positions_nGER<Numerical> Peak_chart_positions_nNED<Numerical> Peak_chart_positions_nSWE<Numerical> Peak_chart_positions_nSUI<Numerical> Certifications_nsales_thresholds<Char> Album<Char>,csv/201-csv/0.tsv
 num<Numerical> Date<Date> Venue<Char> Opponent<Char> Score<Char> Result<Char> Competition<Char>,csv/203-csv/50.tsv
+Representative<Char> Years<Char> State<Char> Party<Char> Lifespan<Char>,csv/204-csv/677.tsv
 Place<Char> Code<Numerical> Area_km2<Numerical> Population<Numerical> Most_spoken_language<Char>,csv/204-csv/890.tsv
+Rank<Numerical> Name<Char> Club<Char> Nationality<Char> Points<Numerical>,csv/203-csv/578.tsv
 Title<Char> Year<Numerical> Peak_chart_positions_nUS<Char> Peak_chart_positions_nUS_RB<Char> Peak_chart_positions_nUS_Rap<Char> Album<Char>,csv/203-csv/454.tsv
+Single_EP<Char> Tracks<Char> Label<Char> Year<Numerical> Album<Char>,csv/204-csv/817.tsv
 Year<Numerical> Title<Char> Role<Char> Notes<Char>,csv/202-csv/201.tsv
+Rank<Numerical> Pair<Numerical> Country<Char> Athletes<Char> Time<Date> Deficit<Char>,csv/204-csv/934.tsv
 Preceded by_nAlfred_Scott<Char>  Member_of_Parliament_for_Ashton_under_Lyne_n1910–1916<Char>  Succeeded by_nAlbert_Stanley<Char>,csv/200-csv/37.tsv
 Year<Numerical> Film<Char> Role<Char> Notes<Char>,csv/202-csv/248.tsv
+Series_Number<Numerical> Season_Number<Numerical> Episode_Title<Char> Premiere_Date<Date> Production_Code<Numerical>,csv/203-csv/768.tsv
+No<Numerical> Score<Numerical> Player<Char> Team<Char> Balls<Numerical> Inns<Numerical> Opposing_team<Char> Date<Date> Result<Char>,csv/204-csv/167.tsv
 num<Numerical> Date<Date> Location<Char> Winner<Char> Score_nJSU<Numerical> Score_nTU<Numerical> Series<Char>,csv/204-csv/166.tsv
+Country<Char> Amphibians<Numerical> Birds<Numerical> Mammals<Numerical> Reptile<Numerical> Total_terrestrial_vertebrates<Numerical> Vascular_plants<Numerical> Biodiversity<Numerical>,csv/201-csv/8.tsv
 Sl_no<Numerical> Name_of_the_prabandham<Char> Starting_c_from<Numerical> Ending_with<Numerical> Number_of_pasurams<Numerical> Sung_by<Char>,csv/204-csv/701.tsv
+Year<Numerical> Winner<Char> Age<Numerical> Jockey<Char> Trainer<Char> Owner<Char> Distance_nMiles<Char> Time<Char> Purse<Char> Gr<Char>,csv/204-csv/502.tsv
+No<Numerical> Date<Date> Tournament<Char> Winning_score<Char> Margin_of_victory<Char> Runners_up<Char>,csv/203-csv/278.tsv
+Representative<Char> Party<Char> Home_Town_City<Char> District<Numerical>,csv/203-csv/155.tsv
 Rank<Numerical> Island<Char> Area_nkm²<Numerical> Area_nsq_mi<Numerical> Country_Countries_Region<Char>,csv/203-csv/144.tsv
+Year<Numerical> Network<Char> Race_caller<Char> Color_commentator<Char> Reporters<Char> Trophy_Presentation<Char>,csv/204-csv/478.tsv
 Year<Numerical> Song<Char> US_Hot_100<Char> US_Modern_Rock<Char> US_Mainstream_Rock<Numerical> Album<Char>,csv/203-csv/628.tsv
-Year<Numerical> Competition<Char> Venue<Char> Position<Char> Notes<Char>,csv/203-csv/492.tsv
-Rank<Numerical> Name<Char> Nationality<Char> Time<Char> Notes<Char> Points<Numerical>,csv/204-csv/304.tsv
-Hand<Char> Auto<Numerical> Wind<Char> Athlete<Char> Nationality<Char> Birthdate<Char> Location<Char> Date<Date>,csv/204-csv/931.tsv
+Year<Numerical> Competition<Char> Venue<Char> Position<Char> Notes<Numerical>,csv/203-csv/492.tsv
+District<Char> Incumbent<Char> Party<Char> First_elected<Date> Result<Char> Candidates<Char>,csv/203-csv/423.tsv
+Rank<Numerical> Name<Char> Nationality<Char> Time<Date> Notes<Char> Points<Numerical>,csv/204-csv/304.tsv
+Clerk<Char> Started<Date> Finished<Date> School_year<Char> Previous_clerkship<Char>,csv/204-csv/619.tsv
+Hand<Char> Auto<Numerical> Wind<Numerical> Athlete<Char> Nationality<Char> Birthdate<Date> Location<Char> Date<Date>,csv/204-csv/931.tsv
 Competition<Char> Total_spectatorship<Numerical> Average_match_attendance<Numerical> Year<Date>,csv/203-csv/199.tsv
+Season<Char> Competition<Char> Round<Char> Club<Char> Home<Numerical> Away<Numerical>,csv/203-csv/776.tsv
 No<Numerical> Date<Date> Tournament<Char> Surface<Char> Partnering<Char> Opponent_in_the_final<Char> Score<Char>,csv/204-csv/447.tsv
+Common_name<Char> Binomial_nomenclature<Char> Colour<Char> Density_¹<Numerical> Location<Char> Characteristics_Usage_and_Status<Char>,csv/203-csv/738.tsv
 Rank<Numerical> Nation<Char> Gold<Numerical> Silver<Numerical> Bronze<Numerical> Total<Numerical>,csv/204-csv/306.tsv
+Num<Numerical> Pod_Color<Char> Nickname<Char> Short_Description<Char> Episode<Char>,csv/204-csv/5.tsv
 Name<Char> Owner<Char> Location<Char> Notes<Char> Transmission<Char> Website<Char>,csv/203-csv/500.tsv
+Year<Numerical> Chassis<Char> Engine<Char> Start<Numerical> Finish<Numerical> Team<Char>,csv/203-csv/493.tsv
 Pos<Numerical> Name<Char> Team<Char> Laps<Numerical> Time_Retired<Char> Grid<Numerical> Points<Numerical>,csv/204-csv/491.tsv
+Rank<Numerical> Player_Name<Char> No_of_Titles<Numerical> Runner_up<Numerical> Final_Appearances<Numerical>,csv/203-csv/86.tsv
 Represents<Char> Contestant<Char> Age<Char> Height<Numerical> Hometown<Char>,csv/204-csv/460.tsv
-Date<Char> Time<Char> Opponentnum<Char> Ranknum<Char> Site<Char> TV<Char> Result<Char> Attendance<Char>,csv/204-csv/657.tsv
-Client<Char> Years_of_Operation<Char> Area_of_Operation<Char> Country<Char> Services<Char>,csv/204-csv/728.tsv
+Stage<Numerical> Date<Date> Route<Char> Terrain<Char> Length<Char> Winner<Char> Race_leader<Char>,csv/204-csv/406.tsv
+City<Char> County<Char> Population_2011<Numerical> Population_2002<Numerical> Altitude_m<Numerical> Year_status_ngranted*_or_nfirst_attested†<Char>,csv/204-csv/454.tsv
+Year<Numerical> Competition<Char> Venue<Char> Position<Char> Notes<Char>,csv/203-csv/819.tsv
+Date<Char> Time<Char> Opponentnum<Char> Ranknum<Char> Site<Char> TV<Char> Result<Char> Attendance<Numerical>,csv/204-csv/657.tsv
+Round<Numerical> Round_1<Char> Race<Char> Date<Date> Pole_Position<Char> Fastest_Lap<Char> Winning_Club<Char> Winning_Team<Char> Report<Char>,csv/203-csv/514.tsv
+Date<Date> Date_1<Date> NULL_COL<Char> Rank<Char> Tournament_name<Char> Venue<Char> City<Char> Winner<Char> Runner_up<Char> Score<Char>,csv/203-csv/140.tsv
+Season<Numerical> Episodes<Numerical> Time_slot_EST<Char> Original_airing_nSeason_premiere<Date> Original_airing_nSeason_finale<Date> Original_airing_nTV_season<Char> Rank<Char> Viewers_nin_millions<Numerical>,csv/203-csv/867.tsv
+Client<Char> Years_of_Operation<Date> Area_of_Operation<Char> Country<Char> Services<Char>,csv/204-csv/728.tsv
 Type<Char> Construction_period<Char> Cylinder<Char> Capacity<Char> Power<Char> Vmax<Char>,csv/203-csv/453.tsv
+Rank<Numerical> Pair<Numerical> Name<Char> Country<Char> Time<Date> Time_behind<Numerical>,csv/204-csv/201.tsv
+Season<Numerical> Date<Date> Location<Char> Discipline<Char> Place<Char>,csv/204-csv/921.tsv
 Fence<Char> Name<Char> Jockey<Char> Age<Numerical> Handicap_st_lb<Char> Starting_price<Char> Fate<Char>,csv/204-csv/856.tsv
-num<Numerical> Name<Char> Hanzi<Char> Hanyu_Pinyin<Char> Population_2003_est<Char> Area_km²<Numerical> Density_km²<Numerical>,csv/202-csv/270.tsv
+Rank<Numerical> Athlete<Char> Nationality<Char> c_215<Char> c_220<Char> c_224<Char> c_227<Char> Result<Numerical> Notes<Char>,csv/204-csv/844.tsv
+num<Numerical> Name<Char> Hanzi<Char> Hanyu_Pinyin<Char> Population_2003_est<Numerical> Area_km²<Numerical> Density_km²<Numerical>,csv/202-csv/270.tsv
 Season<Numerical> Date<Date> Location<Char> Discipline<Char> Place<Char>,csv/204-csv/112.tsv
+Match<Char> Date<Date> Venue<Char> Opponents<Char> Score<Char>,csv/204-csv/254.tsv
 Date<Char> Time<Char> NULL_COL<Char> Score<Char> NULL_COL_1<Char> Set_1<Char> Set_2<Char> Set_3<Char> Set_4<Char> Set_5<Char> Total<Char> Report<Char>,csv/203-csv/68.tsv
 Year<Numerical> Winner<Char> Jockey<Char> Trainer<Char> Owner<Char> Distance_nMiles<Char> Time<Char> Win_$<Char>,csv/204-csv/825.tsv
+Week<Numerical> Date<Date> Opponent<Char> Result<Char> Record<Char> TV_Time<Char> Attendance<Numerical>,csv/203-csv/48.tsv
 Title<Char> Year<Numerical> Authors<Char> Publisher<Char> Pages<Numerical>,csv/203-csv/217.tsv
+Rank<Numerical> Player<Char> From<Char> Transfer_Fee_n€_millions<Numerical> Year<Date>,csv/203-csv/748.tsv
+Year<Numerical> Record<Char> Finish<Char> Manager<Char> Playoffs<Char>,csv/203-csv/822.tsv
 Name<Char> Type<Char> Builder<Char> Works_number<Numerical> Date<Date> Notes<Char>,csv/203-csv/863.tsv
-No<Numerical> Score<Numerical> Player<Char> Team<Char> Balls<Char> Inns<Numerical> Opposing_team<Char> Date<Date> Result<Char>,csv/204-csv/973.tsv
+Name<Char> Route_numbers<Char> Length_mi<Numerical> Location<Char> Notes<Char>,csv/203-csv/100.tsv
+Chart_Year<Numerical> Artist<Char> Album<Char> Song<Char> Billboard_Hot_100<Char> Billboard_Hot_RB_Hip_Hop<Char> NULL_COL<Char>,csv/204-csv/895.tsv
+No<Numerical> Score<Numerical> Player<Char> Team<Char> Balls<Numerical> Inns<Numerical> Opposing_team<Char> Date<Date> Result<Char>,csv/204-csv/973.tsv
+Series<Char> Name<Char> Age<Numerical> Hometown<Char> Occupation<Char> Status<Char>,csv/204-csv/444.tsv
 Rank<Numerical> Nation<Char> Gold<Numerical> Silver<Numerical> Bronze<Numerical> Total<Numerical>,csv/203-csv/64.tsv
+Name<Char> City<Char> State_Country<Char> Designed<Numerical> Completed<Numerical> Other_Information<Char>,csv/204-csv/545.tsv
 Leg<Char> Stage<Char> Time<Date> Name<Char> Length<Numerical> Winner<Char> Time_1<Date> Avg_spd<Numerical> Rally_leader<Char>,csv/203-csv/236.tsv
 Year<Numerical> Title<Char> Role<Char> Notes<Char>,csv/201-csv/23.tsv
-Place<Char> Player<Char> Country<Char> Score<Char> To_par<Char>,csv/203-csv/511.tsv
-Series<Char> Years<Char> Volumes<Numerical> Writer<Char> Editor<Char> Remarks<Char>,csv/203-csv/669.tsv
+Year<Numerical> Network<Char> NASCAR_nCountdown<Char> Lap_by_lap<Char> Color_commentators<Char> Pit_reporters<Char> Ratings<Char> Viewers<Char>,csv/203-csv/122.tsv
+Rank<Numerical> Nation<Char> Gold<Numerical> Silver<Numerical> Bronze<Numerical> Total<Numerical>,csv/204-csv/347.tsv
+num<Numerical> Title<Char> Performers<Char> Film<Char> Length<Char>,csv/203-csv/85.tsv
+Place<Numerical> Player<Char> Country<Char> Score<Char> To_par<Char>,csv/203-csv/511.tsv
+Series<Char> Years<Date> Volumes<Numerical> Writer<Char> Editor<Char> Remarks<Char>,csv/203-csv/669.tsv
+Year<Numerical> Total_npassengers<Numerical> Passenger_nChange<Char> Domestic<Numerical> International_ntotal<Numerical> International_nnon_CIS<Numerical> CIS<Numerical> Aircraft_nLandings<Numerical> Cargo_ntonnes<Numerical>,csv/203-csv/111.tsv
 Departure<Numerical> Going_to<Char> Calling_at<Char> Arrival<Numerical> Operator<Char>,csv/204-csv/754.tsv
+Language<Char> c_2001_census[1]_ntotal_population_1_00459_million<Numerical> c_1991_censusIndian_Census_[2]_ntotal_population_83814_million<Numerical> c_1991_censusIndian_Census_[2]_ntotal_population_83814_million_1<Numerical> NULL_COL<Char>,csv/203-csv/167.tsv
 Year<Numerical> Award<Char> Category<Char> Recipient<Char> Result<Char>,csv/204-csv/348.tsv
 Award<Char> Category<Char> Nominee<Char> Result<Char>,csv/200-csv/11.tsv
+County<Char> Brown<Numerical> Votes<Numerical> Nixon<Numerical> Votes_1<Numerical> Wyckoff<Numerical> Votes_2<Numerical>,csv/203-csv/520.tsv
 Divisions<Char> Prize_EUR<Numerical> Odds_of_winning_1 in<Numerical> Number_of_winning_tickets<Numerical> In_order_to_win<Char>,csv/203-csv/546.tsv
+No_in_nseason<Numerical> No_in_nseries<Numerical> Title<Char> Canadian_airdate<Date> US_airdate<Date> Production_code<Numerical>,csv/204-csv/674.tsv
 num<Numerical> Office<Char> Current_Officer<Char>,csv/200-csv/45.tsv
+Publication<Char> Country<Char> Accolade<Char> Year<Numerical> Rank<Numerical>,csv/203-csv/821.tsv
 Date<Date> Site<Char> Winning_team<Char> Winning_team_1<Numerical> Losing_team<Char> Losing_team_1<Numerical> Series<Char>,csv/204-csv/528.tsv
 Round<Numerical> Date<Date> Home_Away<Char> Opponent_team<Char> Score<Char> Scorers<Char>,csv/203-csv/736.tsv
-Week<Numerical> Date<Date> Opponent<Char> Result<Char> Attendance<Char>,csv/204-csv/80.tsv
+Rnd<Numerical> Circuit<Char> GTP_Winning_Team_nGTP_Winning_Drivers<Char> GTO_Winning_Team_nGTO_Winning_Drivers<Char> GTU_Winning_Team_nGTU_Winning_Drivers<Char> Results<Char>,csv/203-csv/101.tsv
+Release_date<Date> Album_Title<Char> Record_Company<Char> Song_Title<Char> Certification<Char>,csv/203-csv/579.tsv
+Callsign<Char> Area_served<Char> Frequency<Numerical> Band<Char> Fate<Char> Freq_currently<Char> Purpose<Char>,csv/203-csv/604.tsv
+Week<Numerical> Date<Char> Result<Char> Record<Char> Opponent<Char> Points_For<Numerical> Points_Against<Numerical> First_Downs<Numerical> Attendance<Numerical>,csv/203-csv/318.tsv
+Week<Numerical> Date<Date> TV_Time<Char> Opponent<Char> Result<Char> Attendance<Numerical>,csv/203-csv/21.tsv
+School<Char> c_2007<Numerical> c_2008<Numerical> c_2009<Numerical> c_2010<Numerical> c_2011<Numerical>,csv/204-csv/989.tsv
+Week<Numerical> Date<Date> Opponent<Char> Result<Char> Attendance<Numerical>,csv/204-csv/80.tsv
+No<Numerical> Date_time<Date> Aircraft<Char> Foe<Char> Result<Char> Location<Char> Notes<Char>,csv/204-csv/830.tsv
+is<Numerical> name<Char> arrival_ndate<Date> departure_ndate<Date> notes<Char>,csv/203-csv/232.tsv
+Date<Date> Venue<Char> Opponents<Char> Score<Numerical> Competition<Char>,csv/204-csv/264.tsv
 Name<Char> Date_time_UT<Date> Local_time_zone<Char> Location<Char> Elevation_+_height<Char> Delivery<Char> Purpose<Char> Yield<Char> Venting<Char> Notes<Char>,csv/203-csv/625.tsv
 No<Numerical> Driver<Char> Entrant<Char> Constructor<Char> Chassis<Char> Engine<Char>,csv/204-csv/826.tsv
 Name<Char> Nationality<Char> From<Date> To<Date> Honours<Char> Comments<Char>,csv/203-csv/243.tsv
-Date<Date> Opponent<Char> Site<Char> Result<Char>,csv/204-csv/412.tsv
+Model<Char> Fuel_Type<Char> mpg_US_gallons<Numerical> L_100 km<Numerical> NZ_Rating_nStars<Numerical>,csv/204-csv/815.tsv
+Name<Char> Type<Char> RA_J2000<Char> Dec_J2000<Char> Redshift_km_s<Numerical> Apparent_Magnitude<Numerical>,csv/204-csv/189.tsv
+Rank<Numerical> Heat<Numerical> Name<Char> Nationality<Char> Time<Numerical> Notes<Char>,csv/204-csv/259.tsv
+Date<Char> Opponent<Char> Site<Char> Result<Char>,csv/204-csv/412.tsv
+Year<Numerical> Premiers<Char> Score<Char> Runners_Up<Char> Score_1<Char>,csv/203-csv/80.tsv
+School_Name<Char> Low_grade<Char> High_grade<Char> Students_K_12<Numerical> FTE_Teachers<Numerical> Student_teacher_ratio<Numerical>,csv/203-csv/845.tsv
+Rank<Numerical> Nation<Char> Gold<Numerical> Silver<Numerical> Bronze<Numerical> Total<Numerical>,csv/204-csv/216.tsv
 Year<Numerical> Competition<Char> Venue<Char> Position<Char> Event<Char>,csv/203-csv/468.tsv
+Rank<Numerical> Name<Char> Nationality<Char> Time<Date>,csv/204-csv/203.tsv
+num<Numerical> Stadium<Char> Capacity<Numerical> City<Char> Region<Char> Home_Team<Char> Opened<Date>,csv/204-csv/67.tsv
+Year<Numerical> Title<Char> Rol<Char> Format<Char> Related_Links<Char>,csv/203-csv/23.tsv
+Year<Numerical> Song<Char> Album<Char> Position<Numerical> Chart<Char>,csv/203-csv/124.tsv
+Year<Numerical> Team_Record_nW<Numerical> Team_Record_nL<Numerical> Playoffs<Char>,csv/204-csv/118.tsv
 Year<Numerical> Winners<Char> Runners_up<Char> Third<Char> Fourth<Char>,csv/204-csv/732.tsv
 Number<Char> Name<Char> Service<Char> From<Date> To<Date>,csv/203-csv/326.tsv
-Rank<Numerical> City<Char> Passengers<Char> Ranking<Numerical> Airline<Char>,csv/203-csv/169.tsv
-Town_name<Char> County<Char> Established<Numerical> Disestablished<Date> Current_Status<Char> Remarks<Char>,csv/204-csv/69.tsv
-District<Char> Representative<Char> Party<Char> Home_Town_County<Char> Term_of_Service<Char>,csv/204-csv/580.tsv
+Tablet<Numerical> Genealogy<Char> Narrative<Char> Colophon<Char>,csv/203-csv/310.tsv
+Location<Char> Reactor_type<Char> Status<Char> Net_nCapacity_nMWe<Numerical> Gross_nCapacity_nMWe<Numerical>,csv/204-csv/566.tsv
+Rank<Numerical> City<Char> Passengers<Numerical> Ranking<Numerical> Airline<Char>,csv/203-csv/169.tsv
+Season<Char> Tier<Numerical> Division<Char> Place<Char>,csv/203-csv/553.tsv
+Town_name<Char> County<Char> Established<Date> Disestablished<Date> Current_Status<Char> Remarks<Char>,csv/204-csv/69.tsv
+Boat<Char> Time<Numerical> Crew<Char> Nation<Char> Date<Numerical> Meet<Char> Location<Char>,csv/203-csv/360.tsv
+Designation<Char> Keel_Laid<Date> Launched<Date> Commissioned<Date> Fate<Char>,csv/203-csv/369.tsv
+Week<Numerical> Date<Date> Opponent<Char> Results_nFinal_score<Char> Results_nTeam_record<Char> Venue<Char> Attendance<Numerical>,csv/204-csv/404.tsv
+Heat<Numerical> Rank<Numerical> Name<Char> Result<Char> Notes<Char>,csv/203-csv/693.tsv
+Rank<Numerical> Player<Char> Nation<Char> Club<Char> Goals<Numerical>,csv/204-csv/705.tsv
+District<Char> Representative<Char> Party<Char> Home_Town_County<Char> Term_of_Service<Numerical>,csv/204-csv/580.tsv
 Month<Char> Jan<Numerical> Feb<Numerical> Mar<Numerical> Apr<Numerical> May<Numerical> Jun<Numerical> Jul<Numerical> Aug<Numerical> Sep<Numerical> Oct<Numerical> Nov<Numerical> Dec<Numerical> Year<Numerical> Average high °C (°F)<Char> Daily mean °C (°F)<Char> Mean monthly sunshine hours<Numerical>,csv/200-csv/46.tsv
+Year<Numerical> Model<Char> Denomination<Char> Metal_composition<Char> Dimensions<Char>,csv/204-csv/464.tsv
+Event<Char> Class<Char> Gold<Char> Silver<Char> Bronze<Char>,csv/203-csv/792.tsv
 Date<Date> Opponent<Char> Score<Char> Result<Char> Location<Char>,csv/204-csv/367.tsv
 Period<Char> Live_births_per_year<Numerical> Deaths_per_year<Numerical> Natural_change_per_year<Numerical> CBR1<Numerical> CDR1<Numerical> NC1<Numerical> TFR1<Numerical> IMR1<Numerical>,csv/202-csv/154.tsv
 Rank_n<Numerical> Date_n<Char> Level_at_Trent_Bridge_nm<Numerical> Level_at_Trent_Bridge_nft<Numerical> Peak_Flow_nm3_s<Numerical> Peak_Flow_ncfs<Numerical>,csv/202-csv/86.tsv
 Year<Numerical> Title<Char> Chart_positions_nAU<Numerical> Chart_positions_nCA<Numerical> Chart_positions_nIE<Char> Chart_positions_nNL<Numerical> Chart_positions_nNZ<Numerical> Chart_positions_nUK<Numerical> Chart_positions_nUS_nHot_100<Char> Chart_positions_nUS_nAirplay<Numerical> Chart_positions_nUS_nAlternative<Numerical>,csv/201-csv/30.tsv
+decimal32<Numerical> decimal64<Numerical> decimal128<Numerical> decimal32k<Char> Format<Char>,csv/204-csv/326.tsv
 Game<Numerical> Date<Date> Team<Char> Score<Char> High_points<Char> High_rebounds<Char> High_assists<Char> Location_nAttendance<Char> Record<Char>,csv/203-csv/227.tsv
-Name<Char> Location<Char> Date_established<Date> Area<Char> Description<Char>,csv/204-csv/560.tsv
+Name<Char> Location<Char> Date_established<Date> Area<Numerical> Description<Char>,csv/204-csv/560.tsv
 Season<Char> Winning_Team<Char> Score<Numerical> Losing_Team<Char> Score_1<Numerical> Location<Char> Stadium<Char>,csv/203-csv/434.tsv
+Year<Date> Name<Char> Year_1<Date> Name_1<Char> Year_2<Date> Name_2<Char>,csv/203-csv/474.tsv
 Station<Char> Station_Connections<Char> Date_Opened<Date> Station_Parking<Char> City_Neighborhood<Char>,csv/202-csv/168.tsv
-Nr<Numerical> Name<Char> Area_km²<Char> Population_2006<Char> Capital<Char> Clubs<Char>,csv/204-csv/485.tsv
+No<Char> Name<Char> Code<Char> Formed<Date> Headquarters<Char> Administrative_Division<Char> Area_km2<Numerical> Population_2001_census<Numerical> percent_of_State_Population<Numerical> Density_per_km2<Numerical> Urban_percent<Numerical> Literacy_percent<Numerical> Sex_Ratio<Numerical> Tehsils<Numerical> Source<Char>,csv/202-csv/260.tsv
+Nr<Numerical> Name<Char> Area_km²<Numerical> Population_2006<Numerical> Capital<Char> Clubs<Char>,csv/204-csv/485.tsv
+Week<Numerical> Date<Date> Opponent<Char> Result<Char> Game_site<Char> NFL_Recap<Char> Attendance<Char>,csv/203-csv/334.tsv
+Association<Char> Joining_year<Numerical> Mens_team<Char> Womens_team<Char> League<Char>,csv/203-csv/495.tsv
 Vessel<Char> Captor<Char> Date<Date> Location<Char>,csv/202-csv/186.tsv
+Character<Char> Real_name<Char> Home_world<Char> Membership_notes<Char> Powers<Char>,csv/203-csv/32.tsv
+Representative<Char> Title<Char> Presentation_nof_Credentials<Date> Termination_nof_Mission<Date> Appointed_by<Char>,csv/203-csv/188.tsv
+Name<Char> Nation<Char> Position<Char> League_Apps<Numerical> League_Goals<Numerical> FA_Cup_Apps<Numerical> FA_Cup_Goals<Numerical> Total_Apps<Numerical> Total_Goals<Numerical>,csv/203-csv/602.tsv
+Name<Char> Title<Char> Date_c_from<Date> Date_until<Date> Russian_state<Char> Austrian_state<Char>,csv/203-csv/840.tsv
+Pos<Numerical> No<Numerical> Driver<Char> Constructor<Char> Laps<Numerical> Time_Retired<Char> Grid<Numerical> Points<Numerical>,csv/203-csv/275.tsv
 Source<Char> Date<Date> Population_nRomania<Char> Population_nSerbia<Char> Notes<Char>,csv/202-csv/223.tsv
 Sr_No<Numerical> Train_No<Numerical> Name_of_the_Train<Char> Arrival<Date> Departure<Date> Day<Char>,csv/204-csv/611.tsv
-Date<Date> Opponent<Char> Venue<Char> Result<Char> Attendance<Char> Scorers<Char>,csv/204-csv/767.tsv
+Date<Date> Opponent<Char> Venue<Char> Result<Char> Attendance<Numerical> Scorers<Char>,csv/204-csv/767.tsv
+Represented<Char> Contestant<Char> Age<Numerical> Height<Numerical> Hometown<Char>,csv/203-csv/849.tsv
 Outcome<Char> No<Numerical> Date<Date> Tournament<Char> Surface<Char> Opponent<Char> Score<Char>,csv/203-csv/342.tsv
+Region<Char> Physician_GP_specialist<Numerical> Physician_Population_Ratio<Char> Health_Officer<Numerical> HO_Population_Ratio<Char> All_Nurses<Numerical> Nurse_Population_Ratio<Char> Mid_wives<Numerical> Mid_Wife_Population_Ratio<Char> HEW*<Char> HEW_Population_Ratio<Char>,csv/203-csv/265.tsv
 Result<Numerical> Encrypted<Numerical> Result_1<Numerical> Encrypted_1<Numerical> Result_2<Numerical> Encrypted_2<Numerical> Result_3<Numerical> Encrypted_3<Numerical> Result_4<Numerical> Encrypted_4<Numerical>,csv/203-csv/120.tsv
+Rank<Numerical> Diver<Char> Nationality<Char> Preliminary_nPoints<Numerical> Preliminary_nRank<Numerical> Final_nPoints<Numerical> Final_nRank<Numerical>,csv/204-csv/316.tsv
 Material<Char> λ_nm<Numerical> n<Char>,csv/202-csv/128.tsv
 Date_of_Incident<Date> Offender<Char> Team<Char> Offense<Char> Date_of_Action<Date> Length<Char>,csv/204-csv/497.tsv
 Season_Torneo<Char> Jornada_or_Other<Char> Home_Team<Char> Result<Char> Away_Team<Char> Stadium<Char> Date<Date>,csv/203-csv/472.tsv
-Event<Char> Record<Char> Athlete<Char> Date<Date> Meet<Char> Place<Char>,csv/204-csv/819.tsv
+Event<Char> Record<Numerical> Athlete<Char> Date<Date> Meet<Char> Place<Char>,csv/204-csv/819.tsv
 Date<Date> Opponent<Char> Score<Char> Result<Char> Record<Char>,csv/203-csv/75.tsv
-Year<Numerical> Wins_majors<Numerical> Earnings_$<Char> Rank<Numerical>,csv/202-csv/110.tsv
+Rank<Numerical> Lane<Numerical> Name<Char> Nationality<Char> Time<Numerical> Notes<Char>,csv/204-csv/65.tsv
+Alpha_numeric_Code<Numerical> Station_name_nEnglish<Char> Station_name_nChinese<Char> Station_name_nTamil<Char> Opening<Date>,csv/202-csv/216.tsv
+Year<Numerical> Wins_majors<Numerical> Earnings_$<Numerical> Rank<Numerical>,csv/202-csv/110.tsv
 Site<Char> Municipality<Char> Comments<Char> Coordinates<Char> Type<Numerical> Ref<Char>,csv/204-csv/82.tsv
 Name<Char> Character<Char> Unicode_code_point_decimal<Char> Standard<Char> DTD<Char> Old_ISO_subset<Char> Description<Char>,csv/203-csv/45.tsv
+num<Numerical> Episode<Char> Air_Date<Date> Timeslot<Char> Rating<Numerical> Share<Numerical> c_18_49<Char> Viewers<Char> Weekly_Rank<Char>,csv/204-csv/998.tsv
 Pos<Numerical> No<Numerical> Driver<Char> Constructor<Char> Laps<Numerical> Time_Retired<Char> Grid<Numerical> Points<Numerical>,csv/203-csv/479.tsv
+num<Numerical> Title<Char> Singers<Char> Lyricist<Char> Length<Char>,csv/203-csv/816.tsv
 Year<Numerical> Supporting_Actor<Char> Motion_Picture<Char> Nominees<Char>,csv/201-csv/4.tsv
-Week<Numerical> Date<Date> Opponent<Char> Result<Char> Attendance<Char>,csv/204-csv/591.tsv
+Week<Numerical> Date<Date> Opponent<Char> Result<Char> Attendance<Numerical>,csv/204-csv/591.tsv
+Builder<Char> Works_numbers<Char> Dates<Date> CN_numbers<Char> GT_numbers<Char> Notes<Char>,csv/204-csv/901.tsv
+Year<Numerical> Competition<Char> Venue<Char> Position<Char> Event<Char> Notes<Numerical>,csv/203-csv/487.tsv
+Place<Numerical> Player<Char> Country<Char> Score<Char> To_par<Char> Money_$<Numerical>,csv/204-csv/247.tsv
+Rank<Numerical> Nation<Char> Gold<Numerical> Silver<Numerical> Bronze<Numerical> Total<Numerical>,csv/204-csv/382.tsv
+Rank<Numerical> Nation<Char> Gold<Numerical> Silver<Numerical> Bronze<Numerical> Total<Numerical>,csv/204-csv/977.tsv
 Iteration<Char> Year<Numerical> Dates<Char> Location<Char> Theme<Char>,csv/203-csv/870.tsv
 Route_Number<Numerical> Route<Char> Via<Char> Operator<Char> Operation<Char>,csv/204-csv/715.tsv
 Team_1<Char> Agg<Char> Team_2<Char> c_1st_leg<Char> c_2nd_leg<Char>,csv/204-csv/702.tsv
+Stations<Char> Connections<Char> City_Neighborhood<Char> Parking<Char> Date_Opened<Date>,csv/204-csv/289.tsv
 Tournament<Char> c_2007<Char> c_2008<Char> c_2009<Char> c_2010<Char> c_2011<Char> c_2012<Char> c_2013<Char> c_2014<Char> W–L<Char>,csv/203-csv/73.tsv
 Game<Numerical> Date<Date> Opponent<Char> Location<Char> Score<Char> OT<Char> Attendance<Numerical> Record<Char>,csv/203-csv/552.tsv
 Locomotive<Numerical> Name<Char> Serial_No<Char> Entered_Service<Date> Livery<Char>,csv/203-csv/658.tsv
+May_20_21_n118<Date> March_9_n120<Date> December_25_26_n122<Date> October_13_14_n124<Date> August_1_2_n126<Date>,csv/204-csv/182.tsv
 Date<Date> Opponents<Char> Venue<Char> Result<Char> Scorers<Char> Attendance<Char>,csv/204-csv/848.tsv
 Number<Numerical> Name<Char> Type<Char> Livery<Char> Status<Char> Notes<Char>,csv/202-csv/119.tsv
-Rank<Numerical> Airport<Char> Passengers_handled<Char> Change_n2011_12<Char>,csv/202-csv/48.tsv
-Title<Char> Album_details<Char> Peak_positions_nJPN<Numerical> Sales<Char>,csv/202-csv/62.tsv
+Aircraft<Char> Origin<Char> Type<Char> In_service<Numerical> Notes<Char>,csv/203-csv/103.tsv
+Time<Numerical> Wind<Numerical> Auto<Numerical> Athlete<Char> Nationality<Char> Location_of_race<Char> Date<Date>,csv/203-csv/433.tsv
+Rank<Numerical> Name<Char> Nationality<Char> c_1st_m<Numerical> c_2nd_m<Numerical> Points<Numerical>,csv/203-csv/503.tsv
+Rank<Numerical> Airport<Char> Passengers_handled<Numerical> Change_n2011_12<Char>,csv/202-csv/48.tsv
+Title<Char> Album_details<Char> Peak_positions_nJPN<Numerical> Sales<Numerical>,csv/202-csv/62.tsv
 Year<Numerical> Team<Char> GP<Numerical> Att<Numerical> Yds<Numerical> Avg<Numerical> Long<Numerical> Rush_TD<Numerical> Rec<Numerical> Yds_1<Numerical> Avg_1<Numerical> Long_1<Numerical> Rec_TD<Numerical>,csv/202-csv/64.tsv
 Category<Char> Examples<Char> Cancers<Char> Gene_functions<Char>,csv/200-csv/9.tsv
 №<Numerical> num<Numerical> Title<Char> Directed_by<Char> Written_by<Char> Original_air_date<Date> Production_ncode<Char>,csv/203-csv/542.tsv
 NULL_COL<Numerical> Club<Char> Played<Numerical> Won<Numerical> Drawn<Numerical> Lost<Numerical> Points_For<Numerical> Points_Against<Numerical> Points_Difference<Numerical> Tries_For<Numerical> Tries_Against<Numerical> Try_Bonus<Numerical> Losing_Bonus<Numerical> Points<Numerical>,csv/201-csv/26.tsv
 Team_1<Char> Agg<Char> Team_2<Char> c_1st_leg<Char> c_2nd_leg<Char>,csv/203-csv/571.tsv
+Season<Char> Tier<Numerical> League<Char> Pos<Numerical> Postseason<Char> German_Cup<Char> European_competitions<Char>,csv/203-csv/725.tsv
+Position<Char> Player<Char> Transferred_From<Char> Date<Date>,csv/204-csv/290.tsv
 Title<Char> Year<Char> Peak_chart_positions_nUS<Char> Peak_chart_positions_nUS_Dance<Numerical> Peak_chart_positions_nUS_Pop<Char> Peak_chart_positions_nUS_RB<Char> Peak_chart_positions_nGER<Char> Peak_chart_positions_nNL<Char> Peak_chart_positions_nNOR<Char> Peak_chart_positions_nNZ<Char> Peak_chart_positions_nSWI<Char> Peak_chart_positions_nUK<Char> Album<Char>,csv/202-csv/241.tsv
+Character<Char> Actor<Char> Series<Char> Notes<Char>,csv/200-csv/34.tsv
 Party<Char> Candidate<Char> Votes<Numerical> percent<Numerical> ±percent<Numerical>,csv/202-csv/92.tsv
+Season<Numerical> Level<Numerical> Division<Char> Place<Char>,csv/203-csv/632.tsv
 Month<Char> Jan<Numerical> Feb<Numerical> Mar<Numerical> Apr<Numerical> May<Numerical> Jun<Numerical> Jul<Numerical> Aug<Numerical> Sep<Numerical> Oct<Numerical> Nov<Numerical> Dec<Numerical> Year<Numerical> Average high °F (°C)<Char> Average low °F (°C)<Char> Avg. snowy days (≥ 0.1 inch)<Numerical>,csv/202-csv/228.tsv
-№<Numerical> №_1<Numerical> Name_nBirth–Death_nTitle<Char> Portrait<Char> Term_start<Date> Term_end<Date> Political_Party<Char> Head_of_State<Char>,csv/202-csv/263.tsv
+Celebrity<Char> Residence<Char> Famous_for_Occupation<Char> Age<Numerical> Status<Char>,csv/204-csv/380.tsv
+№<Numerical>  №_1<Numerical> Name_nBirth–Death_nTitle<Char>  Portrait<Char> Term_start<Date> Term_end<Date> Political_Party<Char> Head_of_State<Char>,csv/202-csv/263.tsv
 Party<Char> Candidate<Char> Votes<Numerical> percent<Numerical> ±percent<Numerical>,csv/202-csv/91.tsv
 Games<Char> Athletes<Numerical> Gold<Numerical> Silver<Numerical> Bronze<Numerical> Total<Numerical> Rank<Char>,csv/204-csv/66.tsv
 Year<Numerical> Title<Char> Role<Char> Notes<Char>,csv/202-csv/290.tsv
 Grp<Numerical> Race_Name<Char> Age<Char> Sex<Char> Weight<Char> Distance<Numerical> Date<Char>,csv/202-csv/58.tsv
 Year<Numerical> Laureates<Char> Citizenship<Char> Institution<Char> Citation<Char>,csv/202-csv/37.tsv
-Al_Khwarizmi<Char> Latitude<Char> Longitude<Char> Diameter<Char>,csv/202-csv/79.tsv
+Al_Khwarizmi<Char> Latitude<Char> Longitude<Char> Diameter<Numerical>,csv/202-csv/79.tsv
 Result<Char> Record<Char> Opponent<Char> Method<Char> Date<Date> Round<Numerical> Location<Char>,csv/202-csv/256.tsv
 Club_performance_nSeason_nNorway<Numerical> Club_performance_nClub_nNorway<Char> Club_performance_nLeague_nNorway<Char> League_nApps_nLeague<Numerical> League_nGoals_nLeague<Numerical> Cup_nApps_nNorwegian_Cup<Numerical> Cup_nGoals_nNorwegian_Cup<Numerical> Total_nApps_nTotal<Numerical> Total_nGoals_nTotal<Numerical>,csv/200-csv/29.tsv
 NULL_COL<Char> c_1980<Numerical> c_1975<Numerical> c_1975_1<Numerical> c_1985<Numerical> c_1985_1<Numerical>,csv/202-csv/258.tsv

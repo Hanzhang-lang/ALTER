@@ -1,105 +1,108 @@
 from tabulate import tabulate
 import pandas as pd
 from json import loads, dumps
-#TODO: whether pass data into __init__
+# TODO: whether pass data into __init__
 from typing import List, Union, Optional
 from pandas import DataFrame
 import pandas as pd
 import re
+import os
 from langchain_text_splitters import CharacterTextSplitter
-from langchain_openai import OpenAIEmbeddings
+# from langchain_openai import OpenAIEmbeddings
+from langchain.embeddings import CacheBackedEmbeddings
+from langchain_community.embeddings import HuggingFaceBgeEmbeddings
 from langchain_community.vectorstores import FAISS
-from utils import parse_output, normalize_string_value, parse_datetime, normalize_rep_column
+from utils import parse_output, normalize_string_value, parse_datetime, normalize_rep_column, normalize_number
 from functools import partial
+dir_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 class TableFormat:
-    def __init__(self, format:str, data: Optional[Union[dict, DataFrame]] = None, use_sampling=True, save_embedding=True) -> None:
+    def __init__(self, format: str, data: Optional[Union[dict, DataFrame]] = None, save_embedding=False, embeddings=None) -> None:
         self.format = format
         if data is not None:
             if isinstance(data, dict):
-                df = normalize_rep_column(pd.DataFrame(columns=[self.normalize_col_name(c) for c in data["table"]["header"]]))
-                for i, line in enumerate(data['table']['rows']):
-                    df.loc[i] = line
-                self.data = df
+                df = normalize_rep_column(pd.DataFrame(
+                    columns=[self.normalize_col_name(c) for c in data["table"]["header"]]))
+                for _, line in enumerate(data['table']['rows']):
+                    #rm aggregation row
+                    if line[0] not in ['Total', '-']:
+                        df.loc[len(df)] = line
+                self.all_data = df
             elif isinstance(data, DataFrame):
-                self.data = data
+                self.all_data = data
             else:
-                raise ValueError("Invalid data format. Expecting a dict or DataFrame.")
-            self.all_data = self.data
-            # self.all_data.columns = [self.normalize_col_name(c) for c in self.all_data.columns]
-            if use_sampling:
-                self.data = self.data.sample(n=3, random_state=42)
+                raise ValueError(
+                    "Invalid data format. Expecting a dict or DataFrame.")
             if save_embedding:
-                embeddings = OpenAIEmbeddings(openai_api_base="https://api.chatanywhere.com.cn/v1", openai_api_key="sk-WZtqZEeuE0Xb6syVghDgAxdwe0ASWLkQRGxl61UI7B9RqNC4")
-                row_string = []
-                for i in range(len(self.all_data)):
-                    row_string.append(f'# Row {i + 1} ' + ' '.join([f'{{ {self.all_data.columns[j]} : {self.all_data.iloc[i, j]} }}' for j in range(len(self.all_data.columns))]))
-                    text_splitter = CharacterTextSplitter(chunk_size=1, chunk_overlap=0, separator='\n\n')
-                    texts = text_splitter.split_text('\n\n'.join(row_string))
-                    self.db = FAISS.from_texts(texts, embeddings)
-    def load_data_from_dic(self, data: dict, use_sampling=True, schema_information=None):
+                self.save_row_embedding(embeddings)
+
+    def load_data_from_dic(self, data: dict, save_embedding=True, embeddings=None, schema_information=None):
         assert isinstance(data, dict)
-        df = normalize_rep_column(pd.DataFrame(columns=[self.normalize_col_name(c) for c in data["header"]]))
+        df = normalize_rep_column(pd.DataFrame(
+            columns=[self.normalize_col_name(c) for c in data["header"]]))
         for i, line in enumerate(data['rows']):
             df.loc[i] = line
-        self.data = df
-        self.all_data = self.data
-        if use_sampling:
-            self.data = self.data.sample(n=3, random_state=42)
+        self.all_data = df
+        if save_embedding:
+            self.save_embedding(embeddings=embeddings)
         if schema_information is not None:
             self.normalize_schema(schema_information)
         return self
-        
-        
-    def format_markdown(self):
+
+    def format_markdown(self, data: DataFrame, ):
         """
         :return: the linearized text in markdown format from dict
         Markdown: 
         <Markdown grammar>\n To add a table, use three or more hyphens (---) to create each column’s header, and use pipes (|) to separate each column, every cell is separated by pipe \n"
         """
         structured_data_markdown = tabulate(
-            self.data, headers=self.data.columns, tablefmt="pipe", showindex=True
+            data, headers=data.columns, tablefmt="pipe", showindex=True
         )
         return structured_data_markdown
-    
-    def format_nl_sep(self, table_caption:str = '', sep='|',):
+
+    @staticmethod
+    def format_nl_sep(data: DataFrame, table_caption: str = '', sep='|',):
         """
         Nl_sep: 
         <Grammar>\n Each table cell is separated by | , the column idx starts from 1
         """
-        head = 'Col :' + sep.join(self.data.columns) + '\n'
+        head = 'Col :' + sep.join(data.columns) + '\n'
         cells = []
-        for i in range(len(self.data)):
-            cells.append(f'Row {i + 1} :' + sep.join(self.data.iloc[i]))
+        for i in range(len(data)):
+            cells.append(f'Row {i + 1} :' + sep.join(data.iloc[i]))
         if table_caption:
             head = table_caption + '\n' + head
         return head + "\n".join(cells)
-    
-    def format_html(self, table_caption:str = ''):
+
+    @staticmethod
+    def format_html(data: DataFrame, table_caption: str = ''):
         """
         if table_caption is not None, insert <caption> into the tabulate output
         """
-        html = tabulate(self.data, tablefmt='unsafehtml', headers=self.data.columns, numalign="none", stralign="none", showindex='true')
+        html = tabulate(data, tablefmt='unsafehtml', headers=data.columns,
+                        numalign="none", stralign="none", showindex='true')
         if len(table_caption):
             tag_pattern = re.compile(r'<table>')
             return tag_pattern.sub(f'<table>\n<caption>{table_caption}</caption>', html)
         return html
-        
-    def format_tuple(self, structured_data):
+
+    def format_tuple(self, data, table_caption=''):
         """
         Each cell represented in tuple
         """
-        
+
         cells = []
-        for i in range(len(self.data)):
-            row_string = f'Row {i + 1} :' + ' '.join([f'{self.data.columns[j]} : {self.data.iloc[i, j]}' for j in range(len(self.data.columns))])
+        for i in range(len(data)):
+            row_string = f'Row {i + 1} :' + ' '.join(
+                [f'{data.columns[j]} : {data.iloc[i, j]}' for j in range(len(data.columns))])
             cells.append(f'Row {i + 1} :')
         if table_caption:
             head = table_caption + '\n' + head
         return head + "\n".join(cells)
-    
+
     def format_psql(self):
         return tabulate(self.all_data, tablefmt='psql', headers=self.all_data.columns, showindex='true')
-    
+
     def format_json(self, structrued_data, orient="records"):
         """
         Format dataframe to json in specific orient.
@@ -129,20 +132,19 @@ class TableFormat:
         """
         structrued_data.to_json(orient=orient)
         return dumps(structrued_data)
-    
-    
+
     def normalize_col_name(self, col_name, illegal_chars={'.': '', ' ': '_',
-                                                    '\\': '_',  '(': '',
-                                                    ')': '', '?': '',
-                                                    '\n': '_', '&': '',
-                                                    ':': '_', '/': '_',
-                                                    ',': '_', '-': '_',
-                                                    'from': 'c_from',
-                                                    '\'': '',
-                                                    '%': 'percent',
-                                                    '#': 'num',
-                                                    # '19': 'c_19', '20': 'c_20'
-                                                    }):
+                                                          '\\': '_',  '(': '',
+                                                          ')': '', '?': '',
+                                                          '\n': '_', '&': '',
+                                                          ':': '_', '/': '_',
+                                                          ',': '_', '-': '_',
+                                                          'from': 'c_from',
+                                                          '\'': '',
+                                                          '%': 'percent',
+                                                          '#': 'num',
+                                                          # '19': 'c_19', '20': 'c_20'
+                                                          }):
         if len(col_name) == 0:
             return 'NULL_COL'
         for c in illegal_chars:
@@ -150,50 +152,93 @@ class TableFormat:
         col_name = re.sub('_+', '_', col_name)
         if re.search('\d', col_name[0]):
             col_name = 'c_' + col_name
-        return col_name 
-    
+        return col_name
+
     def normalize_schema(self, schema_information):
         col_name, col_schema = parse_output(schema_information)
-        mac_dic = {'Numerical': pd.to_numeric, 'Char': normalize_string_value, 'Date': partial(pd.to_datetime, format='%Y-%m-%d')}
+        mac_dic = {'Numerical': pd.to_numeric, 'Char': normalize_string_value,
+                   'Date': partial(pd.to_datetime, format='%Y-%m-%d')}
         for i, _ in enumerate(col_name):
-            if col_name[i] in self.data.columns:
-                if col_schema[i] == 'Date' or 'date' in col_name[i]:
+            if col_name[i] in self.all_data.columns:
+                if col_schema[i] == 'Char':
+                    self.all_data[col_name[i]] = normalize_string_value(
+                        self.all_data[col_name[i]])
+                    
+                if col_schema[i] == 'Date' or 'date' in col_name[i].lower():
                     try:
-                        self.all_data[col_name[i]] = self.all_data[col_name[i]].apply(lambda x: parse_datetime(x))
-                        self.data[col_name[i]] = self.data[col_name[i]].apply(lambda x: parse_datetime(x))
+                        self.all_data[col_name[i]] = self.all_data[col_name[i]].apply(
+                            lambda x: parse_datetime(x))
                         try:
-                            self.all_data[col_name[i]] = pd.to_datetime(self.all_data[col_name[i]], format='%Y-%m-%d',errors='ignore')
-                            self.data[col_name[i]] = pd.to_datetime(self.data[col_name[i]], format='%Y-%m-%d', errors='ignore')
+                            self.all_data[col_name[i]] = pd.to_datetime(
+                                self.all_data[col_name[i]], format='%Y-%m-%d', errors='ignore')
                             self.all_data[col_name[i]] = self.all_data[col_name[i]].dt.date
-                            self.data[col_name[i]] = self.data[col_name[i]].dt.date
-                        except: 
+                        except:
                             pass
                     except:
-                        print(f'Unknown Date format {self.data.head()[col_name[i]]}')
+                        print(
+                            f'Unknown Date format {self.all_data.head()[col_name[i]]}')
                         continue
                 if col_schema[i] == 'Numerical':
                     try:
-                        self.data[col_name[i]] = self.data[col_name[i]].str.replace(',', '').astype(float)
-                        continue
+                        self.all_data[col_name[i]] = self.all_data[col_name[i]].apply(lambda x: normalize_number(x))
                     except:
                         pass
-                    try:
-                        self.data[col_name[i]] = self.data[col_name[i]].apply(lambda x: eval(x.split('=')[1]))
-                        continue
-                    except:
-                        pass
-                    self.data[col_name[i]] = pd.to_numeric(self.data[col_name[i]], errors='ignore')
-                if col_schema[i] == 'Char':
-                    self.data[col_name[i]] = normalize_string_value(self.data[col_name[i]])
-                        
-            #TODO: whether format date in fixed format
-    
-    def get_all_data(self):
-        self.all_data = self.data
-        self.all_data.columns = [self.normalize_col_name(c) for c in self.all_data.columns]
+                    
+                    self.all_data[col_name[i]] = pd.to_numeric(
+                        self.all_data[col_name[i]], errors='ignore')
+                
+        return self
+
+            # TODO: whether format date in fixed format
+
+    def save_row_embedding(self, embeddings):
+        # embeddings = OpenAIEmbeddings(openai_api_base="https://api.chatanywhere.com.cn/v1",
+        #                               openai_api_key="sk-WZtqZEeuE0Xb6syVghDgAxdwe0ASWLkQRGxl61UI7B9RqNC4")
+        from langchain.storage import LocalFileStore
         
-    def get_sample_data(self):
-            # self.data.sample(frac=0.1, replace=True, random_state=42)
-            return self.data.sample(n=3, random_state=42)
-        
-        
+        store = LocalFileStore(os.path.join(dir_path, "result/.cache/"))
+        cached_embedder = CacheBackedEmbeddings.from_bytes_store(
+            embeddings, store, namespace="huggingface-bge"
+        )
+        row_string = []
+        for r_index in range(len(self.all_data)):
+            row_string.append(f'#Row {r_index} ' + ' '.join(
+                [f'{{ {self.all_data.columns[j]} : {self.all_data.iloc[r_index, j]} }}' for j in range(len(self.all_data.columns))]))
+            # text_splitter = CharacterTextSplitter(
+            #     chunk_size=1, chunk_overlap=0, separator='\n\n')
+            # texts = text_splitter.split_text('\n\n'.join(row_string))
+            self.db = FAISS.from_texts(row_string, cached_embedder)
+ 
+
+    def get_sample_data(self, sample_type: str = 'random', k: int = 3, query: str = ''):
+        if sample_type == 'random':
+            return self.all_data.sample(n=k, random_state=42)
+        if sample_type == 'embedding':
+            retriever = self.db.as_retriever(search_kwargs={"k": k})
+            pattern = re.compile(r'#Row (\d+)')
+            result = retriever.invoke(query)
+            row_inds = [int(pattern.search(r.page_content).group(1))
+                        for r in result]
+            return self.all_data.loc[row_inds]
+        if sample_type == 'head':
+            return self.all_data.head(k)
+        if sample_type == 'all':
+            return self.all_data
+
+    def get_sample_column(self, embeddings, column_information,  threshold: float=0.4, query: str='', ):
+        from langchain.storage import LocalFileStore
+        store = LocalFileStore(os.path.join(dir_path, "result/.cache_column/"))
+        cached_embedder = CacheBackedEmbeddings.from_bytes_store(
+            embeddings, store, namespace="huggingface-bge"
+        )
+        col_names, col_infos = parse_output(column_information, pattern=r'([^<]*)<([^>]*)>')
+        extra_col_info = []
+        for i_c in range(len(col_names)):
+            if col_names[i_c] in self.all_data.columns:
+                extra_col_info.append(f'{col_names[i_c]}: {col_infos[i_c]}' + ' '.join(self.all_data[col_names[i_c]].astype(str)))
+        if len(extra_col_info) == 0:
+            return []
+        db = FAISS.from_texts(extra_col_info, cached_embedder)
+        retriever = db.as_retriever(search_kwargs={"include_metadata": True, "score_threshold": threshold})
+        result = retriever.invoke(query)
+        return [r.page_content.split(':')[0].strip() for r in result]

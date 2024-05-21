@@ -1,3 +1,5 @@
 __pycache__/
 .ipynb_checkpoints/
 **/__pycache__/**
+**/.cache
+**/.cache_column

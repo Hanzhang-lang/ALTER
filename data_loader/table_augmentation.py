@@ -5,6 +5,7 @@ from langchain_core.messages import HumanMessage
 from langchain_openai import ChatOpenAI, OpenAI
 from utils import parse_output
 import logging
+from typing import List
 from langchain.chains import LLMChain
 from langchain_community.callbacks import get_openai_callback
 logger = logging.getLogger(__name__)
@@ -14,7 +15,7 @@ logger = logging.getLogger(__name__)
 #TODO: 字符表示形式representation
 
 class TableAug:
-    def __init__(self, model=None) -> None:
+    def __init__(self, model=None, use_embedding=True) -> None:
         self.batch_method_mapping = {
             "summary": self.batch_summary_aug, "schema": self.batch_schema_aug}
         if model:
@@ -42,16 +43,16 @@ class TableAug:
             content=pre_instruction.format(table=formatter.format_html()))]).content
         return parse_output(output)
 
-    def batch_schema_aug(self, formatter: TableFormat, batch_data, batch_size: int, output_token=False):
+    def batch_schema_aug(self, tables: List, captions: List, output_token=False):
         """
         batch schema augmentation
         """
         pre_instruction_schema = PromptTemplate(input_variables=["table"], template="""
         Instruction: Given the following table, you will add Metadata about the columns in the table.
         Metadata includes:
-        - Numerical: whether the column content is numeric type like int or float.
-        - Char: whether the column content is a text or description.
-        - Date: whether the column content is datetime.
+        - Numerical: consist digits and numerical symbols like decimal points or signs.
+        - Char: whether column content is a text or description.
+        - Date: whether column content represents datetime or date.
 
         You need to output all the column names with metadata in angle brackets.
         Example: name<Char> launched<Date> count<Numerical>
@@ -64,8 +65,7 @@ class TableAug:
             llm=self.llm, prompt=pre_instruction_schema, verbose=False)
         with get_openai_callback() as cb:
             # add
-            batch_pred = llm_chain.batch([formatter.load_data_from_dic(batch_data[i]).format_html(
-                batch_data[i]['caption']) for i in range(batch_size)], return_only_outputs=True)
+            batch_pred = llm_chain.batch([TableFormat.format_html(data=tables[i], table_caption=captions[i]) for i in range(len(tables))], return_only_outputs=True)
 
         for i in range(len(batch_pred)):
             parts = batch_pred[i]['text']
@@ -74,7 +74,7 @@ class TableAug:
             logger.info(f"Batch Schema Augmentaion Tokens: {cb.total_tokens}")
         return schema_list
     
-    def batch_sum_aug(self, formatter: TableFormat, batch_data, batch_size: int, output_token=False):
+    def batch_sum_aug(self, tables: List, captions: List, output_token=False):
         """
         batch summary augmentation(不好用)
         """
@@ -92,9 +92,7 @@ class TableAug:
             llm=self.llm, prompt=pre_instruction_schema, verbose=False)
         with get_openai_callback() as cb:
             # add
-            batch_pred = llm_chain.batch([formatter.load_data_from_dic(batch_data[i]).format_html(
-                batch_data[i]['caption']) for i in range(batch_size)], return_only_outputs=True)
-
+            batch_pred = llm_chain.batch([TableFormat.format_html(data=tables[i], table_caption=captions[i]) for i in range(len(tables))], return_only_outputs=True)
         for i in range(len(batch_pred)):
             parts = batch_pred[i]['text']
             summary_list.append(parts)
@@ -102,7 +100,7 @@ class TableAug:
             logger.info(f"Batch Summary Augmentaion Tokens: {cb.total_tokens}")
         return summary_list
 
-    def batch_summary_aug(self, formatter: TableFormat, batch_data, batch_size: int, output_token=False):
+    def batch_summary_aug(self, tables: List, captions: List, output_token=False):
         #TODO: split 2 parts
         """
         batch summary data
@@ -122,8 +120,7 @@ class TableAug:
             llm=self.llm, prompt=pre_instruction_summary, verbose=False)
         with get_openai_callback() as cb:
             # add
-            batch_pred = llm_chain.batch([formatter.load_data_from_dic(batch_data[i]).format_html(
-                batch_data[i]['caption']) for i in range(batch_size)], return_only_outputs=True)
+            batch_pred = llm_chain.batch([TableFormat.format_html(data=tables[i], table_caption=captions[i]) for i in range(len(tables))], return_only_outputs=True)
 
         for i in range(len(batch_pred)):
             try:
@@ -164,7 +161,7 @@ class TableAug:
         operations = parts[1].split(':')[1].strip()
         return summary, operations
 
-    def batch_composition_aug(self, formatter: TableFormat, batch_data, batch_size: int, output_token=False, schema_information=None):
+    def batch_composition_aug(self, tables: List, captions: List, output_token=False):
         """
         batch composition augmentation
         """
@@ -183,20 +180,13 @@ class TableAug:
             llm=self.llm, prompt=pre_instruction_com, verbose=False)
         with get_openai_callback() as cb:
             # add schema augmentaion info first
-            if schema_information is not None:
-                batch_pred = llm_chain.batch([formatter.load_data_from_dic(batch_data[i], schema_information=schema_information.loc[batch_data[i]['id']]['schema']).format_html(
-                    batch_data[i]['caption']) for i in range(batch_size)], return_only_outputs=True)
-            else:
-                batch_pred = llm_chain.batch([formatter.load_data_from_dic(batch_data[i]).format_html(
-                    batch_data[i]['caption']) for i in range(batch_size)], return_only_outputs=True)
+            batch_pred = llm_chain.batch([TableFormat.format_html(data=tables[i], table_caption=captions[i]) for i in range(len(tables))], return_only_outputs=True)
         for i in range(len(batch_pred)):
             parts = batch_pred[i]['text']
             com_list.append(parts)
         if output_token:
             logger.info(
                 f"Batch Composition Augmentaion  All Tokens: {cb.total_tokens}")
-            logger.info(
-                f"Batch Composition Augmentaion Tokens Average: {cb.total_tokens / batch_size if batch_size > 0 else 0}" )
         return com_list
 
     def composition_aug(self, formatter: TableFormat, output_token=False):
