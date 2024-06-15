@@ -51,7 +51,7 @@ def pipeline(task_name: str,
              verbose: bool,
              save_file: bool, 
              aug_type: List):
-    model = ChatOpenAI(model_name=model_name, openai_api_base="https://api.chatanywhere.tech/v1",
+    model = ChatOpenAI(model_name=model_name,
                        openai_api_key="sk-kxgtm71G6zwC44lglIF5CfiEVVzjjc39TOtppkNAwrVA2fUW", temperature=0.01, max_retries=5, request_timeout=6000)
     engine = create_engine('sqlite:///db/sqlite/tabfact.db', echo=False)
     manager = SQLManager(engine=engine)

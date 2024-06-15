@@ -36,8 +36,8 @@ def augmentation(task_name: str,
              aug_type: List,
              batch_size: int = 32,
              small_test: bool=True):
-    model = ChatOpenAI(model_name=model_name, openai_api_base="https://api.chatanywhere.tech/v1",
-                       openai_api_key="sk-Kfk2WiZcPgajLVtdGPGmfahxCmWqJSbMeRck5sXujlMS4Nai", temperature=0.1)
+    model = ChatOpenAI(model_name=model_name,
+                       openai_api_key="sk-kxgtm71G6zwC44lglIF5CfiEVVzjjc39TOtppkNAwrVA2fUW", temperature=0.1)
     table_loader = TableLoader(
         table_name=task_name, split=split, use_sample=use_sample, small_test=small_test)
     table_aug = TableAug(model)
@@ -91,7 +91,6 @@ def augmentation(task_name: str,
                     save_csv([schema_augs, table_names], [
                                 'schema', 'table_id'], aug_path)
                 if  'composition' in aug_type:
-                    #augmentaion的过程中要进行标准化
                     aug_path = f"result/aug/{task_name}_{split}_composition.csv"
                     com_augs = table_aug.batch_composition_aug(
                     aug_tables, aug_captions, output_token=True)
@@ -111,4 +110,4 @@ def augmentation(task_name: str,
 
 
 if __name__ == "__main__":
-    augmentation('tabfact', 'test', True, 'gpt-3.5-turbo-0125')
+    augmentation('tabfact', 'test', True, 'gpt-3.5-turbo')

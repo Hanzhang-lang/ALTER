@@ -43,7 +43,7 @@ def add_arguments():
     parser.add_argument('--verbose', action='store_true', help="whether verbose output from llm chain")
     parser.add_argument('--use_sample', action='store_true', help='Use sample data')
     parser.add_argument('--save_file', action='store_true', help='Save output in file')
-    parser.add_argument('--model', type=str, default='gpt-3.5-turbo-0125', help='LLM Model')
+    parser.add_argument('--model', type=str, default='gpt-3.5-turbo', help='LLM Model')
     args = parser.parse_args()
 
     return args
