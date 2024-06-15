@@ -9,10 +9,6 @@ from typing import List
 from tqdm import tqdm
 from langchain_openai import AzureChatOpenAI
 
-os.environ["AZURE_OPENAI_API_KEY"] = "0c75de50975e4f278b882fe90da47f2f"
-os.environ["AZURE_OPENAI_ENDPOINT"] = "https://ces.openai.azure.com"
-os.environ["AZURE_OPENAI_API_VERSION"] = "2024-02-01"
-os.environ["AZURE_OPENAI_CHAT_DEPLOYMENT_NAME"] = "gpt-35-turbo"
 LOG_FORMAT = "%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s"
 logger = logging.getLogger(__name__)
 
@@ -42,12 +38,6 @@ def augmentation(task_name: str,
              small_test: bool=True):
     model = ChatOpenAI(model_name=model_name, openai_api_base="https://api.chatanywhere.tech/v1",
                        openai_api_key="sk-Kfk2WiZcPgajLVtdGPGmfahxCmWqJSbMeRck5sXujlMS4Nai", temperature=0.1)
-    
-    model = AzureChatOpenAI(
-        openai_api_version=os.environ["AZURE_OPENAI_API_VERSION"],
-        azure_deployment=os.environ["AZURE_OPENAI_CHAT_DEPLOYMENT_NAME"],
-        temperature=0.1
-    )
     table_loader = TableLoader(
         table_name=task_name, split=split, use_sample=use_sample, small_test=small_test)
     table_aug = TableAug(model)
