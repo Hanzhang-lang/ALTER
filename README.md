@@ -5,6 +5,8 @@ Official implementation of the paper "ALTER: Augmentation for Large-Table-Based 
 
 [ALTER: Augmentation for Large-Table-Based Reasoning]()
 
+
+<!-- ![Document Screenshot](ALTER.jpg) -->
 ## 🚀 Installation
 ```
 git clone https://anonymous.4open.science/r/tabular_data-295C
