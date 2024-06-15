@@ -1,2 +1,2 @@
-from .preprompt import row_instruction, answer_instruction, Zero_shot_prompt, view_instruction, extra_answer_instruction, muilti_answer_instruction
+from .zero_prompt import row_instruction, answer_instruction, Zero_shot_prompt, view_instruction, extra_answer_instruction, muilti_answer_instruction
 from .k_shot import get_k_shot_with_aug, get_k_shot_with_schema_linking, get_step_back_prompt, get_decompose_prompt, get_k_shot_with_string,get_k_shot_with_aug_wiki, get_step_back_prompt_wiki, get_k_shot_with_answer_wiki,get_decompose_prompt_wiki

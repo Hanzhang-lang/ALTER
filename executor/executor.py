@@ -6,6 +6,7 @@ from typing import List, Any
 from pandas import DataFrame
 import pandas as pd
 
+
 class SQLManager:
     def __init__(self, engine) -> None:
         self.engine = engine
@@ -69,69 +70,25 @@ class SQLManager:
                 return self._query(command, self.session, fetch)
         else:
             self.get_simple_fields(command)
-        
+
     def execute_from_df(self, command: str, data: DataFrame,  table_name='DF'):
-        #TODO:添加sqlparse
-        # db_data = data
-        # db_data.columns = [self.normalize_col_name(c) for c in data.columns]
         data.to_sql(table_name, self.engine, if_exists='replace', index=False)
         subtable = pd.read_sql(command, self.engine)
         return subtable
-        
+
     def normalize_col_name(self, col_name, illegal_chars={'.': '', ' ': '_',
-                                                    '\\': '_',  '(': '',
-                                                    ')': '', '?': '',
-                                                    '\n': '_', '&': '',
-                                                    ':': '_', '/': '_',
-                                                    ',': '_', '-': '_',
-                                                    'from': 'c_from',
-                                                    '\'': '',
-                                                    '%': 'percent',
-                                                    '#': 'num'}):
+                                                          '\\': '_',  '(': '',
+                                                          ')': '', '?': '',
+                                                          '\n': '_', '&': '',
+                                                          ':': '_', '/': '_',
+                                                          ',': '_', '-': '_',
+                                                          'from': 'c_from',
+                                                          '\'': '',
+                                                          '%': 'percent',
+                                                          '#': 'num'}):
         if len(col_name) == 0:
             return 'NULL_COL'
         for c in illegal_chars:
             col_name = col_name.replace(c, illegal_chars[c])
         col_name = re.sub('_+', '_', col_name)
-        return col_name    
-
-    def assemble_sql(self, output:str, table_name='DF'):
-        columns = [c.strip() for c in output.split(',')]
-        return 'SELECT {} FROM {}'.format(','.join(columns), table_name)
-        
-        
-        
-        
-    
-    
-    def format_sql(self, output: str, table_name='DF'):
-        """
-        Format subtable output into SQL
-        """
-        matches = re.finditer(r'([^<]*)<([^\s>]*)>', output)
-        items = []
-        dmls = []
-        for match in matches:
-            items.append(self.normalize_col_name(match.group(1).strip()))
-            dmls.append(match.group(2))
-        assert len(items) == len(dmls)
-        AGG = ['COUNT', 'AVG', 'SUM', 'MAX', 'MIN', 'KEEP']
-        complex = ['GROUP BY', 'ORDER BY']
-        select_content = []
-        complex_content = []
-        for (item, dml) in zip(items, dmls):
-            if dml in AGG:
-                if dml== 'KEEP':
-                    select_content.append(f'{item}')
-                else:
-                    select_content.append(dml + f'({item})')
-            if dml in complex:
-                # if dml == 'GROUP BY':
-                #     complex_content.append(dml + f' {item}')
-                #     select_content.append(f'{item}')
-                complex_content.append(dml + f' {item}')
-                select_content.append(f'{item}')
-        return 'SELECT ' + ','.join(select_content) + f' FROM {table_name}'+' '.join(complex_content)
-        
-        
-    
+        return col_name

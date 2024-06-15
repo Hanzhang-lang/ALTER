@@ -2,8 +2,7 @@ import os
 import json
 import argparse
 import numpy as np
-from pipeline import pipeline
-from batch_pipe import new_pipeline
+from batch_pipe import pipeline
 from augmentation import augmentation
 import logging
 
@@ -42,16 +41,9 @@ def add_arguments():
     parser.add_argument('--aug_type', nargs='+', help='augmentation type used', required=True, default='summary')
     parser.add_argument('--small_test',action='store_true', help='Use small test data for Tabfact dataset')
     parser.add_argument('--verbose', action='store_true', help="whether verbose output from llm chain")
-    # parser.add_argument('--dubug', type=bool, help='Debug using sample data', default=True)
     parser.add_argument('--use_sample', action='store_true', help='Use sample data')
     parser.add_argument('--save_file', action='store_true', help='Save output in file')
     parser.add_argument('--model', type=str, default='gpt-3.5-turbo-0125', help='LLM Model')
-    # parser.add_argument('--k_shot', type=int, default=1, help='Number of k-shot.')
-    # parser.add_argument(
-    #     '-c', '--config', default='config.json', help='Path to the config file.'
-    # )
-
-    # Parse the arguments
     args = parser.parse_args()
 
     return args
@@ -60,9 +52,8 @@ def add_arguments():
 if __name__ == "__main__":
 
     args = add_arguments()
-    print(args)
     if args.mode == 'Pipeline':
-        new_pipeline(
+        pipeline(
             task_name=args.task_name,
             split=args.split,
             model_name=args.model,

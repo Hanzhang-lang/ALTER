@@ -10,10 +10,7 @@ from typing import List
 from langchain.chains import LLMChain
 from langchain_community.callbacks import get_openai_callback
 logger = logging.getLogger(__name__)
-# with open('data_loader/small_test_id.json', 'r') as f:
-#     small_test_id = json.load(f)
 
-#TODO: 字符表示形式representation
 
 class TableAug:
     def __init__(self, model=None, use_embedding=True) -> None:
@@ -22,24 +19,23 @@ class TableAug:
         if model:
             self.llm = model
         else:
-            self.llm = ChatOpenAI(model_name="gpt-3.5-turbo-0125", openai_api_base="https://api.chatanywhere.cn/v1",
-                                  openai_api_key="sk-kxgtm71G6zwC44lglIF5CfiEVVzjjc39TOtppkNAwrVA2fUW")
+            self.llm = ChatOpenAI(model_name="gpt-3.5-turbo",
+                                  openai_api_key="sk-Kfk2WiZcPgajLVtdGPGmfahxCmWqJSbMeRck5sXujlMS4Nai")
 
     def schema_aug(self, formatter: TableFormat):
         pre_instruction = PromptTemplate(input_variables=["table"], template="""
-        Instruction: Given the following table, you will add Metadata about the columns in the table.
-        Metadata includes:
-        - Numerical: whether the column content is numeric type like int or float.
-        - Char: whether the column content is a text or description.
-        - Date: whether the column content is datetime.
+Instruction: Given the following table, you will add schema type about the columns in the table.
+Schema type includes:
+- Numerical: consists of digits and numerical symbols like decimal points or signs.
+- Char: whether column content is a phrase or description.
+- Date: whether column content represents time or date.
 
-        You need to output all the column names with metadata in angle brackets.
+        You need to output all the column names with schemas in angle brackets.
         Example: name<Char> launched<Date> count<Numerical>
 
         Table: {table}
         Output:
         """)
-        #
         output = self.llm.invoke([HumanMessage(
             content=pre_instruction.format(table=formatter.format_html()))]).content
         return parse_output(output)
@@ -49,13 +45,13 @@ class TableAug:
         batch schema augmentation
         """
         pre_instruction_schema = PromptTemplate(input_variables=["table"], template="""
-        Instruction: Given the following table, you will add schema type about the columns in the table, which will be used to normalize data types.
-        Schema type includes:
-        - Numerical: consist digits and numerical symbols like decimal points or signs.
-        - Char: whether column content is a text or description.
-        - Date: whether column content represents datetime or date.
+Instruction: Given the following table, you will add schema type about the columns in the table.
+Schema type includes:
+- Numerical: consists of digits and numerical symbols like decimal points or signs.
+- Char: whether column content is a phrase or description.
+- Date: whether column content represents time or date.
 
-        You need to output all the column names with metadata in angle brackets.
+        You need to output all the column names with schemas in angle brackets.
         Example: name<Char> launched<Date> count<Numerical>
 
         Table: {table}
@@ -66,7 +62,8 @@ class TableAug:
             llm=self.llm, prompt=pre_instruction_schema, verbose=False)
         with get_openai_callback() as cb:
             # add
-            batch_pred = llm_chain.batch([TableFormat.format_html(data=tables[i], table_caption=captions[i]) for i in range(len(tables))], return_only_outputs=True)
+            batch_pred = llm_chain.batch([TableFormat.format_html(
+                data=tables[i], table_caption=captions[i]) for i in range(len(tables))], return_only_outputs=True)
 
         for i in range(len(batch_pred)):
             parts = batch_pred[i]['text']
@@ -74,10 +71,10 @@ class TableAug:
         if output_token:
             logger.info(f"Batch Schema Augmentaion Tokens: {cb.total_tokens}")
         return schema_list
-    
+
     def batch_sum_aug(self, tables: List, captions: List, output_token=False):
         """
-        batch summary augmentation(不好用)
+        batch with table summary augmentation
         """
         pre_instruction_schema = PromptTemplate(input_variables=["table"], template="""
         Instruction: Given the following table, you need to summarize the contents of the table and tell what table is about.
@@ -93,7 +90,8 @@ class TableAug:
             llm=self.llm, prompt=pre_instruction_schema, verbose=False)
         with get_openai_callback() as cb:
             # add
-            batch_pred = llm_chain.batch([TableFormat.format_html(data=tables[i], table_caption=captions[i]) for i in range(len(tables))], return_only_outputs=True)
+            batch_pred = llm_chain.batch([TableFormat.format_html(
+                data=tables[i], table_caption=captions[i]) for i in range(len(tables))], return_only_outputs=True)
         for i in range(len(batch_pred)):
             parts = batch_pred[i]['text']
             summary_list.append(parts)
@@ -102,7 +100,7 @@ class TableAug:
         return summary_list
 
     def batch_summary_aug(self, tables: List, captions: List, output_token=False):
-        #TODO: split 2 parts
+        # TODO: split 2 parts
         """
         batch summary data
         """
@@ -121,7 +119,8 @@ class TableAug:
             llm=self.llm, prompt=pre_instruction_summary, verbose=False)
         with get_openai_callback() as cb:
             # add
-            batch_pred = llm_chain.batch([TableFormat.format_html(data=tables[i], table_caption=captions[i]) for i in range(len(tables))], return_only_outputs=True)
+            batch_pred = llm_chain.batch([TableFormat.format_html(
+                data=tables[i], table_caption=captions[i]) for i in range(len(tables))], return_only_outputs=True)
 
         for i in range(len(batch_pred)):
             try:
@@ -167,8 +166,7 @@ class TableAug:
         batch composition augmentation
         """
         pre_instruction_com = PromptTemplate(input_variables=["table"], template="""
-        Below is a subtable with rows sampled, you are required to infer the data distribution and format from the sample data.
-        Refine commonalities about the structure within each table column.
+        Instruction: Below is a subtable with rows sampled, you are required to infer the data distribution and format from the sample data. Refine commonalities in literal representations within each table column.
         You need to output in the following format: 
         number. Column_name: Commonalities
         #example format
@@ -181,7 +179,8 @@ class TableAug:
             llm=self.llm, prompt=pre_instruction_com, verbose=False)
         with get_openai_callback() as cb:
             # add schema augmentaion info first
-            batch_pred = llm_chain.batch([TableFormat.format_html(data=tables[i], table_caption=captions[i]) for i in range(len(tables))], return_only_outputs=True)
+            batch_pred = llm_chain.batch([TableFormat.format_html(
+                data=tables[i], table_caption=captions[i]) for i in range(len(tables))], return_only_outputs=True)
         for i in range(len(batch_pred)):
             parts = batch_pred[i]['text']
             com_list.append(parts)
@@ -189,7 +188,7 @@ class TableAug:
             logger.info(
                 f"Batch Composition Augmentaion  All Tokens: {cb.total_tokens}")
         return com_list
-    
+
     def batch_string_aug(self, tables: List, captions: List, output_token=False):
         """
         batch composition augmentation
@@ -199,7 +198,8 @@ class TableAug:
             llm=self.llm, prompt=get_k_shot_with_string(), verbose=False)
         with get_openai_callback() as cb:
             # add schema augmentaion info first
-            batch_pred = llm_chain.batch([TableFormat.format_html(data=tables[i], table_caption=captions[i]) for i in range(len(tables))], return_only_outputs=True)
+            batch_pred = llm_chain.batch([TableFormat.format_html(
+                data=tables[i], table_caption=captions[i]) for i in range(len(tables))], return_only_outputs=True)
         for i in range(len(batch_pred)):
             parts = batch_pred[i]['text']
             com_list.append(parts)
@@ -207,19 +207,6 @@ class TableAug:
             logger.info(
                 f"Batch String Augmentaion  All Tokens: {cb.total_tokens}")
         return com_list
-    
-
-    def composition_aug(self, formatter: TableFormat, output_token=False):
-
-        pre_instruction = PromptTemplate(input_variables=["table"], template="""
-    Below is a subtable with columns filtered, you are required to infer the data distribution and format from the sample data of the sub-table.
-    sub-table: {table}
-    Refine commonalities about the structure within each table column.
-    """)
-        output = self.llm.invoke([HumanMessage(
-            content=pre_instruction.format(table=formatter.format_html()))]).content
-
-        return output
 
     def table_size(self, formatter: TableFormat):
         return f'The full table has {formatter.all_data.shape[0]} rows and {formatter.all_data.shape[1]} columns.'

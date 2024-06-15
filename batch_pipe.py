@@ -42,7 +42,7 @@ def save_csv(input_list: List[List], label_list: List, file_path):
         df = pd.concat([df_origin, df], axis=0)
     df.to_csv(file_path, index=False, encoding='utf-8')
 
-def new_pipeline(task_name: str,
+def pipeline(task_name: str,
              split: str,
              use_sample: bool,
              model_name: str,
@@ -56,9 +56,9 @@ def new_pipeline(task_name: str,
     engine = create_engine('sqlite:///db/sqlite/tabfact.db', echo=False)
     manager = SQLManager(engine=engine)
     table_loader = TableLoader(
-        table_name=task_name, split=split, use_sample=use_sample, small_test=small_test)
+        table_name=task_name, split=split, use_sample=use_sample, small_test=small_test, cache_dir='/media/disk2/datasets/')
     num_samples = len(table_loader.dataset)
-    num_samples = 100
+    num_samples = 10
     num_batches = num_samples // batch_size
     token_count= []
     embeddings = HuggingFaceBgeEmbeddings(
@@ -74,7 +74,7 @@ def new_pipeline(task_name: str,
     
     
     def scene_with_answer(query, sample, return_sub=False, verbose=verbose, k=3):
-        formatter = TableFormat(format='none', data=sample, use_sampling=True)
+        formatter = TableFormat(format='none', data=sample, save_embedding=True, embeddings=embeddings)
         formatter.normalize_schema(schema_information.loc[sample['table']['id']]['schema'])
         if k == 0:
             sample_data = formatter.get_sample_data(sample_type='head', k=k)
@@ -151,20 +151,22 @@ def new_pipeline(task_name: str,
                 batch_size = num_samples - start  
             inputs,extras, token_count, table_names, preds = [],[],[],[], []
             for i in range(batch_size):
+                all_tokens = 0
                 normalized_sample = table_loader.normalize_table(
                     table_loader.dataset[start + i])
-                # Do query augmentation first
                 table_names.append(normalized_sample['id'])
                 formatter = TableFormat(
-                    format='none', data=normalized_sample, use_sampling=True)
+                    format='none', data=normalized_sample,save_embedding=False)
                 all_queries = []
-                llm_chain = LLMChain(llm=model, prompt=get_step_back_prompt_wiki(), verbose=False)
-                batch_pred = llm_chain.batch([{"query": normalized_sample['query'], "table": formatter.format_html()}], return_only_outputs=True)
-                if batch_pred[0]['text'].strip() != normalized_sample['query']:
-                    all_queries.append(batch_pred[0]['text'].strip())
-                llm_chain = LLMChain(llm=model, prompt=get_decompose_prompt_wiki(), verbose=False)
-                batch_pred = llm_chain.batch([{"query": normalized_sample['query'], "table": formatter.format_html()}], return_only_outputs=True)
-                all_queries.extend([q.strip() for q in batch_pred[0]['text'].split(';')])
+                sample_data = formatter.get_sample_data(sample_type='random')
+                with get_openai_callback() as cb:
+                    llm_chain = LLMChain(llm=model, prompt=get_step_back_prompt_wiki(), verbose=False)
+                    batch_pred = llm_chain.batch([{"query": normalized_sample['query'], "table": TableFormat.format_html(sample_data)}], return_only_outputs=True)
+                    if batch_pred[0]['text'].strip() != normalized_sample['query']:
+                        all_queries.append(batch_pred[0]['text'].strip())
+                    llm_chain = LLMChain(llm=model, prompt=get_decompose_prompt_wiki(), verbose=False)
+                    batch_pred = llm_chain.batch([{"query": normalized_sample['query'], "table": TableFormat.format_html(sample_data)}], return_only_outputs=True)
+                    all_queries.extend([q.strip() for q in batch_pred[0]['text'].split(';')])
                 all_queries = list(set(all_queries))
                 args_list = [{"query": q, "sample": normalized_sample} for q in all_queries]
                 ans_from_scene = parallel_run_kwargs(scene_with_answer, args_list) 
@@ -173,6 +175,7 @@ def new_pipeline(task_name: str,
                 with get_openai_callback() as cb:
                     imp_input = scene_with_answer(normalized_sample['query'], normalized_sample, return_SQL=True, verbose=False)
                     inputs.append({"query": normalized_sample['query'],"SQL": imp_input[1], "table": imp_input[2], "information": '\n'.join(scene_results)})
+                all_tokens += cb.total_tokens
                 extras.append('\n'.join(scene_results))
                 token_count.append(all_tokens)
             llm_chain = LLMChain(llm=model, prompt=get_k_shot_with_answer_wiki(), verbose=True)
@@ -180,8 +183,8 @@ def new_pipeline(task_name: str,
             preds.extend([pred['text'] for pred in batch_preds])
             pbar.update(1)
             if save_file:
-                save_csv([preds, statements, ids, token_count, extras], label_list=['preds', 'statements','ids', 'tokens', 'extra'], file_path=save_path)
+                save_csv([preds, token_count, extras], label_list=['preds', 'tokens', 'extra'], file_path=save_path)
 
 
 if __name__ == "__main__":
-    new_pipeline()
+    pipeline()

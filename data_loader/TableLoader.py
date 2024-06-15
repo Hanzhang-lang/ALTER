@@ -25,23 +25,23 @@ def normalize_col_name(col_name, illegal_chars={'.': '', ' ': '_',
 
 
 class TableLoader:
-    def __init__(self, table_name: str, split: str = None, use_sample: bool = True, small_test: bool = False) -> None:
+    def __init__(self, table_name: str, split: str = None, use_sample: bool = True, small_test: bool = False, cache_dir='/media/disk2/datasets/') -> None:
         """
 
         """
         self.table_name = table_name
-        self.dataset = self.load_table(use_sample, split=split)
+        self.dataset = self.load_table(use_sample, split=split, cache_dir=cache_dir)
         if small_test:
             self.dataset = self.dataset.filter(
                 lambda example: example['small_test'])
 
-    def load_table(self, use_sample: bool = True, split: str = None, ):
+    def load_table(self, use_sample: bool = True, split: str = None, cache_dir = None ):
         dir_path = os.path.dirname(os.path.abspath(__file__))
         if self.table_name == 'fetaqa':
-            dataset = load_dataset('DongfuJiang/FeTaQA',  cache_dir="/media/disk2/datasets")
+            dataset = load_dataset('DongfuJiang/FeTaQA',  cache_dir=cache_dir)
         else:
             dataset = load_dataset(
-            os.path.join(dir_path, f"{self.table_name}.py"), verification_mode="no_checks", cache_dir="/media/disk2/datasets")
+            os.path.join(dir_path, f"{self.table_name}.py"), verification_mode="no_checks", cache_dir=cache_dir)
         if split:
             dataset = dataset[split]
         if use_sample and len(dataset) > 300:
@@ -129,13 +129,11 @@ class TableLoader:
             
 
     def table2db(self, db_con: str, _line: dict):
-
         normalized = self.normalize_table(_line)
         df = pd.DataFrame(columns=[normalize_col_name(c)
                           for c in normalized['table']['header']])
         for ind, r in enumerate(normalized['table']['rows']):
             df.loc[ind] = r
-        # print(' '.join(normalized['table']['header']) + '*************')
         df.to_sql(name=self.table_name + '_' +
                   normalized['id'], con=db_con, if_exists='replace', index=False)
 
