@@ -67,7 +67,7 @@ replication_site<The site where viral replication occurs (nucleus or cytoplasm)>
 date<The date when the match took place> 
 tournament<The name of the tournament where the match was played> 
 surface<The type of playing surface, such as hard or clay> 
-opponent<The name of the opponent she played against> 
+opponent<The name of the opponent Galina Voskoboeva played against> 
 score<The set scores of the match>",2-15272585-8.html.csv
 "The table shows the 1933 Giro d'Italia race details including the date, course, distance, winner, and race leader for each stage.","date<The date of the race stage>
 course<The route of the race stage>
@@ -1727,6 +1727,6 @@ format<The type of content/format the radio station broadcasts>
 owner<The owner of the radio station>",2-18409326-1.html.csv
 "The table shows the date, opponent, score, loss pitcher, and save pitcher for the 2007 Uni-President Lions season.","date<The date of the match> 
 opponent<The opposing team> 
-score<The final score of the match> 
+score<The final score of the match> csv/203-csv/733.tsv
 loss<The pitcher who took the loss for the Lions> 
 save<The pitcher who recorded the save for the Lions>",2-13990653-2.html.csv

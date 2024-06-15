@@ -72,9 +72,9 @@ class SQLManager:
         
     def execute_from_df(self, command: str, data: DataFrame,  table_name='DF'):
         #TODO:添加sqlparse
-        db_data = data
-        db_data.columns = [self.normalize_col_name(c) for c in data.columns]
-        db_data.to_sql(table_name, self.engine, if_exists='replace', index=False)
+        # db_data = data
+        # db_data.columns = [self.normalize_col_name(c) for c in data.columns]
+        data.to_sql(table_name, self.engine, if_exists='replace', index=False)
         subtable = pd.read_sql(command, self.engine)
         return subtable
         

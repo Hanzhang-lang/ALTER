@@ -1,0 +1,138 @@
+preds,statements,ids,tokens,extra
+"Thought: The SQL query is filtering the top 10 cyclists by nationality and counting the number of cyclists from each country. It then orders the count in descending order and limits the result to 1. The country with the most cyclists finishing in the top 10 is ""orty"".
+Answer: orty",which country had the most cyclists finish within the top 10?,nu-0,6118,how many cyclists from each country finished within the top 10?; which country had the most cyclists finish within the top 10?;which country had the most cyclists finish in the top 10?
+"Thought: The SQL query is filtering the sum of the column c_1940_41 from the table DF where the Description_Losses is 'Murdered'. The sum of c_1940_41 for the year 1940/41 is 100,000.
+Answer: 100,000",how many people were murdered in 1940/41?,nu-1,6352, how many people were murdered in 1941?;how many people were murdered during the specified time period?;how many people were murdered in 1940?
+"Thought: It took 1 year for the New York Americans to win the national cup after 1936.
+Answer: 1",how long did it take for the new york americans to win the national cup after 1936?,nu-2,5786,what year did the new york americans win the national cup?;how long did it take for the New York Americans to win the National Cup?; how many years after 1936 did it take for the new york americans to win the national cup?
+"Thought: The SQL query provided does not contain any information about Alfie's birthday party or the airdate of the next episode. Therefore, it is not possible to determine the airdate of the next episode based on the given sub-table.
+Answer: The airdate of the next episode cannot be determined from the provided sub-table.",alfie's birthday party aired on january 19. what was the airdate of the next episode?,nu-3,8240,what was the airdate of alfie's birthday party?;What was the airdate of the next episode of Alfie's birthday party?; what was the airdate of the next episode?
+"Thought: The SQL query is counting the number of 1st place finishes across all events. The total number of 1st place finishes in all events is 17.
+Answer: 17",what is the number of 1st place finishes across all events?,nu-4,6151,what is the number of 1st place finishes in the sprint event?;what is the total number of 1st place finishes in all events?; what is the number of 1st place finishes in the team sprint event?
+"Thought: Based on the SQL query provided, Hopley finished first in the World Junior Championships.
+Answer: World Junior Championships",in which competition did hopley finish fist?,nu-5,6228, in which competition did hopley finish first?;in which competition did Hopley finish first?;what position did hopley finish in each competition?
+"Thought: The total number of films with the language of Kannada listed is 15.
+Answer: 15",what is the total number of films with the language of kannada listed?,nu-6,8063,How many films are listed with the language of Kannada?; how many films have the language of kannada?;what is the language of each film?
+"Thought: The number of people attending the Toros Mexico vs. Monterrey Flash game was 363.
+Answer: 363",what was the number of people attending the toros mexico vs. monterrey flash game?,nu-7,8256,what was the number of people attending the toros mexico game?; what was the number of people attending the monterrey flash game?;what was the attendance at the toros mexico vs. monterrey flash game?
+"Thought: Based on the SQL query provided, there is no data from the database that matches the criteria of having no shirt sponsor. 
+Answer: No data from database",what time period had no shirt sponsor?,nu-8,5888,what was the shirt sponsor for 1977-1978?; what was the shirt sponsor for 1982-1985?;During which time period was there no shirt sponsor?
+"Thought: Based on the SQL query provided, the first time he won a 1st place record was in the year 2000.
+Answer: 2000.0000",when was his first 1st place record?,nu-9,6654,when did he compete in the European Junior Championships?;When did he win his first 1st place record?; when did he compete in the World Championships?
+"Thought: Based on the SQL query provided, the record was the same in the years 1970, 1971, and 1973.
+Answer: 1970, 1971, 1973",in which three consecutive years was the record the same?,nu-10,8577, what was the record for the San Francisco 49ers in 1994?;what was the record for the New York Giants in 2007?;In which years was the record the same?; what was the record for the Dallas Cowboys in 1995?
+"Thought: Based on the SQL query provided, Pat Baldwin's total is 1.0000 and the person with the highest total is Doorman. Neither Pat nor John have the highest total.
+Answer: Neither Pat nor John have the highest total.",does pat or john have the highest total?,nu-11,6003, what is john's total?;what is pat's total?;who has the highest total?
+"Thought: The SQL query is summing the scores of the year end rankings from 2004 to 2008 for the rows with a row number less than 7. The scores for each year are 129, 91, 68, 90, and 62. The sum of these scores is 440.
+Answer: 440",what is the combined score of year end rankings before 2009?,nu-12,14804, what is the score of year end rankings in 2007?;what is the score of year end rankings in 2004?; what is the score of year end rankings in 2005?; what is the score of year end rankings in 2008?;what are the year end rankings before 2009?; what is the score of year end rankings in 2006?
+"Thought: Based on the SQL query provided, there were 3 ships wrecked in Lake Huron and 2 ships wrecked in Erie. Therefore, there was 1 more ship wrecked in Lake Huron than in Erie.
+Answer: 1",how many more ships were wrecked in lake huron than in erie?,nu-13,5578,How many ships were wrecked in Lake Huron?;how many ships were wrecked in lake huron?; how many ships were wrecked in erie?
+"Thought: The only character with a blank C string is the NULL character, represented by '\\0'.
+Answer: \\0",what is the only character with a blank c string?,nu-14,7103,what are the c strings for each character?; which character has a blank c string?;which character has a blank c string?
+"Thought: The SQL query calculates the total number of points scored by the Tide in the last 3 games combined. The points scored by the Tide in the game against #6 Florida was 23, and the points scored in the game against #20 Mississippi State was 29. The sum of these points is 54.
+Answer: 54",what was the total number of points scored by the tide in the last 3 games combined.,nu-15,6281,What is the total number of points scored by the Tide in the last 3 games?;what was the number of points scored by the tide in the game against #6 Florida?; what was the number of points scored by the tide in the game against #20 Mississippi State?
+"Thought: The rider immediately after Sebastian Porto in the race was Tomomi Manako.
+Answer: Tomomi Manako",who came immediately after sebastian porto in the race?,nu-16,5797, what was the position of the rider immediately after sebastian porto?;who was the rider immediately after sebastian porto?;who was the rider immediately after Sebastian Porto in the race?
+"Thought: The query is asking for the total number of festivals that occurred in October. Based on the SQL query provided, there were 5 festivals that occurred in October.
+Answer: 5",what's the total number of festivals that occurred in october?,nu-17,5694,what festivals occurred on October 17?; what festivals occurred on October 20?;How many festivals occurred in October?
+"Thought: The only hospital to have 6 hospital beds is Vidant Bertie Hospital.
+Answer: Vidant Bertie Hospital",what is the only hospital to have 6 hospital beds?,nu-18,8670,what is the number of hospital beds for each hospital?; which hospital has 6 hospital beds?;which hospital has 6 hospital beds?
+"Thought: The total number of Škoda cars sold in 2005 is 622896.2800.
+Answer: 622896.2800",what is the total number of skoda cars sold in the year 2005?,nu-19,9032,What is the total number of Škoda cars sold in 2005?;what is the number of Škoda Octavia cars sold in the year 2005?; what is the number of Škoda Yeti cars sold in the year 2005?
+"Thought: Based on the sub-table, the number of times won on grass was 1.
+Answer: 1",what was the number of times won on grass?,nu-20,7461,what was the outcome of each match?;how many times has the championship been won?; how many matches were played on grass?
+Answer: Aboyne Vikram Brahmo,who won the most gold medals?,nu-21,7455,what is the number of gold medals won by each nation?; who won the most gold medals?;who has the most gold medals?
+"Thought: The total number of wins by Belgian riders is 7.
+Answer: 7",total wins by belgian riders,nu-22,5874, how many wins does Chris Horsefield have?;How many wins do Belgian riders have?;how many wins does Sylvain Geboers have?
+"Thought: The yacht that had the next best time after Ausmaid was Sayonara.
+Answer: Sayonara",what yacht had the next best time (smaller time is better) than ausmaid?,nu-23,7358,which yacht had the next best time after Ausmaid?;what was the time for ausmaid?; what yacht had the best time after ausmaid?
+Answer: GL-B-6,what match comes after gl-b-5?,nu-24,5295,what is the next match after GL-B-5?;what is the date and venue of match gl-b-5?; what match comes after gl-b-5?
+"Thought: Based on the SQL query provided, Amanda was on the judging panel 8 times.
+Answer: 8",how many times was amanda on the judging panel?,nu-25,6936,how many times was amanda on the judging panel for series one?;how many times was Amanda on the judging panel?; how many times was amanda on the judging panel for series two?
+"Thought: Based on the SQL query provided, Leona Lewis has won 14 awards.
+Answer: 14",how many awards has leona lewis won?,nu-26,6994,How many awards has Leona Lewis won?;what awards has leona lewis won?; how many awards has leona lewis won?
+"Thought: The top scorer in the last season was Ingo.
+Answer: Ingo",who was the top scorer in the last season?,nu-27,8926, who was the top scorer in the last season?;what are the top scorers for each season?;who was the top scorer in the last season?
+Answer: 9,how many jury members were there?,nu-28,6148,how many members were on the jury?;who were the jury members?; how many of them were there?
+"Thought: Based on the SQL query provided, the Val d'Isere, France location was used 0 times.
+Answer: 0","how many times was the val d'lsere, france location used?",nu-29,9143,"how many times was the Val d'Isere, France location used in the races?; how many times was the val d'lsere, france location used?;what are the locations used in the season?"
+"Thought: The name listed before the Mount Pleasant line is ""Pennsylvania Avenue Metro Extra Line"".
+Answer: Pennsylvania Avenue Metro Extra Line",what is the name listed before mount pleasant line?,nu-30,7500,what is the name listed for the Wisconsin Avenue Line?;what is the name listed before the Mount Pleasant line?; what is the name listed for the Mount Pleasant Line?
+"Thought: The SQL query orders the stadiums by row number in descending order and then selects the first stadium from the list. 
+Answer: The last stadium listed on this chart is the Halliwell Jones Stadium.",what is the last stadium listed on this chart?,nu-31,5280,what is the stadium for St Helens RLFC?;what is the last stadium listed in the chart?; what is the stadium for Warrington Wolves?
+"Thought: Based on the SQL query provided, Salvatore Bettiol did not have any first place wins in competitions. 
+Answer: 0",how many times did salvatore bettiol win first place across competitions?,nu-32,6324,how many first place wins did Salvatore Bettiol have in competitions?;what was salvatore bettiol's position in each competition?; how many times did salvatore bettiol win first place?
+"Thought: Based on the SQL query provided, the years in which Illinois did not have any losses during the conference were 1914-15 and 1916-17. 
+Answer: 1914-15, 1916-17",which year did illinois not have any losses during the conference?,nu-33,6501,In which year did Illinois have no losses during the conference?;what was the conference record for Illinois in each season?; in which season did Illinois not have any losses during the conference?
+"Thought: Based on the SQL query provided, Natalia Varnakova is the same height as Jahaira Novgorodova, Carmen Jenockova, Mariesea Mnesiču, Patricia Valiahmetova, and Anastasija Larkova.
+Answer: Jahaira Novgorodova, Carmen Jenockova, Mariesea Mnesiču, Patricia Valiahmetova, and Anastasija Larkova",natalia varnakova is the same height as which other contestant(s)?,nu-34,6875,which contestant is the same height as natalia varnakova?;what is the height of natalia varnakova?; who else has the same height as natalia varnakova?
+"Thought: Based on the SQL query provided, there are 64 candidates who belong to a party other than Republican or Democrat.
+Answer: 64",how many candidates belong to a party other than republican or democrat?,nu-35,5756, how many candidates belong to the republican party?;how many candidates belong to the democratic party?;how many candidates belong to a party other than republican or democrat?
+"Thought: Based on the SQL query provided, there were 84 competitions that were not in the United Kingdom.
+Answer: 84",how many competitions were not in the united kingdom?,nu-36,8422,how many competitions were not in the United Kingdom?; how many competitions were in the united kingdom?;what are the locations of each competition?
+"Thought: The sub-table shows that there are 0 domestic routes out of Houston Intercontinental with United as a carrier. 
+Answer: 0",how many domestic routes out of houston intercontinental have united as a carrier?,nu-37,5473,how many domestic routes out of houston intercontinental does United operate as a carrier?;how many domestic routes out of houston intercontinental have delta as a carrier?; how many domestic routes out of houston intercontinental have united as a carrier?
+"Thought: Based on the sub-table, there are 2 individuals from Germany in the dataset.
+Answer: 2","in total, how many germans are listed?",nu-38,8641,What is the nationality of each rider listed?;how many riders are listed in the table?; How many of them are German?
+"Thought: The SQL query filters the minimum season number for giant slalom results that do not start with a hyphen. The first results for giant slalom were recorded in the season 0.4100.
+Answer: 0.4100",in what year are there the first results for giant slalom?,nu-39,6691,what are the results for giant slalom in 2012?;When were the first results for giant slalom recorded?; what are the results for giant slalom in 2005?
+"Thought: Based on the SQL query provided, there were 75 contestants who were older than 20 in cycle 4 of Austria's Next Top Model.
+Answer: 75","in cycle 4 of austria's next top model,how many contestants were older than 20?",nu-40,8108,what is the age of each contestant?; how many contestants were older than 20?;how many contestants in cycle 4 of Austria's Next Top Model were older than 20?
+"Thought: Based on the SQL query provided, Clint Dempsey scored more goals than Eric Wynalda. Clint Dempsey scored 36 goals, while Eric Wynalda scored 34 goals.
+Answer: Clint Dempsey scored more goals than Eric Wynalda.",who scored more goals: clint dempsey or eric wynalda?,nu-41,5446,what is the number of goals scored by Clint Dempsey?; what is the number of goals scored by Eric Wynalda?;who scored more goals?
+"Thought: The building with the least height in Germany is St Nikolai.
+Answer: St Nikolai",what building had the least height in germany?,nu-42,8270, which building had the least height?;which building had the least height in Germany?;what is the height of each building?
+"Thought: The Independent party was represented in the Maine election.
+Answer: Independent","besides republican (r) and democrat (d), what other party was represented in the maine election?",nu-43,7798, were republican and democrat represented in the maine election?;which parties were represented in the maine election?;which party was represented in the maine election?
+"Thought: The team had their most total wins in the 2014 season.
+Answer: 2014",which year did the team have their most total wins?,nu-44,8786,what were the total wins for each year?; which year did the team have the most total wins?;In which season did the team have their most total wins?
+"Thought: The total number of deaths that happened in 1939/1940 is 656681.0480.
+Answer: 656681.0480",what's the total of deaths that happened in 1939/1940?,nu-45,5989,what's the number of direct war losses in 1939/1940?; what's the number of murdered in 1939/1940?;What is the total number of deaths in 1939/1940?
+"Thought: The SQL query is counting the total number of distinct models listed in the table. The total number of models covered in the table is 65.
+Answer: 65",what is the total number of models covered in the table?,nu-46,7687, what is the total number of models?;How many models are listed in the table?;what models are covered in the table?
+"Thought: The SQL query is filtering the table to count the number of wins by the Jaguar XJS in either the Winning_vehicle_TA2 or Winning_vehicle_TA1 columns. The count of wins by the Jaguar XJS is 7.
+Answer: 7",what is the number of wins by jaguar xjs?,nu-47,11890, how many wins does jaguar xjs have?;What is the number of wins by the Jaguar XJS?;what is the winning driver and vehicle for each round?
+"Thought: The query is filtering for nations that earned 2 bronze medals, excluding Peru. The nations that earned 2 bronze medals, excluding Peru, are Chile and Ecuador.
+Answer: Chile, Ecuador",other nations besides peru to earn 2 bronze medals,nu-48,5723,did peru earn 2 bronze medals?; which other nations earned 2 bronze medals?;which nations earned 2 bronze medals?
+"Thought: Based on the SQL query provided, it can be determined that 2 consecutive games were played against Millwall. 
+Answer: 2",how many times were consecutive games played against millwall?,nu-49,5678,what was the date of the game against millwall?;how many games were played against Millwall?; how many consecutive games were played on that date?
+"Thought: The sub-table does not provide enough information to determine the other team listed in the 23rd position. Therefore, I cannot get the answer from the sub-table.
+Answer: I cannot get the answer from the sub-table.","besides angola racing team, what other team is listed in the 23rd position?",nu-50,7149,which team is listed in the 23rd position?;is angola racing team listed in the 23rd position?; what other team is listed in the 23rd position?
+"Thought: Based on the SQL query provided, 72 countries had at least $1 billion in box office revenue.
+Answer: 72",how many countries had at least $1 billion in box office?,nu-51,8240, which countries had at least $1 billion in box office?;how many countries had at least $1 billion in box office revenue?;what is the box office for each country?
+"Thought: The city of Yankton has a radio station called The Wolf 104.1.
+Answer: Yankton",what city has a radio station called the wolf?,nu-52,7106,what is the name of the radio station in Yankton?;what radio stations are in Yankton/Vermillion?; what city is the wolf radio station located in?
+"Thought: Based on the SQL query provided, the earliest date Kodak made 16mm film was between 1935 and 1962.
+Answer: 1935–1962",what is the earliest date kodak made 16mm film?,nu-53,5388, what is the date for kodachrome 25 film?;what is the date for kodachrome 200 film?;When did Kodak first produce 16mm film?
+"Thought: Based on the sub-table, we cannot get an answer to the query ""Who won during the 2009 Fujitsu V8 Supercar season?""
+Answer: Dann",who was the first to win during the 2009 fujitsu v8 supercar season?,nu-54,8536,what events were part of the 2009 fujitsu v8 supercar season?; who won each event?;Who won during the 2009 Fujitsu V8 Supercar season?
+"Thought: The World Championships competition was held in both Berlin, Germany and Daegu, South Korea.
+Answer: World Championships",which competition was held in berlin and daegu?,nu-55,5764, what competitions were held in daegu?;what competitions were held in berlin?;what competitions were held in Berlin and Daegu?
+"Thought: The total number of cars sold in 2001 is 628626.2880.
+Answer: 628626.2880",total number of cars sold in 2001?,nu-56,9127,How many cars were sold in 2001?;What is the number of Škoda Octavia cars sold in 2001?; What is the number of Škoda Yeti cars sold in 2001?
+"Thought: The sub-table shows that there is a type of plane with 0 encounters, but it does not specify the actual type of plane. Therefore, based on the sub-table, we cannot determine which type of plane had the least encounters.
+Answer: The specific type of plane with the least encounters is not provided in the sub-table.",what type of plane was encountered the least?,nu-57,8109, which type of plane had the least encounters?;what are the number of encounters for each type of plane?;Which type of plane was encountered the least?
+"Thought: The SQL query is looking for the name of the competitor with the highest placing. The sub-table shows that the competitor with the top placing is ""Vicksburg properties.""
+Answer: Vicksburg properties",who was the top placing competitor?,nu-58,8088,what was the placing for each competitor?; who had the top placing?;who placed first in the competition?
+"Thought: Based on the SQL query provided, the prize money for 23 January 1984 was $50,000, and the prize money for 23 April 1984 was $200,000. Therefore, the prize money for 23 January 1984 was less than that of 23 April 1984.
+Answer: No",is the price money for 23 january 1984 more than that of 23 april 1984?,nu-59,6411, what was the price money for 23 april 1984?;what was the price money for 23 january 1984?;what is the prize money for 23 january 1984?
+"Thought: Based on the SQL query provided, the only race in 2011 was Giant Slalom.
+Answer: Giant Slalom",what was the only race in 2011?,nu-60,7984,what was the race in 2011?; what was the only race?;what races were there in 2011?
+"Thought: The SQL query is finding the position that was listed the most on the chart. It is grouping the positions and counting the occurrences of each position, then ordering the results by the count in descending order and limiting the output to 1. The position ""S"" had the most listings on this chart with a count of 3.
+Answer: S",which position was listed the most on this chart?,nu-61,8230,which position had the most listings on this chart?;what positions are listed on this chart?; how many times is each position listed on this chart?
+"Thought: Based on the SQL query provided, both Dr. M. Shafi Ahmad and Dr. Abdul Majid have a Ph.D degree.
+Answer: Ph.D",m. shafi ahmad and absdul majid both had what type of degree?,nu-62,6436,what type of degree did m. shafi ahmad have?; what type of degree did absdul majid have?;What type of degree did M. Shafi Ahmad and Abdul Majid both have?
+"Thought: The SQL query is counting the number of rows in the table where the NVR_nPage column contains the word ""photos"". There is 1 row that meets this condition, so there is 1 photo listed in total.
+Answer: 1",how many photos total are listed?,nu-63,11891,what is the status of each ship?;how many ships are listed in the table?; how many years has each ship been active?
+"Thought: The position ""1st"" was listed 5 times in the chart.
+Answer: 5",how many times was first listed as the position according to this chart?,nu-64,6075,what is the position for the first entry?; how many times was that position listed in the chart?;what is the first position listed on this chart?
+"Thought: The candidate before Anastasija Nindova was Alissa Joanndova.
+Answer: Alissa Joanndova",who was the the candidate before anastasija nindova?,nu-65,6147,who was the candidate after anastasija nindova?;who was the candidate before Anastasija Nindova?; who was the candidate before the candidate after anastasija nindova?
+"Thought: Based on the SQL query provided, the next date listed after June 14, 2010 is July 16, 2010.
+Answer: 2010-07-16","what date is next listed after june 14, 2010.",nu-66,6327,"what is the date listed after june 14, 2010?;what is the date listed after June 14, 2010?"
+"Thought: The tournament held in the United States is ""Rancho Mirage, United States"". Based on the sub-table, it can be determined that 1 tournament was held in the United States.
+Answer: 1",how many times was a tournament held in the united states?,nu-67,7363, how many tournaments were held in the united states?;what are the tournaments held in the united states?;how many tournaments were held in the United States?
+"Thought: Based on the SQL query provided, the number of drivers who have led no laps is 18. 
+Answer: 18",how many drivers have no laps led?,nu-68,8121,which drivers have laps led?;how many drivers have led no laps?; how many drivers are there in total?
+"Thought: The position of Lord High Steward is superseded by the Justiciar.
+Answer: Justiciar",who superceded lord high steward?,nu-69,4688,who is the current officer for lord high steward? who is superseded by the current officer?;Who is the current officer of the position superceded by the Lord High Steward?

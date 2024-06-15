@@ -37,7 +37,10 @@ class TableLoader:
 
     def load_table(self, use_sample: bool = True, split: str = None, ):
         dir_path = os.path.dirname(os.path.abspath(__file__))
-        dataset = load_dataset(
+        if self.table_name == 'fetaqa':
+            dataset = load_dataset('DongfuJiang/FeTaQA',  cache_dir="/media/disk2/datasets")
+        else:
+            dataset = load_dataset(
             os.path.join(dir_path, f"{self.table_name}.py"), verification_mode="no_checks", cache_dir="/media/disk2/datasets")
         if split:
             dataset = dataset[split]
@@ -47,6 +50,20 @@ class TableLoader:
         return dataset
 
     def normalize_table(self, _line: dict):
+        if self.table_name == 'fetaqa':
+            return {
+                "id": _line['feta_id'],
+                "title": "",
+                "context": "",
+                "table": {
+                    "header": _line['table_array'][0],
+                    "rows": _line['table_array'][1:],
+                    "caption": _line['table_page_title'],
+                    "id": _line['table_source_json'],
+                },
+                "query": _line['question'],
+                "label": _line['answer']}
+        
         if self.table_name == 'tabfact':
             if str(_line["label"]) == "0":
                 label = "0"
@@ -109,6 +126,7 @@ class TableLoader:
                 'query': ' '.join(_line["question_and_history"]),
                 "label": _line["answer_text"],
             }
+            
 
     def table2db(self, db_con: str, _line: dict):
 

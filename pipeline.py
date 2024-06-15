@@ -3,7 +3,7 @@ from executor import SQLManager
 from langchain.chains import LLMChain
 from langchain_openai import ChatOpenAI, OpenAI
 from data_loader import TableLoader, TableFormat, TableAug
-from prompt_manager import get_k_shot_with_aug, row_instruction, answer_instruction, get_k_shot_with_answer, view_instruction, get_k_shot_with_schema_linking
+from prompt_manager import get_k_shot_with_aug, row_instruction, answer_instruction, view_instruction, get_k_shot_with_schema_linking
 import json
 import os
 from utils import eval_fv_match, normalize_schema, parse_specific_composition, parse_output

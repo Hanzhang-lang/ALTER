@@ -4,6 +4,7 @@ from langchain.prompts.prompt import PromptTemplate
 from langchain_core.messages import HumanMessage
 from langchain_openai import ChatOpenAI, OpenAI
 from utils import parse_output
+from prompt_manager import get_k_shot_with_string
 import logging
 from typing import List
 from langchain.chains import LLMChain
@@ -48,8 +49,8 @@ class TableAug:
         batch schema augmentation
         """
         pre_instruction_schema = PromptTemplate(input_variables=["table"], template="""
-        Instruction: Given the following table, you will add Metadata about the columns in the table.
-        Metadata includes:
+        Instruction: Given the following table, you will add schema type about the columns in the table, which will be used to normalize data types.
+        Schema type includes:
         - Numerical: consist digits and numerical symbols like decimal points or signs.
         - Char: whether column content is a text or description.
         - Date: whether column content represents datetime or date.
@@ -106,7 +107,7 @@ class TableAug:
         batch summary data
         """
         pre_instruction_summary = PromptTemplate(input_variables=['table'], template="""
-        Instruction: Given the following table, you need to first summarize the contents of the table, then based on the summay, give a concluded description to each of the column.
+        Instruction: Given the following table, you need to first summarize the contents of the table, then based on the summary, give a concluded description of each of the columns.
         Table: {table}
 
         The output should use the following format: 
@@ -188,6 +189,25 @@ class TableAug:
             logger.info(
                 f"Batch Composition Augmentaion  All Tokens: {cb.total_tokens}")
         return com_list
+    
+    def batch_string_aug(self, tables: List, captions: List, output_token=False):
+        """
+        batch composition augmentation
+        """
+        com_list = []
+        llm_chain = LLMChain(
+            llm=self.llm, prompt=get_k_shot_with_string(), verbose=False)
+        with get_openai_callback() as cb:
+            # add schema augmentaion info first
+            batch_pred = llm_chain.batch([TableFormat.format_html(data=tables[i], table_caption=captions[i]) for i in range(len(tables))], return_only_outputs=True)
+        for i in range(len(batch_pred)):
+            parts = batch_pred[i]['text']
+            com_list.append(parts)
+        if output_token:
+            logger.info(
+                f"Batch String Augmentaion  All Tokens: {cb.total_tokens}")
+        return com_list
+    
 
     def composition_aug(self, formatter: TableFormat, output_token=False):
 

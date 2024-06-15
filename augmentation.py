@@ -40,8 +40,8 @@ def augmentation(task_name: str,
              aug_type: List,
              batch_size: int = 32,
              small_test: bool=True):
-    # model = ChatOpenAI(model_name=model_name, openai_api_base="https://api.chatanywhere.tech/v1",
-    #                    openai_api_key="sk-bLZSHx4pKfPRZkYyIyyvUHSEjrlqj5sh2QIsxOM23yJnyoGD", temperature=0.1)
+    model = ChatOpenAI(model_name=model_name, openai_api_base="https://api.chatanywhere.tech/v1",
+                       openai_api_key="sk-Kfk2WiZcPgajLVtdGPGmfahxCmWqJSbMeRck5sXujlMS4Nai", temperature=0.1)
     
     model = AzureChatOpenAI(
         openai_api_version=os.environ["AZURE_OPENAI_API_VERSION"],
@@ -107,6 +107,13 @@ def augmentation(task_name: str,
                     aug_tables, aug_captions, output_token=True)
                     save_csv([com_augs, table_names], [
                                 'composition', 'table_id'], aug_path)
+                if 'string' in aug_type:
+                    aug_path = f"result/aug/{task_name}_{split}_string.csv"
+                    string_augs = table_aug.batch_string_aug(
+                    aug_tables, aug_captions, output_token=True)
+                    save_csv([string_augs, table_names], [
+                                'string', 'table_id'], aug_path)
+                    
             pbar.update(1)
                 
                 

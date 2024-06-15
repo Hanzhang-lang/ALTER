@@ -98,7 +98,7 @@ Distribution<Char> x86<Char> x86_64<Char> ia64<Char> ppc<Char> ppc64<Char> sparc
 Rank<Numerical> Player<Char> County<Char> Tally<Char> Total<Numerical> Opposition<Char>,csv/204-csv/505.tsv
 Wrestler_<Char> Reigns_<Numerical> Date_<Date> Place_<Char> Notes_<Char>,csv/204-csv/818.tsv
 num<Numerical> Name<Char> Height<Char> Weight_lbs<Numerical> Position<Char> Class<Char> Hometown<Char> Previous_Teams<Char>,csv/204-csv/83.tsv
-Date<Char> Opponentnum<Char> Ranknum<Char> Site<Char> TV<Char> Result<Char> Attendance<Char>,csv/203-csv/708.tsv
+Date<Char> Opponentnum<Char> Ranknum<Char> Site<Char> TV<Char> Result<Char> Attendance<Numerical>,csv/203-csv/708.tsv
 Tie_no<Char> Home_team<Char> Score<Char> Away_team<Char> Date<Date> Attendance<Numerical>,csv/203-csv/567.tsv
 Rank<Numerical> Nation<Char> Gold<Numerical> Silver<Numerical> Bronze<Numerical> Total<Numerical>,csv/204-csv/165.tsv
 Year<Numerical> Designers<Char> Brief_description<Char> Selected_by_<Char> Associated_publication<Char>,csv/203-csv/205.tsv
@@ -168,7 +168,7 @@ Speed<Numerical> Date<Date> Country<Char> Train<Char> Arr<Char> Power<Char> Stat
 Name_of_place<Char> Number_of_counties<Numerical> Principal_county<Char> Lower_zip_code<Numerical> Upper_zip_code<Numerical>,csv/203-csv/443.tsv
 Year<Numerical> Single<Char> Peak_chart_npositions_nUS_Country<Numerical> Peak_chart_npositions_nCAN_Country<Numerical> Album<Char>,csv/204-csv/919.tsv
 Date<Date> Opponent<Char> Venue<Char> Result<Char> Attendance<Numerical> Scorers<Char>,csv/204-csv/411.tsv
-Year<Numerical> Competition<Char> Venue<Char> Position<Char> Event<Char> Notes<Numerical>,csv/204-csv/588.tsv
+Year<Numerical> Competition<Char> Venue<Char> Position<Numerical> Event<Char> Notes<Numerical>,csv/204-csv/588.tsv
 Name<Char> Pennant<Numerical> Namesake<Char> Builder<Char> Ordered<Date> Laid_down<Date> Launched<Date> Commissioned<Date> Fate<Char>,csv/204-csv/432.tsv
 num<Numerical> Title<Char> Time<Char> Lyrics<Char> Music<Char> Producers<Char> Performers<Char>,csv/203-csv/12.tsv
 Round<Numerical> Pick<Numerical> Player<Char> Position<Char> Nationality<Char> School_Club_Team<Char>,csv/204-csv/695.tsv
@@ -194,7 +194,7 @@ Season<Numerical> Team<Char> Country<Char> Division<Numerical> Apps<Numerical> G
 Place<Char> Player<Char> Country<Char> Score<Char> To_par<Char> Money_$<Numerical>,csv/204-csv/900.tsv
 Value<Char> Diameter<Char> Composition<Char> c_1975–1979_nObverse<Char> c_1975–1979_nReverse<Char> c_1981_nObverse<Char> c_1981_nReverse<Char>,csv/203-csv/96.tsv
 Wrestler_<Char> Times_<Numerical> Date_<Date> Location_<Char> Notes_<Char>,csv/204-csv/499.tsv
-Binary<Numerical> Octal<Numerical> Decimal<Numerical> Hexadecimal<Numerical> Glyph<Char>,csv/203-csv/684.tsv
+Binary<Char> Octal<Char> Decimal<Numerical> Hexadecimal<Numerical> Glyph<Char>,csv/203-csv/684.tsv
 Hull<Char> Type<Char> Original_Name<Char> Original_Operator<Char> Delivery<Date> Disposition_2012<Char> c_2nd_name<Char> c_2nd_operator<Char> c_3rd_Name<Char> c_3rd_operator<Char>,csv/204-csv/280.tsv
 Team<Char> City<Char> Venue<Char> Capacity<Numerical> Head_Coach<Char> Team_Captain<Char> Past_Season<Char>,csv/204-csv/391.tsv
 Common_name<Char> District<Char> Hebrew<Char> Arabic<Char> Population_n2009<Numerical> Area_nkm²<Numerical> Mayor<Char>,csv/204-csv/512.tsv

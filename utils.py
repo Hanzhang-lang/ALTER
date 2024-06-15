@@ -8,6 +8,78 @@ import datetime
 import string
 import collections
 import numpy as np
+import random
+from datetime import timedelta
+import recognizers_suite
+import recognizers_suite as Recognizers
+from recognizers_text import Culture, ModelResult
+
+def str_normalize(user_input, recognition_types=None):
+    """A string normalizer which recognize and normalize value based on recognizers_suite
+    https://github.com/Microsoft/Recognizers-Text/tree/master/Python/"""
+    user_input = str(user_input)
+    user_input = user_input.replace("\\n", " ")
+
+    def replace_by_idx_pairs(orig_str, strs_to_replace, idx_pairs):
+        assert len(strs_to_replace) == len(idx_pairs)
+        last_end = 0
+        to_concat = []
+        for idx_pair, str_to_replace in zip(idx_pairs, strs_to_replace):
+            to_concat.append(orig_str[last_end : idx_pair[0]])
+            to_concat.append(str_to_replace)
+            last_end = idx_pair[1]
+        to_concat.append(orig_str[last_end:])
+        return ''.join(to_concat)
+
+    if recognition_types is None:
+        recognition_types = [
+            "datetime",
+            "number",
+            "ordinal",
+            "percentage",
+            "age",
+            "currency",
+            "dimension",
+            "temperature",
+        ]
+    culture = Culture.English
+    for recognition_type in recognition_types:
+        if re.match("\d+/\d+", user_input):
+            # avoid calculating str as 1991/92
+            continue
+        recognized_list = getattr(
+            recognizers_suite, "recognize_{}".format(recognition_type)
+        )(
+            user_input, culture
+        )  # may match multiple parts
+        strs_to_replace = []
+        idx_pairs = []
+        for recognized in recognized_list:
+            if not recognition_type == 'datetime':
+                recognized_value = recognized.resolution['value']
+                if str(recognized_value).startswith("P"):
+                    # if the datetime is a period:
+                    continue
+                else:
+                    strs_to_replace.append(recognized_value)
+                    idx_pairs.append((recognized.start, recognized.end + 1))
+            else:
+                if recognized.resolution:  # in some cases, this variable could be none.
+                    if len(recognized.resolution['values']) == 1:
+                        strs_to_replace.append(
+                            recognized.resolution['values'][0]['timex']
+                        )  # We use timex as normalization
+                        idx_pairs.append((recognized.start, recognized.end + 1))
+
+        if len(strs_to_replace) > 0:
+            user_input = replace_by_idx_pairs(user_input, strs_to_replace, idx_pairs)
+
+    if re.match("(.*)-(.*)-(.*) 00:00:00", user_input):
+        user_input = user_input[: -len("00:00:00") - 1]
+        # '2008-04-13 00:00:00' -> '2008-04-13'
+    return user_input
+
+
 def parse_output(output: str, pattern=r'([^<]*)<([^\s>]*)>'):
     """
     pattern = r'\d. (.+?): (.+)'
@@ -48,7 +120,7 @@ def normalize_string_value(series, errors='coerce'):
                 return None
             else:
                 s = re.sub(r'^"([^"]*)"$', r'\1', s.strip())
-                return s.replace("–", "-").replace("—", "-").replace("―", "-").replace("−", "-").strip(' ')
+                return s.replace("–", "-").replace("—", "-").replace("―", "-").replace("−", "-").replace('\n', r'\\n').replace(u'\xa0', ' ').strip().replace('\n', ' ').strip()
         except:
             if errors == 'coerce':
                 return None
@@ -125,6 +197,8 @@ def normalize_number(input_str):
         return input_str.replace(',', '')
     elif '=' in input_str:
         return eval(input_str.split('=')[1])
+    elif '%' in input_str:
+        return eval(input_str.split('%')[0])
     elif input_str.replace(' ', '').lower() in ['n.a', 'n/a', 'n.a.', 'n-a', 'nan', 'none', 'null']:
         return None
     else:
@@ -135,6 +209,88 @@ def add_row_number(df: DataFrame):
     df.index = df.index + 1
     df = df.reset_index(names='row_number')
     return df
+
+def composite_frame(df1, df2, reorder=False):
+    n = len(df2)
+    if reorder:
+        insert_index = np.random.choice(range(n + 1))  
+    else:
+        insert_index = 0
+    if insert_index == 0:  # 如果索引为0，则在开头插入
+        df2 = pd.concat([df1, df2])
+    elif insert_index == n:  # 如果索引为n，则在结尾插入
+        df2 = pd.concat([df2, df1])
+    else:  # 否则，在指定位置插入
+        df2 = pd.concat([df2.iloc[:insert_index], df1, df2.iloc[insert_index:]])
+    df2.reset_index(inplace=True, drop=True)
+    return df2
+
+def load_courp(p):
+    courp = []
+    with open(p, mode='r', encoding='utf-8') as f:
+        for line in f.readlines():
+            line = line.strip("\n").strip("\r\n")
+            courp.append(line)
+    return courp
+
+def generate_text(token_count, dict):
+        random_star_idx = random.randint(0, len(dict) - token_count)
+        txt = dict[random_star_idx:random_star_idx + token_count]
+        return ' '.join(txt)
+
+def generate_random_text(type, dic):
+    if type == 'Numerical':
+        max_num = random.choice([10, 100, 1000])
+        if random.random() < 0.5:
+            out = '{:.2f}'.format(random.random() * max_num)
+        elif random.random() < 0.7:
+            out = '{:.0f}'.format(random.random() * max_num)
+        else:
+            # 随机保留小数点后2位
+            out = str(random.random() *
+                        max_num)[:len(str(max_num)) + random.randint(0, 3)]
+    elif type == 'Date':
+        start_date = datetime.datetime.strptime('2000-01-01', '%Y-%m-%d')
+        end_date = datetime.datetime.strptime('2010-12-31', '%Y-%m-%d')
+        
+        # 计算日期范围的天数差
+        delta = (end_date - start_date).days
+        
+        # 随机选择一个天数
+        random_day = random.randrange(delta)
+        
+        # 加上开始日期得到随机日期
+        random_date = start_date + timedelta(days=random_day)
+        
+        # 格式化输出
+        out = random_date.strftime('%Y-%m-%d')
+    else:
+        txt_len = random.randint(1, 3)
+        out = generate_text(txt_len, dic)
+        # 50% 的概率第一个字母大写
+        if random.random() < 0.5:
+            out = out.capitalize()
+    return out
+
+def set_random_cells_to_empty(df, k=10):
+   # 获取行索引和列名的列表
+   rows = df.index.tolist()
+   columns = df.columns.tolist()
+   
+   # 确保DataFrame有足够的单元格来随机选择k个
+   if len(rows) * len(columns) < k:
+       raise ValueError("k is too large, there are not enough cells in the DataFrame.")
+   
+   # 随机生成k个不同的行索引和列名组合
+   indices = np.random.choice(rows, size=k)
+   cols = np.random.choice(columns, size=k)
+   
+   # 遍历这些组合，并将对应的单元格设置为空值''
+   for i in range(k):
+       df.at[indices[i], cols[i]] = ''
+   
+   return df
+
 
 def eval_ex_match(
         pred_list,

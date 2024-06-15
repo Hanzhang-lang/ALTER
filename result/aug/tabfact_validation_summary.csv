@@ -1,0 +1,105 @@
+summary,column_description,table_id
+"The table provides information about wind power in the Republic of Ireland, including details about wind farms, their scheduled dates, capacity in megawatts, number of turbines, type of turbines, and their locations.","wind_farm<The name of the wind farm>
+scheduled<The scheduled date for the wind farm>
+capacity_mw<The capacity of the wind farm in megawatts>
+turbines<The number of turbines in the wind farm>
+type<The type of turbines used in the wind farm>
+location<The location of the wind farm>",2-14101606-2.html.csv
+"The table shows the performance of three rugby clubs in the wru division one east, including the number of games played, drawn, lost, points scored, points conceded, tries scored, tries conceded, try bonus, losing bonus, and total points.","club<The name of the rugby club>
+played<The number of games played by the club>
+drawn<The number of games drawn by the club>
+lost<The number of games lost by the club>
+points_for<The total points scored by the club>
+points_against<The total points conceded by the club>
+tries_for<The total number of tries scored by the club>
+tries_against<The total number of tries conceded by the club>
+try_bonus<The number of try bonus points earned by the club>
+losing_bonus<The number of losing bonus points earned by the club>
+points<The total points earned by the club>",2-12784856-5.html.csv
+"The table lists entertainment events in Greater Moncton, including the event name, establishment year, category, sub-category, and main venue.","event_name<The name of the entertainment event>
+established<The year the event was established>
+category<The category of the event (e.g. arts, sporting)>
+sub_category<The sub-category of the event (e.g. literary, food & drink, kite flying)>
+main_venue<The main venue where the event takes place>",2-11758927-2.html.csv
+"The table shows the 1986-87 North West Counties Football League with the position, team, number of games played, drawn, lost, goals for, goals against, goal difference, and points for each team.","position<The ranking of the team in the league>
+team<The name of the football team>
+played<The number of games played by the team>
+drawn<The number of games drawn by the team>
+lost<The number of games lost by the team>
+goals_for<The total number of goals scored by the team>
+goals_against<The total number of goals conceded by the team>
+goal_difference<The difference between goals scored and goals conceded by the team>
+points_1<The total points earned by the team in the league>",2-17785973-3.html.csv
+"The table contains information about pat bradley's golf championships from 1980, 1981, and 1986.","year<The year of the championship>
+championship<The name of the championship>
+winning_score<The winning score for the championship, including the breakdown of scores>
+margin<The margin of victory for the championship>
+runner_up<The name of the runner-up for the championship>",2-1628851-4.html.csv
+"This table contains information about the tennis matches played by Polona Hercog, including the date, tournament, surface, partner, opponents, and score.","date<The date of the match>
+tournament<The name and location of the tournament>
+surface<The type of surface the match was played on>
+partner<The name of Polona Hercog's doubles partner>
+opponents<The names of the opponents in the match>
+score<The final score of the match>",2-17717526-9.html.csv
+"The table contains a list of game of the year awards, including the year, game title, genre, platforms, and developers.","year<The year in which the game won the award>
+game<The title of the game that won the award>
+genre<The genre of the game>
+platform_s<The platforms on which the game is available>
+developer_s<The developers of the game>",2-1851722-36.html.csv
+"The table contains information about the fai world grand prix 2008, including the position, pilot, country, glider, and points.","position<The ranking of the pilot in the competition>
+pilot<The name of the pilot>
+country<The country the pilot represents>
+glider<The type of glider used by the pilot>
+points<The total points earned by the pilot in the competition>",2-17277703-1.html.csv
+"The table provides information about the Gulf Coast Athletic Conference, including the institutions, location, men's and women's nicknames, founding year, type, enrollment, and joining year.","institution<The name of the institution>
+location<The location of the institution>
+men_s_nickname<The nickname for the men's sports teams>
+women_s_nickname<The nickname for the women's sports teams>
+founded<The year the institution was founded>
+type<The type of institution (e.g. private, religious affiliation)>
+enrollment<The number of students enrolled>
+joined<The year the institution joined the Gulf Coast Athletic Conference>",2-10577579-2.html.csv
+"The table contains data about the TV series M*A*S*H, including information about the season, number of episodes, season premiere and finale dates, ranking, viewers households in millions, and rating.","season<The season number of the TV series>
+ep<The number of episodes in the season>
+season_premiere<The date when the season premiered>
+season_finale<The date when the season finale aired>
+ranking<The ranking of the season>
+viewers_households_in_millions<The number of viewers in households in millions>
+rating<The rating of the season>",2-156045-2.html.csv
+"The table shows the 1998 CFL draft picks, including the pick number, CFL team, player name, player position, and college.","pick<The number indicating the order of selection in the draft>
+cfl_team<The team in the Canadian Football League that selected the player>
+player<The name of the player selected in the draft>
+position<The playing position of the selected player>
+college<The college or university where the selected player played collegiate football>",2-16441561-4.html.csv
+"This table lists schools in the Waikato region, including their name, years, gender, area, authority, decile, and roll.","name<The name of the school>
+years<The range of years the school caters to>
+gender<The gender of the students (coed for both male and female)>
+area<The location or area where the school is situated>
+authority<The authority governing the school (e.g., state, private)>
+decile<The decile rating of the school>
+roll<The number of students enrolled in the school>",2-12146269-10.html.csv
+"The table contains data for the 1948 VFL season including home team, home team score, away team, away team score, venue, crowd, and date.","home_team<The name of the home team>
+home_team_score<The score of the home team in the format goals.points (total points)>
+away_team<The name of the away team>
+away_team_score<The score of the away team in the format goals.points (total points)>
+venue<The name of the venue where the match was played>
+crowd<The number of people in attendance at the match>
+date<The date of the match>",2-10809529-8.html.csv
+"The table shows the draft history of the Washington Redskins, including the round, pick, overall pick number, name of the player, their position, and the college they attended.","round<The round in which the player was drafted>
+pick<The pick number within the round>
+overall<The overall pick number in the draft>
+name<The name of the player drafted>
+position<The position the player plays>
+college<The college the player attended>",2-17100961-34.html.csv
+"The table contains data for the 1980 VFL season including home team, home team score, away team, away team score, venue, crowd, and date.","home_team<The name of the home team>
+home_team_score<The score of the home team in the format of goals.points (total points)>
+away_team<The name of the away team>
+away_team_score<The score of the away team in the format of goals.points (total points)>
+venue<The venue where the match took place>
+crowd<The number of people in attendance at the match>
+date<The date of the match>",2-10809823-18.html.csv
+"The table contains the game number, the date in February, the opponent team, the score, and the record for the 1926-27 New York Rangers season.","game<The game number in the season>
+february<The date in February when the game took place>
+opponent<The name of the opposing team>
+score<The final score of the game>
+record<The overall season record after the game>",2-15950317-5.html.csv

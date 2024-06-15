@@ -12,7 +12,8 @@ from langchain_text_splitters import CharacterTextSplitter
 from langchain.embeddings import CacheBackedEmbeddings
 from langchain_community.embeddings import HuggingFaceBgeEmbeddings
 from langchain_community.vectorstores import FAISS
-from utils import parse_output, normalize_string_value, parse_datetime, normalize_rep_column, normalize_number
+from langchain.storage import LocalFileStore, RedisStore
+from utils import parse_output, normalize_string_value, parse_datetime, normalize_rep_column, normalize_number, str_normalize
 from functools import partial
 dir_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -25,7 +26,7 @@ class TableFormat:
                     columns=[self.normalize_col_name(c) for c in data["table"]["header"]]))
                 for _, line in enumerate(data['table']['rows']):
                     #rm aggregation row
-                    if line[0] not in ['Total', '-']:
+                    if line[0].lower() not in ['total', '-','totaal', 'totals']:
                         df.loc[len(df)] = line
                 self.all_data = df
             elif isinstance(data, DataFrame):
@@ -69,18 +70,48 @@ class TableFormat:
         head = 'Col :' + sep.join(data.columns) + '\n'
         cells = []
         for i in range(len(data)):
-            cells.append(f'Row {i + 1} :' + sep.join(data.iloc[i]))
+            cells.append(f'Row {i + 1} :' + sep.join([str(col) for col in data.iloc[i, :]]))
         if table_caption:
             head = table_caption + '\n' + head
         return head + "\n".join(cells)
 
     @staticmethod
+    def format_PIPE(data: DataFrame, table_caption: str = ''):
+        """
+        Nl_sep: 
+        <Grammar>\n Each table cell is separated by | , the column idx starts from 1
+        """
+        linear_table = "/*\n"
+        if len(table_caption):
+            linear_table += "table caption : " + table_caption + "\n"
+
+        header = "col : " + " | ".join(data.columns) + "\n"
+        linear_table += header
+        rows = data.values.tolist()
+        for row_idx, row in enumerate(rows):
+            row = [str(x) for x in row]
+            line = "row : " + " | ".join(row)
+            if row_idx != len(rows) - 1:
+                line += "\n"
+            linear_table += line
+        linear_table += "\n*/\n"
+        return linear_table
+    
+    
+    @staticmethod
     def format_html(data: DataFrame, table_caption: str = ''):
         """
         if table_caption is not None, insert <caption> into the tabulate output
         """
-        html = tabulate(data, tablefmt='unsafehtml', headers=data.columns,
-                        numalign="none", stralign="none", showindex='true')
+        if len(data) == 0:
+            empty_row = [None] * len(data.columns)
+            data  = pd.DataFrame([empty_row], columns=data.columns)
+            html = tabulate(data, tablefmt='unsafehtml', headers=data.columns,
+                            numalign="none", stralign="none", showindex='true',  floatfmt=".4f")
+            html = re.sub(r'<tbody>.*?</tbody>', '', html, flags=re.DOTALL)
+        else:
+            html = tabulate(data, tablefmt='unsafehtml', headers=data.columns,
+                            numalign="none", stralign="none", showindex='true', floatfmt=".4f")
         if len(table_caption):
             tag_pattern = re.compile(r'<table>')
             return tag_pattern.sub(f'<table>\n<caption>{table_caption}</caption>', html)
@@ -139,7 +170,7 @@ class TableFormat:
                                                           '\n': '_', '&': '',
                                                           ':': '_', '/': '_',
                                                           ',': '_', '-': '_',
-                                                          'from': 'c_from',
+                                                          'from': 'c_from', 'From': 'c_From', 'where': 'c_where',
                                                           '\'': '',
                                                           '%': 'percent',
                                                           '#': 'num',
@@ -167,7 +198,7 @@ class TableFormat:
                 if col_schema[i] == 'Date' or 'date' in col_name[i].lower():
                     try:
                         self.all_data[col_name[i]] = self.all_data[col_name[i]].apply(
-                            lambda x: parse_datetime(x))
+                            lambda x: str_normalize(x))
                         try:
                             self.all_data[col_name[i]] = pd.to_datetime(
                                 self.all_data[col_name[i]], format='%Y-%m-%d', errors='ignore')
@@ -191,12 +222,14 @@ class TableFormat:
 
             # TODO: whether format date in fixed format
 
-    def save_row_embedding(self, embeddings):
+    def save_row_embedding(self, embeddings, save_local=False):
         # embeddings = OpenAIEmbeddings(openai_api_base="https://api.chatanywhere.com.cn/v1",
         #                               openai_api_key="sk-WZtqZEeuE0Xb6syVghDgAxdwe0ASWLkQRGxl61UI7B9RqNC4")
-        from langchain.storage import LocalFileStore
         
-        store = LocalFileStore(os.path.join(dir_path, "result/.cache/"))
+        if save_local:
+            store = LocalFileStore(os.path.join(dir_path, "result/.cache/"))
+        else:
+            store = RedisStore(redis_url="redis://localhost:6379")
         cached_embedder = CacheBackedEmbeddings.from_bytes_store(
             embeddings, store, namespace="huggingface-bge"
         )
@@ -207,12 +240,17 @@ class TableFormat:
             # text_splitter = CharacterTextSplitter(
             #     chunk_size=1, chunk_overlap=0, separator='\n\n')
             # texts = text_splitter.split_text('\n\n'.join(row_string))
-            self.db = FAISS.from_texts(row_string, cached_embedder)
+        self.db = FAISS.from_texts(row_string, cached_embedder)
  
 
     def get_sample_data(self, sample_type: str = 'random', k: int = 3, query: str = ''):
+        if k == 0:
+            return self.all_data.head(0)
         if sample_type == 'random':
-            return self.all_data.sample(n=k, random_state=42)
+            try:
+                return self.all_data.sample(n=k, random_state=42)
+            except:
+                return self.all_data
         if sample_type == 'embedding':
             retriever = self.db.as_retriever(search_kwargs={"k": k})
             pattern = re.compile(r'#Row (\d+)')
