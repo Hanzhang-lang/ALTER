@@ -41,7 +41,7 @@ class TableLoader:
             dataset = load_dataset('DongfuJiang/FeTaQA',  cache_dir=cache_dir)
         else:
             dataset = load_dataset(
-            os.path.join(dir_path, f"{self.table_name}.py"), verification_mode="no_checks", cache_dir=cache_dir)
+            os.path.join(dir_path, f"datasets/{self.table_name}.py"), verification_mode="no_checks", cache_dir=cache_dir)
         if split:
             dataset = dataset[split]
         if use_sample and len(dataset) > 300:

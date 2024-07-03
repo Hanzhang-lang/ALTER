@@ -1,0 +1,20 @@
+# mysql:
+#     host: localhost
+#     dbname: db
+#     user: user
+#     passwd: pwb
+#     port: 3306
+
+sqlite:
+  url: sqlite:///db/sqlite/wikitable.db
+
+OPENAI:
+  api_key: YOUR_API_KEY_HERE
+  model: gpt-3.5-turbo
+  base_url: API_BASE_URL
+  temperature: 0.01
+  max_retries: 5
+  request_timeout: 6000
+
+  
+

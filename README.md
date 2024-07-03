@@ -14,6 +14,10 @@ conda create -n alter python=3.10
 conda activate alter
 pip install -r requirements.txt
 ```
+## Redis store
+```
+docker run -d -p 6379:6379 -p 8001:8001 redis/redis-stack:latest
+```
 
 ## 🧩Data
 

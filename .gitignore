@@ -3,6 +3,7 @@ __pycache__/
 **/__pycache__/**
 **/.cache
 **/.cache_column
+db/
 result/
 *.pyc
 *.pyd

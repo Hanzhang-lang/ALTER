@@ -14,6 +14,7 @@ import recognizers_suite
 import recognizers_suite as Recognizers
 from recognizers_text import Culture, ModelResult
 
+
 def str_normalize(user_input, recognition_types=None):
     """A string normalizer which recognize and normalize value based on recognizers_suite
     https://github.com/Microsoft/Recognizers-Text/tree/master/Python/"""
@@ -25,7 +26,7 @@ def str_normalize(user_input, recognition_types=None):
         last_end = 0
         to_concat = []
         for idx_pair, str_to_replace in zip(idx_pairs, strs_to_replace):
-            to_concat.append(orig_str[last_end : idx_pair[0]])
+            to_concat.append(orig_str[last_end: idx_pair[0]])
             to_concat.append(str_to_replace)
             last_end = idx_pair[1]
         to_concat.append(orig_str[last_end:])
@@ -69,10 +70,12 @@ def str_normalize(user_input, recognition_types=None):
                         strs_to_replace.append(
                             recognized.resolution['values'][0]['timex']
                         )  # We use timex as normalization
-                        idx_pairs.append((recognized.start, recognized.end + 1))
+                        idx_pairs.append(
+                            (recognized.start, recognized.end + 1))
 
         if len(strs_to_replace) > 0:
-            user_input = replace_by_idx_pairs(user_input, strs_to_replace, idx_pairs)
+            user_input = replace_by_idx_pairs(
+                user_input, strs_to_replace, idx_pairs)
 
     if re.match("(.*)-(.*)-(.*) 00:00:00", user_input):
         user_input = user_input[: -len("00:00:00") - 1]
@@ -91,21 +94,23 @@ def parse_output(output: str, pattern=r'([^<]*)<([^\s>]*)>'):
     for match in matches:
         items.append(match.group(1).strip())
         crakets.append(match.group(2).strip())
-    return items,crakets
+    return items, crakets
 
-def parse_specific_composition_zh(output:str, columns:List):
-    items, crakets = parse_output(output, pattern = r'\d. (.+?): (.+)')
+
+def parse_specific_composition(output: str, columns: List):
+    items, crakets = parse_output(output, pattern=r'\d. (.+?): (.+)')
     compositions = []
     for ind, (item, composition) in enumerate(zip(items, crakets)):
         if item in columns:
             compositions.append((item, composition))
     return compositions
-    
+
+
 def normalize_string_value(series, errors='coerce'):
     def normalize_null(s):
         try:
             if type(s) == str and s.replace(' ', '').lower() in [
-            'na', 'nan', 'none', 'null'
+                'na', 'nan', 'none', 'null'
             ] or len(s.strip()) == 0:
                 return None
             else:
@@ -116,19 +121,25 @@ def normalize_string_value(series, errors='coerce'):
                 return None
     return series.apply(normalize_null)
 
+
 def normalize_rep_column(data: DataFrame):
-    duplicates_count = pd.Series(data.columns, index=data.columns).groupby(data.columns).cumcount()
-    rename_list = [f"{col_name}_{col_count}" if col_count > 0 else col_name for (col_name, col_count) in duplicates_count.items()]
+    duplicates_count = pd.Series(
+        data.columns, index=data.columns).groupby(data.columns).cumcount()
+    rename_list = [f"{col_name}_{col_count}" if col_count > 0 else col_name for (
+        col_name, col_count) in duplicates_count.items()]
     data.columns = rename_list
     return data
 
 
 def normalize_schema(data, schema_information):
     col_name, col_schema = parse_output(schema_information)
-    mac_dic = {'Numerical': pd.to_numeric, 'Char': normalize_string_value, 'Date': pd.to_datetime}
+    mac_dic = {'Numerical': pd.to_numeric,
+               'Char': normalize_string_value, 'Date': pd.to_datetime}
     for i, _ in enumerate(col_name):
-        data[col_name[i]] = mac_dic[col_schema[i]](data[col_name[i]], errors='coerce')
+        data[col_name[i]] = mac_dic[col_schema[i]](
+            data[col_name[i]], errors='coerce')
     return data
+
 
 def parse_datetime(date_string):
     parsed_date = parser.parse(date_string)
@@ -159,11 +170,13 @@ def normalize_number(input_str):
     else:
         return input_str.replace('~', '').replace("–", "-").replace("—", "-").replace("―", "-").replace("−", "-").replace(' ', '').strip(' ')
 
+
 def add_row_number(df: DataFrame):
     "default index start from 0"
     df.index = df.index + 1
     df = df.reset_index(names='row_number')
     return df
+
 
 def load_courp(p):
     courp = []
@@ -173,10 +186,12 @@ def load_courp(p):
             courp.append(line)
     return courp
 
+
 def generate_text(token_count, dict):
-        random_star_idx = random.randint(0, len(dict) - token_count)
-        txt = dict[random_star_idx:random_star_idx + token_count]
-        return ' '.join(txt)
+    random_star_idx = random.randint(0, len(dict) - token_count)
+    txt = dict[random_star_idx:random_star_idx + token_count]
+    return ' '.join(txt)
+
 
 def generate_random_text(type, dic):
     if type == 'Numerical':
@@ -187,7 +202,7 @@ def generate_random_text(type, dic):
             out = '{:.0f}'.format(random.random() * max_num)
         else:
             out = str(random.random() *
-                        max_num)[:len(str(max_num)) + random.randint(0, 3)]
+                      max_num)[:len(str(max_num)) + random.randint(0, 3)]
     elif type == 'Date':
         start_date = datetime.datetime.strptime('2000-01-01', '%Y-%m-%d')
         end_date = datetime.datetime.strptime('2010-12-31', '%Y-%m-%d')
@@ -202,13 +217,15 @@ def generate_random_text(type, dic):
             out = out.capitalize()
     return out
 
+
 def set_random_cells_to_empty(df, k=10):
-   rows = df.index.tolist()
-   columns = df.columns.tolist()
-   if len(rows) * len(columns) < k:
-       raise ValueError("k is too large, there are not enough cells in the DataFrame.")
-   indices = np.random.choice(rows, size=k)
-   cols = np.random.choice(columns, size=k)
-   for i in range(k):
-       df.at[indices[i], cols[i]] = ''
-   return df 
+    rows = df.index.tolist()
+    columns = df.columns.tolist()
+    if len(rows) * len(columns) < k:
+        raise ValueError(
+            "k is too large, there are not enough cells in the DataFrame.")
+    indices = np.random.choice(rows, size=k)
+    cols = np.random.choice(columns, size=k)
+    for i in range(k):
+        df.at[indices[i], cols[i]] = ''
+    return df

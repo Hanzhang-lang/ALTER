@@ -256,9 +256,11 @@ class TableFormat:
         if sample_type == 'all':
             return self.all_data
 
-    def get_sample_column(self, embeddings, column_information,  threshold: float = 0.4, query: str = '', ):
-        from langchain.storage import LocalFileStore
-        store = LocalFileStore(os.path.join(dir_path, "result/.cache_column/"))
+    def get_sample_column(self, embeddings, column_information,  threshold: float = 0.4, query: str = '', save_local=False):
+        if save_local:
+            store = LocalFileStore(os.path.join(dir_path, "result/.cache/"))
+        else:
+            store = RedisStore(redis_url="redis://localhost:6379")
         cached_embedder = CacheBackedEmbeddings.from_bytes_store(
             embeddings, store, namespace="huggingface-bge"
         )
