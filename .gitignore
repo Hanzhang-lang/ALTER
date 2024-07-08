@@ -5,6 +5,7 @@ __pycache__/
 **/.cache_column
 db/
 result/
+config.yaml
 *.pyc
 *.pyd
 *.pyo

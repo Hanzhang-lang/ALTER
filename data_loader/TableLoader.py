@@ -25,7 +25,7 @@ def normalize_col_name(col_name, illegal_chars={'.': '', ' ': '_',
 
 
 class TableLoader:
-    def __init__(self, table_name: str, split: str = None, use_sample: bool = True, small_test: bool = False, cache_dir='/media/disk2/datasets/') -> None:
+    def __init__(self, table_name: str, split: str = None, use_sample: bool = True, small_test: bool = False, cache_dir=None) -> None:
         """
 
         """

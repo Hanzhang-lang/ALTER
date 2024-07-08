@@ -34,6 +34,7 @@ def augmentation(task_name: str,
                  use_sample: bool,
                  model_name: str,
                  aug_type: List,
+                 cache_dir: str,
                  batch_size: int = 32,
                  small_test: bool = True):
     with open('config.yaml', 'r') as f:
@@ -41,7 +42,7 @@ def augmentation(task_name: str,
     model = ChatOpenAI(model_name=model_name,
                        openai_api_key=config['OPENAI']['api_key'], base_url=config['OPENAI']['base_url'], temperature=config['OPENAI']['temperature'], max_retries=config['OPENAI']['max_retries'], request_timeout=config['OPENAI']['request_timeout'])
     table_loader = TableLoader(
-        table_name=task_name, split=split, use_sample=use_sample, small_test=small_test)
+        table_name=task_name, split=split, use_sample=use_sample, small_test=small_test, cache_dir=cache_dir)
     table_aug = TableAug(model)
     num_samples = len(table_loader.dataset)
     num_batches = num_samples // batch_size

@@ -37,7 +37,7 @@ def add_arguments():
         help='choosing mode to run',
     )
     parser.add_argument(
-        '--cache_dir', help='cache directory for saving data', default='/media/disk2/datasets/')
+        '--cache_dir', help='cache directory for saving data', default=None)
     parser.add_argument('--batch_size', type=int, default=16,
                         help='batch size for llm chain')
     parser.add_argument('--aug_type', nargs='+',
@@ -65,12 +65,14 @@ if __name__ == "__main__":
             task_name=args.task_name,
             split=args.split,
             model_name=args.model,
+            cache_dir=args.cache_dir,
             use_sample=args.use_sample,
             small_test=args.small_test,
             verbose=args.verbose,
             save_file=args.save_file,
             aug_type=args.aug_type,
-            batch_size=args.batch_size)
+            batch_size=args.batch_size,
+            )
 
     if args.mode == 'Augmentation':
         augmentation(

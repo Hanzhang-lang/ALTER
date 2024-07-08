@@ -3,7 +3,7 @@ Official implementation of the paper "ALTER: Augmentation for Large-Table-Based 
 
 ## 📝 Paper
 
-[ALTER: Augmentation for Large-Table-Based Reasoning]()
+[ALTER: Augmentation for Large-Table-Based Reasoning](https://arxiv.org/abs/2407.03061)
 
 
 <!-- ![Document Screenshot](ALTER.jpg) -->
@@ -25,10 +25,8 @@ docker run -d -p 6379:6379 -p 8001:8001 redis/redis-stack:latest
 ## 🎯 Run
 ```
 # modif config.yaml first
-
-cd scripts
-sh aug.sh
-sh pipelines.sh
+sh scripts/aug.sh
+sh scripts/pipelines.sh
 ```
 
 ## 🧩 Data

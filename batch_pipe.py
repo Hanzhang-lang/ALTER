@@ -51,6 +51,7 @@ def pipeline(task_name: str,
              model_name: str,
              small_test: bool,
              batch_size: int,
+             cache_dir: str,
              verbose: bool,
              save_file: bool,
              aug_type: List):
@@ -61,7 +62,7 @@ def pipeline(task_name: str,
     engine = create_engine(config['sqlite']['url'], echo=False)
     manager = SQLManager(engine=engine)
     table_loader = TableLoader(
-        table_name=task_name, split=split, use_sample=use_sample, small_test=small_test, cache_dir='/media/disk2/datasets/')
+        table_name=task_name, split=split, use_sample=use_sample, small_test=small_test, cache_dir=cache_dir)
     num_samples = len(table_loader.dataset)
     num_samples = 10
     num_batches = num_samples // batch_size
