@@ -1,5 +1,5 @@
 # ALTER: Augmentation for Large-Table-Based Reasoning
-Official implementation of the paper "ALTER: Augmentation for Large-Table-Based Reasoning" 
+Official implementation of the paper "ALTER: Augmentation for Large-Table-Based Reasoning" . We warmly welcome discussions on table reasoning issues together!☺️
 
 ## 📝 Paper
 
